@@ -1,0 +1,4802 @@
+[
+  {
+    "id": "COL001",
+    "level": "A1",
+    "phrase": "make a mistake",
+    "meaning": "do something incorrectly",
+    "vietnamese": "mắc lỗi",
+    "example": "Everyone can make a mistake."
+  },
+  {
+    "id": "COL002",
+    "level": "A2",
+    "phrase": "take a break",
+    "meaning": "rest for a short time",
+    "vietnamese": "nghỉ giải lao",
+    "example": "Let's take a break."
+  },
+  {
+    "id": "COL003",
+    "level": "A2",
+    "phrase": "learn a language",
+    "meaning": "study a language",
+    "vietnamese": "học một ngôn ngữ",
+    "example": "I want to learn a language."
+  },
+  {
+    "id": "COL004",
+    "level": "A1",
+    "phrase": "do homework",
+    "meaning": "complete school assignments at home",
+    "vietnamese": "làm bài tập về nhà",
+    "example": "The thirty students always do homework before the history class."
+  },
+  {
+    "id": "COL005",
+    "level": "A1",
+    "phrase": "make coffee",
+    "meaning": "prepare a cup of coffee",
+    "vietnamese": "pha cà phê",
+    "example": "The software engineer likes to make coffee before auditing the server code."
+  },
+  {
+    "id": "COL006",
+    "level": "A1",
+    "phrase": "take a bus",
+    "meaning": "travel by public bus",
+    "vietnamese": "bắt xe buýt / đi xe buýt",
+    "example": "Thirty students take a bus to visit the historical museum every morning."
+  },
+  {
+    "id": "COL007",
+    "level": "A1",
+    "phrase": "have breakfast",
+    "meaning": "eat the first meal of the day",
+    "vietnamese": "ăn sáng",
+    "example": "The factory supervisor has breakfast at a traditional restaurant in Da Nang."
+  },
+  {
+    "id": "COL008",
+    "level": "A1",
+    "phrase": "go shopping",
+    "meaning": "visit stores to buy goods",
+    "vietnamese": "đi mua sắm",
+    "example": "The designer decided to go shopping for a premium laptop case."
+  },
+  {
+    "id": "COL009",
+    "level": "A1",
+    "phrase": "spend money",
+    "meaning": "use cash to pay for something",
+    "vietnamese": "tiêu tiền",
+    "example": "Don't spend money on low-quality products; buy a durable leather bag instead."
+  },
+  {
+    "id": "COL010",
+    "level": "A1",
+    "phrase": "save time",
+    "meaning": "do something faster to prevent wasting time",
+    "vietnamese": "tiết kiệm thời gian",
+    "example": "Using a cloud backup helps the software engineer save time."
+  },
+  {
+    "id": "COL011",
+    "level": "A2",
+    "phrase": "pay attention",
+    "meaning": "watch or listen carefully",
+    "vietnamese": "chú ý / tập trung",
+    "example": "Please pay attention to the critical line code to avoid system errors."
+  },
+  {
+    "id": "COL012",
+    "level": "A2",
+    "phrase": "make a decision",
+    "meaning": "choose what to do after thinking",
+    "vietnamese": "đưa ra quyết định",
+    "example": "The corporate manager needs to make a decision about expanding the factory."
+  },
+  {
+    "id": "COL013",
+    "level": "A2",
+    "phrase": "take notes",
+    "meaning": "write down information quickly",
+    "vietnamese": "ghi chú / ghi chép",
+    "example": "The apprentice chef took notes while the head chef made the traditional broth."
+  },
+  {
+    "id": "COL014",
+    "level": "A2",
+    "phrase": "have a look",
+    "meaning": "examine or check something quickly",
+    "vietnamese": "nhìn qua / kiểm tra qua",
+    "example": "The system manager came to have a look at the crashed server room."
+  },
+  {
+    "id": "COL015",
+    "level": "A2",
+    "phrase": "keep a secret",
+    "meaning": "not tell anyone else confidential information",
+    "vietnamese": "giữ bí mật",
+    "example": "The head chef knows how to keep a secret about his traditional beef noodle recipe."
+  },
+  {
+    "id": "COL016",
+    "level": "A2",
+    "phrase": "catch a train",
+    "meaning": "board a subway or railway train on time",
+    "vietnamese": "bắt tàu hỏa / tàu điện ngầm",
+    "example": "The factory workers hurried to the subway station to catch a train home."
+  },
+  {
+    "id": "COL017",
+    "level": "A2",
+    "phrase": "give advice",
+    "meaning": "offer suggestions about what someone should do",
+    "vietnamese": "đưa ra lời khuyên",
+    "example": "The experienced developer is always ready to give advice to the apprentice."
+  },
+  {
+    "id": "COL018",
+    "level": "A2",
+    "phrase": "make progress",
+    "meaning": "develop or improve over time",
+    "vietnamese": "tiến bộ",
+    "example": "The students are making progress while analyzing the history textbook."
+  },
+  {
+    "id": "COL019",
+    "level": "A2",
+    "phrase": "do a favor",
+    "meaning": "do something kind or helpful for someone",
+    "vietnamese": "làm giúp một việc / giúp đỡ",
+    "example": "Can you do a favor and carry these thirty wooden boxes into the office?"
+  },
+  {
+    "id": "COL020",
+    "level": "A2",
+    "phrase": "get lost",
+    "meaning": "lose one's way in an unfamiliar place",
+    "vietnamese": "bị lạc đường",
+    "example": "Without a digital map, you might get lost in the old streets of Da Nang."
+  },
+  {
+    "id": "COL021",
+    "level": "A2",
+    "phrase": "pay cash",
+    "meaning": "buy goods using paper money rather than credit",
+    "vietnamese": "trả bằng tiền mặt",
+    "example": "The customer preferred to pay cash for the luxury leather bag."
+  },
+  {
+    "id": "COL022",
+    "level": "B1",
+    "phrase": "take responsibility",
+    "meaning": "accept blame or duty for a situation",
+    "vietnamese": "chịu trách nhiệm",
+    "example": "The software engineer decided to take responsibility for the core system line error."
+  },
+  {
+    "id": "COL023",
+    "level": "B1",
+    "phrase": "make an effort",
+    "meaning": "try hard to achieve something difficult",
+    "vietnamese": "nỗ lực / cố gắng",
+    "example": "The development team made an effort to secure the server before midnight."
+  },
+  {
+    "id": "COL024",
+    "level": "B1",
+    "phrase": "run a business",
+    "meaning": "manage and operate a commercial company",
+    "vietnamese": "vận hành / quản lý kinh doanh",
+    "example": "The famous artist successfully runs a business and a modern art gallery."
+  },
+  {
+    "id": "COL025",
+    "level": "B1",
+    "phrase": "lose patience",
+    "meaning": "become annoyed or unable to wait any longer",
+    "vietnamese": "mất kiên nhẫn",
+    "example": "The factory manager lost patience because the raw materials arrived late."
+  },
+  {
+    "id": "COL026",
+    "level": "B1",
+    "phrase": "gain experience",
+    "meaning": "get knowledge or skills by doing a job",
+    "vietnamese": "tích lũy kinh nghiệm",
+    "example": "The apprentice chef works hard every single day to gain experience."
+  },
+  {
+    "id": "COL027",
+    "level": "B1",
+    "phrase": "meet a deadline",
+    "meaning": "finish a task or project before the target time",
+    "vietnamese": "kịp thời hạn / đúng hạn",
+    "example": "The software engineer worked all night long to meet a deadline."
+  },
+  {
+    "id": "COL028",
+    "level": "B1",
+    "phrase": "break a habit",
+    "meaning": "stop doing a routine negative action",
+    "vietnamese": "từ bỏ một thói quen",
+    "example": "It is difficult to break a habit of drinking too much black coffee at midnight."
+  },
+  {
+    "id": "COL029",
+    "level": "B1",
+    "phrase": "give a presentation",
+    "meaning": "talk and display information to a group of people",
+    "vietnamese": "thuyết trình / báo cáo",
+    "example": "The thirty students are preparing to give a presentation on historical landmarks."
+  },
+  {
+    "id": "COL030",
+    "level": "B1",
+    "phrase": "keep in touch",
+    "meaning": "maintain communication with someone over time",
+    "vietnamese": "giữ liên lạc",
+    "example": "The designer and the corporate manager still keep in touch after the project."
+  },
+  {
+    "id": "COL031",
+    "level": "B1",
+    "phrase": "do research",
+    "meaning": "study a subject in detail to discover new information",
+    "vietnamese": "nghiên cứu",
+    "example": "The team needs to do research before updating the server database application."
+  },
+  {
+    "id": "COL032",
+    "level": "B1",
+    "phrase": "make an appointment",
+    "meaning": "arrange a specific time and place to meet someone",
+    "vietnamese": "đặt một lịch hẹn",
+    "example": "The client called to make an appointment with the leather bag designer."
+  },
+  {
+    "id": "COL033",
+    "level": "B1",
+    "phrase": "take for granted",
+    "meaning": "fail to appreciate the true value of something",
+    "vietnamese": "coi là điều hiển nhiên / không biết trân trọng",
+    "example": "Don't take a premium laptop for granted; use it carefully to build great code."
+  },
+  {
+    "id": "COL034",
+    "level": "A1",
+    "phrase": "go to bed",
+    "meaning": "go to sleep at night",
+    "vietnamese": "đi ngủ",
+    "example": "The tired software engineer usually goes to bed after midnight."
+  },
+  {
+    "id": "COL035",
+    "level": "A1",
+    "phrase": "have a party",
+    "meaning": "organize or celebrate a social gathering",
+    "vietnamese": "tổ chức tiệc",
+    "example": "The corporate manager wants to have a party for the software development team."
+  },
+  {
+    "id": "COL036",
+    "level": "A1",
+    "phrase": "take a photo",
+    "meaning": "capture an image using a camera",
+    "vietnamese": "chụp một bức ảnh",
+    "example": "Thirty students stopped to take a photo in front of the historical museum."
+  },
+  {
+    "id": "COL037",
+    "level": "A1",
+    "phrase": "watch TV",
+    "meaning": "look at a television screen for entertainment",
+    "vietnamese": "xem ti vi",
+    "example": "The factory workers usually watch TV together after a long shifting day."
+  },
+  {
+    "id": "COL038",
+    "level": "A1",
+    "phrase": "listen to music",
+    "meaning": "pay attention to recorded sounds or songs",
+    "vietnamese": "nghe nhạc",
+    "example": "The designer loves to listen to music while drawing on his premium laptop."
+  },
+  {
+    "id": "COL039",
+    "level": "A1",
+    "phrase": "play football",
+    "meaning": "participate in a soccer match",
+    "vietnamese": "đá bóng / chơi bóng đá",
+    "example": "Thirty students often play football near the subway bus station."
+  },
+  {
+    "id": "COL040",
+    "level": "A1",
+    "phrase": "have fun",
+    "meaning": "enjoy oneself during an activity",
+    "vietnamese": "vui vẻ / tận hưởng niềm vui",
+    "example": "Did you have fun at the modern art gallery exhibition in Da Nang?"
+  },
+  {
+    "id": "COL041",
+    "level": "A1",
+    "phrase": "make plans",
+    "meaning": "prepare or arrange things to do in the future",
+    "vietnamese": "lập kế hoạch",
+    "example": "The factory supervisor is making plans to increase leather bag production."
+  },
+  {
+    "id": "COL042",
+    "level": "A1",
+    "phrase": "do exercise",
+    "meaning": "engage in physical activity to stay healthy",
+    "vietnamese": "tập thể dục",
+    "example": "The manager does exercise every morning before coming to the corporate branch."
+  },
+  {
+    "id": "COL043",
+    "level": "A1",
+    "phrase": "say hello",
+    "meaning": "greet someone politely",
+    "vietnamese": "chào hỏi / chào",
+    "example": "The apprentice chef always smiles and says hello to the head chef."
+  },
+  {
+    "id": "COL044",
+    "level": "A1",
+    "phrase": "go for a walk",
+    "meaning": "take a short journey on foot for pleasure or health",
+    "vietnamese": "đi dạo",
+    "example": "The software engineer went for a walk along the coast to clear his mind."
+  },
+  {
+    "id": "COL045",
+    "level": "A1",
+    "phrase": "have time",
+    "meaning": "possess enough available minutes or hours to do something",
+    "vietnamese": "có thời gian",
+    "example": "I don't have time to cook, so I will buy some traditional beef noodles."
+  },
+  {
+    "id": "COL046",
+    "level": "A2",
+    "phrase": "tell a lie",
+    "meaning": "say something that is completely untrue",
+    "vietnamese": "nói dối",
+    "example": "The honest apprentice engineer would never tell a lie about the line code error."
+  },
+  {
+    "id": "COL047",
+    "level": "A2",
+    "phrase": "keep quiet",
+    "meaning": "remain silent or make no noise",
+    "vietnamese": "giữ im lặng",
+    "example": "Please keep quiet inside the secure server room."
+  },
+  {
+    "id": "COL048",
+    "level": "A2",
+    "phrase": "make a phone call",
+    "meaning": "telephone someone to talk",
+    "vietnamese": "gọi một cuộc điện thoại",
+    "example": "The manager needs to make a phone call to the raw leather material provider."
+  },
+  {
+    "id": "COL049",
+    "level": "A2",
+    "phrase": "take a shower",
+    "meaning": "wash oneself using a shower device",
+    "vietnamese": "tắm vòi hoa sen",
+    "example": "He always takes a shower immediately after working at the hot factory line."
+  },
+  {
+    "id": "COL050",
+    "level": "A2",
+    "phrase": "get a job",
+    "meaning": "find employment at a firm or company",
+    "vietnamese": "tìm được việc làm / có việc làm",
+    "example": "The young software engineer was very glad to get a job at the corporate firm."
+  },
+  {
+    "id": "COL051",
+    "level": "A2",
+    "phrase": "give a hand",
+    "meaning": "help someone with a specific physical task",
+    "vietnamese": "giúp đỡ một tay",
+    "example": "Can you give a hand to load these thirty wooden boxes onto the bus?"
+  },
+  {
+    "id": "COL052",
+    "level": "A2",
+    "phrase": "make money",
+    "meaning": "earn cash through working or business",
+    "vietnamese": "kiếm tiền",
+    "example": "The designer aims to make money by selling his premium leather bags."
+  },
+  {
+    "id": "COL053",
+    "level": "A2",
+    "phrase": "take a taxi",
+    "meaning": "travel using a hired commercial car service",
+    "vietnamese": "đi xe taxi",
+    "example": "Because it rained heavily, the client decided to take a taxi to the art gallery."
+  },
+  {
+    "id": "COL054",
+    "level": "A2",
+    "phrase": "have a conversation",
+    "meaning": "talk informally with another person",
+    "vietnamese": "có một cuộc trò chuyện",
+    "example": "The manager and the developer had a serious conversation about the server crash."
+  },
+  {
+    "id": "COL055",
+    "level": "A2",
+    "phrase": "keep control",
+    "meaning": "maintain power or authority over a situation",
+    "vietnamese": "giữ kiểm soát / duy trì kiểm soát",
+    "example": "The system manager knows how to keep control when the core database fails."
+  },
+  {
+    "id": "COL056",
+    "level": "A2",
+    "phrase": "pay a bill",
+    "meaning": "give cash or use digital transaction to clear a cost",
+    "vietnamese": "thanh toán hóa đơn",
+    "example": "You can pay a bill for the traditional beef broth via this secure application."
+  },
+  {
+    "id": "COL057",
+    "level": "A2",
+    "phrase": "make a mess",
+    "meaning": "create a dirty or untidy state in a place",
+    "vietnamese": "bày bừa / làm lộn xộn",
+    "example": "Don't make a mess with your tools inside the modern art gallery."
+  },
+  {
+    "id": "COL058",
+    "level": "A2",
+    "phrase": "take a seat",
+    "meaning": "sit down on a chair or bench",
+    "vietnamese": "ngồi xuống / mời ngồi",
+    "example": "Please take a seat while the corporate manager reviews your line code."
+  },
+  {
+    "id": "COL059",
+    "level": "A2",
+    "phrase": "get tired",
+    "meaning": "become physically or mentally exhausted over time",
+    "vietnamese": "bị mệt / trở nên mệt mỏi",
+    "example": "The thirty students get tired after walking through the entire history museum."
+  },
+  {
+    "id": "COL060",
+    "level": "A2",
+    "phrase": "have a dream",
+    "meaning": "experience a series of thoughts or pictures while sleeping",
+    "vietnamese": "có một giấc mơ / mơ thấy",
+    "example": "The apprentice chef had a dream about owning a traditional restaurant in Da Nang."
+  },
+  {
+    "id": "COL061",
+    "level": "A2",
+    "phrase": "keep in mind",
+    "meaning": "remember or consider a piece of vital information",
+    "vietnamese": "ghi nhớ / lưu ý",
+    "example": "Keep in mind that you must always back up the system files before leaving."
+  },
+  {
+    "id": "COL062",
+    "level": "A2",
+    "phrase": "make an excuse",
+    "meaning": "give a reason to explain a mistake or avoid a task",
+    "vietnamese": "viện cớ / tìm lý do bào chữa",
+    "example": "The lazy worker tried to make an excuse for arriving late at the machinery line."
+  },
+  {
+    "id": "COL063",
+    "level": "A2",
+    "phrase": "take a look",
+    "meaning": "examine or view an item or document directly",
+    "vietnamese": "nhìn / xem qua",
+    "example": "Let's take a look at the new layout designs for the luxury leather bags."
+  },
+  {
+    "id": "COL064",
+    "level": "A1",
+    "phrase": "go home",
+    "meaning": "travel back to the place where you live",
+    "vietnamese": "về nhà",
+    "example": "The tired software engineer decided to go home after fixing the system server."
+  },
+  {
+    "id": "COL065",
+    "level": "A1",
+    "phrase": "have a drink",
+    "meaning": "consume a liquid, often water, juice, or coffee",
+    "vietnamese": "uống nước / uống gì đó",
+    "example": "Let's stop to have a drink before driving the bus to Da Nang."
+  },
+  {
+    "id": "COL066",
+    "level": "A1",
+    "phrase": "take a rest",
+    "meaning": "stop doing an activity to regain physical strength",
+    "vietnamese": "nghỉ ngơi",
+    "example": "The thirty students sat down on the wooden benches to take a rest."
+  },
+  {
+    "id": "COL067",
+    "level": "A1",
+    "phrase": "make a phone call",
+    "meaning": "use a telephone to contact someone",
+    "vietnamese": "gọi điện thoại",
+    "example": "The factory supervisor needs to make a phone call to the manager right now."
+  },
+  {
+    "id": "COL068",
+    "level": "A1",
+    "phrase": "go to school",
+    "meaning": "attend regular classes at an educational institution",
+    "vietnamese": "đi học",
+    "example": "Thirty students take the subway train to go to school every day."
+  },
+  {
+    "id": "COL069",
+    "level": "A1",
+    "phrase": "have lunch",
+    "meaning": "eat the middle meal of the day",
+    "vietnamese": "ăn trưa",
+    "example": "The software engineer usually has lunch while sitting in front of his premium laptop."
+  },
+  {
+    "id": "COL070",
+    "level": "A1",
+    "phrase": "say goodbye",
+    "meaning": "farewell someone before leaving",
+    "vietnamese": "chào tạm biệt",
+    "example": "The apprentice chef said goodbye to the team before going home."
+  },
+  {
+    "id": "COL071",
+    "level": "A1",
+    "phrase": "go for a run",
+    "meaning": "engage in running activity for fitness",
+    "vietnamese": "đi chạy bộ",
+    "example": "The active designer likes to go for a run along the Da Nang beach."
+  },
+  {
+    "id": "COL072",
+    "level": "A1",
+    "phrase": "have a look",
+    "meaning": "direct your eyes toward something to check it",
+    "vietnamese": "nhìn xem / xem thử",
+    "example": "Can you have a look inside this handmade leather bag?"
+  },
+  {
+    "id": "COL073",
+    "level": "A1",
+    "phrase": "do a test",
+    "meaning": "complete an examination or technical evaluation",
+    "vietnamese": "làm bài kiểm tra / chạy thử nghiệm",
+    "example": "The thirty students must do a test on history landmarks today."
+  },
+  {
+    "id": "COL074",
+    "level": "A1",
+    "phrase": "make a list",
+    "meaning": "write down a series of items or tasks",
+    "vietnamese": "lập danh sách",
+    "example": "The manager made a list of critical core system errors to resolve."
+  },
+  {
+    "id": "COL075",
+    "level": "A1",
+    "phrase": "take a holiday",
+    "meaning": "spend time away from work or study for relaxation",
+    "vietnamese": "đi nghỉ mát / đi nghỉ lễ",
+    "example": "The factory workers plan to take a holiday after finishing the order."
+  },
+  {
+    "id": "COL076",
+    "level": "A1",
+    "phrase": "get up",
+    "meaning": "rise from bed after sleeping",
+    "vietnamese": "thức dậy",
+    "example": "The apprentice chef has to get up early to prepare the traditional beef broth."
+  },
+  {
+    "id": "COL077",
+    "level": "A1",
+    "phrase": "have a shower",
+    "meaning": "wash your body while standing under a spray of water",
+    "vietnamese": "tắm rửa",
+    "example": "The worker always has a shower before changing into fresh clothes."
+  },
+  {
+    "id": "COL078",
+    "level": "A1",
+    "phrase": "go to a museum",
+    "meaning": "visit a place that displays historical or art objects",
+    "vietnamese": "đi bảo tàng",
+    "example": "The thirty students will go to a museum to study ancient history textbooks."
+  },
+  {
+    "id": "COL079",
+    "level": "A1",
+    "phrase": "have dinner",
+    "meaning": "eat the main evening meal",
+    "vietnamese": "ăn tối",
+    "example": "They decided to have dinner at a famous traditional beef noodle restaurant."
+  },
+  {
+    "id": "COL080",
+    "level": "A1",
+    "phrase": "do your best",
+    "meaning": "try as hard as you can to achieve something",
+    "vietnamese": "làm hết sức mình / cố gắng hết sức",
+    "example": "The software engineer will do his best to patch the line code bug."
+  },
+  {
+    "id": "COL081",
+    "level": "A1",
+    "phrase": "make a sound",
+    "meaning": "produce a noise",
+    "vietnamese": "phát ra âm thanh / tiếng động",
+    "example": "The old factory machinery line started to make a strange sound."
+  },
+  {
+    "id": "COL082",
+    "level": "A1",
+    "phrase": "take an exam",
+    "meaning": "sit for an official test of knowledge",
+    "vietnamese": "đi thi / làm bài thi",
+    "example": "The thirty students feel nervous before they take an exam."
+  },
+  {
+    "id": "COL083",
+    "level": "A1",
+    "phrase": "go to work",
+    "meaning": "travel to your office or factory place to do a job",
+    "vietnamese": "đi làm",
+    "example": "The designer carries his premium laptop to go to work at 8 AM."
+  },
+  {
+    "id": "COL084",
+    "level": "A2",
+    "phrase": "tell a story",
+    "meaning": "recount a tale or series of events to an audience",
+    "vietnamese": "kể một câu chuyện",
+    "example": "The old guide loved to tell a story about the historical landmarks of Da Nang."
+  },
+  {
+    "id": "COL085",
+    "level": "A2",
+    "phrase": "keep a promise",
+    "meaning": "do what you said you would definitely do",
+    "vietnamese": "giữ lời hứa",
+    "example": "The corporate manager kept a promise to give the tech team a bonus."
+  },
+  {
+    "id": "COL086",
+    "level": "A2",
+    "phrase": "pay a compliment",
+    "meaning": "remark politely to praise someone's work or appearance",
+    "vietnamese": "khen ngợi / đưa ra lời khen",
+    "example": "The head chef paid a compliment to the apprentice for the rich broth flavor."
+  },
+  {
+    "id": "COL087",
+    "level": "A2",
+    "phrase": "take a risk",
+    "meaning": "do something even though something bad might happen",
+    "vietnamese": "chấp nhận rủi ro / mạo hiểm",
+    "example": "The software engineer didn't want to take a risk by deploying raw code."
+  },
+  {
+    "id": "COL088",
+    "level": "A2",
+    "phrase": "get married",
+    "meaning": "legally become husband and wife",
+    "vietnamese": "kết hôn / lập gia đình",
+    "example": "The leather bag designer plans to get married in Da Nang next winter."
+  },
+  {
+    "id": "COL089",
+    "level": "A2",
+    "phrase": "give a description",
+    "meaning": "provide details about what something looks like",
+    "vietnamese": "đưa ra bản mô tả / miêu tả",
+    "example": "The client gave a detailed description of the premium leather bag he wanted."
+  },
+  {
+    "id": "COL090",
+    "level": "A2",
+    "phrase": "make a promise",
+    "meaning": "state definitively that you will do something",
+    "vietnamese": "hứa / đưa ra lời hứa",
+    "example": "The factory supervisor made a promise to ship thirty boxes on time."
+  },
+  {
+    "id": "COL091",
+    "level": "A2",
+    "phrase": "take a break",
+    "meaning": "pause a current labor activity to relax",
+    "vietnamese": "nghỉ giải lao",
+    "example": "Let's take a break and enjoy a bowl of traditional beef noodles."
+  },
+  {
+    "id": "COL092",
+    "level": "A2",
+    "phrase": "have an argument",
+    "meaning": "express disagreement in an angry or heated conversation",
+    "vietnamese": "tranh cãi / cãi cọ",
+    "example": "The development team had an argument over the database backup system."
+  },
+  {
+    "id": "COL093",
+    "level": "A2",
+    "phrase": "keep a diary",
+    "meaning": "write regular personal records in a private book",
+    "vietnamese": "viết nhật ký",
+    "example": "One of the thirty students keeps a diary about his daily history classes."
+  },
+  {
+    "id": "COL094",
+    "level": "A2",
+    "phrase": "pay by card",
+    "meaning": "use a credit or debit card to complete a transaction",
+    "vietnamese": "thanh toán bằng thẻ",
+    "example": "The customer chose to pay by card for the modern art painting."
+  },
+  {
+    "id": "COL095",
+    "level": "A2",
+    "phrase": "make a request",
+    "meaning": "ask politely for something to be given or done",
+    "vietnamese": "đưa ra yêu cầu",
+    "example": "The client made a request to inspect the premium laptop screen."
+  },
+  {
+    "id": "COL096",
+    "level": "A2",
+    "phrase": "take a message",
+    "meaning": "write down or remember text data for an absent person",
+    "vietnamese": "nhận / ghi lại lời nhắn",
+    "example": "The secretary can take a message for the corporate manager."
+  },
+  {
+    "id": "COL097",
+    "level": "A2",
+    "phrase": "get permission",
+    "meaning": "receive formal consent to perform an action",
+    "vietnamese": "xin phép / nhận được sự cho phép",
+    "example": "You must get permission before entering the secure server room."
+  },
+  {
+    "id": "COL098",
+    "level": "A2",
+    "phrase": "have a cold",
+    "meaning": "suffer from a common respiratory viral infection",
+    "vietnamese": "bị cảm lạnh",
+    "example": "The software engineer had a cold, so he worked remotely from home."
+  },
+  {
+    "id": "COL099",
+    "level": "A2",
+    "phrase": "keep active",
+    "meaning": "maintain physical health through regular movement",
+    "vietnamese": "duy trì sự năng động / hoạt động",
+    "example": "The factory manager keeps active by walking around the assembly plant daily."
+  },
+  {
+    "id": "COL100",
+    "level": "A2",
+    "phrase": "make an inquiry",
+    "meaning": "ask for general or official information about something",
+    "vietnamese": "hỏi thăm / yêu cầu thông tin",
+    "example": "The designer made an inquiry about the cost of genuine animal leather."
+  },
+  {
+    "id": "COL101",
+    "level": "A2",
+    "phrase": "take an interest",
+    "meaning": "show attention or curiosity regarding a subject",
+    "vietnamese": "quan tâm / chú ý đến",
+    "example": "More corporate investors are taking an interest in our cloud application."
+  },
+  {
+    "id": "COL102",
+    "level": "A2",
+    "phrase": "get better",
+    "meaning": "improve in quality, skill, or physical health state",
+    "vietnamese": "trở nên tốt hơn / cải thiện",
+    "example": "Your skills at writing line code will get better with daily practice."
+  },
+  {
+    "id": "COL103",
+    "level": "A2",
+    "phrase": "have a look",
+    "meaning": "view an item intently for a short duration",
+    "vietnamese": "ngắm nhìn / xem qua",
+    "example": "The supervisor went to have a look at the thirty completed leather bags."
+  },
+  {
+    "id": "COL104",
+    "level": "A2",
+    "phrase": "keep early hours",
+    "meaning": "go to bed early and wake up early regularly",
+    "vietnamese": "ngủ sớm dậy sớm",
+    "example": "The apprentice chef keeps early hours to open the traditional restaurant on time."
+  },
+  {
+    "id": "COL105",
+    "level": "A2",
+    "phrase": "make an impression",
+    "meaning": "produce a strong, memorable impact on someone",
+    "vietnamese": "tạo ấn tượng",
+    "example": "The modern art gallery exhibition made a deep impression on the visitors."
+  },
+  {
+    "id": "COL106",
+    "level": "A2",
+    "phrase": "take medicine",
+    "meaning": "consume medical substances to heal an illness",
+    "vietnamese": "uống thuốc",
+    "example": "The sick worker needs to take medicine and take a rest today."
+  },
+  {
+    "id": "COL107",
+    "level": "A2",
+    "phrase": "get angry",
+    "meaning": "become annoyed or furious about a negative situation",
+    "vietnamese": "tức giận / nổi giận",
+    "example": "The manager got angry because the system database crashed twice."
+  },
+  {
+    "id": "COL108",
+    "level": "A2",
+    "phrase": "have a physical problem",
+    "meaning": "experience an issue with machinery or body health",
+    "vietnamese": "gặp sự cố vật lý / vấn đề sức khỏe",
+    "example": "The premium laptop has a physical problem on its screen panel."
+  },
+  {
+    "id": "COL109",
+    "level": "A2",
+    "phrase": "keep safe",
+    "meaning": "protect someone or something from danger or errors",
+    "vietnamese": "giữ an toàn / bảo vệ",
+    "example": "Always deploy advanced security firewalls to keep your line code safe."
+  },
+  {
+    "id": "COL110",
+    "level": "A2",
+    "phrase": "make arrangements",
+    "meaning": "plan and organize details for a future event",
+    "vietnamese": "sắp xếp / chuẩn bị",
+    "example": "The manager is making arrangements for the upcoming server audit."
+  },
+  {
+    "id": "COL111",
+    "level": "A2",
+    "phrase": "take a photograph",
+    "meaning": "capture a scenery layout using a camera sensor",
+    "vietnamese": "chụp ảnh",
+    "example": "He decided to take a photograph of the modern painting inside the gallery."
+  },
+  {
+    "id": "COL112",
+    "level": "A2",
+    "phrase": "get rich",
+    "meaning": "accumulate a large amount of cash or property assets",
+    "vietnamese": "trở nên giàu có",
+    "example": "He wishes to get rich by selling premium custom leather bags globally."
+  },
+  {
+    "id": "COL113",
+    "level": "A2",
+    "phrase": "have a talk",
+    "meaning": "discuss a matter with someone briefly",
+    "vietnamese": "bàn bạc / thảo luận",
+    "example": "Let's have a talk regarding the new historical textbook presentation layout."
+  },
+  {
+    "id": "COL114",
+    "level": "A2",
+    "phrase": "keep in place",
+    "meaning": "maintain an item securely in its proper position",
+    "vietnamese": "giữ đúng vị trí / cố định",
+    "example": "Use these durable bolts to keep the active machinery line in place."
+  },
+  {
+    "id": "COL115",
+    "level": "A2",
+    "phrase": "make friends",
+    "meaning": "form pleasant friendly relationships with new people",
+    "vietnamese": "kết bạn / làm quen",
+    "example": "The apprentice engineer found it easy to make friends at the new firm."
+  },
+  {
+    "id": "COL116",
+    "level": "A2",
+    "phrase": "take time",
+    "meaning": "require or use a long period to complete an action",
+    "vietnamese": "tốn thời gian / mất thời gian",
+    "example": "Perfecting the flavor of traditional beef broth will always take time."
+  },
+  {
+    "id": "COL117",
+    "level": "A2",
+    "phrase": "get dynamic",
+    "meaning": "become active, energetic, and productive",
+    "vietnamese": "trở nên năng động",
+    "example": "The corporate development team needs to get dynamic to meet deadlines."
+  },
+  {
+    "id": "COL118",
+    "level": "A2",
+    "phrase": "have trouble",
+    "meaning": "experience difficulty or complex problems with a task",
+    "vietnamese": "gặp khó khăn / gặp rắc rối",
+    "example": "The software engineer is having trouble with the core system database connection."
+  },
+  {
+    "id": "COL119",
+    "level": "A2",
+    "phrase": "keep clear of",
+    "meaning": "stay away from a dangerous object or area",
+    "vietnamese": "tránh xa khỏi / giữ khoảng cách",
+    "example": "Please keep clear of the factory line while the heavy machinery is operating."
+  },
+  {
+    "id": "COL120",
+    "level": "A2",
+    "phrase": "make a mistake",
+    "meaning": "execute an action incorrectly causing an error",
+    "vietnamese": "mắc sai lầm / phạm lỗi",
+    "example": "Even an experienced developer can make a mistake in a complex line of code."
+  },
+  {
+    "id": "COL121",
+    "level": "A2",
+    "phrase": "take a course",
+    "meaning": "enroll in a series of studies or training lessons",
+    "vietnamese": "tham gia một khóa học",
+    "example": "The thirty students decided to take a course on traditional Vietnamese art history."
+  },
+  {
+    "id": "COL122",
+    "level": "A2",
+    "phrase": "get warm",
+    "meaning": "increase in temperature mildly",
+    "vietnamese": "trở nên ấm hơn / nóng lên",
+    "example": "The server tower began to get warm after executing extensive data audits."
+  },
+  {
+    "id": "COL123",
+    "level": "A2",
+    "phrase": "have a headache",
+    "meaning": "experience a continuous pain inside the head",
+    "vietnamese": "bị đau đầu",
+    "example": "Staring at the laptop screen for thirty hours gave the software engineer a headache."
+  },
+  {
+    "id": "COL124",
+    "level": "A1",
+    "phrase": "go to the beach",
+    "meaning": "visit the sandy shore of the ocean for leisure",
+    "vietnamese": "đi biển / đi ra bãi biển",
+    "example": "After a stressful week, the software engineer went to the beach to relax."
+  },
+  {
+    "id": "COL125",
+    "level": "A1",
+    "phrase": "have a look at",
+    "meaning": "inspect or observe a specific item",
+    "vietnamese": "nhìn vào / xem qua cái gì",
+    "example": "The manager wanted to have a look at the design layout on the premium laptop."
+  },
+  {
+    "id": "COL126",
+    "level": "A1",
+    "phrase": "take a walk",
+    "meaning": "journey on foot short distances for health or recreation",
+    "vietnamese": "đi dạo bộ",
+    "example": "The thirty students usually take a walk around the park near the bus station."
+  },
+  {
+    "id": "COL127",
+    "level": "A1",
+    "phrase": "make a call",
+    "meaning": "initiate a conversation over a telephone line",
+    "vietnamese": "gọi điện",
+    "example": "The factory supervisor had to make a call to check the leather material delivery."
+  },
+  {
+    "id": "COL128",
+    "level": "A1",
+    "phrase": "go shopping for",
+    "meaning": "visit commercial stores with the specific intention to buy something",
+    "vietnamese": "đi mua sắm cái gì",
+    "example": "The designer decided to go shopping for some high-quality metal buttons."
+  },
+  {
+    "id": "COL129",
+    "level": "A1",
+    "phrase": "have a cup of tea",
+    "meaning": "drink a warm beverage made from tea leaves",
+    "vietnamese": "uống một tách trà",
+    "example": "The head chef likes to have a cup of tea before cooking the traditional beef broth."
+  },
+  {
+    "id": "COL130",
+    "level": "A1",
+    "phrase": "say sorry",
+    "meaning": "apologize to someone for a mistake or accident",
+    "vietnamese": "xin lỗi",
+    "example": "The worker quickly said sorry after dropping a heavy wooden box on the floor."
+  },
+  {
+    "id": "COL131",
+    "level": "A1",
+    "phrase": "go for a swim",
+    "meaning": "enter the water to swim for exercise or fun",
+    "vietnamese": "đi bơi",
+    "example": "When the weather gets hot in Da Nang, thirty students go for a swim."
+  },
+  {
+    "id": "COL132",
+    "level": "A1",
+    "phrase": "have a problem with",
+    "meaning": "experience technical difficulties or issues regarding something",
+    "vietnamese": "gặp vấn đề với cái gì",
+    "example": "The development team had a problem with the server database configuration."
+  },
+  {
+    "id": "COL133",
+    "level": "A1",
+    "phrase": "do an exercise",
+    "meaning": "complete a specific task or question for learning practice",
+    "vietnamese": "làm một bài tập",
+    "example": "The students must do an exercise in their history textbook tonight."
+  },
+  {
+    "id": "COL134",
+    "level": "A1",
+    "phrase": "make a plan for",
+    "meaning": "arrange a detailed strategy for an upcoming event or task",
+    "vietnamese": "lập kế hoạch cho cái gì",
+    "example": "The corporate manager is making a plan for the new branch launch."
+  },
+  {
+    "id": "COL135",
+    "level": "A1",
+    "phrase": "take a break from",
+    "meaning": "temporarily stop a continuous action to rest",
+    "vietnamese": "tạm nghỉ giải lao khỏi cái gì",
+    "example": "Let's take a break from analyzing code and grab some traditional beef noodles."
+  },
+  {
+    "id": "COL136",
+    "level": "A1",
+    "phrase": "get home from work",
+    "meaning": "arrive at your house after finishing office duties",
+    "vietnamese": "đi làm về / về đến nhà sau giờ làm",
+    "example": "He usually gets home from work late because of the heavy traffic lines."
+  },
+  {
+    "id": "COL137",
+    "level": "A1",
+    "phrase": "have a good time",
+    "meaning": "enjoy a pleasant and entertaining experience",
+    "vietnamese": "có một khoảng thời gian vui vẻ",
+    "example": "The team had a good time during the modern art gallery exhibition tour."
+  },
+  {
+    "id": "COL138",
+    "level": "A1",
+    "phrase": "go to a restaurant",
+    "meaning": "visit a commercial dining venue to purchase a meal",
+    "vietnamese": "đi nhà hàng / đi quán ăn",
+    "example": "They love to go to a restaurant that serves authentic local food."
+  },
+  {
+    "id": "COL139",
+    "level": "A1",
+    "phrase": "have a conversation with",
+    "meaning": "engage in a spoken dialogue with another individual",
+    "vietnamese": "trò chuyện với ai",
+    "example": "The client wanted to have a conversation with the leather bag designer."
+  },
+  {
+    "id": "COL140",
+    "level": "A1",
+    "phrase": "do business with",
+    "meaning": "engage in commercial trade or corporate transactions with an entity",
+    "vietnamese": "làm ăn / kinh doanh với ai",
+    "example": "Our tech company prefers to do business with reliable cloud service providers."
+  },
+  {
+    "id": "COL141",
+    "level": "A1",
+    "phrase": "make a choice",
+    "meaning": "select an option from a set of alternatives",
+    "vietnamese": "đưa ra sự lựa chọn",
+    "example": "The customer had to make a choice between a black or brown leather bag."
+  },
+  {
+    "id": "COL142",
+    "level": "A1",
+    "phrase": "take an order",
+    "meaning": "record a customer's request for food or products",
+    "vietnamese": "nhận đơn hàng / ghi món ăn",
+    "example": "The waiter approached the thirty students to take an order for dinner."
+  },
+  {
+    "id": "COL143",
+    "level": "A1",
+    "phrase": "go on a trip",
+    "meaning": "travel to a distant place for leisure or business purposes",
+    "vietnamese": "đi du lịch / đi một chuyến đi",
+    "example": "The designer plans to go on a trip to find creative inspiration."
+  },
+  {
+    "id": "COL144",
+    "level": "A2",
+    "phrase": "tell the truth",
+    "meaning": "speak the actual facts without hiding anything",
+    "vietnamese": "nói thật / nói sự thật",
+    "example": "The apprentice chose to tell the truth about why the system server crashed."
+  },
+  {
+    "id": "COL145",
+    "level": "A2",
+    "phrase": "keep a clean desk",
+    "meaning": "maintain one's working station in a neat condition",
+    "vietnamese": "giữ bàn làm việc sạch sẽ",
+    "example": "The organized software engineer always keeps a clean desk."
+  },
+  {
+    "id": "COL146",
+    "level": "A2",
+    "phrase": "pay attention to details",
+    "meaning": "observe and handle small elements with precision",
+    "vietnamese": "chú ý đến các chi tiết",
+    "example": "A professional designer must pay attention to details when cutting leather."
+  },
+  {
+    "id": "COL147",
+    "level": "A2",
+    "phrase": "take a deep breath",
+    "meaning": "inhale a large amount of air to calm oneself down",
+    "vietnamese": "hít một hơi thật sâu",
+    "example": "Take a deep breath before you deliver the history presentation to the class."
+  },
+  {
+    "id": "COL148",
+    "level": "A2",
+    "phrase": "get into trouble",
+    "meaning": "face legal, professional, or personal difficulties due to bad actions",
+    "vietnamese": "gặp rắc rối / dính vào rắc rối",
+    "example": "You will get into trouble if you deploy system code without a thorough audit."
+  },
+  {
+    "id": "COL149",
+    "level": "A2",
+    "phrase": "give a clear explanation",
+    "meaning": "provide easy-to-understand details about a topic",
+    "vietnamese": "giải thích rõ ràng",
+    "example": "The guide gave a clear explanation of the historical textbook facts."
+  },
+  {
+    "id": "COL150",
+    "level": "A2",
+    "phrase": "make a complaint about",
+    "meaning": "state formal dissatisfaction regarding an item or service",
+    "vietnamese": "phàn nàn / khiếu nại về cái gì",
+    "example": "The buyer made a complaint about the broken premium laptop screen."
+  },
+  {
+    "id": "COL151",
+    "level": "A2",
+    "phrase": "take a long time",
+    "meaning": "consume hours or days to achieve completion",
+    "vietnamese": "tốn nhiều thời gian / mất nhiều thời gian",
+    "example": "Fixing the core line code error might take a long time."
+  },
+  {
+    "id": "COL152",
+    "level": "A2",
+    "phrase": "have a strong interest in",
+    "meaning": "possess intense curiosity or passion for a subject",
+    "vietnamese": "có niềm đam mê / sự quan tâm lớn đối với",
+    "example": "Thirty students have a strong interest in visiting the modern art gallery."
+  },
+  {
+    "id": "COL153",
+    "level": "A2",
+    "phrase": "keep an eye on",
+    "meaning": "watch or monitor an object or situation carefully",
+    "vietnamese": "để mắt tới / trông chừng / giám sát",
+    "example": "Please keep an eye on the factory machinery line while I am away."
+  },
+  {
+    "id": "COL154",
+    "level": "A2",
+    "phrase": "pay an amount of cash",
+    "meaning": "spend money physically to purchase something",
+    "vietnamese": "trả một khoản tiền mặt",
+    "example": "He had to pay an amount of cash to buy the luxury leather bag."
+  },
+  {
+    "id": "COL155",
+    "level": "A2",
+    "phrase": "make a suggestion",
+    "meaning": "offer an idea or plan for someone to consider",
+    "vietnamese": "đưa ra một gợi ý / đề xuất",
+    "example": "The supervisor made a suggestion to update the database application."
+  },
+  {
+    "id": "COL156",
+    "level": "A2",
+    "phrase": "take a photo of",
+    "meaning": "capture a digital image of a specific object",
+    "vietnamese": "chụp ảnh cái gì / ai",
+    "example": "He stopped to take a photo of the traditional beef noodles dish."
+  },
+  {
+    "id": "COL157",
+    "level": "A2",
+    "phrase": "get ready for",
+    "meaning": "prepare oneself physically or mentally for an upcoming event",
+    "vietnamese": "chuẩn bị sẵn sàng cho",
+    "example": "The software engineer is getting ready for the crucial corporate audit."
+  },
+  {
+    "id": "COL158",
+    "level": "A2",
+    "phrase": "have an appointment with",
+    "meaning": "arrange a formal time slot to meet a professional",
+    "vietnamese": "có lịch hẹn với ai",
+    "example": "The manager has an appointment with the corporate legal advisor."
+  },
+  {
+    "id": "COL159",
+    "level": "A2",
+    "phrase": "keep track of",
+    "meaning": "monitor or record changes and progress systematically",
+    "vietnamese": "theo dõi / ghi nhận tiến độ",
+    "example": "Use this software to keep track of the manufactured leather bags."
+  },
+  {
+    "id": "COL160",
+    "level": "A2",
+    "phrase": "make an appointment with",
+    "meaning": "schedule a meeting setup with a client or doctor",
+    "vietnamese": "đặt lịch hẹn với ai",
+    "example": "The client called to make an appointment with the chief designer."
+  },
+  {
+    "id": "COL161",
+    "level": "A2",
+    "phrase": "take a message for",
+    "meaning": "write down information intended for an absent colleague",
+    "vietnamese": "nhận / ghi lại lời nhắn cho ai",
+    "example": "Can you please take a message for the software engineer?"
+  },
+  {
+    "id": "COL162",
+    "level": "A2",
+    "phrase": "get sick",
+    "meaning": "become ill or suffer a degradation of physical health",
+    "vietnamese": "bị ốm / đổ bệnh",
+    "example": "The apprentice chef got sick due to working in the cold storage room."
+  },
+  {
+    "id": "COL163",
+    "level": "A2",
+    "phrase": "have an experience in",
+    "meaning": "possess previous practical skills or knowledge within a field",
+    "vietnamese": "gặp trải nghiệm / có kinh nghiệm trong việc gì",
+    "example": "The designer has an extensive experience in crafting custom leather bags."
+  },
+  {
+    "id": "COL164",
+    "level": "A2",
+    "phrase": "keep a secret from",
+    "meaning": "hide confidential information away from someone intentionally",
+    "vietnamese": "giữ bí mật khỏi ai",
+    "example": "You cannot keep a secret from the corporate data audit application."
+  },
+  {
+    "id": "COL165",
+    "level": "A2",
+    "phrase": "make a dynamic change",
+    "meaning": "execute energetic and effective adjustments to a setup",
+    "vietnamese": "tạo ra một thay đổi mạnh mẽ / linh hoạt",
+    "example": "The firm needs to make a dynamic change to its security system code."
+  },
+  {
+    "id": "COL166",
+    "level": "A2",
+    "phrase": "take responsibility for",
+    "meaning": "accept the duty to deal with or blame for a situation",
+    "vietnamese": "chịu trách nhiệm cho cái gì",
+    "example": "The senior manager will take responsibility for the manufacturing delay."
+  },
+  {
+    "id": "COL167",
+    "level": "A2",
+    "phrase": "get a phone call from",
+    "meaning": "receive an incoming voice contact from a person via mobile device",
+    "vietnamese": "nhận cuộc gọi từ ai",
+    "example": "The software engineer got a phone call from the server host support team."
+  },
+  {
+    "id": "COL168",
+    "level": "A2",
+    "phrase": "have a talk with",
+    "meaning": "engage in a brief consultative discussion with a peer",
+    "vietnamese": "có một cuộc thảo luận / trao đổi với ai",
+    "example": "The head chef needs to have a talk with the broth preparation team."
+  },
+  {
+    "id": "COL169",
+    "level": "A2",
+    "phrase": "keep contact with",
+    "meaning": "maintain ongoing communication channels with a contact",
+    "vietnamese": "duy trì liên lạc với ai",
+    "example": "The thirty students still keep contact with their history professor."
+  },
+  {
+    "id": "COL170",
+    "level": "A2",
+    "phrase": "make a difference to",
+    "meaning": "have a significant positive or noticeable effect on something",
+    "vietnamese": "tạo nên sự khác biệt đối với cái gì",
+    "example": "Buying a premium laptop will make a big difference to your coding speed."
+  },
+  {
+    "id": "COL171",
+    "level": "A2",
+    "phrase": "take a course in",
+    "meaning": "enroll in a specific educational program topic",
+    "vietnamese": "tham gia khóa học về cái gì",
+    "example": "She decided to take a course in modern art gallery management."
+  },
+  {
+    "id": "COL172",
+    "level": "A2",
+    "phrase": "get a good grade",
+    "meaning": "achieve high score marks in an academic test or evaluation",
+    "vietnamese": "đạt điểm cao",
+    "example": "Thirty students studied hard to get a good grade on the history exam."
+  },
+  {
+    "id": "COL173",
+    "level": "A2",
+    "phrase": "have a strict rule about",
+    "meaning": "enforce a firm regulation regarding an operational action",
+    "vietnamese": "gặp quy định nghiêm ngặt về cái gì",
+    "example": "The corporate firm has a strict rule about server security access."
+  },
+  {
+    "id": "COL174",
+    "level": "A2",
+    "phrase": "keep clear of danger",
+    "meaning": "stay away from potentially harmful objects or situations",
+    "vietnamese": "tránh xa mối nguy hiểm",
+    "example": "The supervisor ordered the workers to keep clear of danger near the active line."
+  },
+  {
+    "id": "COL175",
+    "level": "A2",
+    "phrase": "make a speech",
+    "meaning": "deliver a formal talk or presentation to an audience line",
+    "vietnamese": "phát biểu / đọc diễn văn",
+    "example": "The manager will make a speech at the corporate anniversary party."
+  },
+  {
+    "id": "COL176",
+    "level": "A2",
+    "phrase": "take control of",
+    "meaning": "assume governing power or operational management over something",
+    "vietnamese": "nắm quyền kiểm soát cái gì",
+    "example": "The network admin rushed to take control of the crashing system server."
+  },
+  {
+    "id": "COL177",
+    "level": "A2",
+    "phrase": "get lost in",
+    "meaning": "become unable to find your direction inside an unfamiliar area",
+    "vietnamese": "bị lạc ở trong nơi nào",
+    "example": "Don't get lost in the crowded streets when visiting Da Nang landmarks."
+  },
+  {
+    "id": "COL178",
+    "level": "A2",
+    "phrase": "have a physical problem with",
+    "meaning": "experience structural or hardware failure with a device",
+    "vietnamese": "gặp lỗi vật lý với thiết bị nào",
+    "example": "My premium laptop has a physical problem with its internal cooling fan."
+  },
+  {
+    "id": "COL179",
+    "level": "A2",
+    "phrase": "keep safe from",
+    "meaning": "protect an item or a system from potential external harm",
+    "vietnamese": "bảo vệ an toàn khỏi cái gì",
+    "example": "Always implement firewalls to keep system code safe from malicious crashes."
+  },
+  {
+    "id": "COL180",
+    "level": "A2",
+    "phrase": "make a promise to",
+    "meaning": "commit formally via a declaration to perform a duty for someone",
+    "vietnamese": "hứa với ai",
+    "example": "The factory manager made a promise to the workers to fix the machinery line."
+  },
+  {
+    "id": "COL181",
+    "level": "A2",
+    "phrase": "take a look at",
+    "meaning": "examine or survey a document or visual layout carefully",
+    "vietnamese": "nhìn vào / xem xét cái gì",
+    "example": "Let's take a look at the stitching quality of this leather bag."
+  },
+  {
+    "id": "COL182",
+    "level": "A2",
+    "phrase": "get tired of",
+    "meaning": "become bored or annoyed with a repetitive situation or task",
+    "vietnamese": "trở nên mệt mỏi / chán ngấy với cái gì",
+    "example": "The software engineer got tired of fixing the same line code error all day."
+  },
+  {
+    "id": "COL183",
+    "level": "A2",
+    "phrase": "have dinner with",
+    "meaning": "consume the primary evening meal in company with someone",
+    "vietnamese": "ăn tối cùng ai",
+    "example": "The designer had dinner with the corporate manager at a modern restaurant."
+  },
+  {
+    "id": "COL184",
+    "level": "A1",
+    "phrase": "go to a party",
+    "meaning": "attend a social gathering for celebration or entertainment",
+    "vietnamese": "đi dự tiệc",
+    "example": "The thirty students are excited to go to a party after the history exam."
+  },
+  {
+    "id": "COL185",
+    "level": "A1",
+    "phrase": "have a glass of water",
+    "meaning": "drink a single serving of clear water from a glass container",
+    "vietnamese": "uống một cốc nước",
+    "example": "The tired worker stopped to have a glass of water near the machinery line."
+  },
+  {
+    "id": "COL186",
+    "level": "A1",
+    "phrase": "take a bus to",
+    "meaning": "travel to a specific destination using public bus transportation",
+    "vietnamese": "bắt xe buýt đến nơi nào",
+    "example": "The designer decided to take a bus to the modern art gallery in Da Nang."
+  },
+  {
+    "id": "COL187",
+    "level": "A1",
+    "phrase": "make a mistake in",
+    "meaning": "execute an error within a specific task or document",
+    "vietnamese": "mắc lỗi trong cái gì",
+    "example": "Be careful not to make a mistake in the critical system database setup."
+  },
+  {
+    "id": "COL188",
+    "level": "A1",
+    "phrase": "go to the cinema",
+    "meaning": "visit a movie theater to watch a motion picture film",
+    "vietnamese": "đi xem phim",
+    "example": "The development team went to the cinema together over the weekend."
+  },
+  {
+    "id": "COL189",
+    "level": "A1",
+    "phrase": "have a cup of coffee",
+    "meaning": "drink a serving of warm or iced coffee beverage",
+    "vietnamese": "uống một tách cà phê",
+    "example": "The software engineer needs to have a cup of coffee before rewriting the code."
+  },
+  {
+    "id": "COL190",
+    "level": "A1",
+    "phrase": "say thank you",
+    "meaning": "express gratitude or appreciation politely to someone",
+    "vietnamese": "nói lời cảm ơn",
+    "example": "The apprentice chef said thank you to the head chef for teaching the broth recipe."
+  },
+  {
+    "id": "COL191",
+    "level": "A1",
+    "phrase": "go for a drive",
+    "meaning": "take a short recreational journey inside a motor vehicle",
+    "vietnamese": "lái xe đi dạo / đi hóng gió bằng xe",
+    "example": "The corporate manager likes to go for a drive along the coast to reduce stress."
+  },
+  {
+    "id": "COL192",
+    "level": "A1",
+    "phrase": "have a question about",
+    "meaning": "possess a query or uncertainty regarding a specific matter",
+    "vietnamese": "có câu hỏi về cái gì",
+    "example": "If you have a question about the leather bag design, ask the supervisor."
+  },
+  {
+    "id": "COL193",
+    "level": "A1",
+    "phrase": "do a project on",
+    "meaning": "complete an organized task or research regarding a particular subject",
+    "vietnamese": "làm một dự án về cái gì",
+    "example": "Thirty students are assigned to do a project on historical landmarks."
+  },
+  {
+    "id": "COL194",
+    "level": "A1",
+    "phrase": "make a list of",
+    "meaning": "write down a sequential itemized record of specific objects",
+    "vietnamese": "lập danh sách các cái gì",
+    "example": "Please make a list of required hardware components for the premium laptop."
+  },
+  {
+    "id": "COL195",
+    "level": "A1",
+    "phrase": "take a rest from",
+    "meaning": "pause an intensive labor or study routine to recover energy",
+    "vietnamese": "nghỉ ngơi khỏi cái gì",
+    "example": "The factory workers took a rest from moving thirty heavy wooden boxes."
+  },
+  {
+    "id": "COL196",
+    "level": "A1",
+    "phrase": "get home from school",
+    "meaning": "arrive at one's residence after completing daily classes",
+    "vietnamese": "đi học về / về đến nhà sau giờ học",
+    "example": "The students usually get home from school at around 5 PM every afternoon."
+  },
+  {
+    "id": "COL197",
+    "level": "A1",
+    "phrase": "have a great day",
+    "meaning": "experience a highly pleasant and successful day",
+    "vietnamese": "có một ngày tuyệt vời",
+    "example": "We had a great day exploring the traditional food markets in Da Nang."
+  },
+  {
+    "id": "COL198",
+    "level": "A1",
+    "phrase": "go to the park",
+    "meaning": "visit a public green space for recreation or exercise",
+    "vietnamese": "đi công viên",
+    "example": "The designer took his sketchbook and went to the park to find inspiration."
+  },
+  {
+    "id": "COL199",
+    "level": "A1",
+    "phrase": "have a discussion about",
+    "meaning": "engage in a detailed conversation to trade ideas on a topic",
+    "vietnamese": "thảo luận về cái gì",
+    "example": "The tech firm had a discussion about upgrading the server infrastructure."
+  },
+  {
+    "id": "COL200",
+    "level": "A1",
+    "phrase": "do morning exercise",
+    "meaning": "perform physical training routines right after waking up",
+    "vietnamese": "tập thể dục buổi sáng",
+    "example": "The manager keeps healthy by doing morning exercise every single day."
+  },
+  {
+    "id": "COL201",
+    "level": "A1",
+    "phrase": "make a schedule",
+    "meaning": "create a structured plan listing times for tasks to be done",
+    "vietnamese": "lập thời gian biểu / lịch trình",
+    "example": "The supervisor needs to make a schedule for the factory assembly line."
+  },
+  {
+    "id": "COL202",
+    "level": "A1",
+    "phrase": "take an seat at",
+    "meaning": "sit down at a specific designated location or table",
+    "vietnamese": "ngồi vào chỗ nào",
+    "example": "The client took a seat at the desk to inspect the premium laptop closely."
+  },
+  {
+    "id": "COL203",
+    "level": "A1",
+    "phrase": "go on holiday",
+    "meaning": "take a vacation journey away from regular business or school duties",
+    "vietnamese": "đi nghỉ mát / đi nghỉ dưỡng",
+    "example": "The software engineer plans to go on holiday after completing the deployment."
+  },
+  {
+    "id": "COL204",
+    "level": "A2",
+    "phrase": "tell a secret to",
+    "meaning": "reveal confidential private facts to a trusted person",
+    "vietnamese": "tiết lộ bí mật cho ai",
+    "example": "The chef decided to tell a secret to his most hard-working apprentice."
+  },
+  {
+    "id": "COL205",
+    "level": "A2",
+    "phrase": "keep an orderly office",
+    "meaning": "maintain a neat and highly structured working environment",
+    "vietnamese": "giữ gìn văn phòng ngăn nắp",
+    "example": "The corporate branch manager requires everyone to keep an orderly office."
+  },
+  {
+    "id": "COL206",
+    "level": "A2",
+    "phrase": "pay attention to instructions",
+    "meaning": "listen or read operational guidelines with absolute care",
+    "vietnamese": "chú ý đến các hướng dẫn",
+    "example": "Please pay attention to instructions before starting the dangerous machinery line."
+  },
+  {
+    "id": "COL207",
+    "level": "A2",
+    "phrase": "take a message from",
+    "meaning": "accept and write down words left by an incoming caller",
+    "vietnamese": "nhận lời nhắn từ ai",
+    "example": "The front desk secretary took a message from the premium leather provider."
+  },
+  {
+    "id": "COL208",
+    "level": "A2",
+    "phrase": "get into a habit of",
+    "meaning": "develop a routine behavioral pattern over a period of time",
+    "vietnamese": "hình thành thói quen làm gì",
+    "example": "You should get into a habit of auditing your line code before saving it."
+  },
+  {
+    "id": "COL209",
+    "level": "A2",
+    "phrase": "give a full report",
+    "meaning": "provide a comprehensive account of a technical situation",
+    "vietnamese": "đưa ra báo cáo đầy đủ",
+    "example": "The security team must give a full report about the system server crash."
+  },
+  {
+    "id": "COL210",
+    "level": "A2",
+    "phrase": "make an agreement with",
+    "meaning": "reach a formal contract consensus with another corporate party",
+    "vietnamese": "đạt được thỏa thuận với ai",
+    "example": "Our firm signed to make an agreement with the software development team."
+  },
+  {
+    "id": "COL211",
+    "level": "A2",
+    "phrase": "take a short break",
+    "meaning": "pause labor for a brief period to drink water or rest",
+    "vietnamese": "nghỉ giải lao một lát / nghỉ ngắn",
+    "example": "The factory workers take a short break to eat traditional beef noodles."
+  },
+  {
+    "id": "COL212",
+    "level": "A2",
+    "phrase": "have a serious talk about",
+    "meaning": "engage in an earnest consultative dialogue regarding a vital issue",
+    "vietnamese": "thảo luận nghiêm túc về cái gì",
+    "example": "The manager wants to have a serious talk about the manufacturing delay."
+  },
+  {
+    "id": "COL213",
+    "level": "A2",
+    "phrase": "keep a steady pace",
+    "meaning": "maintain a consistent, unhurried speed of performance",
+    "vietnamese": "duy trì tốc độ đều đặn",
+    "example": "The development team kept a steady pace to ensure no line code bugs occurred."
+  },
+  {
+    "id": "COL214",
+    "level": "A2",
+    "phrase": "pay cash for",
+    "meaning": "use physical paper bills to purchase a specific item",
+    "vietnamese": "trả tiền mặt cho cái gì",
+    "example": "The artist chose to pay cash for the modern oil painting frame."
+  },
+  {
+    "id": "COL215",
+    "level": "A2",
+    "phrase": "make a firm decision",
+    "meaning": "conclude an absolute choice after reviewing options carefully",
+    "vietnamese": "đưa ra quyết định chắc chắn / dứt khoát",
+    "example": "The corporate executive made a firm decision to expand the Da Nang office."
+  },
+  {
+    "id": "COL216",
+    "level": "A2",
+    "phrase": "take a photograph of",
+    "meaning": "capture a scenery layout using a standalone digital camera sensor",
+    "vietnamese": "chụp ảnh cái gì / ai",
+    "example": "Thirty students stopped to take a photograph of the ancient stone gate."
+  },
+  {
+    "id": "COL217",
+    "level": "A2",
+    "phrase": "get dynamic results from",
+    "meaning": "receive highly active and positive feedback from a tool setup",
+    "vietnamese": "nhận được kết quả tích cực / mạnh mẽ từ",
+    "example": "We got dynamic results from updating the core server application database."
+  },
+  {
+    "id": "COL218",
+    "level": "A2",
+    "phrase": "have an appointment at",
+    "meaning": "possess a scheduled time slot at a specific location",
+    "vietnamese": "có một lịch hẹn tại đâu",
+    "example": "The designer has an appointment at the luxury leather bag showroom."
+  },
+  {
+    "id": "COL219",
+    "level": "A2",
+    "phrase": "keep records of",
+    "meaning": "maintain ongoing written database documentation of operations",
+    "vietnamese": "lưu giữ hồ sơ / ghi chép về cái gì",
+    "example": "The factory manager keeps records of all completed leather product boxes."
+  },
+  {
+    "id": "COL220",
+    "level": "A2",
+    "phrase": "make a reservation for",
+    "meaning": "book a table or room slot in advance for a future date",
+    "vietnamese": "đặt chỗ trước cho cái gì",
+    "example": "He called to make a reservation for thirty guests at the traditional restaurant."
+  },
+  {
+    "id": "COL221",
+    "level": "A2",
+    "phrase": "take notes on",
+    "meaning": "record short vital data strings regarding a lecture or subject",
+    "vietnamese": "ghi chú về cái gì",
+    "example": "The students take notes on historical facts during the textbook presentation."
+  },
+  {
+    "id": "COL222",
+    "level": "A2",
+    "phrase": "get sick from",
+    "meaning": "contract an illness caused directly by a specific element",
+    "vietnamese": "bị đổ bệnh do cái gì",
+    "example": "The apprentice chef got sick from staying too long in the damp basement room."
+  },
+  {
+    "id": "COL223",
+    "level": "A2",
+    "phrase": "have a conversation with",
+    "meaning": "execute a friendly structural spoken dialogue with a contact peer",
+    "vietnamese": "trò chuyện / có cuộc đối thoại với ai",
+    "example": "The corporate buyer spent an hour having a conversation with the head designer."
+  },
+  {
+    "id": "COL224",
+    "level": "A2",
+    "phrase": "keep confidential facts secret",
+    "meaning": "prevent unauthorized people from knowing sensitive data details",
+    "vietnamese": "giữ bí mật các thông tin bảo mật",
+    "example": "The system auditor must keep confidential facts secret after checking the line code."
+  },
+  {
+    "id": "COL225",
+    "level": "A2",
+    "phrase": "make a dramatic change to",
+    "meaning": "apply a highly noticeable and extensive alteration to a system",
+    "vietnamese": "tạo ra một thay đổi lớn / đột phá đối với",
+    "example": "They decided to make a dramatic change to the user application user interface."
+  },
+  {
+    "id": "COL226",
+    "level": "A2",
+    "phrase": "take full responsibility for",
+    "meaning": "accept complete liability and blame for a failed operation setup",
+    "vietnamese": "chịu trách nhiệm hoàn toàn cho",
+    "example": "The team lead will take full responsibility for the server application error."
+  },
+  {
+    "id": "COL227",
+    "level": "A2",
+    "phrase": "get a message from",
+    "meaning": "receive a text notification transmitted directly from a peer contact",
+    "vietnamese": "nhận được tin nhắn từ ai",
+    "example": "The software engineer got a message from the manager about the emergency meeting."
+  },
+  {
+    "id": "COL228",
+    "level": "A2",
+    "phrase": "have a long discussion with",
+    "meaning": "spend a substantial duration debating details with another person",
+    "vietnamese": "thảo luận lâu dài với ai",
+    "example": "The head chef had a long discussion with the broth ingredient provider."
+  },
+  {
+    "id": "COL229",
+    "level": "A2",
+    "phrase": "keep close contact with",
+    "meaning": "maintain constant ongoing communications with a trusted partner",
+    "vietnamese": "giữ liên lạc chặt chẽ với ai",
+    "example": "Our technical firm keeps close contact with the raw leather material factory."
+  },
+  {
+    "id": "COL230",
+    "level": "A2",
+    "phrase": "make an impression on",
+    "meaning": "produce a powerful memorable effect inside someone's mind layout",
+    "vietnamese": "tạo ấn tượng đối với ai",
+    "example": "The custom handmade leather bags made a strong impression on the client."
+  },
+  {
+    "id": "COL231",
+    "level": "A2",
+    "phrase": "take a training course in",
+    "meaning": "join an official vocational program to gain specialized expertise",
+    "vietnamese": "tham gia khóa đào tạo về cái gì",
+    "example": "The firm ordered the apprentice to take a training course in cyber security."
+  },
+  {
+    "id": "COL232",
+    "level": "A2",
+    "phrase": "get a bad grade",
+    "meaning": "receive low unfavorable score points in an academic evaluation",
+    "vietnamese": "bị điểm kém",
+    "example": "If you don't study the history textbook, you might get a bad grade."
+  },
+  {
+    "id": "COL233",
+    "level": "A2",
+    "phrase": "have a strict policy on",
+    "meaning": "enforce an unyielding formal regulation regarding an activity theme",
+    "vietnamese": "gặp chính sách nghiêm ngặt về cái gì",
+    "example": "The modern art gallery has a strict policy on copying layout designs."
+  },
+  {
+    "id": "COL234",
+    "level": "A2",
+    "phrase": "keep clear of the line",
+    "meaning": "stay completely away from a designated active boundary track",
+    "vietnamese": "tránh xa khỏi đường dây / dây chuyền",
+    "example": "For security reasons, visitors must keep clear of the active machinery line."
+  },
+  {
+    "id": "COL235",
+    "level": "A2",
+    "phrase": "make an official speech",
+    "meaning": "deliver a highly formal public statement at an event venue",
+    "vietnamese": "phát biểu một cách chính thức",
+    "example": "The director will make an official speech to open the Da Nang branch."
+  },
+  {
+    "id": "COL236",
+    "level": "A2",
+    "phrase": "take control of the system",
+    "meaning": "assume complete operational command over a technical setup layout",
+    "vietnamese": "nắm quyền kiểm soát hệ thống",
+    "example": "The network admin used his premium laptop to take control of the system."
+  },
+  {
+    "id": "COL237",
+    "level": "A2",
+    "phrase": "get lost in the city",
+    "meaning": "lose one's directional tracking within an urban city street grid",
+    "vietnamese": "bị lạc ở trong thành phố",
+    "example": "The thirty students used a digital map to avoid getting lost in the city."
+  },
+  {
+    "id": "COL238",
+    "level": "A2",
+    "phrase": "have a software problem with",
+    "meaning": "experience virtual programming bugs or crashes within a device setup",
+    "vietnamese": "gặp lỗi phần mềm với cái gì",
+    "example": "The core server began to have a software problem with its firewall line."
+  },
+  {
+    "id": "COL239",
+    "level": "A2",
+    "phrase": "keep safe from damage",
+    "meaning": "protect a physical or digital product from structural degradation",
+    "vietnamese": "giữ an toàn khỏi bị hư hại",
+    "example": "Store the luxury leather bag inside a wooden box to keep it safe from damage."
+  },
+  {
+    "id": "COL243",
+    "level": "A2",
+    "phrase": "make an clear promise to",
+    "meaning": "give a highly transparent definitive commitment statement to a peer",
+    "vietnamese": "hứa một cách rõ ràng với ai",
+    "example": "The supervisor made a clear promise to deliver the thirty leather boxes tomorrow."
+  },
+  {
+    "id": "COL244",
+    "level": "A1",
+    "phrase": "go to bed",
+    "meaning": "get into bed in order to sleep for the night",
+    "vietnamese": "đi ngủ",
+    "example": "The exhausted software engineer decided to go to bed at midnight."
+  },
+  {
+    "id": "COL245",
+    "level": "A1",
+    "phrase": "have a cup of milk",
+    "meaning": "drink a single serving of fresh milk from a cup",
+    "vietnamese": "uống một cốc sữa",
+    "example": "The apprentice chef likes to have a cup of milk before starting his morning shift."
+  },
+  {
+    "id": "COL246",
+    "level": "A1",
+    "phrase": "take a taxi to",
+    "meaning": "travel to a location by hiring a private taxi automobile",
+    "vietnamese": "bắt taxi đến nơi nào",
+    "example": "The client chose to take a taxi to the premium leather bag factory."
+  },
+  {
+    "id": "COL247",
+    "level": "A1",
+    "phrase": "make a mess in",
+    "meaning": "create a dirty or untidy state inside a specific room",
+    "vietnamese": "bày bừa / làm lộn xộn ở nơi nào",
+    "example": "The thirty students accidentally made a mess in the history classroom."
+  },
+  {
+    "id": "COL248",
+    "level": "A1",
+    "phrase": "go to the supermarket",
+    "meaning": "visit a large retail store to buy food and household goods",
+    "vietnamese": "đi siêu thị",
+    "example": "The supervisor went to the supermarket to buy water for the factory workers."
+  },
+  {
+    "id": "COL249",
+    "level": "A1",
+    "phrase": "have a plate of rice",
+    "meaning": "eat a serving portion of cooked rice on a flat dish",
+    "vietnamese": "ăn một đĩa cơm",
+    "example": "They stopped at a traditional restaurant to have a plate of rice for lunch."
+  },
+  {
+    "id": "COL250",
+    "level": "A1",
+    "phrase": "say hello to",
+    "meaning": "greet someone politely when meeting them",
+    "vietnamese": "chào hỏi ai",
+    "example": "The designer smiled to say hello to the corporate manager."
+  },
+  {
+    "id": "COL251",
+    "level": "A1",
+    "phrase": "go for a walk",
+    "meaning": "take a short pedestrian journey outside for leisure",
+    "vietnamese": "đi dạo bộ hóng mát",
+    "example": "The manager likes to go for a walk along the Da Nang beach every evening."
+  },
+  {
+    "id": "COL252",
+    "level": "A1",
+    "phrase": "have a problem with the laptop",
+    "meaning": "experience technical hardware or software faults with a laptop",
+    "vietnamese": "gặp sự cố với máy tính xách tay",
+    "example": "The designer had a problem with the laptop while rendering the layout."
+  },
+  {
+    "id": "COL253",
+    "level": "A1",
+    "phrase": "do research on",
+    "meaning": "study a subject carefully to discover new facts or data strings",
+    "vietnamese": "nghiên cứu về cái gì",
+    "example": "Thirty students need to do research on traditional art history textbook topics."
+  },
+  {
+    "id": "COL254",
+    "level": "A1",
+    "phrase": "make a plan for the project",
+    "meaning": "design a structured schedule timeline for a specific business task",
+    "vietnamese": "lập kế hoạch cho dự án",
+    "example": "The corporate manager spent hours making a plan for the project deployment."
+  },
+  {
+    "id": "COL255",
+    "level": "A1",
+    "phrase": "take a short rest",
+    "meaning": "stop regular activities for a brief duration to regain strength",
+    "vietnamese": "nghỉ ngơi một lát",
+    "example": "Let's take a short rest before we move these thirty wooden boxes."
+  },
+  {
+    "id": "COL256",
+    "level": "A1",
+    "phrase": "get home from the office",
+    "meaning": "arrive back at your residence after finishing corporate labor",
+    "vietnamese": "đi làm về / về đến nhà từ văn phòng",
+    "example": "He usually gets home from the office before the heavy rain starts."
+  },
+  {
+    "id": "COL257",
+    "level": "A1",
+    "phrase": "have a wonderful time",
+    "meaning": "experience an exceptionally great and delightful experience",
+    "vietnamese": "có một khoảng thời gian tuyệt diệu",
+    "example": "The tourists had a wonderful time visiting ancient landmarks in Da Nang."
+  },
+  {
+    "id": "COL258",
+    "level": "A1",
+    "phrase": "go to the local library",
+    "meaning": "visit a public building containing books to read or borrow",
+    "vietnamese": "đi thư viện địa phương",
+    "example": "The students often go to the local library to read about history landmarks."
+  },
+  {
+    "id": "COL259",
+    "level": "A1",
+    "phrase": "have an interest in art",
+    "meaning": "possess a natural feeling of wanting to learn about art layouts",
+    "vietnamese": "có niềm yêu thích / quan tâm đến nghệ thuật",
+    "example": "The young worker has an interest in art and custom leather designs."
+  },
+  {
+    "id": "COL260",
+    "level": "A1",
+    "phrase": "do a good job",
+    "meaning": "perform a task successfully and with a high level of quality",
+    "vietnamese": "làm tốt một công việc",
+    "example": "The developer did a good job patching the core system server error."
+  },
+  {
+    "id": "COL261",
+    "level": "A1",
+    "phrase": "make an executive decision",
+    "meaning": "conclude an important administrative choice for a team setup",
+    "vietnamese": "đưa ra quyết định quản lý / điều hành",
+    "example": "The factory supervisor made an executive decision to pause the assembly line."
+  },
+  {
+    "id": "COL262",
+    "level": "A1",
+    "phrase": "take a comfortable seat",
+    "meaning": "sit down on a relaxing chair or bench location",
+    "vietnamese": "ngồi vào một chỗ thoải mái",
+    "example": "The client took a comfortable seat inside the premium showroom lounge."
+  },
+  {
+    "id": "COL263",
+    "level": "A1",
+    "phrase": "go on a summer holiday",
+    "meaning": "take a vacation during the summer season months",
+    "vietnamese": "đi nghỉ mát vào mùa hè",
+    "example": "The development team will go on a summer holiday after the software release."
+  },
+  {
+    "id": "COL264",
+    "level": "A2",
+    "phrase": "tell a funny story",
+    "meaning": "recount an amusing tale that causes the audience to laugh",
+    "vietnamese": "kể một câu chuyện khôi hài / buồn cười",
+    "example": "The tour guide loved to tell a funny story about traditional food markets."
+  },
+  {
+    "id": "COL265",
+    "level": "A2",
+    "phrase": "keep a clean working space",
+    "meaning": "maintain your personal desk counter in a neat condition",
+    "vietnamese": "giữ không gian làm việc sạch sẽ",
+    "example": "Always keep a clean working space to minimize coding mistakes."
+  },
+  {
+    "id": "COL266",
+    "level": "A2",
+    "phrase": "pay attention to the server",
+    "meaning": "monitor the network host station with continuous care",
+    "vietnamese": "chú ý / giám sát hệ thống máy chủ",
+    "example": "The admin must pay attention to the server performance logs today."
+  },
+  {
+    "id": "COL267",
+    "level": "A2",
+    "phrase": "take a quick look at",
+    "meaning": "inspect a file or layout briefly for a short duration",
+    "vietnamese": "xem nhanh qua cái gì",
+    "example": "Can you take a quick look at this line of database code?"
+  },
+  {
+    "id": "COL268",
+    "level": "A2",
+    "phrase": "get into a bad habit",
+    "meaning": "develop an undesirable negative routine pattern over time",
+    "vietnamese": "nhiễm một thói quen xấu",
+    "example": "Don't get into a bad habit of skipping system security audits."
+  },
+  {
+    "id": "COL269",
+    "level": "A2",
+    "phrase": "give a detailed report",
+    "meaning": "provide an itemized and thorough account of a situation",
+    "vietnamese": "đưa ra báo cáo chi tiết",
+    "example": "The supervisor needs to give a detailed report on the machinery error."
+  },
+  {
+    "id": "COL270",
+    "level": "A2",
+    "phrase": "make an agreement with clients",
+    "meaning": "reach a formal mutually acceptable contract setup with buyers",
+    "vietnamese": "đạt được thỏa thuận với khách hàng",
+    "example": "The designer managed to make an agreement with clients from Da Nang."
+  },
+  {
+    "id": "COL271",
+    "level": "A2",
+    "phrase": "take a short rest break",
+    "meaning": "pause operational routines briefly to drink water or sit down",
+    "vietnamese": "nghỉ giải lao ngắn",
+    "example": "The assembly workers take a short rest break every two hours."
+  },
+  {
+    "id": "COL272",
+    "level": "A2",
+    "phrase": "have a brief talk about",
+    "meaning": "execute a short conversation regarding a specific subject matter",
+    "vietnamese": "thảo luận ngắn về cái gì",
+    "example": "Let's have a brief talk about the layout of the luxury leather bag."
+  },
+  {
+    "id": "COL273",
+    "level": "A2",
+    "phrase": "keep a steady speed",
+    "meaning": "maintain a constant unvarying velocity of a machine or action",
+    "vietnamese": "duy trì tốc độ ổn định",
+    "example": "The active assembly line must keep a steady speed to avoid jamming."
+  },
+  {
+    "id": "COL274",
+    "level": "A2",
+    "phrase": "pay credit card bills",
+    "meaning": "transfer money to settle electronic credit balances",
+    "vietnamese": "thanh toán hóa đơn thẻ tín dụng",
+    "example": "The corporate manager uses his premium laptop to pay credit card bills."
+  },
+  {
+    "id": "COL275",
+    "level": "A2",
+    "phrase": "make a final choice",
+    "meaning": "select the definitive option after evaluating all parameters",
+    "vietnamese": "đưa ra sự lựa chọn cuối cùng",
+    "example": "The customer made a final choice to purchase the custom leather bag."
+  },
+  {
+    "id": "COL276",
+    "level": "A2",
+    "phrase": "take a high-quality photo",
+    "meaning": "capture a sharp clear digital image using a good sensor device",
+    "vietnamese": "chụp một bức ảnh chất lượng cao",
+    "example": "The artist stopped to take a high-quality photo of the modern art painting."
+  },
+  {
+    "id": "COL277",
+    "level": "A2",
+    "phrase": "get dynamic performance from",
+    "meaning": "receive energetic and highly effective output from a tool line",
+    "vietnamese": "đạt được hiệu suất mạnh mẽ từ",
+    "example": "We got dynamic performance from the upgraded system database engine."
+  },
+  {
+    "id": "COL278",
+    "level": "A2",
+    "phrase": "have a business appointment",
+    "meaning": "possess an arranged corporate time slot to meet an individual",
+    "vietnamese": "có một lịch hẹn công việc / kinh doanh",
+    "example": "The manager has a business appointment with a premium leather provider."
+  },
+  {
+    "id": "COL279",
+    "level": "A2",
+    "phrase": "keep digital records of",
+    "meaning": "store documentation files inside a computer database framework",
+    "vietnamese": "lưu trữ hồ sơ điện tử về cái gì",
+    "example": "The software application keeps digital records of all system user logs."
+  },
+  {
+    "id": "COL274",
+    "level": "A2",
+    "phrase": "make a room reservation",
+    "meaning": "book a hotel lodging space in advance for a future date",
+    "vietnamese": "đặt phòng trước",
+    "example": "The secretary called the Da Nang hotel to make a room reservation."
+  },
+  {
+    "id": "COL281",
+    "level": "A2",
+    "phrase": "take extensive notes on",
+    "meaning": "record detailed technical data strings regarding a specific lecture",
+    "vietnamese": "ghi chép chuyên sâu về cái gì",
+    "example": "Thirty students take extensive notes on modern history landmarks."
+  },
+  {
+    "id": "COL282",
+    "level": "A2",
+    "phrase": "get sick from food",
+    "meaning": "suffer digestive illness caused directly by contaminated meals",
+    "vietnamese": "bị ngộ độc / đổ bệnh do thức ăn",
+    "example": "Be careful not to get sick from food sold at unlicensed street markets."
+  },
+  {
+    "id": "COL283",
+    "level": "A2",
+    "phrase": "have a meeting with",
+    "meaning": "engage in a structured professional discussion event with an entity",
+    "vietnamese": "có cuộc họp với ai",
+    "example": "The corporate development team has a meeting with the main client."
+  },
+  {
+    "id": "COL284",
+    "level": "A2",
+    "phrase": "keep corporate data secret",
+    "meaning": "prevent unauthorized parties from downloading sensitive firm code",
+    "vietnamese": "giữ bí mật dữ liệu công ty",
+    "example": "The software engineer uses advanced encryption to keep corporate data secret."
+  },
+  {
+    "id": "COL285",
+    "level": "A2",
+    "phrase": "make a positive change to",
+    "meaning": "apply a beneficial constructive adjustment to an existing setup",
+    "vietnamese": "tạo ra thay đổi tích cực đối với",
+    "example": "Upgrading the core laptop memory will make a positive change to processing speed."
+  },
+  {
+    "id": "COL286",
+    "level": "A2",
+    "phrase": "take full blame for",
+    "meaning": "accept complete liability for an operational failure or mistake",
+    "vietnamese": "nhận toàn bộ trách nhiệm / lỗi lầm về",
+    "example": "The supervisor decided to take full blame for the factory line delay."
+  },
+  {
+    "id": "COL287",
+    "level": "A2",
+    "phrase": "get an email from",
+    "meaning": "receive an electronic mail transmission inside your inbox folder",
+    "vietnamese": "nhận được thư điện tử từ ai",
+    "example": "The database administrator got an email from the server security hub."
+  },
+  {
+    "id": "COL288",
+    "level": "A2",
+    "phrase": "have an open discussion with",
+    "meaning": "engage in a transparent candid dialogue to swap ideas with a peer",
+    "vietnamese": "thảo luận cởi mở với ai",
+    "example": "The head chef had an open discussion with his apprentice team."
+  },
+  {
+    "id": "COL289",
+    "level": "A2",
+    "phrase": "keep close communication with",
+    "meaning": "maintain constant fluid contact streams with a corporate branch",
+    "vietnamese": "giữ mối liên hệ chặt chẽ với ai",
+    "example": "We must keep close communication with our primary material suppliers."
+  },
+  {
+    "id": "COL290",
+    "level": "A2",
+    "phrase": "make an impression on buyers",
+    "meaning": "produce a powerful memorable positive effect on purchasing clients",
+    "vietnamese": "tạo ấn tượng tốt đối với người mua",
+    "example": "The custom leather bag layout made a great impression on buyers."
+  },
+  {
+    "id": "COL291",
+    "level": "A2",
+    "phrase": "take an advanced course in",
+    "meaning": "enroll in a high-level specialized training educational track",
+    "vietnamese": "tham gia khóa học nâng cao về cái gì",
+    "example": "The senior developer took an advanced course in database encryption."
+  },
+  {
+    "id": "COL292",
+    "level": "A2",
+    "phrase": "get a passing grade",
+    "meaning": "achieve the minimum acceptable score points to pass an exam",
+    "vietnamese": "đạt điểm số đủ đỗ / qua môn",
+    "example": "Thirty students studied hard just to get a passing grade in history."
+  },
+  {
+    "id": "COL293",
+    "level": "A2",
+    "phrase": "have a strict regulation on",
+    "meaning": "enforce an unyielding official rule controlling a specific action",
+    "vietnamese": "gặp quy định nghiêm ngặt về điều gì",
+    "example": "The local city government has a strict regulation on historical landmark sites."
+  },
+  {
+    "id": "COL294",
+    "level": "A2",
+    "phrase": "keep clear of the machine",
+    "meaning": "stay completely away from heavy operating factory equipment",
+    "vietnamese": "tránh xa khỏi thiết bị / máy móc",
+    "example": "Please keep clear of the machine while the engine line is spinning."
+  },
+  {
+    "id": "COL295",
+    "level": "A2",
+    "phrase": "make a formal speech",
+    "meaning": "deliver a highly structured official address to an assembly group",
+    "vietnamese": "phát biểu một cách trang trọng",
+    "example": "The manager will make a formal speech to welcome thirty new students."
+  },
+  {
+    "id": "COL296",
+    "level": "A2",
+    "phrase": "take absolute control of",
+    "meaning": "assume total complete governing management over a technical system",
+    "vietnamese": "nắm quyền kiểm soát tuyệt đối đối với",
+    "example": "The system firewall took absolute control of the data routing process."
+  },
+  {
+    "id": "COL297",
+    "level": "A2",
+    "phrase": "get lost in the woods",
+    "meaning": "lose one's directional tracking within a dense forest zone area",
+    "vietnamese": "bị lạc ở trong rừng",
+    "example": "The hikers carried a digital map device to avoid getting lost in the woods."
+  },
+  {
+    "id": "COL298",
+    "level": "A2",
+    "phrase": "have a database problem with",
+    "meaning": "experience structural query code syntax failures inside a server",
+    "vietnamese": "gặp lỗi cơ sở dữ liệu với cái gì",
+    "example": "The mobile app began to have a database problem with user authentication."
+  },
+  {
+    "id": "COL299",
+    "level": "A2",
+    "phrase": "keep safe from system errors",
+    "meaning": "protect a virtual program application from code execution bugs",
+    "vietnamese": "giữ an toàn khỏi lỗi hệ thống",
+    "example": "Run comprehensive code audits to keep safe from system errors."
+  },
+  {
+    "id": "COL300",
+    "level": "A2",
+    "phrase": "make an honest promise",
+    "meaning": "give a sincere genuine commitment declaration to a peer contact",
+    "vietnamese": "đưa ra lời hứa chân thành",
+    "example": "The artisan made an honest promise to fix the leather bag stitching."
+  },
+  {
+    "id": "COL301",
+    "level": "A2",
+    "phrase": "take a look at the code",
+    "meaning": "examine or review specific lines of written programming script",
+    "vietnamese": "xem qua / kiểm tra đoạn mã code",
+    "example": "Let's take a look at the code before deploying it to the production server."
+  },
+  {
+    "id": "COL302",
+    "level": "A2",
+    "phrase": "get tired of coding",
+    "meaning": "become weary or unmotivated due to long hours of programming",
+    "vietnamese": "trở nên mệt mỏi / chán việc lập trình",
+    "example": "The software engineer got tired of coding after a thirty-hour marathon session."
+  },
+  {
+    "id": "COL303",
+    "level": "A2",
+    "phrase": "have lunch with clients",
+    "meaning": "consume the middle meal of the day in company with corporate buyers",
+    "vietnamese": "ăn trưa cùng khách hàng",
+    "example": "The designer decided to have lunch with clients at a Da Nang restaurant."
+  },
+  {
+    "id": "COL304",
+    "level": "A1",
+    "phrase": "go to the beach",
+    "meaning": "visit the sandy coastal shoreline for recreation or swimming",
+    "vietnamese": "đi biển / đi tắm biển",
+    "example": "The design team wanted to go to the beach after completing the project."
+  },
+  {
+    "id": "COL305",
+    "level": "A1",
+    "phrase": "have a bowl of soup",
+    "meaning": "eat a single deep dish serving of warm liquid broth",
+    "vietnamese": "ăn một bát súp / canh",
+    "example": "The apprentice chef prepared a bowl of soup for the restaurant manager."
+  },
+  {
+    "id": "COL306",
+    "level": "A1",
+    "phrase": "take a train to",
+    "meaning": "travel to a destination location using railway transportation",
+    "vietnamese": "bắt tàu hỏa đến nơi nào",
+    "example": "Thirty students decided to take a train to the historical capital city."
+  },
+  {
+    "id": "COL307",
+    "level": "A1",
+    "phrase": "make a sound",
+    "meaning": "produce a noise or audible vibration from an object or person",
+    "vietnamese": "phát ra âm thanh / tiếng động",
+    "example": "The premium laptop didn't make a sound even during heavy video rendering."
+  },
+  {
+    "id": "COL308",
+    "level": "A1",
+    "phrase": "go to the gym",
+    "meaning": "visit a fitness center to perform physical exercises",
+    "vietnamese": "đi tập thể hình / tập gym",
+    "example": "The supervisor goes to the gym every afternoon after leaving the factory."
+  },
+  {
+    "id": "COL309",
+    "level": "A1",
+    "phrase": "have a glass of milk",
+    "meaning": "drink a single serving of fresh milk from a glass container",
+    "vietnamese": "uống một ly sữa",
+    "example": "He liked to have a glass of milk while auditing the code lines."
+  },
+  {
+    "id": "COL310",
+    "level": "A1",
+    "phrase": "say goodbye to",
+    "meaning": "express a parting farewell statement to someone leaving",
+    "vietnamese": "chào tạm biệt ai",
+    "example": "The manager shook hands to say goodbye to the primary client."
+  },
+  {
+    "id": "COL311",
+    "level": "A1",
+    "phrase": "go for a swim",
+    "meaning": "engage in a short recreational swimming session in water",
+    "vietnamese": "đi bơi",
+    "example": "The tourists decided to go for a swim in the warm Da Nang sea."
+  },
+  {
+    "id": "COL312",
+    "level": "A1",
+    "phrase": "have a question for",
+    "meaning": "possess an inquiry directed at a specific professional person",
+    "vietnamese": "có câu hỏi dành cho ai",
+    "example": "If you have a question for the designer, leave it in the inbox."
+  },
+  {
+    "id": "COL313",
+    "level": "A1",
+    "phrase": "do an exercise on",
+    "meaning": "complete a structured practice task regarding a specific lesson",
+    "vietnamese": "làm bài tập về cái gì",
+    "example": "The students must do an exercise on local history landmark facts."
+  },
+  {
+    "id": "COL314",
+    "level": "A1",
+    "phrase": "make a promise to",
+    "meaning": "state a definitive commitment to perform an action for someone",
+    "vietnamese": "hứa với ai điều gì",
+    "example": "The supervisor made a promise to upgrade the machinery line next month."
+  },
+  {
+    "id": "COL315",
+    "level": "A1",
+    "phrase": "take a long rest",
+    "meaning": "pause operational actions for an extended duration to fully recover",
+    "vietnamese": "nghỉ ngơi một thời gian dài",
+    "example": "The factory workers took a long rest after moving thirty heavy boxes."
+  },
+  {
+    "id": "COL316",
+    "level": "A1",
+    "phrase": "get home from work",
+    "meaning": "arrive back at your residence after completing daily labor duties",
+    "vietnamese": "đi làm về / về đến nhà sau giờ làm",
+    "example": "She always gets home from work and opens her laptop to check emails."
+  },
+  {
+    "id": "COL317",
+    "level": "A1",
+    "phrase": "have a terrible day",
+    "meaning": "experience an exceptionally stressful or unsuccessful day",
+    "vietnamese": "có một ngày tồi tệ",
+    "example": "The database admin had a terrible day because of multiple server crashes."
+  },
+  {
+    "id": "COL318",
+    "level": "A1",
+    "phrase": "go to the museum",
+    "meaning": "visit a building displaying historical, scientific, or art objects",
+    "vietnamese": "đi bảo tàng",
+    "example": "The designer went to the local art museum to analyze ancient layouts."
+  },
+  {
+    "id": "COL319",
+    "level": "A1",
+    "phrase": "have a clear idea about",
+    "meaning": "possess a distinct comprehensive understanding of a concept",
+    "vietnamese": "có ý tưởng / hiểu biết rõ ràng về cái gì",
+    "example": "The software engineer has a clear idea about optimizing the database."
+  },
+  {
+    "id": "COL320",
+    "level": "A1",
+    "phrase": "do homework on",
+    "meaning": "complete assigned school study tasks regarding a specific topic",
+    "vietnamese": "làm bài tập về nhà về cái gì",
+    "example": "The thirty students are doing homework on modern painting techniques."
+  },
+  {
+    "id": "COL321",
+    "level": "A1",
+    "phrase": "make a phone call to",
+    "meaning": "initiate a telephonic conversation contact with a specific party",
+    "vietnamese": "gọi điện thoại cho ai",
+    "example": "The secretary made a phone call to the premium leather supplier."
+  },
+  {
+    "id": "COL322",
+    "level": "A1",
+    "phrase": "take a seat near",
+    "meaning": "sit down at a position close to a specific object or area",
+    "vietnamese": "ngồi ở vị trí gần cái gì",
+    "example": "The client took a seat near the premium leather bag display counter."
+  },
+  {
+    "id": "COL323",
+    "level": "A1",
+    "phrase": "go on a business trip",
+    "meaning": "journey to a distant location for corporate professional purposes",
+    "vietnamese": "đi công tác",
+    "example": "The corporate manager had to go on a business trip to the Da Nang branch."
+  },
+  {
+    "id": "COL324",
+    "level": "A2",
+    "phrase": "tell a lie to",
+    "meaning": "state a deliberately false statement to a specific individual",
+    "vietnamese": "nói dối ai",
+    "example": "The apprentice chef didn't want to tell a lie to the head chef."
+  },
+  {
+    "id": "COL325",
+    "level": "A2",
+    "phrase": "keep an organized desk",
+    "meaning": "maintain your workspace surface in an orderly structured layout",
+    "vietnamese": "giữ bàn làm việc ngăn nắp",
+    "example": "He prefers to keep an organized desk to maximize software coding efficiency."
+  },
+  {
+    "id": "COL326",
+    "level": "A2",
+    "phrase": "pay attention to quality",
+    "meaning": "monitor structural standards of a product with absolute care",
+    "vietnamese": "chú ý đến chất lượng",
+    "example": "Our leather bag factory always pays close attention to quality."
+  },
+  {
+    "id": "COL327",
+    "level": "A2",
+    "phrase": "take a deep look into",
+    "meaning": "conduct a thorough detailed inspection of a system problem",
+    "vietnamese": "xem xét / nghiên cứu sâu vào cái gì",
+    "example": "The system auditor will take a deep look into the database structure."
+  },
+  {
+    "id": "COL328",
+    "level": "A2",
+    "phrase": "get into the routine of",
+    "meaning": "establish a regular systematic habit of performing a task",
+    "vietnamese": "bước vào quy trình / thói quen làm gì",
+    "example": "You should get into the routine of checking server log lines daily."
+  },
+  {
+    "id": "COL329",
+    "level": "A2",
+    "phrase": "give an accurate report",
+    "meaning": "provide a highly precise data summary regarding an operation",
+    "vietnamese": "đưa ra báo cáo chính xác",
+    "example": "The supervisor gave an accurate report on the factory assembly line output."
+  },
+  {
+    "id": "COL330",
+    "level": "A2",
+    "phrase": "make an arrangement for",
+    "meaning": "organize specific preparatory details or schedules for an event",
+    "vietnamese": "sắp xếp / chuẩn bị cho cái gì",
+    "example": "The secretary made an arrangement for the upcoming corporate conference."
+  },
+  {
+    "id": "COL331",
+    "level": "A2",
+    "phrase": "take a 15-minute break",
+    "meaning": "pause active work routines for exactly fifteen minutes to rest",
+    "vietnamese": "nghỉ giải lao 15 phút",
+    "example": "The factory line workers take a 15-minute break to have coffee."
+  },
+  {
+    "id": "COL332",
+    "level": "A2",
+    "phrase": "have a private talk with",
+    "meaning": "engage in a confidential dual dialogue with an individual",
+    "vietnamese": "nói chuyện riêng với ai",
+    "example": "The manager wanted to have a private talk with the head designer."
+  },
+  {
+    "id": "COL333",
+    "level": "A2",
+    "phrase": "keep a steady production",
+    "meaning": "maintain a continuous unvarying manufacturing volume output",
+    "vietnamese": "duy trì sản xuất ổn định",
+    "example": "The factory line must keep a steady production of premium leather boxes."
+  },
+  {
+    "id": "COL334",
+    "level": "A2",
+    "phrase": "pay cash at the counter",
+    "meaning": "use paper bills to settle a bill transaction at a desk location",
+    "vietnamese": "trả tiền mặt tại quầy",
+    "example": "The customer preferred to pay cash at the counter for the leather bag."
+  },
+  {
+    "id": "COL335",
+    "level": "A2",
+    "phrase": "make a deliberate choice",
+    "meaning": "conclude an intentional well-thought choice after deep review",
+    "vietnamese": "đưa ra lựa chọn có chủ đích / cân nhắc kỹ",
+    "example": "The designer made a deliberate choice to use traditional layout assets."
+  },
+  {
+    "id": "COL336",
+    "level": "A2",
+    "phrase": "take a panoramic photo",
+    "meaning": "capture a wide horizontal landscape image using a camera framework",
+    "vietnamese": "chụp một bức ảnh toàn cảnh",
+    "example": "The artist used his smartphone to take a panoramic photo of the city."
+  },
+  {
+    "id": "COL337",
+    "level": "A2",
+    "phrase": "get dynamic data from",
+    "meaning": "receive highly active real-time data streams from a software node",
+    "vietnamese": "nhận dữ liệu động / trực tiếp từ",
+    "example": "The application gets dynamic data from the primary server station."
+  },
+  {
+    "id": "COL338",
+    "level": "A2",
+    "phrase": "have a medical appointment",
+    "meaning": "possess a arranged time slot to consult a healthcare doctor",
+    "vietnamese": "có lịch hẹn khám bệnh / y tế",
+    "example": "The senior worker has a medical appointment at the city clinic today."
+  },
+  {
+    "id": "COL339",
+    "level": "A2",
+    "phrase": "keep historical records of",
+    "meaning": "maintain archived chronological documentation files on a subject",
+    "vietnamese": "lưu giữ hồ sơ lịch sử về cái gì",
+    "example": "The local library keeps historical records of the ancient landmarks."
+  },
+  {
+    "id": "COL340",
+    "level": "A2",
+    "phrase": "make a flight reservation",
+    "meaning": "book an airplane travel seat slot in advance for a future date",
+    "vietnamese": "đặt trước vé máy bay",
+    "example": "The corporate manager made a flight reservation to visit the Da Nang hub."
+  },
+  {
+    "id": "COL341",
+    "level": "A2",
+    "phrase": "take brief notes on",
+    "meaning": "record short vital summaries regarding an ongoing explanation line",
+    "vietnamese": "ghi chú ngắn gọn về cái gì",
+    "example": "The apprentices take brief notes on the traditional broth recipe."
+  },
+  {
+    "id": "COL342",
+    "level": "A2",
+    "phrase": "get sick from water",
+    "meaning": "suffer physical illness triggered directly by contaminated liquid",
+    "vietnamese": "bị đổ bệnh do nguồn nước",
+    "example": "The hikers were warned not to get sick from water in the old stream."
+  },
+  {
+    "id": "COL343",
+    "level": "A2",
+    "phrase": "have an urgent meeting",
+    "meaning": "engage in an immediate unexpected professional meeting event",
+    "vietnamese": "có cuộc họp khẩn cấp",
+    "example": "The software development team had an urgent meeting about the firewall."
+  },
+  {
+    "id": "COL344",
+    "level": "A2",
+    "phrase": "keep personal data secret",
+    "meaning": "prevent private user information strings from being leaked public",
+    "vietnamese": "giữ bí mật dữ liệu cá nhân",
+    "example": "The security system acts to keep personal data secret from hackers."
+  },
+  {
+    "id": "COL345",
+    "level": "A2",
+    "phrase": "make a structural change to",
+    "meaning": "apply an extensive layout rearrangement to a system architecture",
+    "vietnamese": "tạo ra thay đổi về mặt cấu trúc đối với",
+    "example": "They need to make a structural change to the web database schema."
+  },
+  {
+    "id": "COL346",
+    "level": "A2",
+    "phrase": "take the blame for",
+    "meaning": "accept the negative responsibility or fault for a project error",
+    "vietnamese": "nhận lỗi về cái gì",
+    "example": "The team leader refused to take the blame for the software failure."
+  },
+  {
+    "id": "COL347",
+    "level": "A2",
+    "phrase": "get a letter from",
+    "meaning": "receive a physical paper mail statement inside an envelope folder",
+    "vietnamese": "nhận được thư (giấy) từ ai",
+    "example": "The artisan got a formal letter from the traditional design guild."
+  },
+  {
+    "id": "COL348",
+    "level": "A2",
+    "phrase": "have a serious discussion with",
+    "meaning": "spend a duration analyzing deep critical matters with an entity",
+    "vietnamese": "thảo luận nghiêm túc với ai",
+    "example": "The manager had a serious discussion with the database engineer."
+  },
+  {
+    "id": "COL349",
+    "level": "A2",
+    "phrase": "keep constant communication with",
+    "meaning": "maintain uninterrupted active updates flow with a target team",
+    "vietnamese": "giữ liên lạc liên tục với ai",
+    "example": "The developers keep constant communication with the main client."
+  },
+  {
+    "id": "COL350",
+    "level": "A2",
+    "phrase": "make a deep impression on",
+    "meaning": "produce an intensely memorable long-lasting impact inside a mind",
+    "vietnamese": "tạo ấn tượng sâu sắc đối với ai",
+    "example": "The premium laptop layout made a deep impression on tech reviewers."
+  },
+  {
+    "id": "COL351",
+    "level": "A2",
+    "phrase": "take a professional course in",
+    "meaning": "join an official career qualification educational track curriculum",
+    "vietnamese": "tham gia khóa học chuyên nghiệp về cái gì",
+    "example": "The designer plans to take a professional course in UI/UX layout."
+  },
+  {
+    "id": "COL352",
+    "level": "A2",
+    "phrase": "get an excellent grade",
+    "meaning": "achieve top flawless score points inside an academic evaluation",
+    "vietnamese": "đạt điểm số xuất sắc",
+    "example": "She studied the textbook lines carefully to get an excellent grade."
+  },
+  {
+    "id": "COL353",
+    "level": "A2",
+    "phrase": "have a strict ban on",
+    "meaning": "enforce an absolute formal prohibition ruling against an action",
+    "vietnamese": "gặp lệnh cấm nghiêm ngặt về cái gì",
+    "example": "The modern art museum has a strict ban on flashing photography."
+  },
+  {
+    "id": "COL354",
+    "level": "A2",
+    "phrase": "keep clear of the entrance",
+    "meaning": "stay completely away from a main doorway access border space",
+    "vietnamese": "tránh xa khu vực cửa ra vào",
+    "example": "Please keep clear of the entrance to allow factory trucks to pass."
+  },
+  {
+    "id": "COL355",
+    "level": "A2",
+    "phrase": "make a brief speech",
+    "meaning": "deliver a short concise spoken statement to an audience group",
+    "vietnamese": "phát biểu một bài ngắn gọn",
+    "example": "The supervisor stood up to make a brief speech to thirty students."
+  },
+  {
+    "id": "COL356",
+    "level": "A2",
+    "phrase": "take control of the car",
+    "meaning": "assume immediate steering mechanical command of a motor vehicle",
+    "vietnamese": "nắm quyền lái / kiểm soát chiếc xe",
+    "example": "The manager had to take control of the car when the tire slipped."
+  },
+  {
+    "id": "COL357",
+    "level": "A2",
+    "phrase": "get lost in the dark",
+    "meaning": "lose one's spatial navigation coordinates inside an unlit area",
+    "vietnamese": "bị lạc trong bóng đêm",
+    "example": "Without a laptop flashlight, it is easy to get lost in the dark basement."
+  },
+  {
+    "id": "COL358",
+    "level": "A2",
+    "phrase": "have a serious problem with",
+    "meaning": "experience a severe critical malfunction within a device setup",
+    "vietnamese": "gặp sự cố nghiêm trọng với cái gì",
+    "example": "The factory began to have a serious problem with its machinery line."
+  },
+  {
+    "id": "COL359",
+    "level": "A2",
+    "phrase": "keep safe from fire damage",
+    "meaning": "protect structural physical goods from flame heat destruction",
+    "vietnamese": "giữ an toàn khỏi bị hỏa hoạn",
+    "example": "Store the thirty leather boxes carefully to keep safe from fire damage."
+  },
+  {
+    "id": "COL360",
+    "level": "A2",
+    "phrase": "make a formal promise to",
+    "meaning": "give an official legally binding commitment statement to a party",
+    "vietnamese": "đưa ra lời hứa mang tính trang trọng với ai",
+    "example": "The tech firm made a formal promise to patch the database loop."
+  },
+  {
+    "id": "COL361",
+    "level": "A2",
+    "phrase": "take a look at the design",
+    "meaning": "examine or review a specific visual layout composition draft",
+    "vietnamese": "xem qua / kiểm tra bản thiết kế",
+    "example": "Let's take a look at the design of the luxury leather bag."
+  },
+  {
+    "id": "COL362",
+    "level": "A2",
+    "phrase": "get tired of waiting",
+    "meaning": "become annoyed or restless due to an extended delay duration",
+    "vietnamese": "trở nên mệt mỏi / nản lòng vì phải chờ đợi",
+    "example": "The client got tired of waiting for the sample leather product boxes."
+  },
+  {
+    "id": "COL363",
+    "level": "A2",
+    "phrase": "have dinner with partners",
+    "meaning": "consume the evening meal of the day alongside corporate associates",
+    "vietnamese": "ăn tối cùng các đối tác",
+    "example": "The corporate manager scheduled to have dinner with partners in Da Nang."
+  },
+  {
+    "id": "COL364",
+    "level": "A1",
+    "phrase": "go to the cinema",
+    "meaning": "visit a movie theater to watch a film screening",
+    "vietnamese": "đi xem phim ở rạp",
+    "example": "The thirty students planned to go to the cinema after their history exam."
+  },
+  {
+    "id": "COL365",
+    "level": "A1",
+    "phrase": "have a slice of bread",
+    "meaning": "eat a single thin flat piece cut from a loaf of bread",
+    "vietnamese": "ăn một lát bánh mì",
+    "example": "The apprentice chef usually has a slice of bread for a quick breakfast."
+  },
+  {
+    "id": "COL366",
+    "level": "A1",
+    "phrase": "take a bus to",
+    "meaning": "travel to a specific location using public bus transit",
+    "vietnamese": "bắt xe buýt đến nơi nào",
+    "example": "The design team had to take a bus to the leather bag workshop."
+  },
+  {
+    "id": "COL367",
+    "level": "A1",
+    "phrase": "make a mistake in",
+    "meaning": "produce an error or incorrect action inside a task setup",
+    "vietnamese": "mắc sai lầm / lỗi trong việc gì",
+    "example": "He made a mistake in the database user authentication code."
+  },
+  {
+    "id": "COL368",
+    "level": "A1",
+    "phrase": "go to the park",
+    "meaning": "visit a public green area for relaxation or outdoor activities",
+    "vietnamese": "đi công viên",
+    "example": "The supervisor likes to go to the park to clear his mind after work."
+  },
+  {
+    "id": "COL369",
+    "level": "A1",
+    "phrase": "have a bottle of water",
+    "meaning": "drink fresh water from a plastic or glass bottle container",
+    "vietnamese": "uống một chai nước",
+    "example": "Please have a bottle of water before starting the long assembly shift."
+  },
+  {
+    "id": "COL370",
+    "level": "A1",
+    "phrase": "say sorry to",
+    "meaning": "express an apology to someone for a mistake or inconvenience",
+    "vietnamese": "xin lỗi ai",
+    "example": "The developer chose to say sorry to the client for the late response."
+  },
+  {
+    "id": "COL371",
+    "level": "A1",
+    "phrase": "go for a run",
+    "meaning": "engage in a session of running outside for exercise benefits",
+    "vietnamese": "đi chạy bộ",
+    "example": "The corporate manager likes to go for a run along the Da Nang coast."
+  },
+  {
+    "id": "COL372",
+    "level": "A1",
+    "phrase": "have an answer for",
+    "meaning": "possess a solution or explanation for a specific question",
+    "vietnamese": "có câu trả lời cho điều gì",
+    "example": "The senior designer always has an answer for complex layout issues."
+  },
+  {
+    "id": "COL373",
+    "level": "A1",
+    "phrase": "do an experiment on",
+    "meaning": "conduct a scientific test to discover or prove something",
+    "vietnamese": "làm thí nghiệm về cái gì",
+    "example": "The thirty students need to do an experiment on leather dye chemicals."
+  },
+  {
+    "id": "COL374",
+    "level": "A1",
+    "phrase": "make an offer to",
+    "meaning": "propose a specific price or deal arrangement to a business party",
+    "vietnamese": "đưa ra lời đề nghị với ai",
+    "example": "The manager made an offer to the premium leather supplier this morning."
+  },
+  {
+    "id": "COL375",
+    "level": "A1",
+    "phrase": "take a lunch break",
+    "meaning": "pause daily labor operations to eat the middle meal of the day",
+    "vietnamese": "nghỉ trưa / nghỉ giải lao ăn trưa",
+    "example": "The factory line workers take a lunch break at exactly twelve o'clock."
+  },
+  {
+    "id": "COL376",
+    "level": "A1",
+    "phrase": "get home from school",
+    "meaning": "arrive back at your residence after finishing daily educational classes",
+    "vietnamese": "đi học về / về đến nhà sau giờ học",
+    "example": "The students get home from school and immediately open their laptops."
+  },
+  {
+    "id": "COL377",
+    "level": "A1",
+    "phrase": "have an amazing day",
+    "meaning": "experience an exceptionally pleasant, joyful, and successful day",
+    "vietnamese": "có một ngày tuyệt vời",
+    "example": "The team had an amazing day launching the new leather bag collection."
+  },
+  {
+    "id": "COL378",
+    "level": "A1",
+    "phrase": "go to the post office",
+    "meaning": "visit a public building where letters and parcels are sent",
+    "vietnamese": "đi bưu điện",
+    "example": "The secretary went to the post office to mail thirty corporate letters."
+  },
+  {
+    "id": "COL379",
+    "level": "A1",
+    "phrase": "have a deep understanding of",
+    "meaning": "possess an advanced thorough knowledge regarding a specialized topic",
+    "vietnamese": "có sự hiểu biết sâu sắc về cái gì",
+    "example": "The administrator has a deep understanding of server architecture."
+  },
+  {
+    "id": "COL380",
+    "level": "A1",
+    "phrase": "do a presentation on",
+    "meaning": "deliver a structured speech or talk showcasing an idea to a group",
+    "vietnamese": "làm / trình bày một bài thuyết trình về",
+    "example": "The designer will do a presentation on traditional art layout concepts."
+  },
+  {
+    "id": "COL381",
+    "level": "A1",
+    "phrase": "make an inquiry about",
+    "meaning": "request official information strings regarding a product or service",
+    "vietnamese": "yêu cầu thông tin / پرسش về cái gì",
+    "example": "The client made an inquiry about custom leather bag shipping dates."
+  },
+  {
+    "id": "COL382",
+    "level": "A1",
+    "phrase": "take a seat in",
+    "meaning": "sit down inside a specific room, vehicle, or designated area",
+    "vietnamese": "ngồi vào chỗ ở đâu",
+    "example": "The supervisor invited the guests to take a seat in the main office."
+  },
+  {
+    "id": "COL383",
+    "level": "A1",
+    "phrase": "go on a weekend trip",
+    "meaning": "take a short leisure journey during Saturday and Sunday hours",
+    "vietnamese": "đi du lịch / dã ngoại cuối tuần",
+    "example": "The system development group will go on a weekend trip to Da Nang."
+  },
+  {
+    "id": "COL384",
+    "level": "A2",
+    "phrase": "tell the truth to",
+    "meaning": "state honest accurate facts without hiding details from an individual",
+    "vietnamese": "nói thật với ai",
+    "example": "The system administrator decided to tell the truth to the management."
+  },
+  {
+    "id": "COL385",
+    "level": "A2",
+    "phrase": "keep a clean keyboard",
+    "meaning": "maintain your laptop typing interface free of dust and dirt particles",
+    "vietnamese": "giữ bàn phím sạch sẽ",
+    "example": "You should keep a clean keyboard to avoid hardware jamming issues."
+  },
+  {
+    "id": "COL386",
+    "level": "A2",
+    "phrase": "pay attention to feedback",
+    "meaning": "listen and review evaluative comments with intentional care",
+    "vietnamese": "chú ý đến phản hồi / góp ý",
+    "example": "The layout designer always pays close attention to buyer feedback."
+  },
+  {
+    "id": "COL387",
+    "level": "A2",
+    "phrase": "take a close look into",
+    "meaning": "execute a highly careful itemized audit of a system file error",
+    "vietnamese": "xem xét / kiểm tra kỹ lưỡng cái gì",
+    "example": "The tech specialist will take a close look into the data leak bug."
+  },
+  {
+    "id": "COL388",
+    "level": "A2",
+    "phrase": "get into the pattern of",
+    "meaning": "develop a structured repeatable routine of performing actions",
+    "vietnamese": "hình thành khuôn mẫu / thói quen làm gì",
+    "example": "The team got into the pattern of backing up database logs every night."
+  },
+  {
+    "id": "COL389",
+    "level": "A2",
+    "phrase": "give a financial report",
+    "meaning": "provide an official accounting summary regarding monetary funds",
+    "vietnamese": "đưa ra báo cáo tài chính",
+    "example": "The corporate manager must give a financial report to the partners."
+  },
+  {
+    "id": "COL390",
+    "level": "A2",
+    "phrase": "make a preparation for",
+    "meaning": "execute preparatory actions or organize assets ahead of an event",
+    "vietnamese": "chuẩn bị cho cái gì",
+    "example": "The workers made a thorough preparation for the leather bag showcase."
+  },
+  {
+    "id": "COL391",
+    "level": "A2",
+    "phrase": "take a 30-minute break",
+    "meaning": "pause operational manufacturing duties for exactly half an hour",
+    "vietnamese": "nghỉ giải lao 30 phút",
+    "example": "The assembly team takes a 30-minute break to eat light traditional snacks."
+  },
+  {
+    "id": "COL392",
+    "level": "A2",
+    "phrase": "have a serious talk with",
+    "meaning": "engage in a deep non-frivolous conversation regarding a critical theme",
+    "vietnamese": "nói chuyện nghiêm túc với ai",
+    "example": "The supervisor needs to have a serious talk with the late employee."
+  },
+  {
+    "id": "COL393",
+    "level": "A2",
+    "phrase": "keep a steady quality",
+    "meaning": "maintain an unyielding identical standard of product output excellence",
+    "vietnamese": "duy trì chất lượng ổn định",
+    "example": "We use premium materials to keep a steady quality for our leather bags."
+  },
+  {
+    "id": "COL394",
+    "level": "A2",
+    "phrase": "pay bills online",
+    "meaning": "transfer monetary funds electronically to settle household charges",
+    "vietnamese": "thanh toán hóa đơn trực tuyến",
+    "example": "She uses her personal laptop to pay office utility bills online."
+  },
+  {
+    "id": "COL395",
+    "level": "A2",
+    "phrase": "make a smart choice",
+    "meaning": "conclude an intelligent highly beneficial decision after analysis",
+    "vietnamese": "đưa ra lựa chọn thông minh / khôn ngoan",
+    "example": "Choosing Da Nang for the new production plant was a smart choice."
+  },
+  {
+    "id": "COL396",
+    "level": "A2",
+    "phrase": "take a professional photo",
+    "meaning": "capture an image utilizing studio equipment and advanced setups",
+    "vietnamese": "chụp một bức ảnh chuyên nghiệp",
+    "example": "They hired an artist to take a professional photo of the leather bag."
+  },
+  {
+    "id": "COL397",
+    "level": "A2",
+    "phrase": "get structural data from",
+    "meaning": "receive organized system schema values from a digital database",
+    "vietnamese": "nhận dữ liệu cấu trúc từ",
+    "example": "The front-end app gets structural data from the central database node."
+  },
+  {
+    "id": "COL398",
+    "level": "A2",
+    "phrase": "have a regular appointment",
+    "meaning": "possess a recurring standard pre-arranged time slot for a meeting",
+    "vietnamese": "có lịch hẹn định kỳ",
+    "example": "The corporate client has a regular appointment with the head designer."
+  },
+  {
+    "id": "COL399",
+    "level": "A2",
+    "phrase": "keep financial records of",
+    "meaning": "maintain structured ledger tracking files of money expenditures",
+    "vietnamese": "lưu giữ sổ sách / hồ sơ tài chính về",
+    "example": "The accountant keeps financial records of all leather material purchases."
+  },
+  {
+    "id": "COL400",
+    "level": "A2",
+    "phrase": "make a table reservation",
+    "meaning": "book a specific dining spot inside a restaurant ahead of time",
+    "vietnamese": "đặt bàn trước (ở nhà hàng)",
+    "example": "The manager called to make a table reservation for the business dinner."
+  },
+  {
+    "id": "COL401",
+    "level": "A2",
+    "phrase": "take detailed notes on",
+    "meaning": "record comprehensive highly descriptive points during a briefing",
+    "vietnamese": "ghi chép chi tiết về cái gì",
+    "example": "The students take detailed notes on ancient history landmark lectures."
+  },
+  {
+    "id": "COL402",
+    "level": "A2",
+    "phrase": "get sick from the cold",
+    "meaning": "suffer physical respiratory illness caused by low temperature weather",
+    "vietnamese": "bị ốm do thời tiết lạnh",
+    "example": "Wear a thick warm jacket so you don't get sick from the cold."
+  },
+  {
+    "id": "COL403",
+    "level": "A2",
+    "phrase": "have a scheduling meeting",
+    "meaning": "engage in a structured discussion to plan time slot timelines",
+    "vietnamese": "có cuộc họp lên lịch trình / tiến độ",
+    "example": "The software engineers have a scheduling meeting every Monday morning."
+  },
+  {
+    "id": "COL404",
+    "level": "A2",
+    "phrase": "keep company secrets safe",
+    "meaning": "protect confidential firm industrial formulas from external download",
+    "vietnamese": "giữ an toàn cho bí mật công ty",
+    "example": "Every employee signed a contract to keep company secrets safe."
+  },
+  {
+    "id": "COL405",
+    "level": "A2",
+    "phrase": "make a major change to",
+    "meaning": "apply a highly significant massive modification to an active system",
+    "vietnamese": "tạo ra thay đổi lớn / mang tính cốt lõi đối với",
+    "example": "The developer had to make a major change to the website layout framework."
+  },
+  {
+    "id": "COL406",
+    "level": "A2",
+    "phrase": "take the credit for",
+    "meaning": "accept the praise, recognition, or applause for completing a task",
+    "vietnamese": "nhận công trạng / lời khen ngợi về cái gì",
+    "example": "The lazy programmer tried to take the credit for the database upgrade."
+  },
+  {
+    "id": "COL407",
+    "level": "A2",
+    "phrase": "get a package from",
+    "meaning": "receive a physical box parcel shipped from a specific delivery entity",
+    "vietnamese": "nhận được một bưu kiện / kiện hàng từ ai",
+    "example": "We just got a package from the premium leather factory in Da Nang."
+  },
+  {
+    "id": "COL408",
+    "level": "A2",
+    "phrase": "have a long discussion with",
+    "meaning": "spend an extended duration analyzing concepts with a peer group",
+    "vietnamese": "thảo luận lâu / chi tiết với ai",
+    "example": "The supervisor had a long discussion with the factory equipment operators."
+  },
+  {
+    "id": "COL409",
+    "level": "A2",
+    "phrase": "keep fluid communication with",
+    "meaning": "maintain seamless active continuous updates exchange with a partner",
+    "vietnamese": "giữ giao tiếp / liên lạc trôi chảy với ai",
+    "example": "It is vital to keep fluid communication with overseas corporate buyers."
+  },
+  {
+    "id": "COL410",
+    "level": "A2",
+    "phrase": "make an impression on clients",
+    "meaning": "generate a striking positive memorable effect on corporate buyers",
+    "vietnamese": "tạo ấn tượng với khách hàng",
+    "example": "The clean minimalist layout made an impression on corporate clients."
+  },
+  {
+    "id": "COL411",
+    "level": "A2",
+    "phrase": "take a certified course in",
+    "meaning": "enroll in an officially licensed qualification educational program",
+    "vietnamese": "tham gia một khóa học có chứng chỉ về",
+    "example": "The technician decided to take a certified course in database management."
+  },
+  {
+    "id": "COL412",
+    "level": "A2",
+    "phrase": "get a perfect score",
+    "meaning": "achieve the highest maximum possible grading points on an evaluation",
+    "vietnamese": "đạt điểm số tuyệt đối",
+    "example": "Five out of thirty students managed to get a perfect score in history."
+  },
+  {
+    "id": "COL413",
+    "level": "A2",
+    "phrase": "have a strict regulation on",
+    "meaning": "be subject to rigid legislative rule sets controlling operations",
+    "vietnamese": "chịu quy định nghiêm ngặt về cái gì",
+    "example": "The factory must follow a strict regulation on chemical waste layout."
+  },
+  {
+    "id": "COL414",
+    "level": "A2",
+    "phrase": "keep clear of the lane",
+    "meaning": "stay completely away from a designated driving path or transport track",
+    "vietnamese": "tránh xa làn đường / đường chạy",
+    "example": "Please keep clear of the lane to let the warehouse forklift pass safely."
+  },
+  {
+    "id": "COL415",
+    "level": "A2",
+    "phrase": "make an official speech",
+    "meaning": "deliver a highly structured formal address at a public ceremony",
+    "vietnamese": "phát biểu một bài phát biểu chính thức",
+    "example": "The director will make an official speech at the Da Nang corporate hub."
+  },
+  {
+    "id": "COL416",
+    "level": "A2",
+    "phrase": "take control of the situation",
+    "meaning": "assume immediate commanding direction over a chaotic environment",
+    "vietnamese": "nắm quyền kiểm soát tình hình",
+    "example": "The supervisor stepped in to take control of the situation at the factory."
+  },
+  {
+    "id": "COL417",
+    "level": "A2",
+    "phrase": "get lost in the city",
+    "meaning": "lose one's directional tracking path inside a large urban area",
+    "vietnamese": "bị lạc ở trong thành phố",
+    "example": "Without a map application on your laptop, it is easy to get lost in the city."
+  },
+  {
+    "id": "COL418",
+    "level": "A2",
+    "phrase": "have a technical problem with",
+    "meaning": "experience a systemic mechanical or electronic hardware failure",
+    "vietnamese": "gặp lỗi kỹ thuật với cái gì",
+    "example": "The assembly line started to have a technical problem with the motor engine."
+  },
+  {
+    "id": "COL419",
+    "level": "A2",
+    "phrase": "keep safe from water damage",
+    "meaning": "protect physical or electronic materials from liquid wet destruction",
+    "vietnamese": "giữ an toàn khỏi bị ngấm / hỏng do nước",
+    "example": "Store the premium leather bags high to keep safe from water damage."
+  },
+  {
+    "id": "COL420",
+    "level": "A2",
+    "phrase": "make a solemn promise to",
+    "meaning": "give a highly sincere serious unbreakable oath statement to a peer",
+    "vietnamese": "đưa ra lời hứa trang trọng / long trọng với ai",
+    "example": "The company made a solemn promise to protect user data privacy strings."
+  },
+  {
+    "id": "COL421",
+    "level": "A2",
+    "phrase": "take a look at the data",
+    "meaning": "examine or review specific informational statistics or log rows",
+    "vietnamese": "xem qua / kiểm tra dữ liệu",
+    "example": "The system admin asked the team to take a look at the data traffic logs."
+  },
+  {
+    "id": "COL422",
+    "level": "A2",
+    "phrase": "get tired of working",
+    "meaning": "become exhausted or fatigued due to continuous labor activities",
+    "vietnamese": "trở nên mệt mỏi / kiệt sức vì làm việc",
+    "example": "The factory workers got tired of working after twelve continuous hours."
+  },
+  {
+    "id": "COL423",
+    "level": "A2",
+    "phrase": "have dinner with managers",
+    "meaning": "consume the evening meal alongside corporate administrative chiefs",
+    "vietnamese": "ăn tối cùng các vị quản lý",
+    "example": "The layout designer was invited to have dinner with managers from Da Nang."
+  },
+  {
+    "id": "COL424",
+    "level": "A1",
+    "phrase": "go to the beach",
+    "meaning": "travel to the ocean shore for leisure activities",
+    "vietnamese": "đi biển",
+    "example": "The thirty students decided to go to the beach to celebrate the end of their term."
+  },
+  {
+    "id": "COL425",
+    "level": "A1",
+    "phrase": "have a cup of tea",
+    "meaning": "drink a warm serving of brewed tea",
+    "vietnamese": "uống một tách trà",
+    "example": "He likes to have a cup of tea while reading technical database manuals."
+  },
+  {
+    "id": "COL426",
+    "level": "A1",
+    "phrase": "take a walk to",
+    "meaning": "travel to a nearby destination on foot for leisure",
+    "vietnamese": "đi bộ đến đâu",
+    "example": "The manager took a walk to the local gallery to look at modern art."
+  },
+  {
+    "id": "COL427",
+    "level": "A1",
+    "phrase": "make a phone call",
+    "meaning": "use a mobile device to initiate a voice conversation",
+    "vietnamese": "thực hiện một cuộc gọi điện thoại",
+    "example": "Please make a phone call to the Da Nang branch office right now."
+  },
+  {
+    "id": "COL428",
+    "level": "A1",
+    "phrase": "go to the store",
+    "meaning": "visit a retail outlet to purchase necessary supplies",
+    "vietnamese": "đi cửa hàng / đi mua sắm",
+    "example": "The factory supervisor went to the store to buy more leather material."
+  },
+  {
+    "id": "COL429",
+    "level": "A1",
+    "phrase": "have a glass of milk",
+    "meaning": "consume a serving of fresh cow milk from a glass",
+    "vietnamese": "uống một ly sữa",
+    "example": "The apprentice chef prefers to have a glass of milk before sleeping."
+  },
+  {
+    "id": "COL430",
+    "level": "A1",
+    "phrase": "say hello to everyone",
+    "meaning": "greet all present individuals in a room politely",
+    "vietnamese": "chào hỏi mọi người",
+    "example": "The new developer walked in to say hello to everyone in the tech team."
+  },
+  {
+    "id": "COL431",
+    "level": "A1",
+    "phrase": "go for a walk",
+    "meaning": "take a casual pedestrian journey for health",
+    "vietnamese": "đi dạo",
+    "example": "They love to go for a walk in the park after dinner."
+  },
+  {
+    "id": "COL432",
+    "level": "A1",
+    "phrase": "have a question for the teacher",
+    "meaning": "possess a query intended for an academic instructor",
+    "vietnamese": "có câu hỏi dành cho giáo viên",
+    "example": "One of the thirty students has a question for the teacher."
+  },
+  {
+    "id": "COL433",
+    "level": "A1",
+    "phrase": "do an exercise on grammar",
+    "meaning": "complete language practice tasks focused on grammatical structures",
+    "vietnamese": "làm bài tập ngữ pháp",
+    "example": "The class must do an exercise on grammar before the final exam."
+  },
+  {
+    "id": "COL434",
+    "level": "A1",
+    "phrase": "make a list of items",
+    "meaning": "create a structured written inventory of required objects",
+    "vietnamese": "lập danh sách các món đồ",
+    "example": "The secretary is making a list of items to buy for the party."
+  },
+  {
+    "id": "COL435",
+    "level": "A1",
+    "phrase": "take a break from work",
+    "meaning": "stop labor tasks temporarily to recover mental energy",
+    "vietnamese": "tạm nghỉ làm việc",
+    "example": "The software engineer needed to take a break from work for ten minutes."
+  },
+  {
+    "id": "COL436",
+    "level": "A1",
+    "phrase": "get home from the airport",
+    "meaning": "arrive at your house after returning from an air journey",
+    "vietnamese": "về đến nhà từ sân bay",
+    "example": "The designer got home from the airport late on Friday night."
+  },
+  {
+    "id": "COL437",
+    "level": "A1",
+    "phrase": "have a pleasant time",
+    "meaning": "experience a joyful and smooth social interaction",
+    "vietnamese": "có một khoảng thời gian dễ chịu",
+    "example": "We hope you have a pleasant time while visiting our showroom."
+  },
+  {
+    "id": "COL438",
+    "level": "A1",
+    "phrase": "go to a restaurant",
+    "meaning": "visit an establishment that prepares and serves food",
+    "vietnamese": "đi nhà hàng",
+    "example": "Let's go to a restaurant that serves traditional beef noodles."
+  },
+  {
+    "id": "COL439",
+    "level": "A1",
+    "phrase": "have a talk with someone",
+    "meaning": "engage in a brief spoken discussion with a person",
+    "vietnamese": "trò chuyện với ai đó",
+    "example": "The manager wants to have a talk with you about the project status."
+  },
+  {
+    "id": "COL440",
+    "level": "A1",
+    "phrase": "do business with a client",
+    "meaning": "engage in commercial cooperation with a customer",
+    "vietnamese": "làm ăn với khách hàng",
+    "example": "It is our honor to do business with a professional client like you."
+  },
+  {
+    "id": "COL441",
+    "level": "A1",
+    "phrase": "make a choice between two",
+    "meaning": "select one option from a pair of alternatives",
+    "vietnamese": "đưa ra lựa chọn giữa hai cái",
+    "example": "You have to make a choice between the brown and black leather bag."
+  },
+  {
+    "id": "COL442",
+    "level": "A1",
+    "phrase": "take an order from a customer",
+    "meaning": "record the specific request of a buyer",
+    "vietnamese": "nhận đơn hàng từ khách hàng",
+    "example": "The assistant will take an order from a customer at the front desk."
+  },
+  {
+    "id": "COL443",
+    "level": "A1",
+    "phrase": "go on a trip to",
+    "meaning": "travel to a specific location for leisure",
+    "vietnamese": "đi một chuyến du lịch đến",
+    "example": "They plan to go on a trip to Da Nang this summer."
+  },
+  {
+    "id": "COL444",
+    "level": "A2",
+    "phrase": "tell the truth to a friend",
+    "meaning": "share honest facts with a close peer",
+    "vietnamese": "nói thật với bạn bè",
+    "example": "It is always better to tell the truth to a friend."
+  },
+  {
+    "id": "COL445",
+    "level": "A2",
+    "phrase": "keep a tidy desk",
+    "meaning": "maintain your workspace in a neat organized layout",
+    "vietnamese": "giữ bàn làm việc gọn gàng",
+    "example": "The software engineer tries to keep a tidy desk to focus better."
+  },
+  {
+    "id": "COL446",
+    "level": "A2",
+    "phrase": "pay attention to the details",
+    "meaning": "focus carefully on small specific elements of a task",
+    "vietnamese": "chú ý đến từng chi tiết",
+    "example": "You must pay attention to the details when sewing the leather bag."
+  },
+  {
+    "id": "COL447",
+    "level": "A2",
+    "phrase": "take a deep breath in",
+    "meaning": "inhale air deeply into your lungs to relax",
+    "vietnamese": "hít một hơi thật sâu",
+    "example": "Take a deep breath in before speaking to the group."
+  },
+  {
+    "id": "COL448",
+    "level": "A2",
+    "phrase": "get into trouble with",
+    "meaning": "encounter difficulties or negative consequences with an authority",
+    "vietnamese": "gặp rắc rối với ai/cái gì",
+    "example": "Do not get into trouble with the network security team."
+  },
+  {
+    "id": "COL449",
+    "level": "A2",
+    "phrase": "give a clear explanation",
+    "meaning": "provide an easy-to-understand account of a topic",
+    "vietnamese": "đưa ra giải thích rõ ràng",
+    "example": "The teacher gave a clear explanation of the historical event."
+  },
+  {
+    "id": "COL450",
+    "level": "A2",
+    "phrase": "make a complaint to the manager",
+    "meaning": "express formal dissatisfaction to the person in charge",
+    "vietnamese": "phàn nàn với người quản lý",
+    "example": "The customer had to make a complaint to the manager about the delay."
+  },
+  {
+    "id": "COL451",
+    "level": "A2",
+    "phrase": "take a long time to finish",
+    "meaning": "require significant duration for completion",
+    "vietnamese": "mất nhiều thời gian để hoàn thành",
+    "example": "This database code will take a long time to finish."
+  },
+  {
+    "id": "COL452",
+    "level": "A2",
+    "phrase": "have a strong interest in art",
+    "meaning": "possess intense passion for artistic subjects",
+    "vietnamese": "rất hứng thú với nghệ thuật",
+    "example": "Thirty students have a strong interest in art history."
+  },
+  {
+    "id": "COL453",
+    "level": "A2",
+    "phrase": "keep an eye on the time",
+    "meaning": "monitor the clock to ensure you are on schedule",
+    "vietnamese": "để mắt đến thời gian",
+    "example": "Please keep an eye on the time during the presentation."
+  },
+  {
+    "id": "COL454",
+    "level": "A2",
+    "phrase": "pay cash at the store",
+    "meaning": "purchase items using paper money at a physical shop",
+    "vietnamese": "trả tiền mặt tại cửa hàng",
+    "example": "The shop prefers that you pay cash at the store."
+  },
+  {
+    "id": "COL455",
+    "level": "A2",
+    "phrase": "make a good suggestion",
+    "meaning": "offer a helpful and effective idea",
+    "vietnamese": "đưa ra một gợi ý hay",
+    "example": "The lead developer made a good suggestion for the system update."
+  },
+  {
+    "id": "COL456",
+    "level": "A2",
+    "phrase": "take a photo of the landscape",
+    "meaning": "capture a scenic view using a camera",
+    "vietnamese": "chụp ảnh phong cảnh",
+    "example": "He stopped the car to take a photo of the landscape."
+  },
+  {
+    "id": "COL457",
+    "level": "A2",
+    "phrase": "get ready for the trip",
+    "meaning": "prepare oneself physically or mentally for travel",
+    "vietnamese": "chuẩn bị sẵn sàng cho chuyến đi",
+    "example": "The manager is getting ready for the business trip to Da Nang."
+  },
+  {
+    "id": "COL458",
+    "level": "A2",
+    "phrase": "have an appointment with the doctor",
+    "meaning": "possess a scheduled time slot to see a physician",
+    "vietnamese": "có lịch hẹn với bác sĩ",
+    "example": "She has an appointment with the doctor at 3 PM today."
+  },
+  {
+    "id": "COL459",
+    "level": "A2",
+    "phrase": "keep track of expenses",
+    "meaning": "record all money spending systematically",
+    "vietnamese": "theo dõi các khoản chi tiêu",
+    "example": "Use an app to keep track of your daily expenses."
+  },
+  {
+    "id": "COL460",
+    "level": "A2",
+    "phrase": "make an appointment with a client",
+    "meaning": "schedule a meeting with a business buyer",
+    "vietnamese": "đặt lịch hẹn với khách hàng",
+    "example": "I need to make an appointment with a client to discuss the contract."
+  },
+  {
+    "id": "COL461",
+    "level": "A2",
+    "phrase": "take a message for someone",
+    "meaning": "record information intended for an absent person",
+    "vietnamese": "nhận lời nhắn cho ai đó",
+    "example": "Can I take a message for the chief designer?"
+  },
+  {
+    "id": "COL462",
+    "level": "A2",
+    "phrase": "get sick after eating",
+    "meaning": "experience physical illness following meal consumption",
+    "vietnamese": "đổ bệnh sau khi ăn",
+    "example": "He got sick after eating at an unclean food stall."
+  },
+  {
+    "id": "COL463",
+    "level": "A2",
+    "phrase": "have an experience in coding",
+    "meaning": "possess previous practical skills regarding programming",
+    "vietnamese": "có kinh nghiệm trong việc lập trình",
+    "example": "The candidate has an experience in coding with modern databases."
+  },
+  {
+    "id": "COL464",
+    "level": "A2",
+    "phrase": "keep a secret from someone",
+    "meaning": "withhold confidential information from another person",
+    "vietnamese": "giữ bí mật với ai",
+    "example": "It is hard to keep a secret from your best friend."
+  },
+  {
+    "id": "COL465",
+    "level": "A2",
+    "phrase": "make a big change",
+    "meaning": "apply significant modifications to a situation",
+    "vietnamese": "tạo ra một thay đổi lớn",
+    "example": "The CEO decided to make a big change to the company policy."
+  },
+  {
+    "id": "COL466",
+    "level": "A2",
+    "phrase": "take responsibility for your actions",
+    "meaning": "accept the outcome and duty of your own decisions",
+    "vietnamese": "chịu trách nhiệm cho hành động của mình",
+    "example": "An adult must take responsibility for your actions."
+  },
+  {
+    "id": "COL467",
+    "level": "A2",
+    "phrase": "get a call from the office",
+    "meaning": "receive a phone contact initiated by the company",
+    "vietnamese": "nhận cuộc gọi từ văn phòng",
+    "example": "He got a call from the office regarding the urgent project."
+  },
+  {
+    "id": "COL468",
+    "level": "A2",
+    "phrase": "have a talk with your boss",
+    "meaning": "engage in a professional discussion with your supervisor",
+    "vietnamese": "nói chuyện với sếp của bạn",
+    "example": "It is time to have a talk with your boss about your promotion."
+  },
+  {
+    "id": "COL469",
+    "level": "A2",
+    "phrase": "keep contact with friends",
+    "meaning": "maintain active communication with social peers",
+    "vietnamese": "giữ liên lạc với bạn bè",
+    "example": "Use social media to keep contact with friends."
+  },
+  {
+    "id": "COL470",
+    "level": "A2",
+    "phrase": "make a difference in the world",
+    "meaning": "have a significant positive impact globally",
+    "vietnamese": "tạo nên sự khác biệt cho thế giới",
+    "example": "Every little action can make a difference in the world."
+  },
+  {
+    "id": "COL471",
+    "level": "A2",
+    "phrase": "take a course in history",
+    "meaning": "enroll in educational lessons about past events",
+    "vietnamese": "tham gia khóa học lịch sử",
+    "example": "The thirty students will take a course in history next semester."
+  },
+  {
+    "id": "COL472",
+    "level": "A2",
+    "phrase": "get a high grade",
+    "meaning": "receive an excellent score on an academic test",
+    "vietnamese": "đạt điểm số cao",
+    "example": "If you study hard, you will get a high grade."
+  },
+  {
+    "id": "COL473",
+    "level": "A2",
+    "phrase": "have a strict rule",
+    "meaning": "enforce a firm and inflexible regulation",
+    "vietnamese": "có một quy định nghiêm ngặt",
+    "example": "The laboratory has a strict rule about wearing protective gear."
+  },
+  {
+    "id": "COL474",
+    "level": "A2",
+    "phrase": "keep clear of the traffic",
+    "meaning": "stay away from dangerous road movement zones",
+    "vietnamese": "tránh xa làn đường giao thông",
+    "example": "Pedestrians must keep clear of the traffic on the highway."
+  },
+  {
+    "id": "COL475",
+    "level": "A2",
+    "phrase": "make a speech in public",
+    "meaning": "speak formally before a group of people",
+    "vietnamese": "diễn thuyết nơi công cộng",
+    "example": "She was nervous to make a speech in public."
+  },
+  {
+    "id": "COL476",
+    "level": "A2",
+    "phrase": "take control of the company",
+    "meaning": "assume power to manage business operations",
+    "vietnamese": "nắm quyền kiểm soát công ty",
+    "example": "The new owner will take control of the company next month."
+  },
+  {
+    "id": "COL477",
+    "level": "A2",
+    "phrase": "get lost in thought",
+    "meaning": "become so absorbed in your mind that you lose situational awareness",
+    "vietnamese": "chìm đắm trong suy nghĩ",
+    "example": "I was so lost in thought that I missed my bus stop."
+  },
+  {
+    "id": "COL478",
+    "level": "A2",
+    "phrase": "have a problem with the car",
+    "meaning": "encounter mechanical issues with an automobile",
+    "vietnamese": "gặp sự cố với chiếc xe",
+    "example": "We have a problem with the car and cannot travel today."
+  },
+  {
+    "id": "COL479",
+    "level": "A2",
+    "phrase": "keep safe from harm",
+    "meaning": "protect oneself or others from danger",
+    "vietnamese": "giữ an toàn khỏi tổn hại",
+    "example": "Security guards are there to keep safe from harm."
+  },
+  {
+    "id": "COL480",
+    "level": "A2",
+    "phrase": "make a promise to your family",
+    "meaning": "commit to a pledge regarding household duties",
+    "vietnamese": "hứa với gia đình",
+    "example": "He made a promise to his family to spend more time at home."
+  },
+  {
+    "id": "COL481",
+    "level": "A2",
+    "phrase": "take a look at the contract",
+    "meaning": "inspect the legal document thoroughly",
+    "vietnamese": "xem xét bản hợp đồng",
+    "example": "Please take a look at the contract before signing it."
+  },
+  {
+    "id": "COL482",
+    "level": "A2",
+    "phrase": "get tired of the routine",
+    "meaning": "become bored with unchanging daily tasks",
+    "vietnamese": "chán ngấy với công việc thường nhật",
+    "example": "Sometimes people get tired of the routine of office work."
+  },
+  {
+    "id": "COL483",
+    "level": "A2",
+    "phrase": "have dinner with the family",
+    "meaning": "eat the evening meal alongside relatives",
+    "vietnamese": "ăn tối cùng gia đình",
+    "example": "It is lovely to have dinner with the family after a long day."
+  },
+  {
+    "id": "COL484",
+    "level": "A1",
+    "phrase": "go to the cinema",
+    "meaning": "visit a movie theater to watch a film",
+    "vietnamese": "đi xem phim ở rạp",
+    "example": "My friends and I usually go to the cinema every Friday night."
+  },
+  {
+    "id": "COL485",
+    "level": "A1",
+    "phrase": "have a cup of tea",
+    "meaning": "drink a warm cup of brewed tea",
+    "vietnamese": "uống một tách trà",
+    "example": "I like to have a cup of tea while reading books."
+  },
+  {
+    "id": "COL486",
+    "level": "A1",
+    "phrase": "take a bus to school",
+    "meaning": "use a bus as a way to get to your educational institution",
+    "vietnamese": "bắt xe buýt đến trường",
+    "example": "He decided to take a bus to school to save money."
+  },
+  {
+    "id": "COL487",
+    "level": "A1",
+    "phrase": "make a mistake in grammar",
+    "meaning": "produce an error related to grammatical rules",
+    "vietnamese": "mắc lỗi ngữ pháp",
+    "example": "Don't worry if you make a mistake in grammar; just keep practicing."
+  },
+  {
+    "id": "COL488",
+    "level": "A1",
+    "phrase": "go to the park for a walk",
+    "meaning": "visit a park to engage in walking for leisure",
+    "vietnamese": "đi bộ trong công viên",
+    "example": "They love to go to the park for a walk in the evening."
+  },
+  {
+    "id": "COL489",
+    "level": "A1",
+    "phrase": "have a glass of milk",
+    "meaning": "drink a glass filled with fresh milk",
+    "vietnamese": "uống một ly sữa",
+    "example": "Children should have a glass of milk every morning."
+  },
+  {
+    "id": "COL490",
+    "level": "A1",
+    "phrase": "say hello to the neighbors",
+    "meaning": "greet people living next door politely",
+    "vietnamese": "chào hỏi hàng xóm",
+    "example": "I always say hello to the neighbors when I leave home."
+  },
+  {
+    "id": "COL491",
+    "level": "A1",
+    "phrase": "go for a run in the morning",
+    "meaning": "exercise by running early in the day",
+    "vietnamese": "chạy bộ vào buổi sáng",
+    "example": "It is healthy to go for a run in the morning."
+  },
+  {
+    "id": "COL492",
+    "level": "A1",
+    "phrase": "have a question for the teacher",
+    "meaning": "ask the instructor a specific inquiry",
+    "vietnamese": "có câu hỏi cho giáo viên",
+    "example": "Raise your hand if you have a question for the teacher."
+  },
+  {
+    "id": "COL493",
+    "level": "A1",
+    "phrase": "do an exercise to stay healthy",
+    "meaning": "perform physical training for well-being",
+    "vietnamese": "tập thể dục để giữ sức khỏe",
+    "example": "You need to do an exercise to stay healthy daily."
+  },
+  {
+    "id": "COL494",
+    "level": "A1",
+    "phrase": "make a list of things to do",
+    "meaning": "write down tasks you need to complete",
+    "vietnamese": "lập danh sách các việc cần làm",
+    "example": "I always make a list of things to do to manage my time better."
+  },
+  {
+    "id": "COL495",
+    "level": "A1",
+    "phrase": "take a break from work",
+    "meaning": "pause work tasks briefly for rest",
+    "vietnamese": "nghỉ giải lao trong khi làm việc",
+    "example": "He decided to take a break from work to drink some water."
+  },
+  {
+    "id": "COL496",
+    "level": "A1",
+    "phrase": "get home from the office",
+    "meaning": "arrive at your house after work finished",
+    "vietnamese": "về đến nhà từ văn phòng",
+    "example": "She usually gets home from the office at 6 PM."
+  },
+  {
+    "id": "COL497",
+    "level": "A1",
+    "phrase": "have a great time",
+    "meaning": "enjoy yourself thoroughly",
+    "vietnamese": "có một khoảng thời gian tuyệt vời",
+    "example": "We hope you have a great time at the party tonight."
+  },
+  {
+    "id": "COL498",
+    "level": "A1",
+    "phrase": "go to the museum on Sunday",
+    "meaning": "visit an art/history museum on a Sunday",
+    "vietnamese": "đi bảo tàng vào Chủ nhật",
+    "example": "Many families go to the museum on Sunday for culture."
+  },
+  {
+    "id": "COL499",
+    "level": "A1",
+    "phrase": "have a conversation with friends",
+    "meaning": "talk socially with acquaintances",
+    "vietnamese": "trò chuyện với bạn bè",
+    "example": "I like to have a conversation with friends at a coffee shop."
+  },
+  {
+    "id": "COL500",
+    "level": "A1",
+    "phrase": "do business in the city",
+    "meaning": "conduct commercial activities within a city",
+    "vietnamese": "kinh doanh trong thành phố",
+    "example": "They want to do business in the city because there are more customers."
+  },
+  {
+    "id": "COL501",
+    "level": "A1",
+    "phrase": "make a final choice",
+    "meaning": "select the last option available",
+    "vietnamese": "đưa ra sự lựa chọn cuối cùng",
+    "example": "It took him an hour to make a final choice."
+  },
+  {
+    "id": "COL502",
+    "level": "A1",
+    "phrase": "take a seat at the table",
+    "meaning": "sit in a chair at a table",
+    "vietnamese": "ngồi vào chỗ tại bàn",
+    "example": "Please take a seat at the table and wait for the meal."
+  },
+  {
+    "id": "COL503",
+    "level": "A1",
+    "phrase": "go on a long trip",
+    "meaning": "travel for a long distance or duration",
+    "vietnamese": "đi một chuyến du lịch dài",
+    "example": "They want to go on a long trip around the world."
+  },
+  {
+    "id": "COL504",
+    "level": "A2",
+    "phrase": "tell the truth to others",
+    "meaning": "be honest with other people",
+    "vietnamese": "nói thật với người khác",
+    "example": "You should always tell the truth to others to build trust."
+  },
+  {
+    "id": "COL505",
+    "level": "A2",
+    "phrase": "keep a diary of your day",
+    "meaning": "write down events of the day in a journal",
+    "vietnamese": "viết nhật ký về ngày của bạn",
+    "example": "I like to keep a diary of your day to remember what happened."
+  },
+  {
+    "id": "COL506",
+    "level": "A2",
+    "phrase": "pay attention to new words",
+    "meaning": "focus on learning new vocabulary",
+    "vietnamese": "chú ý đến các từ vựng mới",
+    "example": "Please pay attention to new words while reading the text."
+  },
+  {
+    "id": "COL507",
+    "level": "A2",
+    "phrase": "take a deep breath",
+    "meaning": "inhale deeply to calm down",
+    "vietnamese": "hít một hơi thật sâu",
+    "example": "Take a deep breath and stay calm before the test."
+  },
+  {
+    "id": "COL508",
+    "level": "A2",
+    "phrase": "get into the right habit",
+    "meaning": "begin to follow a correct routine",
+    "vietnamese": "hình thành thói quen đúng",
+    "example": "It is important to get into the right habit of saving money."
+  },
+  {
+    "id": "COL509",
+    "level": "A2",
+    "phrase": "give a clear answer",
+    "meaning": "provide an understandable response",
+    "vietnamese": "đưa ra câu trả lời rõ ràng",
+    "example": "Can you give a clear answer to my question?"
+  },
+  {
+    "id": "COL510",
+    "level": "A2",
+    "phrase": "make a plan for the weekend",
+    "meaning": "organize your activities for Saturday and Sunday",
+    "vietnamese": "lập kế hoạch cho cuối tuần",
+    "example": "Let's make a plan for the weekend together."
+  },
+  {
+    "id": "COL511",
+    "level": "A2",
+    "phrase": "take a bus to the airport",
+    "meaning": "travel to the airport by bus",
+    "vietnamese": "bắt xe buýt đến sân bay",
+    "example": "He will take a bus to the airport tomorrow morning."
+  },
+  {
+    "id": "COL512",
+    "level": "A2",
+    "phrase": "have a serious discussion",
+    "meaning": "talk about a complex or important topic",
+    "vietnamese": "thảo luận nghiêm túc",
+    "example": "The staff had a serious discussion about the new rules."
+  },
+  {
+    "id": "COL513",
+    "level": "A2",
+    "phrase": "keep a steady pace in running",
+    "meaning": "maintain a consistent speed during exercise",
+    "vietnamese": "duy trì tốc độ chạy ổn định",
+    "example": "To win, you should keep a steady pace in running."
+  },
+  {
+    "id": "COL514",
+    "level": "A2",
+    "phrase": "pay money at the cash register",
+    "meaning": "give cash to the cashier",
+    "vietnamese": "trả tiền tại quầy thu ngân",
+    "example": "Please pay money at the cash register before leaving."
+  },
+  {
+    "id": "COL515",
+    "level": "A2",
+    "phrase": "make a quick decision",
+    "meaning": "choose something fast without delay",
+    "vietnamese": "đưa ra quyết định nhanh chóng",
+    "example": "I had to make a quick decision because the shop was closing."
+  },
+  {
+    "id": "COL516",
+    "level": "A2",
+    "phrase": "take a picture of the sea",
+    "meaning": "use a camera to capture the ocean view",
+    "vietnamese": "chụp ảnh biển",
+    "example": "They stopped to take a picture of the sea."
+  },
+  {
+    "id": "COL517",
+    "level": "A2",
+    "phrase": "get ready for work",
+    "meaning": "prepare yourself to start working",
+    "vietnamese": "chuẩn bị sẵn sàng cho công việc",
+    "example": "I need 20 minutes to get ready for work."
+  },
+  {
+    "id": "COL518",
+    "level": "A2",
+    "phrase": "have a regular appointment with a doctor",
+    "meaning": "see a doctor periodically",
+    "vietnamese": "có lịch hẹn khám bác sĩ định kỳ",
+    "example": "He has a regular appointment with a doctor for his back pain."
+  },
+  {
+    "id": "COL519",
+    "level": "A2",
+    "phrase": "keep records of sales",
+    "meaning": "document information about items sold",
+    "vietnamese": "lưu giữ hồ sơ bán hàng",
+    "example": "The manager must keep records of sales to calculate profit."
+  },
+  {
+    "id": "COL520",
+    "level": "A2",
+    "phrase": "make a table reservation",
+    "meaning": "book a spot in a restaurant",
+    "vietnamese": "đặt chỗ tại nhà hàng",
+    "example": "You should make a table reservation if you want to eat at that place."
+  },
+  {
+    "id": "COL521",
+    "level": "A2",
+    "phrase": "take notes on the lecture",
+    "meaning": "write down key points from a speech",
+    "vietnamese": "ghi chú bài giảng",
+    "example": "If you want to pass, take notes on the lecture."
+  },
+  {
+    "id": "COL522",
+    "level": "A2",
+    "phrase": "get sick from the cold weather",
+    "meaning": "become ill due to low temperatures",
+    "vietnamese": "bị ốm do thời tiết lạnh",
+    "example": "Many people get sick from the cold weather in winter."
+  },
+  {
+    "id": "COL523",
+    "level": "A2",
+    "phrase": "have a meeting on Monday",
+    "meaning": "attend a meeting scheduled for the first day of the week",
+    "vietnamese": "có cuộc họp vào thứ Hai",
+    "example": "The director will have a meeting on Monday to talk about results."
+  },
+  {
+    "id": "COL524",
+    "level": "A2",
+    "phrase": "keep a secret safe",
+    "meaning": "ensure confidential information is not revealed",
+    "vietnamese": "giữ bí mật an toàn",
+    "example": "It is your job to keep a secret safe."
+  },
+  {
+    "id": "COL525",
+    "level": "A2",
+    "phrase": "make a positive change",
+    "meaning": "apply modifications that improve a situation",
+    "vietnamese": "tạo ra thay đổi tích cực",
+    "example": "Small habits can make a positive change in your health."
+  },
+  {
+    "id": "COL526",
+    "level": "A2",
+    "phrase": "take the credit for the success",
+    "meaning": "accept recognition for a achievement",
+    "vietnamese": "nhận công trạng cho sự thành công",
+    "example": "The whole team should take the credit for the success."
+  },
+  {
+    "id": "COL527",
+    "level": "A2",
+    "phrase": "get a letter in the mail",
+    "meaning": "receive a letter via postal service",
+    "vietnamese": "nhận được thư qua đường bưu điện",
+    "example": "I was happy to get a letter in the mail from my friend."
+  },
+  {
+    "id": "COL528",
+    "level": "A2",
+    "phrase": "have a long discussion about work",
+    "meaning": "talk at length regarding professional tasks",
+    "vietnamese": "thảo luận lâu về công việc",
+    "example": "We had a long discussion about work this afternoon."
+  },
+  {
+    "id": "COL529",
+    "level": "A2",
+    "phrase": "keep communication lines open",
+    "meaning": "ensure ongoing ability to interact/talk",
+    "vietnamese": "giữ thông tin liên lạc thông suốt",
+    "example": "Always keep communication lines open with your partners."
+  },
+  {
+    "id": "COL530",
+    "level": "A2",
+    "phrase": "make a good impression on people",
+    "meaning": "be viewed positively by others",
+    "vietnamese": "tạo ấn tượng tốt với mọi người",
+    "example": "Dress well to make a good impression on people at the interview."
+  },
+  {
+    "id": "COL531",
+    "level": "A2",
+    "phrase": "take a course in English",
+    "meaning": "attend language learning classes",
+    "vietnamese": "tham gia khóa học tiếng Anh",
+    "example": "I plan to take a course in English to improve my skills."
+  },
+  {
+    "id": "COL532",
+    "level": "A2",
+    "phrase": "get a top grade in class",
+    "meaning": "receive the highest score in an academic group",
+    "vietnamese": "đạt điểm cao nhất trong lớp",
+    "example": "She worked hard to get a top grade in class."
+  },
+  {
+    "id": "COL533",
+    "level": "A2",
+    "phrase": "have a strict policy",
+    "meaning": "implement a rigid rule/guide",
+    "vietnamese": "có một chính sách nghiêm ngặt",
+    "example": "The school has a strict policy regarding late arrivals."
+  },
+  {
+    "id": "COL534",
+    "level": "A2",
+    "phrase": "keep clear of the danger zone",
+    "meaning": "stay away from hazardous areas",
+    "vietnamese": "tránh xa vùng nguy hiểm",
+    "example": "You must keep clear of the danger zone during the construction."
+  },
+  {
+    "id": "COL535",
+    "level": "A2",
+    "phrase": "make a speech before the audience",
+    "meaning": "deliver an address to listeners",
+    "vietnamese": "phát biểu trước khán giả",
+    "example": "He will make a speech before the audience at the conference."
+  },
+  {
+    "id": "COL536",
+    "level": "A2",
+    "phrase": "take control of your life",
+    "meaning": "take responsibility for managing your own future",
+    "vietnamese": "nắm quyền kiểm soát cuộc sống của bạn",
+    "example": "Only you can take control of your life."
+  },
+  {
+    "id": "COL537",
+    "level": "A2",
+    "phrase": "get lost in the forest",
+    "meaning": "lose one's way while in a wooded area",
+    "vietnamese": "bị lạc trong rừng",
+    "example": "It is easy to get lost in the forest if you don't have a map."
+  },
+  {
+    "id": "COL538",
+    "level": "A2",
+    "phrase": "have a problem with the internet",
+    "meaning": "experience connection issues with an online network",
+    "vietnamese": "gặp sự cố với internet",
+    "example": "I have a problem with the internet connection right now."
+  },
+  {
+    "id": "COL539",
+    "level": "A2",
+    "phrase": "keep safe from any harm",
+    "meaning": "ensure nothing bad happens",
+    "vietnamese": "giữ an toàn khỏi mọi tổn hại",
+    "example": "The mother tries to keep safe from any harm to her child."
+  },
+  {
+    "id": "COL540",
+    "level": "A2",
+    "phrase": "make a promise to change",
+    "meaning": "commit to improving one's behavior",
+    "vietnamese": "hứa sẽ thay đổi",
+    "example": "He made a promise to change his bad habits."
+  },
+  {
+    "id": "COL541",
+    "level": "A2",
+    "phrase": "take a look at the picture",
+    "meaning": "observe an image",
+    "vietnamese": "xem bức ảnh",
+    "example": "Take a look at the picture and tell me what you see."
+  },
+  {
+    "id": "COL542",
+    "level": "A2",
+    "phrase": "get tired of waiting for help",
+    "meaning": "become weary of delay",
+    "vietnamese": "mệt mỏi vì chờ đợi sự giúp đỡ",
+    "example": "Many people get tired of waiting for help when problems happen."
+  },
+  {
+    "id": "COL543",
+    "level": "A2",
+    "phrase": "have dinner with the team",
+    "meaning": "eat the last meal of the day with colleagues",
+    "vietnamese": "ăn tối cùng cả nhóm",
+    "example": "Let's have dinner with the team after the project ends."
+  },
+  {
+    "id": "COL544",
+    "level": "A1",
+    "phrase": "go to bed early",
+    "meaning": "get into bed before the usual time",
+    "vietnamese": "đi ngủ sớm",
+    "example": "If you are tired, you should go to bed early."
+  },
+  {
+    "id": "COL545",
+    "level": "A1",
+    "phrase": "have a slice of cake",
+    "meaning": "eat a single piece of cake",
+    "vietnamese": "ăn một miếng bánh ngọt",
+    "example": "Would you like to have a slice of cake for dessert?"
+  },
+  {
+    "id": "COL546",
+    "level": "A1",
+    "phrase": "take a taxi to the hotel",
+    "meaning": "use a taxi to travel to a hotel",
+    "vietnamese": "bắt taxi đến khách sạn",
+    "example": "They decided to take a taxi to the hotel after the flight."
+  },
+  {
+    "id": "COL547",
+    "level": "A1",
+    "phrase": "make a mess in the room",
+    "meaning": "leave things untidy in a specific room",
+    "vietnamese": "làm bừa bộn căn phòng",
+    "example": "Please do not make a mess in the room while playing."
+  },
+  {
+    "id": "COL548",
+    "level": "A1",
+    "phrase": "go to the supermarket with mom",
+    "meaning": "accompany your mother to buy groceries",
+    "vietnamese": "đi siêu thị với mẹ",
+    "example": "I go to the supermarket with mom every Saturday morning."
+  },
+  {
+    "id": "COL549",
+    "level": "A1",
+    "phrase": "have a bowl of noodles",
+    "meaning": "eat a serving of noodles in a bowl",
+    "vietnamese": "ăn một bát mì",
+    "example": "Let's have a bowl of noodles for breakfast."
+  },
+  {
+    "id": "COL550",
+    "level": "A1",
+    "phrase": "say hello to the guests",
+    "meaning": "greet the people visiting your house",
+    "vietnamese": "chào hỏi khách",
+    "example": "Remember to say hello to the guests when they arrive."
+  },
+  {
+    "id": "COL551",
+    "level": "A1",
+    "phrase": "go for a walk in the park",
+    "meaning": "take a walk inside a park area",
+    "vietnamese": "đi dạo trong công viên",
+    "example": "It is very relaxing to go for a walk in the park."
+  },
+  {
+    "id": "COL552",
+    "level": "A1",
+    "phrase": "have a problem with the printer",
+    "meaning": "experience technical issues with a printer",
+    "vietnamese": "gặp vấn đề với máy in",
+    "example": "I have a problem with the printer; it won't work."
+  },
+  {
+    "id": "COL553",
+    "level": "A1",
+    "phrase": "do research on a topic",
+    "meaning": "study a specific subject in detail",
+    "vietnamese": "nghiên cứu về một chủ đề",
+    "example": "Students have to do research on a topic for the class."
+  },
+  {
+    "id": "COL554",
+    "level": "A1",
+    "phrase": "make a plan for tomorrow",
+    "meaning": "schedule your activities for the next day",
+    "vietnamese": "lập kế hoạch cho ngày mai",
+    "example": "It is good to make a plan for tomorrow before you sleep."
+  },
+  {
+    "id": "COL555",
+    "level": "A1",
+    "phrase": "take a short rest after lunch",
+    "meaning": "rest for a short time following lunch",
+    "vietnamese": "nghỉ ngơi một lát sau bữa trưa",
+    "example": "I usually take a short rest after lunch."
+  },
+  {
+    "id": "COL556",
+    "level": "A1",
+    "phrase": "get home from work tired",
+    "meaning": "return home feeling exhausted from work",
+    "vietnamese": "đi làm về trong trạng thái mệt mỏi",
+    "example": "He often gets home from work tired after long meetings."
+  },
+  {
+    "id": "COL557",
+    "level": "A1",
+    "phrase": "have a wonderful time together",
+    "meaning": "enjoy spending time with others",
+    "vietnamese": "có khoảng thời gian tuyệt vời bên nhau",
+    "example": "We had a wonderful time together at the beach."
+  },
+  {
+    "id": "COL558",
+    "level": "A1",
+    "phrase": "go to the local library",
+    "meaning": "visit the library in your neighborhood",
+    "vietnamese": "đi thư viện địa phương",
+    "example": "They go to the local library to borrow storybooks."
+  },
+  {
+    "id": "COL559",
+    "level": "A1",
+    "phrase": "have an interest in learning",
+    "meaning": "show curiosity and passion for studying",
+    "vietnamese": "có hứng thú với việc học",
+    "example": "Children who have an interest in learning do better in school."
+  },
+  {
+    "id": "COL560",
+    "level": "A1",
+    "phrase": "do a good job in the task",
+    "meaning": "perform a job successfully",
+    "vietnamese": "làm tốt công việc/nhiệm vụ",
+    "example": "She did a good job in the task assigned by the manager."
+  },
+  {
+    "id": "COL561",
+    "level": "A1",
+    "phrase": "make an important decision",
+    "meaning": "decide something with significant consequences",
+    "vietnamese": "đưa ra quyết định quan trọng",
+    "example": "I need more time to make an important decision."
+  },
+  {
+    "id": "COL562",
+    "level": "A1",
+    "phrase": "take a comfortable seat here",
+    "meaning": "sit down in a relaxed spot",
+    "vietnamese": "ngồi vào chỗ thoải mái ở đây",
+    "example": "Please take a comfortable seat here and relax."
+  },
+  {
+    "id": "COL563",
+    "level": "A1",
+    "phrase": "go on a summer holiday trip",
+    "meaning": "travel for vacation during the summer",
+    "vietnamese": "đi du lịch nghỉ hè",
+    "example": "Every year, we go on a summer holiday trip to Da Nang."
+  },
+  {
+    "id": "COL564",
+    "level": "A2",
+    "phrase": "tell a funny story to friends",
+    "meaning": "share an amusing tale with peers",
+    "vietnamese": "kể chuyện vui cho bạn bè",
+    "example": "He loves to tell a funny story to friends at parties."
+  },
+  {
+    "id": "COL565",
+    "level": "A2",
+    "phrase": "keep your room clean",
+    "meaning": "maintain cleanliness in your living space",
+    "vietnamese": "giữ phòng của bạn sạch sẽ",
+    "example": "You should keep your room clean every day."
+  },
+  {
+    "id": "COL566",
+    "level": "A2",
+    "phrase": "pay attention to the instructions",
+    "meaning": "listen carefully to directions provided",
+    "vietnamese": "chú ý đến các hướng dẫn",
+    "example": "If you pay attention to the instructions, you will know what to do."
+  },
+  {
+    "id": "COL567",
+    "level": "A2",
+    "phrase": "take a quick look at the file",
+    "meaning": "examine a document briefly",
+    "vietnamese": "xem nhanh tài liệu",
+    "example": "Can you take a quick look at the file for me?"
+  },
+  {
+    "id": "COL568",
+    "level": "A2",
+    "phrase": "get into the habit of reading",
+    "meaning": "start reading regularly",
+    "vietnamese": "tạo thói quen đọc sách",
+    "example": "You should get into the habit of reading before bed."
+  },
+  {
+    "id": "COL569",
+    "level": "A2",
+    "phrase": "give a detailed report to the boss",
+    "meaning": "provide an exhaustive account of work",
+    "vietnamese": "đưa ra báo cáo chi tiết cho sếp",
+    "example": "I have to give a detailed report to the boss about this project."
+  },
+  {
+    "id": "COL570",
+    "level": "A2",
+    "phrase": "make an agreement with your partner",
+    "meaning": "come to a mutual understanding",
+    "vietnamese": "đạt được thỏa thuận với đối tác",
+    "example": "We finally made an agreement with our partner."
+  },
+  {
+    "id": "COL571",
+    "level": "A2",
+    "phrase": "take a short rest break at work",
+    "meaning": "stop work briefly to recharge",
+    "vietnamese": "nghỉ giải lao ngắn tại nơi làm việc",
+    "example": "It is important to take a short rest break at work."
+  },
+  {
+    "id": "COL572",
+    "level": "A2",
+    "phrase": "have a brief talk about the plan",
+    "meaning": "discuss a strategy quickly",
+    "vietnamese": "thảo luận ngắn về kế hoạch",
+    "example": "Can we have a brief talk about the plan for next month?"
+  },
+  {
+    "id": "COL573",
+    "level": "A2",
+    "phrase": "keep a steady speed when driving",
+    "meaning": "maintain constant velocity on the road",
+    "vietnamese": "duy trì tốc độ ổn định khi lái xe",
+    "example": "You should keep a steady speed when driving on the highway."
+  },
+  {
+    "id": "COL574",
+    "level": "A2",
+    "phrase": "pay credit card bills on time",
+    "meaning": "make payments by the deadline",
+    "vietnamese": "thanh toán hóa đơn thẻ tín dụng đúng hạn",
+    "example": "Always pay credit card bills on time to avoid fees."
+  },
+  {
+    "id": "COL575",
+    "level": "A2",
+    "phrase": "make a final choice to quit",
+    "meaning": "decide definitively to stop something",
+    "vietnamese": "đưa ra lựa chọn cuối cùng là bỏ cuộc/nghỉ việc",
+    "example": "He made a final choice to quit his current job."
+  },
+  {
+    "id": "COL576",
+    "level": "A2",
+    "phrase": "take a high-quality photo of the sunset",
+    "meaning": "photograph the sunset beautifully",
+    "vietnamese": "chụp bức ảnh chất lượng cao về hoàng hôn",
+    "example": "She loves to take a high-quality photo of the sunset."
+  },
+  {
+    "id": "COL577",
+    "level": "A2",
+    "phrase": "get dynamic results from the team",
+    "meaning": "achieve active/good performance from a group",
+    "vietnamese": "đạt được kết quả năng động từ nhóm",
+    "example": "The manager wants to get dynamic results from the team this year."
+  },
+  {
+    "id": "COL578",
+    "level": "A2",
+    "phrase": "have a business appointment in the morning",
+    "meaning": "meet for work early in the day",
+    "vietnamese": "có lịch hẹn công việc vào buổi sáng",
+    "example": "I have a business appointment in the morning with a new client."
+  },
+  {
+    "id": "COL579",
+    "level": "A2",
+    "phrase": "keep digital records of customer data",
+    "meaning": "save information electronically",
+    "vietnamese": "lưu giữ hồ sơ kỹ thuật số về dữ liệu khách hàng",
+    "example": "The company must keep digital records of customer data securely."
+  },
+  {
+    "id": "COL580",
+    "level": "A2",
+    "phrase": "make a room reservation for the weekend",
+    "meaning": "book a hotel room for Saturday/Sunday",
+    "vietnamese": "đặt phòng khách sạn cho cuối tuần",
+    "example": "I need to make a room reservation for the weekend."
+  },
+  {
+    "id": "COL581",
+    "level": "A2",
+    "phrase": "take extensive notes on the meeting",
+    "meaning": "write down lots of details during a meeting",
+    "vietnamese": "ghi chép chi tiết về cuộc họp",
+    "example": "Please take extensive notes on the meeting for everyone."
+  },
+  {
+    "id": "COL582",
+    "level": "A2",
+    "phrase": "get sick from eating too much",
+    "meaning": "become ill due to overeating",
+    "vietnamese": "bị ốm vì ăn quá nhiều",
+    "example": "You might get sick from eating too much at the party."
+  },
+  {
+    "id": "COL583",
+    "level": "A2",
+    "phrase": "have a meeting with the client",
+    "meaning": "attend a meeting with someone you work for",
+    "vietnamese": "có cuộc họp với khách hàng",
+    "example": "The whole team will have a meeting with the client on Tuesday."
+  },
+  {
+    "id": "COL584",
+    "level": "A2",
+    "phrase": "keep corporate data secret",
+    "meaning": "ensure confidential information remains private",
+    "vietnamese": "giữ bí mật dữ liệu của công ty",
+    "example": "Employees have to keep corporate data secret."
+  },
+  {
+    "id": "COL585",
+    "level": "A2",
+    "phrase": "make a positive change to your life",
+    "meaning": "improve your lifestyle",
+    "vietnamese": "tạo thay đổi tích cực cho cuộc sống của bạn",
+    "example": "Exercising every day can make a positive change to your life."
+  },
+  {
+    "id": "COL586",
+    "level": "A2",
+    "phrase": "take full blame for the mistake",
+    "meaning": "accept 100% of the responsibility",
+    "vietnamese": "nhận toàn bộ trách nhiệm về sai lầm",
+    "example": "The supervisor had to take full blame for the mistake."
+  },
+  {
+    "id": "COL587",
+    "level": "A2",
+    "phrase": "get an email from the teacher",
+    "meaning": "receive an electronic message from school staff",
+    "vietnamese": "nhận được email từ giáo viên",
+    "example": "Did you get an email from the teacher about the deadline?"
+  },
+  {
+    "id": "COL588",
+    "level": "A2",
+    "phrase": "have an open discussion with colleagues",
+    "meaning": "talk freely with co-workers",
+    "vietnamese": "thảo luận cởi mở với đồng nghiệp",
+    "example": "Let's have an open discussion with colleagues about the new plan."
+  },
+  {
+    "id": "COL589",
+    "level": "A2",
+    "phrase": "keep close communication with your team",
+    "meaning": "talk often with teammates",
+    "vietnamese": "giữ liên lạc chặt chẽ với nhóm của bạn",
+    "example": "It is vital to keep close communication with your team."
+  },
+  {
+    "id": "COL590",
+    "level": "A2",
+    "phrase": "make an impression on the interviewer",
+    "meaning": "seem impressive to someone hiring you",
+    "vietnamese": "tạo ấn tượng với người phỏng vấn",
+    "example": "You need to make an impression on the interviewer to get the job."
+  },
+  {
+    "id": "COL591",
+    "level": "A2",
+    "phrase": "take an advanced course in coding",
+    "meaning": "study high-level programming",
+    "vietnamese": "tham gia khóa học nâng cao về lập trình",
+    "example": "I want to take an advanced course in coding next year."
+  },
+  {
+    "id": "COL592",
+    "level": "A2",
+    "phrase": "get a passing grade in the exam",
+    "meaning": "pass a test successfully",
+    "vietnamese": "đạt điểm đỗ trong kỳ thi",
+    "example": "I just need to get a passing grade in the exam to graduate."
+  },
+  {
+    "id": "COL593",
+    "level": "A2",
+    "phrase": "have a strict regulation on working hours",
+    "meaning": "enforce firm rules about time",
+    "vietnamese": "có quy định nghiêm ngặt về giờ làm việc",
+    "example": "The company has a strict regulation on working hours."
+  },
+  {
+    "id": "COL594",
+    "level": "A2",
+    "phrase": "keep clear of the machine area",
+    "meaning": "stay away from dangerous equipment",
+    "vietnamese": "tránh xa khu vực máy móc",
+    "example": "For your safety, keep clear of the machine area."
+  },
+  {
+    "id": "COL595",
+    "level": "A2",
+    "phrase": "make a formal speech at the event",
+    "meaning": "speak officially in public",
+    "vietnamese": "phát biểu trang trọng tại sự kiện",
+    "example": "The CEO will make a formal speech at the event."
+  },
+  {
+    "id": "COL596",
+    "level": "A2",
+    "phrase": "take absolute control of the process",
+    "meaning": "be in charge of everything",
+    "vietnamese": "nắm quyền kiểm soát tuyệt đối quy trình",
+    "example": "The new manager will take absolute control of the process."
+  },
+  {
+    "id": "COL597",
+    "level": "A2",
+    "phrase": "get lost in the maze",
+    "meaning": "lose one's way in a labyrinth",
+    "vietnamese": "bị lạc trong mê cung",
+    "example": "It is easy to get lost in the maze if you are not careful."
+  },
+  {
+    "id": "COL598",
+    "level": "A2",
+    "phrase": "have a database problem with the server",
+    "meaning": "experience technical issues with data storage",
+    "vietnamese": "gặp lỗi cơ sở dữ liệu với máy chủ",
+    "example": "We have a database problem with the server today."
+  },
+  {
+    "id": "COL599",
+    "level": "A2",
+    "phrase": "keep safe from system errors",
+    "meaning": "protect software from bugs",
+    "vietnamese": "giữ an toàn khỏi lỗi hệ thống",
+    "example": "Update the software to keep safe from system errors."
+  },
+  {
+    "id": "COL600",
+    "level": "A2",
+    "phrase": "make an honest promise to help",
+    "meaning": "vow sincerely to provide assistance",
+    "vietnamese": "đưa ra lời hứa chân thành sẽ giúp đỡ",
+    "example": "She made an honest promise to help us with the work."
+  },
+  {
+    "id": "COL601",
+    "level": "A2",
+    "phrase": "take a look at the code syntax",
+    "meaning": "review programming language structure",
+    "vietnamese": "xem xét cú pháp đoạn mã",
+    "example": "You should take a look at the code syntax before running it."
+  },
+  {
+    "id": "COL602",
+    "level": "A2",
+    "phrase": "get tired of coding for hours",
+    "meaning": "become weary from long programming",
+    "vietnamese": "mệt mỏi vì lập trình hàng giờ liền",
+    "example": "I usually get tired of coding for hours in front of the screen."
+  },
+  {
+    "id": "COL603",
+    "level": "A2",
+    "phrase": "have lunch with the manager",
+    "meaning": "eat the mid-day meal with your boss",
+    "vietnamese": "ăn trưa cùng quản lý",
+    "example": "I will have lunch with the manager to discuss the feedback."
+  }
+]

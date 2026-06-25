@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>English Journey v1.7</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <aside>
+      <h1>📚 English</h1>
+
+      <button onclick="loadLesson('grammar')">📘 Grammar</button>
+
+      <button onclick="loadLesson('vocabulary')">📚 Vocabulary</button>
+
+      <button onclick="loadLesson('collocation')">🔗 Collocations</button>
+
+      <button onclick="loadLesson('phrasal')">⚡ Phrasal Verbs</button>
+
+      <button onclick="startQuiz()">📝 Quiz</button>
+      <button onclick="showNotes()">
+      
+📌 My Notes
+</button>
+  <button onclick="exportKeys()">
+Export English Journey Keys
+</button>
+    </aside>
+
+    <main>
+      <section class="stats">
+        <div class="stat-card">
+          <div class="stat-icon">📘</div>
+
+          <div>
+            <span> Grammar </span>
+
+            <h2 id="grammarCount">0</h2>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">📚</div>
+
+          <div>
+            <span> Vocabulary </span>
+
+            <h2 id="vocabCount">0</h2>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">🔗</div>
+
+          <div>
+            <span> Collocations </span>
+
+            <h2 id="collocationCount">0</h2>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">⚡</div>
+
+          <div>
+            <span> Phrasal Verbs </span>
+
+            <h2 id="phrasalCount">0</h2>
+          </div>
+        </div>
+      </section>
+
+      <section id="content">
+        <div class="welcome">
+          <h2>Welcome to English Journey 🚀</h2>
+
+          <p>Choose a lesson to start learning.</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

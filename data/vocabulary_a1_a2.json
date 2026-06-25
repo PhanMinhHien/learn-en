@@ -1,0 +1,6002 @@
+[
+  {
+    "id": "VOC001",
+    "level": "A1",
+    "topic": "Daily Life",
+    "word": "wake up",
+    "type": "phrasal verb",
+    "meaning": "to stop sleeping",
+    "vietnamese": "thức dậy",
+    "example": "I wake up at 7 a.m."
+  },
+  {
+    "id": "VOC002",
+    "level": "A1",
+    "topic": "Daily Life",
+    "word": "routine",
+    "type": "noun",
+    "meaning": "things you do regularly",
+    "vietnamese": "thói quen hằng ngày",
+    "example": "My daily routine starts at 6 a.m."
+  },
+  {
+    "id": "VOC003",
+    "level": "A2",
+    "topic": "Communication",
+    "word": "improve",
+    "type": "verb",
+    "meaning": "to become better",
+    "vietnamese": "cải thiện",
+    "example": "I want to improve my English."
+  },
+  {
+    "id": "VOC004",
+    "level": "A2",
+    "topic": "Travel",
+    "word": "book a ticket",
+    "type": "phrase",
+    "meaning": "buy or reserve a ticket",
+    "vietnamese": "đặt vé",
+    "example": "I need to book a ticket online."
+  },
+  {
+    "id": "VOC005",
+    "level": "A1",
+    "topic": "Daily Life",
+    "word": "shower",
+    "type": "noun",
+    "meaning": "an act of washing your body while standing",
+    "vietnamese": "vòi hoa sen / việc tắm vòi sen",
+    "example": "I take a shower every morning."
+  },
+  {
+    "id": "VOC006",
+    "level": "A1",
+    "topic": "Daily Life",
+    "word": "brush",
+    "type": "verb",
+    "meaning": "to clean something using a brush",
+    "vietnamese": "chải / đánh (răng)",
+    "example": "You should brush your teeth twice a day."
+  },
+  {
+    "id": "VOC007",
+    "level": "A1",
+    "topic": "Daily Life",
+    "word": "clothes",
+    "type": "noun",
+    "meaning": "things you wear, such as shirts or trousers",
+    "vietnamese": "quần áo",
+    "example": "She buys new clothes for the winter."
+  },
+  {
+    "id": "VOC008",
+    "level": "A1",
+    "topic": "Daily Life",
+    "word": "prepare",
+    "type": "verb",
+    "meaning": "to make something ready",
+    "vietnamese": "chuẩn bị",
+    "example": "He prepares breakfast for his family."
+  },
+  {
+    "id": "VOC009",
+    "level": "A2",
+    "topic": "Daily Life",
+    "word": "household",
+    "type": "noun",
+    "meaning": "connected with a house or common home tasks",
+    "vietnamese": "hộ gia đình / việc nhà",
+    "example": "Everyone shares the household chores."
+  },
+  {
+    "id": "VOC010",
+    "level": "A2",
+    "topic": "Daily Life",
+    "word": "exercise",
+    "type": "verb",
+    "meaning": "physical activity that you do to stay healthy",
+    "vietnamese": "tập thể dục",
+    "example": "I try to exercise for 30 minutes daily."
+  },
+  {
+    "id": "VOC011",
+    "level": "A2",
+    "topic": "Daily Life",
+    "word": "relax",
+    "type": "verb",
+    "meaning": "to rest and build up energy again",
+    "vietnamese": "thư giãn",
+    "example": "Listening to music helps me relax."
+  },
+  {
+    "id": "VOC012",
+    "level": "A2",
+    "topic": "Daily Life",
+    "word": "habit",
+    "type": "noun",
+    "meaning": "something that you do often and regularly",
+    "vietnamese": "thói quen",
+    "example": "Reading books before bed is a good habit."
+  },
+  {
+    "id": "VOC013",
+    "level": "A1",
+    "topic": "Family",
+    "word": "parents",
+    "type": "noun",
+    "meaning": "a father or mother",
+    "vietnamese": "bố mẹ",
+    "example": "I live with my parents in Hanoi."
+  },
+  {
+    "id": "VOC014",
+    "level": "A1",
+    "topic": "Family",
+    "word": "sibling",
+    "type": "noun",
+    "meaning": "a brother or sister",
+    "vietnamese": "anh chị em ruột",
+    "example": "Do you have any siblings?"
+  },
+  {
+    "id": "VOC015",
+    "level": "A1",
+    "topic": "Family",
+    "word": "children",
+    "type": "noun",
+    "meaning": "young human beings below the age of full growth",
+    "vietnamese": "con cái / trẻ em",
+    "example": "They have two children, a boy and a girl."
+  },
+  {
+    "id": "VOC016",
+    "level": "A1",
+    "topic": "Family",
+    "word": "daughter",
+    "type": "noun",
+    "meaning": "a female child",
+    "vietnamese": "con gái (đối với bố mẹ)",
+    "example": "My daughter is five years old."
+  },
+  {
+    "id": "VOC017",
+    "level": "A1",
+    "topic": "Family",
+    "word": "son",
+    "type": "noun",
+    "meaning": "a male child",
+    "vietnamese": "con trai (đối với bố mẹ)",
+    "example": "His son wants to be a doctor."
+  },
+  {
+    "id": "VOC018",
+    "level": "A2",
+    "topic": "Family",
+    "word": "relative",
+    "type": "noun",
+    "meaning": "a member of your family",
+    "vietnamese": "họ hàng / người thân",
+    "example": "All my relatives came to the party."
+  },
+  {
+    "id": "VOC019",
+    "level": "A2",
+    "topic": "Family",
+    "word": "nephew",
+    "type": "noun",
+    "meaning": "a son of your sister or brother",
+    "vietnamese": "cháu trai (con của anh/chị/em)",
+    "example": "I bought a toy car for my nephew."
+  },
+  {
+    "id": "VOC020",
+    "level": "A2",
+    "topic": "Family",
+    "word": "niece",
+    "type": "noun",
+    "meaning": "a daughter of your sister or brother",
+    "vietnamese": "cháu gái (con của anh/chị/em)",
+    "example": "My niece loves drawing pictures."
+  },
+  {
+    "id": "VOC021",
+    "level": "A2",
+    "topic": "Family",
+    "word": "marriage",
+    "type": "noun",
+    "meaning": "the legal relationship between two people",
+    "vietnamese": "hôn nhân",
+    "example": "They celebrated 10 years of marriage."
+  },
+  {
+    "id": "VOC022",
+    "level": "A1",
+    "topic": "Food & Drink",
+    "word": "delicious",
+    "type": "adjective",
+    "meaning": "having a very pleasant taste",
+    "vietnamese": "ngon miệng",
+    "example": "This chocolate cake is delicious."
+  },
+  {
+    "id": "VOC023",
+    "level": "A1",
+    "topic": "Food & Drink",
+    "word": "vegetable",
+    "type": "noun",
+    "meaning": "a plant root, seed, or pod that is used as food",
+    "vietnamese": "rau củ",
+    "example": "Eating fresh vegetables is good for your health."
+  },
+  {
+    "id": "VOC024",
+    "level": "A1",
+    "topic": "Food & Drink",
+    "word": "hungry",
+    "type": "adjective",
+    "meaning": "wanting or needing food",
+    "vietnamese": "đói bụng",
+    "example": "I am hungry, let's get something to eat."
+  },
+  {
+    "id": "VOC025",
+    "level": "A1",
+    "topic": "Food & Drink",
+    "word": "thirsty",
+    "type": "adjective",
+    "meaning": "needing to drink something",
+    "vietnamese": "khát nước",
+    "example": "Can I have some water? I'm so thirsty."
+  },
+  {
+    "id": "VOC026",
+    "level": "A1",
+    "topic": "Food & Drink",
+    "word": "order",
+    "type": "verb",
+    "meaning": "ask for food or drink in a restaurant",
+    "vietnamese": "gọi món / đặt hàng",
+    "example": "Are you ready to order your food?"
+  },
+  {
+    "id": "VOC027",
+    "level": "A2",
+    "topic": "Food & Drink",
+    "word": "ingredient",
+    "type": "noun",
+    "meaning": "one of the foods that you use to make a particular dish",
+    "vietnamese": "nguyên liệu",
+    "example": "Flour is the main ingredient in bread."
+  },
+  {
+    "id": "VOC028",
+    "level": "A2",
+    "topic": "Food & Drink",
+    "word": "recipe",
+    "type": "noun",
+    "meaning": "a set of instructions telling you how to cook something",
+    "vietnamese": "công thức nấu ăn",
+    "example": "I am following a new recipe for chicken soup."
+  },
+  {
+    "id": "VOC029",
+    "level": "A2",
+    "topic": "Food & Drink",
+    "word": "flavor",
+    "type": "noun",
+    "meaning": "how something tastes",
+    "vietnamese": "hương vị",
+    "example": "Ice cream comes in many different flavors."
+  },
+  {
+    "id": "VOC030",
+    "level": "A2",
+    "topic": "Food & Drink",
+    "word": "dessert",
+    "type": "noun",
+    "meaning": "sweet food eaten at the end of a meal",
+    "vietnamese": "món tráng miệng",
+    "example": "We had fruit and ice cream for dessert."
+  },
+  {
+    "id": "VOC031",
+    "level": "A1",
+    "topic": "Travel",
+    "word": "ticket",
+    "type": "noun",
+    "meaning": "a small piece of paper that shows you have paid for a journey",
+    "vietnamese": "vé",
+    "example": "Don't forget to show your train ticket."
+  },
+  {
+    "id": "VOC032",
+    "level": "A1",
+    "topic": "Travel",
+    "word": "luggage",
+    "type": "noun",
+    "meaning": "bags and suitcases that you take on a journey",
+    "vietnamese": "hành lý",
+    "example": "You can leave your heavy luggage at the hotel."
+  },
+  {
+    "id": "VOC033",
+    "level": "A1",
+    "topic": "Travel",
+    "word": "passport",
+    "type": "noun",
+    "meaning": "an official document for travel to foreign countries",
+    "vietnamese": "hộ chiếu",
+    "example": "You need a valid passport to fly international."
+  },
+  {
+    "id": "VOC034",
+    "level": "A2",
+    "topic": "Travel",
+    "word": "destination",
+    "type": "noun",
+    "meaning": "the place where someone or something is going",
+    "vietnamese": "điểm đến",
+    "example": "Paris is a very popular tourist destination."
+  },
+  {
+    "id": "VOC035",
+    "level": "A2",
+    "topic": "Travel",
+    "word": "journey",
+    "type": "noun",
+    "meaning": "an act of traveling from one place to another",
+    "vietnamese": "chuyến đi / hành trình",
+    "example": "Have a safe journey to London!"
+  },
+  {
+    "id": "VOC036",
+    "level": "A2",
+    "topic": "Travel",
+    "word": "souvenir",
+    "type": "noun",
+    "meaning": "something you buy to remember a place you visited",
+    "vietnamese": "quà lưu niệm",
+    "example": "I bought a small keychain as a souvenir."
+  },
+  {
+    "id": "VOC037",
+    "level": "A1",
+    "topic": "Shopping",
+    "word": "cheap",
+    "type": "adjective",
+    "meaning": "costing very little money",
+    "vietnamese": "rẻ tiền",
+    "example": "This shirt is very nice and cheap."
+  },
+  {
+    "id": "VOC038",
+    "level": "A1",
+    "topic": "Shopping",
+    "word": "expensive",
+    "type": "adjective",
+    "meaning": "costing a lot of money",
+    "vietnamese": "đắt đỏ",
+    "example": "Laptops are usually quite expensive."
+  },
+  {
+    "id": "VOC039",
+    "level": "A1",
+    "topic": "Shopping",
+    "word": "price",
+    "type": "noun",
+    "meaning": "the amount of money you pay for something",
+    "vietnamese": "giá cả",
+    "example": "The price of food is increasing."
+  },
+  {
+    "id": "VOC040",
+    "level": "A2",
+    "topic": "Shopping",
+    "word": "discount",
+    "type": "noun",
+    "meaning": "a reduction in the usual price",
+    "vietnamese": "giảm giá",
+    "example": "They are offering a 20% discount today."
+  },
+  {
+    "id": "VOC041",
+    "level": "A2",
+    "topic": "Shopping",
+    "word": "receipt",
+    "type": "noun",
+    "meaning": "a piece of paper proving you paid for something",
+    "vietnamese": "hóa đơn mua hàng",
+    "example": "Keep your receipt if you want to return the dress."
+  },
+  {
+    "id": "VOC042",
+    "level": "A1",
+    "topic": "Weather",
+    "word": "cloudy",
+    "type": "adjective",
+    "meaning": "with many clouds in the sky",
+    "vietnamese": "nhiều mây",
+    "example": "It is cloudy today, it might rain."
+  },
+  {
+    "id": "VOC043",
+    "level": "A1",
+    "topic": "Weather",
+    "word": "windy",
+    "type": "adjective",
+    "meaning": "with a lot of wind",
+    "vietnamese": "nhiều gió",
+    "example": "It's a windy afternoon by the beach."
+  },
+  {
+    "id": "VOC044",
+    "level": "A2",
+    "topic": "Weather",
+    "word": "forecast",
+    "type": "noun",
+    "meaning": "a description of what the weather will be like",
+    "vietnamese": "dự báo thời tiết",
+    "example": "The weather forecast says it will be sunny."
+  },
+  {
+    "id": "VOC045",
+    "level": "A2",
+    "topic": "Weather",
+    "word": "temperature",
+    "type": "noun",
+    "meaning": "the measurement of how hot or cold it is",
+    "vietnamese": "nhiệt độ",
+    "example": "The temperature dropped quickly at night."
+  },
+  {
+    "id": "VOC046",
+    "level": "A1",
+    "topic": "Health",
+    "word": "doctor",
+    "type": "noun",
+    "meaning": "a person whose job is to make sick people well",
+    "vietnamese": "bác sĩ",
+    "example": "You should see a doctor if you feel bad."
+  },
+  {
+    "id": "VOC047",
+    "level": "A1",
+    "topic": "Health",
+    "word": "medicine",
+    "type": "noun",
+    "meaning": "substance used to treat an illness",
+    "vietnamese": "thuốc",
+    "example": "Take this medicine after your lunch."
+  },
+  {
+    "id": "VOC048",
+    "level": "A2",
+    "topic": "Health",
+    "word": "headache",
+    "type": "noun",
+    "meaning": "a pain in your head",
+    "vietnamese": "đau đầu",
+    "example": "Working too much gives me a headache."
+  },
+  {
+    "id": "VOC049",
+    "level": "A2",
+    "topic": "Health",
+    "word": "fever",
+    "type": "noun",
+    "meaning": "a medical condition in which the body temperature is higher than normal",
+    "vietnamese": "sốt",
+    "example": "The child has a high fever."
+  },
+  {
+    "id": "VOC050",
+    "level": "A1",
+    "topic": "Education",
+    "word": "student",
+    "type": "noun",
+    "meaning": "a person who is studying at a school or university",
+    "vietnamese": "học sinh / sinh viên",
+    "example": "She is a hard-working student."
+  },
+  {
+    "id": "VOC051",
+    "level": "A1",
+    "topic": "Education",
+    "word": "lesson",
+    "type": "noun",
+    "meaning": "a period of time when you learn something with a teacher",
+    "vietnamese": "bài học",
+    "example": "The English lesson starts at 8 AM."
+  },
+  {
+    "id": "VOC052",
+    "level": "A1",
+    "topic": "Education",
+    "word": "homework",
+    "type": "noun",
+    "meaning": "work that teachers give students to do at home",
+    "vietnamese": "bài tập về nhà",
+    "example": "I need to complete my math homework."
+  },
+  {
+    "id": "VOC053",
+    "level": "A2",
+    "topic": "Education",
+    "word": "subject",
+    "type": "noun",
+    "meaning": "an area of knowledge studied in a school",
+    "vietnamese": "môn học",
+    "example": "History is my favorite subject."
+  },
+  {
+    "id": "VOC054",
+    "level": "A2",
+    "topic": "Education",
+    "word": "course",
+    "type": "noun",
+    "meaning": "a set of lessons on a particular subject",
+    "vietnamese": "khóa học",
+    "example": "I signed up for an online coding course."
+  },
+  {
+    "id": "VOC055",
+    "level": "A2",
+    "topic": "Education",
+    "word": "exam",
+    "type": "noun",
+    "meaning": "a formal test of knowledge or ability",
+    "vietnamese": "kỳ thi",
+    "example": "She is studying hard for her final exam."
+  },
+  {
+    "id": "VOC056",
+    "level": "A1",
+    "topic": "Entertainment",
+    "word": "movie",
+    "type": "noun",
+    "meaning": "a film that tells a story using sound and pictures",
+    "vietnamese": "phim điện ảnh",
+    "example": "Let's watch a funny movie tonight."
+  },
+  {
+    "id": "VOC057",
+    "level": "A1",
+    "topic": "Entertainment",
+    "word": "music",
+    "type": "noun",
+    "meaning": "sounds that are sung or played to express ideas and emotions",
+    "vietnamese": "âm nhạc",
+    "example": "She likes listening to pop music."
+  },
+  {
+    "id": "VOC058",
+    "level": "A2",
+    "topic": "Entertainment",
+    "word": "concert",
+    "type": "noun",
+    "meaning": "a public performance of music",
+    "vietnamese": "buổi hòa nhạc / liveshow",
+    "example": "We bought tickets for the rock concert."
+  },
+  {
+    "id": "VOC059",
+    "level": "A2",
+    "topic": "Entertainment",
+    "word": "instrument",
+    "type": "noun",
+    "meaning": "an object used for producing musical sounds",
+    "vietnamese": "nhạc cụ",
+    "example": "The guitar is a popular musical instrument."
+  },
+  {
+    "id": "VOC060",
+    "level": "A2",
+    "topic": "Entertainment",
+    "word": "hobby",
+    "type": "noun",
+    "meaning": "an activity that you enjoy doing in your free time",
+    "vietnamese": "sở thích",
+    "example": "Photography is her favorite hobby."
+  },
+  {
+    "id": "VOC061",
+    "level": "A1",
+    "topic": "Nature & Environment",
+    "word": "forest",
+    "type": "noun",
+    "meaning": "a large area of land covered with trees",
+    "vietnamese": "rừng",
+    "example": "They went for a walk in the pine forest."
+  },
+  {
+    "id": "VOC062",
+    "level": "A1",
+    "topic": "Nature & Environment",
+    "word": "mountain",
+    "type": "noun",
+    "meaning": "a very high hill",
+    "vietnamese": "ngọn núi",
+    "example": "Fuji is a famous mountain in Japan."
+  },
+  {
+    "id": "VOC063",
+    "level": "A1",
+    "topic": "Nature & Environment",
+    "word": "river",
+    "type": "noun",
+    "meaning": "a natural wide flow of fresh water across the land",
+    "vietnamese": "con sông",
+    "example": "We like to fish in the river near our house."
+  },
+  {
+    "id": "VOC064",
+    "level": "A2",
+    "topic": "Nature & Environment",
+    "word": "environment",
+    "type": "noun",
+    "meaning": "the air, water, and land in or on which people, animals, and plants live",
+    "vietnamese": "môi trường",
+    "example": "We need to protect the environment by reducing plastic."
+  },
+  {
+    "id": "VOC065",
+    "level": "A2",
+    "topic": "Nature & Environment",
+    "word": "pollution",
+    "type": "noun",
+    "meaning": "damage caused to water, air, etc. by harmful substances",
+    "vietnamese": "sự ô nhiễm",
+    "example": "Air pollution is a big problem in large cities."
+  },
+  {
+    "id": "VOC066",
+    "level": "A2",
+    "topic": "Nature & Environment",
+    "word": "protect",
+    "type": "verb",
+    "meaning": "to keep someone or something safe from injury, damage, or loss",
+    "vietnamese": "bảo vệ",
+    "example": "Wearing sunscreen protects your skin."
+  },
+  {
+    "id": "VOC067",
+    "level": "A1",
+    "topic": "Town & City",
+    "word": "market",
+    "type": "noun",
+    "meaning": "a place where people buy and sell food and other goods",
+    "vietnamese": "chợ",
+    "example": "My mother goes to the traditional market every morning."
+  },
+  {
+    "id": "VOC068",
+    "level": "A1",
+    "topic": "Town & City",
+    "word": "street",
+    "type": "noun",
+    "meaning": "a road in a city, town, or village",
+    "vietnamese": "đường phố",
+    "example": "The street is full of beautiful cafes."
+  },
+  {
+    "id": "VOC069",
+    "level": "A1",
+    "topic": "Town & City",
+    "word": "hospital",
+    "type": "noun",
+    "meaning": "a place where people who are ill or injured are treated",
+    "vietnamese": "bệnh viện",
+    "example": "The ambulance took him straight to the hospital."
+  },
+  {
+    "id": "VOC070",
+    "level": "A2",
+    "topic": "Town & City",
+    "word": "suburb",
+    "type": "noun",
+    "meaning": "an area on the edge of a large town or city where people live",
+    "vietnamese": "vùng ngoại ô",
+    "example": "It is much quieter to live in the suburb than the city center."
+  },
+  {
+    "id": "VOC071",
+    "level": "A2",
+    "topic": "Town & City",
+    "word": "building",
+    "type": "noun",
+    "meaning": "a structure with walls and a roof, such as a house or factory",
+    "vietnamese": "tòa nhà",
+    "example": "Landmark 81 is a very tall building."
+  },
+  {
+    "id": "VOC072",
+    "level": "A2",
+    "topic": "Town & City",
+    "word": "traffic",
+    "type": "noun",
+    "meaning": "the number of vehicles moving on roads",
+    "vietnamese": "giao thông / lượng xe cộ",
+    "example": "The traffic was heavy during rush hour."
+  },
+  {
+    "id": "VOC073",
+    "level": "A1",
+    "topic": "Technology",
+    "word": "computer",
+    "type": "noun",
+    "meaning": "an electronic machine that can store and work with large amounts of information",
+    "vietnamese": "máy tính",
+    "example": "I use my computer to work from home."
+  },
+  {
+    "id": "VOC074",
+    "level": "A1",
+    "topic": "Technology",
+    "word": "website",
+    "type": "noun",
+    "meaning": "a set of pages on the internet where you can find information",
+    "vietnamese": "trang web",
+    "example": "You can find more details on our website."
+  },
+  {
+    "id": "VOC075",
+    "level": "A1",
+    "topic": "Technology",
+    "word": "internet",
+    "type": "noun",
+    "meaning": "the large system of connected computers around the world",
+    "vietnamese": "mạng internet",
+    "example": "We can search for everything via the internet."
+  },
+  {
+    "id": "VOC076",
+    "level": "A2",
+    "topic": "Technology",
+    "word": "smartphone",
+    "type": "noun",
+    "meaning": "a mobile phone that can be used as a small computer",
+    "vietnamese": "điện thoại thông minh",
+    "example": "Almost everyone owns a smartphone nowadays."
+  },
+  {
+    "id": "VOC077",
+    "level": "A2",
+    "topic": "Technology",
+    "word": "application",
+    "type": "noun",
+    "meaning": "a computer program designed to do a particular job (app)",
+    "vietnamese": "ứng dụng",
+    "example": "I downloaded an application to learn English vocabulary."
+  },
+  {
+    "id": "VOC078",
+    "level": "A2",
+    "topic": "Technology",
+    "word": "screen",
+    "type": "noun",
+    "meaning": "the flat surface on a television or computer where pictures are shown",
+    "vietnamese": "màn hình",
+    "example": "My phone screen is cracked, so I need to fix it."
+  },
+  {
+    "id": "VOC079",
+    "level": "A1",
+    "topic": "Jobs & Work",
+    "word": "teacher",
+    "type": "noun",
+    "meaning": "a person whose job is to teach, especially in a school",
+    "vietnamese": "giáo viên",
+    "example": "Mr. Smith is our new English teacher."
+  },
+  {
+    "id": "VOC080",
+    "level": "A1",
+    "topic": "Jobs & Work",
+    "word": "worker",
+    "type": "noun",
+    "meaning": "a person who does a specified type of work or who works in a specified way",
+    "vietnamese": "công nhân / người lao động",
+    "example": "He is a construction worker."
+  },
+  {
+    "id": "VOC081",
+    "level": "A1",
+    "topic": "Jobs & Work",
+    "word": "office",
+    "type": "noun",
+    "meaning": "a room or building where people work at desks",
+    "vietnamese": "văn phòng",
+    "example": "Her office is on the fifth floor."
+  },
+  {
+    "id": "VOC082",
+    "level": "A2",
+    "topic": "Jobs & Work",
+    "word": "manager",
+    "type": "noun",
+    "meaning": "the person who is in charge of a department or a company",
+    "vietnamese": "quản lý / trưởng phòng",
+    "example": "She talked to the hotel manager about the room."
+  },
+  {
+    "id": "VOC083",
+    "level": "A2",
+    "topic": "Jobs & Work",
+    "word": "salary",
+    "type": "noun",
+    "meaning": "money that you receive monthly for doing your job",
+    "vietnamese": "lương tháng",
+    "example": "He is happy because his company increased his salary."
+  },
+  {
+    "id": "VOC084",
+    "level": "A2",
+    "topic": "Jobs & Work",
+    "word": "interview",
+    "type": "noun",
+    "meaning": "a formal meeting in which someone is asked questions to see if they are right for a job",
+    "vietnamese": "cuộc phỏng vấn",
+    "example": "I have a job interview tomorrow morning."
+  },
+  {
+    "id": "VOC085",
+    "level": "A1",
+    "topic": "Feelings & Emotions",
+    "word": "happy",
+    "type": "adjective",
+    "meaning": "feeling or showing pleasure or contentment",
+    "vietnamese": "vui vẻ / hạnh phúc",
+    "example": "We are happy to see you again."
+  },
+  {
+    "id": "VOC086",
+    "level": "A1",
+    "topic": "Feelings & Emotions",
+    "word": "sad",
+    "type": "adjective",
+    "meaning": "feeling unhappy or sorrowful",
+    "vietnamese": "buồn bã",
+    "example": "The sad movie made her cry."
+  },
+  {
+    "id": "VOC087",
+    "level": "A1",
+    "topic": "Feelings & Emotions",
+    "word": "angry",
+    "type": "adjective",
+    "meaning": "having a strong feeling of dislike or displeasure",
+    "vietnamese": "tức giận",
+    "example": "He was angry because the train was late."
+  },
+  {
+    "id": "VOC088",
+    "level": "A2",
+    "topic": "Feelings & Emotions",
+    "word": "nervous",
+    "type": "adjective",
+    "meaning": "worried or frightened about something",
+    "vietnamese": "lo lắng / hồi hộp",
+    "example": "I feel nervous before speaking in public."
+  },
+  {
+    "id": "VOC089",
+    "level": "A2",
+    "topic": "Feelings & Emotions",
+    "word": "excited",
+    "type": "adjective",
+    "meaning": "feeling or showing happiness and enthusiasm",
+    "vietnamese": "hào hứng / phấn khích",
+    "example": "The children are excited about going to the zoo."
+  },
+  {
+    "id": "VOC090",
+    "level": "A2",
+    "topic": "Feelings & Emotions",
+    "word": "confused",
+    "type": "adjective",
+    "meaning": "unable to think clearly or understand something",
+    "vietnamese": "bối rối / hoang mang",
+    "example": "The directions were unclear, so I got confused."
+  },
+  {
+    "id": "VOC091",
+    "level": "A1",
+    "topic": "Appearance",
+    "word": "tall",
+    "type": "adjective",
+    "meaning": "having a greater than average height",
+    "vietnamese": "cao ráo",
+    "example": "He is the tallest boy in his class."
+  },
+  {
+    "id": "VOC092",
+    "level": "A1",
+    "topic": "Appearance",
+    "word": "short",
+    "type": "adjective",
+    "meaning": "small in height",
+    "vietnamese": "thấp / lùn",
+    "example": "She has short black hair."
+  },
+  {
+    "id": "VOC093",
+    "level": "A1",
+    "topic": "Appearance",
+    "word": "beautiful",
+    "type": "adjective",
+    "meaning": "very attractive to look at",
+    "vietnamese": "đẹp / xinh đẹp",
+    "example": "What a beautiful dress you are wearing!"
+  },
+  {
+    "id": "VOC094",
+    "level": "A2",
+    "topic": "Appearance",
+    "word": "handsome",
+    "type": "adjective",
+    "meaning": "attractive (usually used for men)",
+    "vietnamese": "đẹp trai",
+    "example": "The actor looks very handsome."
+  },
+  {
+    "id": "VOC095",
+    "level": "A2",
+    "topic": "Appearance",
+    "word": "skinny",
+    "type": "adjective",
+    "meaning": "very thin, often in a way that is not attractive",
+    "vietnamese": "gầy gò / mảnh khảnh",
+    "example": "He was skinny when he was a child, but now he is strong."
+  },
+  {
+    "id": "VOC096",
+    "level": "A2",
+    "topic": "Appearance",
+    "word": "overweight",
+    "type": "adjective",
+    "meaning": "fat, heavier than is healthy",
+    "vietnamese": "thừa cân / béo",
+    "example": "Doctors advise overweight people to eat less sugar."
+  },
+  {
+    "id": "VOC097",
+    "level": "A1",
+    "topic": "Clothes & Fashion",
+    "word": "shirt",
+    "type": "noun",
+    "meaning": "a piece of clothing worn on the upper part of the body",
+    "vietnamese": "áo sơ mi",
+    "example": "He wears a white shirt to the office."
+  },
+  {
+    "id": "VOC098",
+    "level": "A1",
+    "topic": "Clothes & Fashion",
+    "word": "shoes",
+    "type": "noun",
+    "meaning": "coverings for feet, usually made of leather or plastic",
+    "vietnamese": "đôi giày",
+    "example": "Take off your shoes before entering the house."
+  },
+  {
+    "id": "VOC099",
+    "level": "A1",
+    "topic": "Clothes & Fashion",
+    "word": "jacket",
+    "type": "noun",
+    "meaning": "a short coat",
+    "vietnamese": "áo khoác ngắn",
+    "example": "It is cold outside, bring a jacket."
+  },
+  {
+    "id": "VOC100",
+    "level": "A2",
+    "topic": "Clothes & Fashion",
+    "word": "uniform",
+    "type": "noun",
+    "meaning": "a special set of clothes worn by people of the same organization",
+    "vietnamese": "đồng phục",
+    "example": "Students must wear school uniforms on Monday."
+  },
+  {
+    "id": "VOC101",
+    "level": "A2",
+    "topic": "Clothes & Fashion",
+    "word": "leather",
+    "type": "noun",
+    "meaning": "animal skin treated to be used for making shoes, bags, etc.",
+    "vietnamese": "chất liệu da",
+    "example": "This wallet is made of real leather."
+  },
+  {
+    "id": "VOC102",
+    "level": "A2",
+    "topic": "Clothes & Fashion",
+    "word": "fashionable",
+    "type": "adjective",
+    "meaning": "popular at a particular time",
+    "vietnamese": "hợp thời trang / sành điệu",
+    "example": "She always wears fashionable clothes."
+  },
+  {
+    "id": "VOC103",
+    "level": "A1",
+    "topic": "House & Home",
+    "word": "kitchen",
+    "type": "noun",
+    "meaning": "a room where food is kept and cooked",
+    "vietnamese": "nhà bếp",
+    "example": "My dad loves baking in the kitchen."
+  },
+  {
+    "id": "VOC104",
+    "level": "A1",
+    "topic": "House & Home",
+    "word": "bedroom",
+    "type": "noun",
+    "meaning": "a room used for sleeping",
+    "vietnamese": "phòng ngủ",
+    "example": "There is a large bed in my bedroom."
+  },
+  {
+    "id": "VOC105",
+    "level": "A1",
+    "topic": "House & Home",
+    "word": "window",
+    "type": "noun",
+    "meaning": "a space in the wall of a building filled with glass",
+    "vietnamese": "cửa sổ",
+    "example": "Please open the window to let the fresh air in."
+  },
+  {
+    "id": "VOC106",
+    "level": "A2",
+    "topic": "House & Home",
+    "word": "furniture",
+    "type": "noun",
+    "meaning": "things like tables, chairs, or beds used in a room",
+    "vietnamese": "đồ nội thất",
+    "example": "We need to buy some new furniture for the living room."
+  },
+  {
+    "id": "VOC107",
+    "level": "A2",
+    "topic": "House & Home",
+    "word": "balcony",
+    "type": "noun",
+    "meaning": "an area with a wall or bars around it, joined to the outside wall of a building",
+    "vietnamese": "ban công",
+    "example": "I grow small plants on my apartment balcony."
+  },
+  {
+    "id": "VOC108",
+    "level": "A2",
+    "topic": "House & Home",
+    "word": "rent",
+    "type": "verb",
+    "meaning": "to pay money to live in a house that belongs to someone else",
+    "vietnamese": "thuê (nhà/phòng)",
+    "example": "They want to rent a house near their office."
+  },
+  {
+    "id": "VOC109",
+    "level": "A1",
+    "topic": "Sports & Leisure",
+    "word": "football",
+    "type": "noun",
+    "meaning": "a game played by two teams of eleven players using a round ball",
+    "vietnamese": "bóng đá",
+    "example": "They play football every Sunday afternoon."
+  },
+  {
+    "id": "VOC110",
+    "level": "A1",
+    "topic": "Sports & Leisure",
+    "word": "swim",
+    "type": "verb",
+    "meaning": "to move through water by moving the body",
+    "vietnamese": "bơi lội",
+    "example": "He can swim very fast."
+  },
+  {
+    "id": "VOC111",
+    "level": "A1",
+    "topic": "Sports & Leisure",
+    "word": "game",
+    "type": "noun",
+    "meaning": "an entertaining activity or sport with rules",
+    "vietnamese": "trò chơi / trận đấu",
+    "example": "Do you want to play a board game?"
+  },
+  {
+    "id": "VOC112",
+    "level": "A2",
+    "topic": "Sports & Leisure",
+    "word": "tournament",
+    "type": "noun",
+    "meaning": "a competition with many matches to find a winner",
+    "vietnamese": "giải đấu",
+    "example": "Our team won the local tennis tournament."
+  },
+  {
+    "id": "VOC113",
+    "level": "A2",
+    "topic": "Sports & Leisure",
+    "word": "champion",
+    "type": "noun",
+    "meaning": "someone or a team that has won a competition",
+    "vietnamese": "nhà vô địch",
+    "example": "Argentina became the football world champion."
+  },
+  {
+    "id": "VOC114",
+    "level": "A2",
+    "topic": "Sports & Leisure",
+    "word": "gym",
+    "type": "noun",
+    "meaning": "a room or building with equipment for doing physical exercise",
+    "vietnamese": "phòng tập thể hình",
+    "example": "She goes to the gym three times a week."
+  },
+  {
+    "id": "VOC115",
+    "level": "A1",
+    "topic": "Time & Dates",
+    "word": "morning",
+    "type": "noun",
+    "meaning": "the early part of the day",
+    "vietnamese": "buổi sáng",
+    "example": "Good morning! Did you sleep well?"
+  },
+  {
+    "id": "VOC116",
+    "level": "A1",
+    "topic": "Time & Dates",
+    "word": "calendar",
+    "type": "noun",
+    "meaning": "a table showing the days, weeks, and months of a year",
+    "vietnamese": "lịch",
+    "example": "Check the calendar to see when the holiday starts."
+  },
+  {
+    "id": "VOC117",
+    "level": "A1",
+    "topic": "Time & Dates",
+    "word": "minute",
+    "type": "noun",
+    "meaning": "a period of time equal to 60 seconds",
+    "vietnamese": "phút",
+    "example": "Give me five minutes to get ready."
+  },
+  {
+    "id": "VOC118",
+    "level": "A2",
+    "topic": "Time & Dates",
+    "word": "century",
+    "type": "noun",
+    "meaning": "a period of 100 years",
+    "vietnamese": "thế kỷ",
+    "example": "We are living in the 21st century."
+  },
+  {
+    "id": "VOC119",
+    "level": "A2",
+    "topic": "Time & Dates",
+    "word": "schedule",
+    "type": "noun",
+    "meaning": "a list of planned activities and their times",
+    "vietnamese": "lịch trình / thời gian biểu",
+    "example": "I have a very busy schedule today."
+  },
+  {
+    "id": "VOC120",
+    "level": "A2",
+    "topic": "Time & Dates",
+    "word": "future",
+    "type": "noun",
+    "meaning": "the period of time that will come after the present",
+    "vietnamese": "tương lai",
+    "example": "She hopes to study abroad in the future."
+  },
+  {
+    "id": "VOC121",
+    "level": "A1",
+    "topic": "Money & Finance",
+    "word": "money",
+    "type": "noun",
+    "meaning": "coins or notes used to buy things",
+    "vietnamese": "tiền bạc",
+    "example": "How much money do you need for the trip?"
+  },
+  {
+    "id": "VOC122",
+    "level": "A1",
+    "topic": "Money & Finance",
+    "word": "buy",
+    "type": "verb",
+    "meaning": "to get something by paying money for it",
+    "vietnamese": "mua",
+    "example": "I want to buy a new pair of shoes."
+  },
+  {
+    "id": "VOC123",
+    "level": "A1",
+    "topic": "Money & Finance",
+    "word": "cash",
+    "type": "noun",
+    "meaning": "money in the form of notes or coins",
+    "vietnamese": "tiền mặt",
+    "example": "Do you prefer to pay in cash or by credit card?"
+  },
+  {
+    "id": "VOC124",
+    "level": "A2",
+    "topic": "Money & Finance",
+    "word": "afford",
+    "type": "verb",
+    "meaning": "to have enough money to buy something",
+    "vietnamese": "có đủ khả năng chi trả",
+    "example": "I can't afford to buy that luxury car."
+  },
+  {
+    "id": "VOC125",
+    "level": "A2",
+    "topic": "Money & Finance",
+    "word": "borrow",
+    "type": "verb",
+    "meaning": "to take something with the plan to return it later",
+    "vietnamese": "vay / mượn",
+    "example": "Can I borrow your pen for a minute?"
+  },
+  {
+    "id": "VOC126",
+    "level": "A2",
+    "topic": "Money & Finance",
+    "word": "currency",
+    "type": "noun",
+    "meaning": "the system of money used in a particular country",
+    "vietnamese": "tiền tệ",
+    "example": "The Vietnam Dong is the local currency."
+  },
+  {
+    "id": "VOC127",
+    "level": "A1",
+    "topic": "Transport",
+    "word": "bus",
+    "type": "noun",
+    "meaning": "a large road vehicle for carrying many passengers",
+    "vietnamese": "xe buýt",
+    "example": "The bus arrives at the station every ten minutes."
+  },
+  {
+    "id": "VOC128",
+    "level": "A1",
+    "topic": "Transport",
+    "word": "drive",
+    "type": "verb",
+    "meaning": "to control the movement of a car, bus, or train",
+    "vietnamese": "lái xe",
+    "example": "My father teaches me how to drive a car."
+  },
+  {
+    "id": "VOC129",
+    "level": "A1",
+    "topic": "Transport",
+    "word": "station",
+    "type": "noun",
+    "meaning": "a place where trains or buses stop for passengers",
+    "vietnamese": "nhà ga / bến xe",
+    "example": "Meet me at the train station at 6 PM."
+  },
+  {
+    "id": "VOC130",
+    "level": "A2",
+    "topic": "Transport",
+    "word": "vehicle",
+    "type": "noun",
+    "meaning": "a machine with an engine used for transport, like a car",
+    "vietnamese": "phương tiện giao thông",
+    "example": "Motorbikes are the most common vehicle in Vietnam."
+  },
+  {
+    "id": "VOC131",
+    "level": "A2",
+    "topic": "Transport",
+    "word": "passenger",
+    "type": "noun",
+    "meaning": "a person who is traveling in a vehicle but not driving it",
+    "vietnamese": "hành khách",
+    "example": "The plane was carrying over 200 passengers."
+  },
+  {
+    "id": "VOC132",
+    "level": "A2",
+    "topic": "Transport",
+    "word": "delay",
+    "type": "verb",
+    "meaning": "to make something happen at a later time than planned",
+    "vietnamese": "trì hoãn / hoãn lại",
+    "example": "Our flight was delayed due to heavy rain."
+  },
+  {
+    "id": "VOC133",
+    "level": "A1",
+    "topic": "Animals & Pets",
+    "word": "puppy",
+    "type": "noun",
+    "meaning": "a young dog",
+    "vietnamese": "chó con",
+    "example": "Our golden retriever just had a cute puppy."
+  },
+  {
+    "id": "VOC134",
+    "level": "A1",
+    "topic": "Animals & Pets",
+    "word": "kitten",
+    "type": "noun",
+    "meaning": "a young cat",
+    "vietnamese": "mèo con",
+    "example": "The little kitten is sleeping on the sofa."
+  },
+  {
+    "id": "VOC135",
+    "level": "A1",
+    "topic": "Animals & Pets",
+    "word": "feed",
+    "type": "verb",
+    "meaning": "to give food to a person or an animal",
+    "vietnamese": "cho ăn",
+    "example": "Don't forget to feed the fish this morning."
+  },
+  {
+    "id": "VOC136",
+    "level": "A2",
+    "topic": "Animals & Pets",
+    "word": "wildlife",
+    "type": "noun",
+    "meaning": "animals and plants growing in natural conditions",
+    "vietnamese": "động vật hoang dã",
+    "example": "We saw a lot of wildlife during our safari trip."
+  },
+  {
+    "id": "VOC137",
+    "level": "A2",
+    "topic": "Animals & Pets",
+    "word": "species",
+    "type": "noun",
+    "meaning": "a set of animals or plants with similar characteristics",
+    "vietnamese": "loài / chủng loài",
+    "example": "There are many endangered species of birds in this forest."
+  },
+  {
+    "id": "VOC138",
+    "level": "A2",
+    "topic": "Animals & Pets",
+    "word": "adopt",
+    "type": "verb",
+    "meaning": "to legally take a pet or child into your family",
+    "vietnamese": "nhận nuôi",
+    "example": "They decided to adopt a cat from the shelter."
+  },
+  {
+    "id": "VOC139",
+    "level": "A1",
+    "topic": "Communication",
+    "word": "speak",
+    "type": "verb",
+    "meaning": "to say words using your voice",
+    "vietnamese": "nói (ngôn ngữ / phát biểu)",
+    "example": "She can speak English fluently."
+  },
+  {
+    "id": "VOC140",
+    "level": "A1",
+    "topic": "Communication",
+    "word": "message",
+    "type": "noun",
+    "meaning": "written or spoken information sent to somebody",
+    "vietnamese": "tin nhắn",
+    "example": "I received a text message from my boss."
+  },
+  {
+    "id": "VOC141",
+    "level": "A1",
+    "topic": "Communication",
+    "word": "email",
+    "type": "noun",
+    "meaning": "a system of sending messages over the internet",
+    "vietnamese": "thư điện tử",
+    "example": "Please send me the file via email."
+  },
+  {
+    "id": "VOC142",
+    "level": "A2",
+    "topic": "Communication",
+    "word": "discuss",
+    "type": "verb",
+    "meaning": "to talk about a subject with someone to reach a decision",
+    "vietnamese": "thảo luận",
+    "example": "We need to discuss the new project details."
+  },
+  {
+    "id": "VOC143",
+    "level": "A2",
+    "topic": "Communication",
+    "word": "opinion",
+    "type": "noun",
+    "meaning": "what you think about something",
+    "vietnamese": "ý kiến / quan điểm",
+    "example": "In my opinion, this plan is the best choice."
+  },
+  {
+    "id": "VOC144",
+    "level": "A2",
+    "topic": "Communication",
+    "word": "contact",
+    "type": "verb",
+    "meaning": "to communicate with someone by calling or writing",
+    "vietnamese": "liên lạc",
+    "example": "You can contact me anytime on this number."
+  },
+  {
+    "id": "VOC145",
+    "level": "A1",
+    "topic": "Health & Fitness",
+    "word": "sick",
+    "type": "adjective",
+    "meaning": "physically or mentally ill",
+    "vietnamese": "ốm / đau bệnh",
+    "example": "He stayed at home today because he was sick."
+  },
+  {
+    "id": "VOC146",
+    "level": "A1",
+    "topic": "Health & Fitness",
+    "word": "healthy",
+    "type": "adjective",
+    "meaning": "having good health and not ill",
+    "vietnamese": "khỏe mạnh / lành mạnh",
+    "example": "Fresh fruit is a healthy snack option."
+  },
+  {
+    "id": "VOC147",
+    "level": "A1",
+    "topic": "Health & Fitness",
+    "word": "pain",
+    "type": "noun",
+    "meaning": "an unpleasant feeling caused by injury or illness",
+    "vietnamese": "sự đau đớn / cơn đau",
+    "example": "She felt a sharp pain in her leg."
+  },
+  {
+    "id": "VOC148",
+    "level": "A2",
+    "topic": "Health & Fitness",
+    "word": "injury",
+    "type": "noun",
+    "meaning": "physical damage to a person's body",
+    "vietnamese": "chấn thương",
+    "example": "He suffered a minor knee injury during the match."
+  },
+  {
+    "id": "VOC149",
+    "level": "A2",
+    "topic": "Health & Fitness",
+    "word": "disease",
+    "type": "noun",
+    "meaning": "an illness caused by infection or poor health",
+    "vietnamese": "bệnh tật / dịch bệnh",
+    "example": "Regular washing of hands helps prevent disease."
+  },
+  {
+    "id": "VOC150",
+    "level": "A2",
+    "topic": "Health & Fitness",
+    "word": "patient",
+    "type": "noun",
+    "meaning": "a person who is receiving medical treatment",
+    "vietnamese": "bệnh nhân",
+    "example": "The doctor is checking on his patients."
+  },
+  {
+    "id": "VOC151",
+    "level": "A1",
+    "topic": "Geography",
+    "word": "country",
+    "type": "noun",
+    "meaning": "an area of land that has its own government",
+    "vietnamese": "quốc gia / đất nước",
+    "example": "Vietnam is a beautiful country in Asia."
+  },
+  {
+    "id": "VOC152",
+    "level": "A1",
+    "topic": "Geography",
+    "word": "city",
+    "type": "noun",
+    "meaning": "a large and important town",
+    "vietnamese": "thành phố",
+    "example": "New York is a fast-paced city."
+  },
+  {
+    "id": "VOC153",
+    "level": "A1",
+    "topic": "Geography",
+    "word": "map",
+    "type": "noun",
+    "meaning": "a drawing of the earth's surface showing countries and rivers",
+    "vietnamese": "bản đồ",
+    "example": "We used a map to find our way around Rome."
+  },
+  {
+    "id": "VOC154",
+    "level": "A2",
+    "topic": "Geography",
+    "word": "border",
+    "type": "noun",
+    "meaning": "the line that separates two countries",
+    "vietnamese": "biên giới",
+    "example": "They crossed the border between France and Spain."
+  },
+  {
+    "id": "VOC155",
+    "level": "A2",
+    "topic": "Geography",
+    "word": "continent",
+    "type": "noun",
+    "meaning": "one of the seven large land masses on the earth",
+    "vietnamese": "lục địa / châu lục",
+    "example": "Asia is the largest continent in the world."
+  },
+  {
+    "id": "VOC156",
+    "level": "A2",
+    "topic": "Geography",
+    "word": "capital",
+    "type": "noun",
+    "meaning": "the city where the government of a country is based",
+    "vietnamese": "thủ đô",
+    "example": "Hanoi is the capital of Vietnam."
+  },
+  {
+    "id": "VOC157",
+    "level": "A1",
+    "topic": "Socializing",
+    "word": "friend",
+    "type": "noun",
+    "meaning": "a person you know well and like",
+    "vietnamese": "bạn bè",
+    "example": "She invited her best friend to dinner."
+  },
+  {
+    "id": "VOC158",
+    "level": "A1",
+    "topic": "Socializing",
+    "word": "meet",
+    "type": "verb",
+    "meaning": "to come together with someone intentionally",
+    "vietnamese": "gặp gỡ",
+    "example": "Let's meet outside the cinema at 7 PM."
+  },
+  {
+    "id": "VOC159",
+    "level": "A1",
+    "topic": "Socializing",
+    "word": "party",
+    "type": "noun",
+    "meaning": "a social event where people eat, drink, and dance",
+    "vietnamese": "bữa tiệc",
+    "example": "Are you going to his birthday party?"
+  },
+  {
+    "id": "VOC160",
+    "level": "A2",
+    "topic": "Socializing",
+    "word": "invitation",
+    "type": "noun",
+    "meaning": "a written or spoken request to invite someone somewhere",
+    "vietnamese": "lời mời / thiệp mời",
+    "example": "Thank you for the invitation to your wedding."
+  },
+  {
+    "id": "VOC161",
+    "level": "A2",
+    "topic": "Socializing",
+    "word": "celebrate",
+    "type": "verb",
+    "meaning": "to do something enjoyable for a special occasion",
+    "vietnamese": "ăn mừng / kỷ niệm",
+    "example": "We are gathering to celebrate New Year's Eve."
+  },
+  {
+    "id": "VOC162",
+    "level": "A2",
+    "topic": "Socializing",
+    "word": "guest",
+    "type": "noun",
+    "meaning": "a person who is invited to visit someone's home or attend an event",
+    "vietnamese": "khách mời / khách khứa",
+    "example": "The hotel provides excellent service for every guest."
+  },
+  {
+    "id": "VOC163",
+    "level": "A1",
+    "topic": "Media & News",
+    "word": "news",
+    "type": "noun",
+    "meaning": "information about recent events",
+    "vietnamese": "tin tức",
+    "example": "I always watch the evening news on TV."
+  },
+  {
+    "id": "VOC164",
+    "level": "A1",
+    "topic": "Media & News",
+    "word": "radio",
+    "type": "noun",
+    "meaning": "a piece of equipment used for listening to programs",
+    "vietnamese": "đài phát thanh / radio",
+    "example": "He likes listening to the radio while driving."
+  },
+  {
+    "id": "VOC165",
+    "level": "A1",
+    "topic": "Media & News",
+    "word": "newspaper",
+    "type": "noun",
+    "meaning": "large folded sheets of paper containing news",
+    "vietnamese": "báo giấy",
+    "example": "My grandfather reads the newspaper every morning."
+  },
+  {
+    "id": "VOC166",
+    "level": "A2",
+    "topic": "Media & News",
+    "word": "journalist",
+    "type": "noun",
+    "meaning": "a person whose job is to collect and write news stories",
+    "vietnamese": "nhà báo",
+    "example": "The journalist interviewed the famous singer."
+  },
+  {
+    "id": "VOC167",
+    "level": "A2",
+    "topic": "Media & News",
+    "word": "article",
+    "type": "noun",
+    "meaning": "a piece of writing in a newspaper or magazine",
+    "vietnamese": "bài báo / bài viết",
+    "example": "I read an interesting article about AI today."
+  },
+  {
+    "id": "VOC168",
+    "level": "A2",
+    "topic": "Media & News",
+    "word": "advertise",
+    "type": "verb",
+    "meaning": "to tell the public about a product or service to sell it",
+    "vietnamese": "quảng cáo",
+    "example": "Companies advertise their goods on social media."
+  },
+  {
+    "id": "VOC169",
+    "level": "A1",
+    "topic": "Free Time Activities",
+    "word": "read",
+    "type": "verb",
+    "meaning": "to look at and understand written words",
+    "vietnamese": "đọc",
+    "example": "She loves to read comic books."
+  },
+  {
+    "id": "VOC170",
+    "level": "A1",
+    "topic": "Free Time Activities",
+    "word": "sing",
+    "type": "verb",
+    "meaning": "to make musical sounds with the voice",
+    "vietnamese": "hát",
+    "example": "They like to sing songs together around the campfire."
+  },
+  {
+    "id": "VOC171",
+    "level": "A1",
+    "topic": "Free Time Activities",
+    "word": "dance",
+    "type": "verb",
+    "meaning": "to move your body to the rhythm of music",
+    "vietnamese": "nhảy múa",
+    "example": "We danced all night at the party."
+  },
+  {
+    "id": "VOC172",
+    "level": "A2",
+    "topic": "Free Time Activities",
+    "word": "photography",
+    "type": "noun",
+    "meaning": "the skill or job of taking photographs",
+    "vietnamese": "nhiếp ảnh",
+    "example": "He decided to take a course in landscape photography."
+  },
+  {
+    "id": "VOC173",
+    "level": "A2",
+    "topic": "Free Time Activities",
+    "word": "gardening",
+    "type": "noun",
+    "meaning": "the activity of growing and taking care of plants in a garden",
+    "vietnamese": "làm vườn",
+    "example": "Gardening is a relaxing weekend activity for my mother."
+  },
+  {
+    "id": "VOC174",
+    "level": "A2",
+    "topic": "Free Time Activities",
+    "word": "camp",
+    "type": "verb",
+    "meaning": "to put up a tent and stay in it for a short time",
+    "vietnamese": "cắm trại",
+    "example": "We plan to camp near the lake next weekend."
+  },
+  {
+    "id": "VOC175",
+    "level": "A1",
+    "topic": "Hotels & Accommodation",
+    "word": "hotel",
+    "type": "noun",
+    "meaning": "a building where travelers pay for a room to sleep in",
+    "vietnamese": "khách sạn",
+    "example": "We booked a room in a five-star hotel."
+  },
+  {
+    "id": "VOC176",
+    "level": "A1",
+    "topic": "Hotels & Accommodation",
+    "word": "room",
+    "type": "noun",
+    "meaning": "a part of the inside of a building that is separated from other parts by walls",
+    "vietnamese": "phòng",
+    "example": "Our hotel room has a great sea view."
+  },
+  {
+    "id": "VOC177",
+    "level": "A1",
+    "topic": "Hotels & Accommodation",
+    "word": "key",
+    "type": "noun",
+    "meaning": "a piece of metal used to open or lock a door",
+    "vietnamese": "chìa khóa",
+    "example": "Please leave your room key at the front desk."
+  },
+  {
+    "id": "VOC178",
+    "level": "A2",
+    "topic": "Hotels & Accommodation",
+    "word": "reception",
+    "type": "noun",
+    "meaning": "the place in a hotel where guests register when they arrive",
+    "vietnamese": "quầy lễ tân",
+    "example": "Ask the reception if you need an extra towel."
+  },
+  {
+    "id": "VOC179",
+    "level": "A2",
+    "topic": "Hotels & Accommodation",
+    "word": "reserve",
+    "type": "verb",
+    "meaning": "to keep something for a particular person or purpose",
+    "vietnamese": "đặt trước / giữ chỗ",
+    "example": "I would like to reserve a table for four, please."
+  },
+  {
+    "id": "VOC180",
+    "level": "A2",
+    "topic": "Hotels & Accommodation",
+    "word": "service",
+    "type": "noun",
+    "meaning": "the quality of help given to customers in a business",
+    "vietnamese": "dịch vụ",
+    "example": "The hotel is famous for its excellent room service."
+  },
+  {
+    "id": "VOC181",
+    "level": "A1",
+    "topic": "People & Personality",
+    "word": "kind",
+    "type": "adjective",
+    "meaning": "generous, helpful, and thinking about other people's feelings",
+    "vietnamese": "tốt bụng / tử tế",
+    "example": "Thank you for your advice, you are very kind."
+  },
+  {
+    "id": "VOC182",
+    "level": "A1",
+    "topic": "People & Personality",
+    "word": "quiet",
+    "type": "adjective",
+    "meaning": "making very little noise or not talking much",
+    "vietnamese": "yên lặng / ít nói",
+    "example": "He is a quiet boy who loves reading."
+  },
+  {
+    "id": "VOC183",
+    "level": "A1",
+    "topic": "People & Personality",
+    "word": "funny",
+    "type": "adjective",
+    "meaning": "making you laugh",
+    "vietnamese": "vui tính / khôi hài",
+    "example": "Our history teacher tells many funny stories."
+  },
+  {
+    "id": "VOC184",
+    "level": "A2",
+    "topic": "People & Personality",
+    "word": "creative",
+    "type": "adjective",
+    "meaning": "producing or using original and unusual ideas",
+    "vietnamese": "sáng tạo",
+    "example": "Designers need to be highly creative."
+  },
+  {
+    "id": "VOC185",
+    "level": "A2",
+    "topic": "People & Personality",
+    "word": "polite",
+    "type": "adjective",
+    "meaning": "behaving in a way that is socially correct and shows respect",
+    "vietnamese": "lịch sự / lễ phép",
+    "example": "It is polite to say 'thank you' when receiving help."
+  },
+  {
+    "id": "VOC186",
+    "level": "A2",
+    "topic": "People & Personality",
+    "word": "honest",
+    "type": "adjective",
+    "meaning": "telling the truth and not hiding the facts",
+    "vietnamese": "thật thà / trung thực",
+    "example": "Give me your honest opinion about this website."
+  },
+  {
+    "id": "VOC187",
+    "level": "A1",
+    "topic": "Law & Order",
+    "word": "police",
+    "type": "noun",
+    "meaning": "the official organization that makes people obey the law",
+    "vietnamese": "cảnh sát",
+    "example": "If you see a crime, call the police immediately."
+  },
+  {
+    "id": "VOC188",
+    "level": "A1",
+    "topic": "Law & Order",
+    "word": "rule",
+    "type": "noun",
+    "meaning": "an official statement of what you must or must not do",
+    "vietnamese": "quy tắc / luật lệ",
+    "example": "You must follow the safety rules in the lab."
+  },
+  {
+    "id": "VOC189",
+    "level": "A1",
+    "topic": "Law & Order",
+    "word": "safe",
+    "type": "adjective",
+    "meaning": "not in danger or likely to be harmed",
+    "vietnamese": "an toàn",
+    "example": "Keep your money in a safe place."
+  },
+  {
+    "id": "VOC190",
+    "level": "A2",
+    "topic": "Law & Order",
+    "word": "crime",
+    "type": "noun",
+    "meaning": "an illegal act that can be punished by law",
+    "vietnamese": "tội phạm / vụ phạm tội",
+    "example": "The police are trying to prevent cyber crime."
+  },
+  {
+    "id": "VOC191",
+    "level": "A2",
+    "topic": "Law & Order",
+    "word": "thief",
+    "type": "noun",
+    "meaning": "a person who steals something from another person",
+    "vietnamese": "kẻ trộm",
+    "example": "The thief stole her handbag on the bus."
+  },
+  {
+    "id": "VOC192",
+    "level": "A2",
+    "topic": "Law & Order",
+    "word": "prison",
+    "type": "noun",
+    "meaning": "a building where criminals are kept as a punishment",
+    "vietnamese": "nhà tù",
+    "example": "He was sent to prison for two years."
+  },
+  {
+    "id": "VOC193",
+    "level": "A1",
+    "topic": "Environment & Weather",
+    "word": "sun",
+    "type": "noun",
+    "meaning": "the star that provides light and heat for the earth",
+    "vietnamese": "mặt trời",
+    "example": "The sun rises in the east."
+  },
+  {
+    "id": "VOC194",
+    "level": "A1",
+    "topic": "Environment & Weather",
+    "word": "rain",
+    "type": "noun",
+    "meaning": "water that falls from the clouds in drops",
+    "vietnamese": "mưa / cơn mưa",
+    "example": "Take an umbrella, there is heavy rain outside."
+  },
+  {
+    "id": "VOC195",
+    "level": "A1",
+    "topic": "Environment & Weather",
+    "word": "snow",
+    "type": "noun",
+    "meaning": "soft white pieces of frozen water that fall from the sky",
+    "vietnamese": "tuyết",
+    "example": "Children love playing in the snow during winter."
+  },
+  {
+    "id": "VOC196",
+    "level": "A2",
+    "topic": "Environment & Weather",
+    "word": "climate",
+    "type": "noun",
+    "meaning": "the general weather conditions of a place over a long period",
+    "vietnamese": "khí hậu",
+    "example": "Vietnam has a tropical climate."
+  },
+  {
+    "id": "VOC197",
+    "level": "A2",
+    "topic": "Environment & Weather",
+    "word": "storm",
+    "type": "noun",
+    "meaning": "an extreme weather condition with very strong winds and heavy rain",
+    "vietnamese": "cơn bão",
+    "example": "The storm destroyed several houses near the coast."
+  },
+  {
+    "id": "VOC198",
+    "level": "A2",
+    "topic": "Environment & Weather",
+    "word": "degree",
+    "type": "noun",
+    "meaning": "a unit for measuring temperature",
+    "vietnamese": "độ (đo nhiệt độ)",
+    "example": "The temperature today is 35 degrees Celsius."
+  },
+  {
+    "id": "VOC199",
+    "level": "A1",
+    "topic": "Business & Marketing",
+    "word": "sell",
+    "type": "verb",
+    "meaning": "to give something to someone who pays for it",
+    "vietnamese": "bán",
+    "example": "They sell fresh fruit at the market."
+  },
+  {
+    "id": "VOC200",
+    "level": "A1",
+    "topic": "Business & Marketing",
+    "word": "shop",
+    "type": "noun",
+    "meaning": "a place where you can buy goods or services",
+    "vietnamese": "cửa hàng",
+    "example": "I am looking for a book shop nearby."
+  },
+  {
+    "id": "VOC201",
+    "level": "A1",
+    "topic": "Business & Marketing",
+    "word": "work",
+    "type": "verb",
+    "meaning": "to do a job that you get paid for",
+    "vietnamese": "làm việc",
+    "example": "She works for a technology company."
+  },
+  {
+    "id": "VOC202",
+    "level": "A2",
+    "topic": "Business & Marketing",
+    "word": "business",
+    "type": "noun",
+    "meaning": "the activity of buying and selling goods and services",
+    "vietnamese": "kinh doanh / doanh nghiệp",
+    "example": "He wants to start his own coffee business."
+  },
+  {
+    "id": "VOC203",
+    "level": "A2",
+    "topic": "Business & Marketing",
+    "word": "product",
+    "type": "noun",
+    "meaning": "something that is made to be sold",
+    "vietnamese": "sản phẩm",
+    "example": "They are launching a new skincare product next month."
+  },
+  {
+    "id": "VOC204",
+    "level": "A2",
+    "topic": "Business & Marketing",
+    "word": "customer",
+    "type": "noun",
+    "meaning": "a person who buys goods or services from a shop or company",
+    "vietnamese": "khách hàng",
+    "example": "The shop was full of customers during the sale."
+  },
+  {
+    "id": "VOC205",
+    "level": "A1",
+    "topic": "Devices & Gadgets",
+    "word": "phone",
+    "type": "noun",
+    "meaning": "a device used to talk to someone who is far away",
+    "vietnamese": "điện thoại",
+    "example": "Answer the phone, please."
+  },
+  {
+    "id": "VOC206",
+    "level": "A1",
+    "topic": "Devices & Gadgets",
+    "word": "camera",
+    "type": "noun",
+    "meaning": "a device for taking photographs or recording videos",
+    "vietnamese": "máy ảnh",
+    "example": "She bought a digital camera for her holiday."
+  },
+  {
+    "id": "VOC207",
+    "level": "A1",
+    "topic": "Devices & Gadgets",
+    "word": "clock",
+    "type": "noun",
+    "meaning": "a device that shows what time it is",
+    "vietnamese": "đồng hồ treo tường",
+    "example": "The clock on the wall says it's 10 o'clock."
+  },
+  {
+    "id": "VOC208",
+    "level": "A2",
+    "topic": "Devices & Gadgets",
+    "word": "laptop",
+    "type": "noun",
+    "meaning": "a small computer that is easy to carry around",
+    "vietnamese": "máy tính xách tay",
+    "example": "I always carry my laptop in my backpack."
+  },
+  {
+    "id": "VOC209",
+    "level": "A2",
+    "topic": "Devices & Gadgets",
+    "word": "charger",
+    "type": "noun",
+    "meaning": "a piece of equipment used to put electricity into a battery",
+    "vietnamese": "cục sạc / dây sạc",
+    "example": "Can I borrow your phone charger?"
+  },
+  {
+    "id": "VOC210",
+    "level": "A2",
+    "topic": "Devices & Gadgets",
+    "word": "headphones",
+    "type": "noun",
+    "meaning": "a piece of equipment that you wear over your ears to listen to music",
+    "vietnamese": "tai nghe chụp tai",
+    "example": "He wears headphones to block out the noise."
+  },
+  {
+    "id": "VOC211",
+    "level": "A1",
+    "topic": "Feelings & Emotions",
+    "word": "tired",
+    "type": "adjective",
+    "meaning": "needing to rest or sleep",
+    "vietnamese": "mệt mỏi",
+    "example": "I feel very tired after working all day."
+  },
+  {
+    "id": "VOC212",
+    "level": "A1",
+    "topic": "Feelings & Emotions",
+    "word": "scared",
+    "type": "adjective",
+    "meaning": "frightened or worried about something",
+    "vietnamese": "sợ hãi",
+    "example": "The little girl is scared of dark rooms."
+  },
+  {
+    "id": "VOC213",
+    "level": "A1",
+    "topic": "Feelings & Emotions",
+    "word": "bored",
+    "type": "adjective",
+    "meaning": "feeling unhappy because something is not interesting",
+    "vietnamese": "buồn chán",
+    "example": "I am bored, let's watch a movie."
+  },
+  {
+    "id": "VOC214",
+    "level": "A2",
+    "topic": "Feelings & Emotions",
+    "word": "lonely",
+    "type": "adjective",
+    "meaning": "unhappy because you are alone and have no friends",
+    "vietnamese": "cô đơn",
+    "example": "He felt lonely when he first moved to the city."
+  },
+  {
+    "id": "VOC215",
+    "level": "A2",
+    "topic": "Feelings & Emotions",
+    "word": "proud",
+    "type": "adjective",
+    "meaning": "feeling pleasure and satisfaction because of your achievements",
+    "vietnamese": "tự hào",
+    "example": "My parents are proud of my good grades."
+  },
+  {
+    "id": "VOC216",
+    "level": "A2",
+    "topic": "Feelings & Emotions",
+    "word": "jealous",
+    "type": "adjective",
+    "meaning": "unhappy because someone has something you want",
+    "vietnamese": "ghen tị",
+    "example": "Don't be jealous of other people's success."
+  },
+  {
+    "id": "VOC217",
+    "level": "A1",
+    "topic": "Food & Drink",
+    "word": "milk",
+    "type": "noun",
+    "meaning": "a white liquid produced by cows, goats, or sheep",
+    "vietnamese": "sữa",
+    "example": "I like to drink a glass of milk before bed."
+  },
+  {
+    "id": "VOC218",
+    "level": "A1",
+    "topic": "Food & Drink",
+    "word": "bread",
+    "type": "noun",
+    "meaning": "a food made from flour, water, and yeast mixed together and baked",
+    "vietnamese": "bánh mì",
+    "example": "She bought a fresh loaf of bread."
+  },
+  {
+    "id": "VOC219",
+    "level": "A1",
+    "topic": "Food & Drink",
+    "word": "fruit",
+    "type": "noun",
+    "meaning": "something that grows on a plant or tree and contains seeds",
+    "vietnamese": "trái cây / hoa quả",
+    "example": "Apples and bananas are my favorite fruits."
+  },
+  {
+    "id": "VOC220",
+    "level": "A2",
+    "topic": "Food & Drink",
+    "word": "seafood",
+    "type": "noun",
+    "meaning": "animals from the sea that can be eaten, like fish or shrimp",
+    "vietnamese": "hải sản",
+    "example": "This restaurant is famous for fresh seafood."
+  },
+  {
+    "id": "VOC221",
+    "level": "A2",
+    "topic": "Food & Drink",
+    "word": "spicy",
+    "type": "adjective",
+    "meaning": "having a strong, hot flavor from spices",
+    "vietnamese": "cay",
+    "example": "Thai food is usually very spicy."
+  },
+  {
+    "id": "VOC222",
+    "level": "A2",
+    "topic": "Food & Drink",
+    "word": "vegetarian",
+    "type": "noun",
+    "meaning": "a person who does not eat meat or fish",
+    "vietnamese": "người ăn chay / món ăn chay",
+    "example": "She became a vegetarian two years ago."
+  },
+  {
+    "id": "VOC223",
+    "level": "A1",
+    "topic": "House & Home",
+    "word": "door",
+    "type": "noun",
+    "meaning": "the flat object that you open and close to enter a room",
+    "vietnamese": "cửa ra vào",
+    "example": "Please close the door behind you."
+  },
+  {
+    "id": "VOC224",
+    "level": "A1",
+    "topic": "House & Home",
+    "word": "floor",
+    "type": "noun",
+    "meaning": "the flat surface that you stand on inside a room",
+    "vietnamese": "sàn nhà / tầng nhà",
+    "example": "The children are playing on the living room floor."
+  },
+  {
+    "id": "VOC225",
+    "level": "A1",
+    "topic": "House & Home",
+    "word": "wall",
+    "type": "noun",
+    "meaning": "one of the vertical sides of a room or building",
+    "vietnamese": "bức tường",
+    "example": "We hung a beautiful picture on the wall."
+  },
+  {
+    "id": "VOC226",
+    "level": "A2",
+    "topic": "House & Home",
+    "word": "garden",
+    "type": "noun",
+    "meaning": "an area of land next to a house where plants and flowers grow",
+    "vietnamese": "khu vườn",
+    "example": "There are beautiful roses in our garden."
+  },
+  {
+    "id": "VOC227",
+    "level": "A2",
+    "topic": "House & Home",
+    "word": "neighborhood",
+    "type": "noun",
+    "meaning": "the area of a town that surrounds someone's home",
+    "vietnamese": "khu dân cư / vùng lân cận",
+    "example": "It is a very safe and friendly neighborhood."
+  },
+  {
+    "id": "VOC228",
+    "level": "A2",
+    "topic": "House & Home",
+    "word": "air-conditioning",
+    "type": "noun",
+    "meaning": "a system that keeps the air inside a building cool",
+    "vietnamese": "hệ thống máy điều hòa",
+    "example": "Turn on the air-conditioning, it's boiling hot here."
+  },
+  {
+    "id": "VOC229",
+    "level": "A1",
+    "topic": "Sports & Leisure",
+    "word": "tennis",
+    "type": "noun",
+    "meaning": "a game played by two or four players hitting a ball over a net",
+    "vietnamese": "môn quần vợt / tennis",
+    "example": "He practices tennis twice a week."
+  },
+  {
+    "id": "VOC230",
+    "level": "A1",
+    "topic": "Sports & Leisure",
+    "word": "run",
+    "type": "verb",
+    "meaning": "to move on foot faster than walking",
+    "vietnamese": "chạy bộ",
+    "example": "I run in the park every morning."
+  },
+  {
+    "id": "VOC231",
+    "level": "A1",
+    "topic": "Sports & Leisure",
+    "word": "watch",
+    "type": "verb",
+    "meaning": "to look at something for a period of time",
+    "vietnamese": "xem / theo dõi",
+    "example": "They love to watch live sports on TV."
+  },
+  {
+    "id": "VOC232",
+    "level": "A2",
+    "topic": "Sports & Leisure",
+    "word": "competition",
+    "type": "noun",
+    "meaning": "an organized event in which people try to win a prize",
+    "vietnamese": "cuộc thi / cuộc cạnh tranh",
+    "example": "She won first place in the swimming competition."
+  },
+  {
+    "id": "VOC233",
+    "level": "A2",
+    "topic": "Sports & Leisure",
+    "word": "coach",
+    "type": "noun",
+    "meaning": "someone whose job is to train a person or a team in sport",
+    "vietnamese": "huấn luyện viên",
+    "example": "The football coach gave us excellent strategies."
+  },
+  {
+    "id": "VOC234",
+    "level": "A2",
+    "topic": "Sports & Leisure",
+    "word": "active",
+    "type": "adjective",
+    "meaning": "doing a lot of practical things and taking regular exercise",
+    "vietnamese": "năng động / tích cực hoạt động",
+    "example": "Playing sports helps you stay fit and active."
+  },
+  {
+    "id": "VOC235",
+    "level": "A1",
+    "topic": "Shopping",
+    "word": "store",
+    "type": "noun",
+    "meaning": "a large shop where you can buy many types of goods",
+    "vietnamese": "cửa hàng / tiệm bách hóa",
+    "example": "The convenience store is open 24 hours."
+  },
+  {
+    "id": "VOC236",
+    "level": "A1",
+    "topic": "Shopping",
+    "word": "pay",
+    "type": "verb",
+    "meaning": "to give money to someone for goods or services",
+    "vietnamese": "thanh toán / trả tiền",
+    "example": "Where can I pay for these clothes?"
+  },
+  {
+    "id": "VOC237",
+    "level": "A1",
+    "topic": "Shopping",
+    "word": "cost",
+    "type": "verb",
+    "meaning": "to have a specific amount of money as a price",
+    "vietnamese": "có giá là / tốn chi phí",
+    "example": "How much does this ticket cost?"
+  },
+  {
+    "id": "VOC238",
+    "level": "A2",
+    "topic": "Shopping",
+    "word": "customer service",
+    "type": "noun",
+    "meaning": "the help and advice a company gives to people who buy things",
+    "vietnamese": "dịch vụ chăm sóc khách hàng",
+    "example": "This online shop has excellent customer service."
+  },
+  {
+    "id": "VOC239",
+    "level": "A2",
+    "topic": "Shopping",
+    "word": "complain",
+    "type": "verb",
+    "meaning": "to say that something is wrong or not satisfactory",
+    "vietnamese": "phàn nàn / khiếu nại",
+    "example": "The food was cold, so he decided to complain to the waiter."
+  },
+  {
+    "id": "VOC240",
+    "level": "A2",
+    "topic": "Shopping",
+    "word": "brand",
+    "type": "noun",
+    "meaning": "a product made by a particular company with a unique name",
+    "vietnamese": "thương hiệu / nhãn hàng",
+    "example": "Apple is a very famous technology brand."
+  },
+  {
+    "id": "VOC241",
+    "level": "A1",
+    "topic": "Education & School",
+    "word": "classroom",
+    "type": "noun",
+    "meaning": "a room in a school where students have lessons",
+    "vietnamese": "phòng học / lớp học",
+    "example": "Our classroom has a big smart board."
+  },
+  {
+    "id": "VOC242",
+    "level": "A1",
+    "topic": "Education & School",
+    "word": "learn",
+    "type": "verb",
+    "meaning": "to get knowledge or skill in a new subject",
+    "vietnamese": "học hỏi / tiếp thu",
+    "example": "Children learn foreign languages very quickly."
+  },
+  {
+    "id": "VOC243",
+    "level": "A1",
+    "topic": "Education & School",
+    "word": "dictionary",
+    "type": "noun",
+    "meaning": "a book that contains a list of words in alphabetical order with their meanings",
+    "vietnamese": "từ điển",
+    "example": "You can use an online dictionary to check word meanings."
+  },
+  {
+    "id": "VOC244",
+    "level": "A2",
+    "topic": "Education & School",
+    "word": "degree",
+    "type": "noun",
+    "meaning": "a qualification given to a student after finishing a university course",
+    "vietnamese": "bằng cấp / bằng đại học",
+    "example": "He has a bachelor's degree in computer science."
+  },
+  {
+    "id": "VOC245",
+    "level": "A2",
+    "topic": "Education & School",
+    "word": "graduate",
+    "type": "verb",
+    "meaning": "to complete school, college, or university education successfully",
+    "vietnamese": "tốt nghiệp",
+    "example": "She graduated from university last summer."
+  },
+  {
+    "id": "VOC246",
+    "level": "A2",
+    "topic": "Education & School",
+    "word": "assignment",
+    "type": "noun",
+    "meaning": "a piece of work given to someone, typically as part of their studies",
+    "vietnamese": "bài tập lớn / nhiệm vụ được giao",
+    "example": "We must submit the English assignment before Friday."
+  },
+  {
+    "id": "VOC247",
+    "level": "A1",
+    "topic": "Work & Business",
+    "word": "boss",
+    "type": "noun",
+    "meaning": "the person who is in charge of an organization or department",
+    "vietnamese": "sếp / cấp trên",
+    "example": "My boss gave me a new task today."
+  },
+  {
+    "id": "VOC248",
+    "level": "A1",
+    "topic": "Work & Business",
+    "word": "meeting",
+    "type": "noun",
+    "meaning": "an occasion when people come together to discuss something",
+    "vietnamese": "cuộc họp",
+    "example": "We have an important staff meeting at 9 AM."
+  },
+  {
+    "id": "VOC249",
+    "level": "A1",
+    "topic": "Work & Business",
+    "word": "company",
+    "type": "noun",
+    "meaning": "an organization that sells goods or services to make money",
+    "vietnamese": "công ty",
+    "example": "He works for an international technology company."
+  },
+  {
+    "id": "VOC250",
+    "level": "A2",
+    "topic": "Work & Business",
+    "word": "employee",
+    "type": "noun",
+    "meaning": "someone who is paid to work for a person or company",
+    "vietnamese": "nhân viên / người lao động",
+    "example": "The company has more than 500 employees."
+  },
+  {
+    "id": "VOC251",
+    "level": "A2",
+    "topic": "Work & Business",
+    "word": "deadline",
+    "type": "noun",
+    "meaning": "a time or date by which something must be finished",
+    "vietnamese": "hạn chót / deadline",
+    "example": "The deadline for this project is next Monday."
+  },
+  {
+    "id": "VOC252",
+    "level": "A2",
+    "topic": "Work & Business",
+    "word": "career",
+    "type": "noun",
+    "meaning": "the job or series of jobs that you do during your working life",
+    "vietnamese": "sự nghiệp",
+    "example": "She wants to build a career in marketing."
+  },
+  {
+    "id": "VOC253",
+    "level": "A1",
+    "topic": "Travel & Tourism",
+    "word": "map",
+    "type": "noun",
+    "meaning": "a drawing of an area showing roads, rivers, and cities",
+    "vietnamese": "bản đồ",
+    "example": "We used a digital map to find our hotel."
+  },
+  {
+    "id": "VOC254",
+    "level": "A1",
+    "topic": "Travel & Tourism",
+    "word": "tourist",
+    "type": "noun",
+    "meaning": "someone who visits a place for pleasure and interest",
+    "vietnamese": "khách du lịch",
+    "example": "The city center is always crowded with tourists."
+  },
+  {
+    "id": "VOC255",
+    "level": "A1",
+    "topic": "Travel & Tourism",
+    "word": "flight",
+    "type": "noun",
+    "meaning": "a journey in an aircraft",
+    "vietnamese": "chuyến bay",
+    "example": "Our flight to Tokyo leaves at midnight."
+  },
+  {
+    "id": "VOC256",
+    "level": "A2",
+    "topic": "Travel & Tourism",
+    "word": "guidebook",
+    "type": "noun",
+    "meaning": "a book that gives information about a place for tourists",
+    "vietnamese": "sách hướng dẫn du lịch",
+    "example": "This guidebook has a list of the best local restaurants."
+  },
+  {
+    "id": "VOC257",
+    "level": "A2",
+    "topic": "Travel & Tourism",
+    "word": "explore",
+    "type": "verb",
+    "meaning": "to travel to or around a place to learn about it",
+    "vietnamese": "khám phá / thám hiểm",
+    "example": "We love to explore small islands during our holidays."
+  },
+  {
+    "id": "VOC258",
+    "level": "A2",
+    "topic": "Travel & Tourism",
+    "word": "scenery",
+    "type": "noun",
+    "meaning": "the general appearance of the natural environment, especially when beautiful",
+    "vietnamese": "phong cảnh / cảnh vật",
+    "example": "The mountain scenery was absolutely breathtaking."
+  },
+  {
+    "id": "VOC259",
+    "level": "A1",
+    "topic": "Art & Culture",
+    "word": "paint",
+    "type": "verb",
+    "meaning": "to make a picture using paints",
+    "vietnamese": "vẽ tranh (dùng màu nước/sơn dầu)",
+    "example": "She likes to paint landscapes in her free time."
+  },
+  {
+    "id": "VOC260",
+    "level": "A1",
+    "topic": "Art & Culture",
+    "word": "song",
+    "type": "noun",
+    "meaning": "a short piece of music with words that you sing",
+    "vietnamese": "bài hát",
+    "example": "That pop song is very popular on the radio right now."
+  },
+  {
+    "id": "VOC261",
+    "level": "A1",
+    "topic": "Art & Culture",
+    "word": "museum",
+    "type": "noun",
+    "meaning": "a building where objects of historical or artistic interest are kept",
+    "vietnamese": "bảo tàng",
+    "example": "We visited the national art museum yesterday."
+  },
+  {
+    "id": "VOC262",
+    "level": "A2",
+    "topic": "Art & Culture",
+    "word": "exhibition",
+    "type": "noun",
+    "meaning": "a public event where art, photos, or objects are shown",
+    "vietnamese": "triển lãm",
+    "example": "There is a modern photography exhibition open this week."
+  },
+  {
+    "id": "VOC263",
+    "level": "A2",
+    "topic": "Art & Culture",
+    "word": "culture",
+    "type": "noun",
+    "meaning": "the habits, traditions, and beliefs of a country or group",
+    "vietnamese": "văn hóa",
+    "example": "Learning a language helps you understand its culture."
+  },
+  {
+    "id": "VOC264",
+    "level": "A2",
+    "topic": "Art & Culture",
+    "word": "gallery",
+    "type": "noun",
+    "meaning": "a room or building for showing paintings and statues",
+    "vietnamese": "phòng trưng bày nghệ thuật / gallery",
+    "example": "He sells his paintings through a local art gallery."
+  },
+  {
+    "id": "VOC265",
+    "level": "A1",
+    "topic": "Social Media",
+    "word": "post",
+    "type": "verb",
+    "meaning": "to publish something online on a message board or social media page",
+    "vietnamese": "đăng bài / đăng tải (lên mạng)",
+    "example": "She often posts beautiful travel photos on Instagram."
+  },
+  {
+    "id": "VOC266",
+    "level": "A1",
+    "topic": "Social Media",
+    "word": "profile",
+    "type": "noun",
+    "meaning": "information about a person on a social media website",
+    "vietnamese": "hồ sơ cá nhân / trang cá nhân",
+    "example": "He updated his profile picture on Facebook."
+  },
+  {
+    "id": "VOC267",
+    "level": "A1",
+    "topic": "Social Media",
+    "word": "share",
+    "type": "verb",
+    "meaning": "to send a link or post to other people online",
+    "vietnamese": "chia sẻ",
+    "example": "Please share this funny video with your friends."
+  },
+  {
+    "id": "VOC268",
+    "level": "A2",
+    "topic": "Social Media",
+    "word": "comment",
+    "type": "noun",
+    "meaning": "something that you say or write that expresses your opinion on a post",
+    "vietnamese": "bình luận / comment",
+    "example": "Leave a comment below if you agree with this idea."
+  },
+  {
+    "id": "VOC269",
+    "level": "A2",
+    "topic": "Social Media",
+    "word": "notification",
+    "type": "noun",
+    "meaning": "a message that alerts you about activity on your account",
+    "vietnamese": "thông báo",
+    "example": "I turned off notifications so I can focus on my work."
+  },
+  {
+    "id": "VOC270",
+    "level": "A2",
+    "topic": "Social Media",
+    "word": "follower",
+    "type": "noun",
+    "meaning": "someone who chooses to see your posts on their social media feed",
+    "vietnamese": "người theo dõi",
+    "example": "Her TikTok channel has over 10,000 followers."
+  },
+  {
+    "id": "VOC271",
+    "level": "A1",
+    "topic": "Nature & Weather",
+    "word": "sky",
+    "type": "noun",
+    "meaning": "the space high above the earth where clouds, the sun, and stars are seen",
+    "vietnamese": "bầu trời",
+    "example": "The sky is so blue and clear today."
+  },
+  {
+    "id": "VOC272",
+    "level": "A1",
+    "topic": "Nature & Weather",
+    "word": "wind",
+    "type": "noun",
+    "meaning": "a current of air moving naturally across the land",
+    "vietnamese": "gió",
+    "example": "A cold wind started blowing from the north."
+  },
+  {
+    "id": "VOC273",
+    "level": "A1",
+    "topic": "Nature & Weather",
+    "word": "ice",
+    "type": "noun",
+    "meaning": "water that has frozen into a solid state",
+    "vietnamese": "băng / đá lạnh",
+    "example": "Put some ice cubes in my soda, please."
+  },
+  {
+    "id": "VOC274",
+    "level": "A2",
+    "topic": "Nature & Weather",
+    "word": "season",
+    "type": "noun",
+    "meaning": "one of the four periods of the year (spring, summer, autumn, winter)",
+    "vietnamese": "mùa (trong năm)",
+    "example": "Autumn is my favorite season because of the cool weather."
+  },
+  {
+    "id": "VOC275",
+    "level": "A2",
+    "topic": "Nature & Weather",
+    "word": "umbrella",
+    "type": "noun",
+    "meaning": "a folding frame covered in cloth used to protect against rain",
+    "vietnamese": "chiếc ô / cái dù",
+    "example": "It's drizzling outside, you should carry an umbrella."
+  },
+  {
+    "id": "VOC276",
+    "level": "A2",
+    "topic": "Nature & Weather",
+    "word": "flood",
+    "type": "noun",
+    "meaning": "a large amount of water covering an area that is usually dry",
+    "vietnamese": "lũ lụt / ngập lụt",
+    "example": "Heavy rain caused a major flood on many city streets."
+  },
+  {
+    "id": "VOC277",
+    "level": "A1",
+    "topic": "Health & Body",
+    "word": "arm",
+    "type": "noun",
+    "meaning": "either of the two long parts of the upper body connected to the shoulders",
+    "vietnamese": "cánh tay",
+    "example": "He broke his left arm while playing football."
+  },
+  {
+    "id": "VOC278",
+    "level": "A1",
+    "topic": "Health & Body",
+    "word": "leg",
+    "type": "noun",
+    "meaning": "either of the two long limbs that a person uses to walk and stand",
+    "vietnamese": "cái chân",
+    "example": "My legs feel sore after running five kilometers."
+  },
+  {
+    "id": "VOC279",
+    "level": "A1",
+    "topic": "Health & Body",
+    "word": "hurt",
+    "type": "verb",
+    "meaning": "to cause physical pain or injury to someone",
+    "vietnamese": "làm đau / bị đau",
+    "example": "Be careful, you might hurt yourself with that knife."
+  },
+  {
+    "id": "VOC280",
+    "level": "A2",
+    "topic": "Health & Body",
+    "word": "fitness",
+    "type": "noun",
+    "meaning": "the condition of being physically strong and healthy",
+    "vietnamese": "sự khỏe khoắn / thể hình cân đối",
+    "example": "He does yoga daily to improve his mental and physical fitness."
+  },
+  {
+    "id": "VOC281",
+    "level": "A2",
+    "topic": "Health & Body",
+    "word": "exercise",
+    "type": "noun",
+    "meaning": "physical activity to keep your body strong and healthy",
+    "vietnamese": "bài tập thể dục",
+    "example": "Swimming is an excellent form of exercise."
+  },
+  {
+    "id": "VOC282",
+    "level": "A2",
+    "topic": "Health & Body",
+    "word": "diet",
+    "type": "noun",
+    "meaning": "the food and drink usually eaten by a person",
+    "vietnamese": "chế độ ăn uống / chế độ ăn kiêng",
+    "example": "A balanced diet contains plenty of vegetables and fruits."
+  },
+  {
+    "id": "VOC283",
+    "level": "A1",
+    "topic": "Food & Cooking",
+    "word": "cook",
+    "type": "verb",
+    "meaning": "to prepare food by heating it",
+    "vietnamese": "nấu ăn",
+    "example": "My parents cook dinner together every night."
+  },
+  {
+    "id": "VOC284",
+    "level": "A1",
+    "topic": "Food & Cooking",
+    "word": "salt",
+    "type": "noun",
+    "meaning": "a white substance used to add flavor to food",
+    "vietnamese": "muối ăn",
+    "example": "Don't add too much salt to the soup."
+  },
+  {
+    "id": "VOC285",
+    "level": "A1",
+    "topic": "Food & Cooking",
+    "word": "sugar",
+    "type": "noun",
+    "meaning": "a sweet substance used to flavor food and drinks",
+    "vietnamese": "đường ăn",
+    "example": "Do you take sugar in your coffee?"
+  },
+  {
+    "id": "VOC286",
+    "level": "A2",
+    "topic": "Food & Cooking",
+    "word": "bake",
+    "type": "verb",
+    "meaning": "to cook food inside an oven using dry heat",
+    "vietnamese": "nướng (bánh mì, bánh ngọt)",
+    "example": "She loves to bake chocolate cookies on weekends."
+  },
+  {
+    "id": "VOC287",
+    "level": "A2",
+    "topic": "Food & Cooking",
+    "word": "knife",
+    "type": "noun",
+    "meaning": "a sharp tool used for cutting food",
+    "vietnamese": "con dao",
+    "example": "Use a sharp knife to cut the meat easily."
+  },
+  {
+    "id": "VOC288",
+    "level": "A2",
+    "topic": "Food & Cooking",
+    "word": "delicious",
+    "type": "adjective",
+    "meaning": "having an extremely pleasant taste or smell",
+    "vietnamese": "thơm ngon / ngon miệng",
+    "example": "The roast chicken smells absolutely delicious."
+  },
+  {
+    "id": "VOC289",
+    "level": "A1",
+    "topic": "Daily Objects",
+    "word": "bag",
+    "type": "noun",
+    "meaning": "a container made of thin cloth or plastic for carrying things",
+    "vietnamese": "túi xách / cặp sách",
+    "example": "He put his wallet and keys inside his bag."
+  },
+  {
+    "id": "VOC290",
+    "level": "A1",
+    "topic": "Daily Objects",
+    "word": "box",
+    "type": "noun",
+    "meaning": "a square or rectangular container with stiff sides",
+    "vietnamese": "hộp / thùng",
+    "example": "The delivery man left a large cardboard box outside."
+  },
+  {
+    "id": "VOC291",
+    "level": "A1",
+    "topic": "Daily Objects",
+    "word": "pen",
+    "type": "noun",
+    "meaning": "an object used for writing or drawing with ink",
+    "vietnamese": "bút mực",
+    "example": "Sign your name here with a black pen."
+  },
+  {
+    "id": "VOC292",
+    "level": "A2",
+    "topic": "Daily Objects",
+    "word": "wallet",
+    "type": "noun",
+    "meaning": "a small, flat case for holding paper money and cards",
+    "vietnamese": "ví tiền / bóp tiền",
+    "example": "I think I left my leather wallet in the car."
+  },
+  {
+    "id": "VOC293",
+    "level": "A2",
+    "topic": "Daily Objects",
+    "word": "mirror",
+    "type": "noun",
+    "meaning": "a piece of glass that reflects clear images",
+    "vietnamese": "gương soi",
+    "example": "She looked in the mirror to fix her hair."
+  },
+  {
+    "id": "VOC294",
+    "level": "A2",
+    "topic": "Daily Objects",
+    "word": "scissors",
+    "type": "noun",
+    "meaning": "a tool used for cutting paper, cloth, or hair",
+    "vietnamese": "cái kéo",
+    "example": "Can you pass me the scissors to cut this thread?"
+  },
+  {
+    "id": "VOC295",
+    "level": "A1",
+    "topic": "Feelings & Character",
+    "word": "nice",
+    "type": "adjective",
+    "meaning": "pleasant, agreeable, or kind",
+    "vietnamese": "dễ mến / ngoan ngoãn",
+    "example": "It was very nice of you to invite us."
+  },
+  {
+    "id": "VOC296",
+    "level": "A1",
+    "topic": "Feelings & Character",
+    "word": "smart",
+    "type": "adjective",
+    "meaning": "intelligent or clever",
+    "vietnamese": "thông minh / nhanh trí",
+    "example": "He is a smart boy who answers all questions correctly."
+  },
+  {
+    "id": "VOC297",
+    "level": "A1",
+    "topic": "Feelings & Character",
+    "word": "lazy",
+    "type": "adjective",
+    "meaning": "not willing to work or use any effort",
+    "vietnamese": "lười biếng",
+    "example": "Don't be lazy, stand up and clean your room."
+  },
+  {
+    "id": "VOC298",
+    "level": "A2",
+    "topic": "Feelings & Character",
+    "word": "friendly",
+    "type": "adjective",
+    "meaning": "behaving in a pleasant, kind way towards someone",
+    "vietnamese": "thân thiện / cởi mở",
+    "example": "The local people here are very warm and friendly."
+  },
+  {
+    "id": "VOC299",
+    "level": "A2",
+    "topic": "Feelings & Character",
+    "word": "serious",
+    "type": "adjective",
+    "meaning": "thinking carefully about things and not laughing much",
+    "vietnamese": "nghiêm túc / đứng đắn",
+    "example": "He looks like a very serious manager."
+  },
+  {
+    "id": "VOC300",
+    "level": "A2",
+    "topic": "Feelings & Character",
+    "word": "brave",
+    "type": "adjective",
+    "meaning": "showing no fear in dangerous or difficult situations",
+    "vietnamese": "dũng cảm / gan dạ",
+    "example": "The brave firefighter saved the little dog from the flames."
+  },
+  {
+    "id": "VOC301",
+    "level": "A1",
+    "topic": "Technology & Internet",
+    "word": "website",
+    "type": "noun",
+    "meaning": "a set of pages of information on the internet about a particular subject",
+    "vietnamese": "trang web",
+    "example": "You can find more information on our official website."
+  },
+  {
+    "id": "VOC302",
+    "level": "A1",
+    "topic": "Technology & Internet",
+    "word": "email",
+    "type": "noun",
+    "meaning": "a system of sending messages from one computer to another",
+    "vietnamese": "thư điện tử / email",
+    "example": "Please send me the report via email."
+  },
+  {
+    "id": "VOC303",
+    "level": "A1",
+    "topic": "Technology & Internet",
+    "word": "mouse",
+    "type": "noun",
+    "meaning": "a small device that you move across a surface to control a computer screen",
+    "vietnamese": "chuột máy tính",
+    "example": "The wireless mouse is much more convenient."
+  },
+  {
+    "id": "VOC304",
+    "level": "A2",
+    "topic": "Technology & Internet",
+    "word": "password",
+    "type": "noun",
+    "meaning": "a secret word or combination of letters or numbers",
+    "vietnamese": "mật khẩu",
+    "example": "Never share your bank account password with anyone."
+  },
+  {
+    "id": "VOC305",
+    "level": "A2",
+    "topic": "Technology & Internet",
+    "word": "download",
+    "type": "verb",
+    "meaning": "to copy data from one computer system to another, typically over the internet",
+    "vietnamese": "tải xuống",
+    "example": "You can download the mobile app for free."
+  },
+  {
+    "id": "VOC306",
+    "level": "A2",
+    "topic": "Technology & Internet",
+    "word": "screen",
+    "type": "noun",
+    "meaning": "the flat surface on a television or computer where images are shown",
+    "vietnamese": "màn hình",
+    "example": "My phone screen is cracked after it fell down."
+  },
+  {
+    "id": "VOC307",
+    "level": "A1",
+    "topic": "Office & Work",
+    "word": "desk",
+    "type": "noun",
+    "meaning": "a type of table that you can sit at to write or work",
+    "vietnamese": "bàn làm việc / bàn học",
+    "example": "There is a computer and a lamp on my desk."
+  },
+  {
+    "id": "VOC308",
+    "level": "A1",
+    "topic": "Office & Work",
+    "word": "paper",
+    "type": "noun",
+    "meaning": "thin, flat material used for writing, printing, or drawing",
+    "vietnamese": "giấy",
+    "example": "I need a sheet of paper to write down his number."
+  },
+  {
+    "id": "VOC309",
+    "level": "A1",
+    "topic": "Office & Work",
+    "word": "job",
+    "type": "noun",
+    "meaning": "the regular work that a person does to earn money",
+    "vietnamese": "công việc / nghề nghiệp",
+    "example": "She applied for a new job in marketing."
+  },
+  {
+    "id": "VOC310",
+    "level": "A2",
+    "topic": "Office & Work",
+    "word": "manager",
+    "type": "noun",
+    "meaning": "a person who is in charge of a part of a company or organization",
+    "vietnamese": "quản lý / trưởng phòng",
+    "example": "The project manager assigned the tasks clearly."
+  },
+  {
+    "id": "VOC311",
+    "level": "A2",
+    "topic": "Office & Work",
+    "word": "colleague",
+    "type": "noun",
+    "meaning": "a person that you work with, especially in a profession",
+    "vietnamese": "đồng nghiệp",
+    "example": "I'm having lunch with my colleagues today."
+  },
+  {
+    "id": "VOC312",
+    "level": "A2",
+    "topic": "Office & Work",
+    "word": "salary",
+    "type": "noun",
+    "meaning": "a fixed amount of money agreed every year as pay for an employee",
+    "vietnamese": "tiền lương",
+    "example": "They offer a competitive salary and health benefits."
+  },
+  {
+    "id": "VOC313",
+    "level": "A1",
+    "topic": "City & Places",
+    "word": "street",
+    "type": "noun",
+    "meaning": "a public road in a city, town, or village",
+    "vietnamese": "con đường / tuyến phố",
+    "example": "The streets are beautifully decorated for the festival."
+  },
+  {
+    "id": "VOC314",
+    "level": "A1",
+    "topic": "City & Places",
+    "word": "bank",
+    "type": "noun",
+    "meaning": "an organization where people can safely keep or borrow money",
+    "vietnamese": "ngân hàng",
+    "example": "I need to go to the bank to withdraw some cash."
+  },
+  {
+    "id": "VOC315",
+    "level": "A1",
+    "topic": "City & Places",
+    "word": "hotel",
+    "type": "noun",
+    "meaning": "a building where travelers can pay for lodging and meals",
+    "vietnamese": "khách sạn",
+    "example": "We booked a five-star hotel near the beach."
+  },
+  {
+    "id": "VOC316",
+    "level": "A2",
+    "topic": "City & Places",
+    "word": "library",
+    "type": "noun",
+    "meaning": "a building containing collections of books for people to read or borrow",
+    "vietnamese": "thư viện",
+    "example": "The university library is open until midnight during exams."
+  },
+  {
+    "id": "VOC317",
+    "level": "A2",
+    "topic": "City & Places",
+    "word": "bridge",
+    "type": "noun",
+    "meaning": "a structure built over a river or road so people or vehicles can cross",
+    "vietnamese": "cây cầu",
+    "example": "They are building a modern bridge across the river."
+  },
+  {
+    "id": "VOC318",
+    "level": "A2",
+    "topic": "City & Places",
+    "word": "stadium",
+    "type": "noun",
+    "meaning": "a large open area with seats around it, used for sports events or concerts",
+    "vietnamese": "sân vận động",
+    "example": "The stadium was completely full of cheering fans."
+  },
+  {
+    "id": "VOC319",
+    "level": "A1",
+    "topic": "Shopping & Money",
+    "word": "price",
+    "type": "noun",
+    "meaning": "the amount of money for which something is sold",
+    "vietnamese": "giá cả",
+    "example": "The price of gas has increased recently."
+  },
+  {
+    "id": "VOC320",
+    "level": "A1",
+    "topic": "Shopping & Money",
+    "word": "cheap",
+    "type": "adjective",
+    "meaning": "costing little money or less than is usual",
+    "vietnamese": "rẻ / giá thấp",
+    "example": "Vegetables are very cheap at the local market."
+  },
+  {
+    "id": "VOC321",
+    "level": "A1",
+    "topic": "Shopping & Money",
+    "word": "cash",
+    "type": "noun",
+    "meaning": "money in the form of notes or coins",
+    "vietnamese": "tiền mặt",
+    "example": "Do you want to pay by cash or credit card?"
+  },
+  {
+    "id": "VOC322",
+    "level": "A2",
+    "topic": "Shopping & Money",
+    "word": "expensive",
+    "type": "adjective",
+    "meaning": "costing a lot of money",
+    "vietnamese": "đắt đỏ / tốn kém",
+    "example": "Dining at luxury restaurants is very expensive."
+  },
+  {
+    "id": "VOC323",
+    "level": "A2",
+    "topic": "Shopping & Money",
+    "word": "receipt",
+    "type": "noun",
+    "meaning": "a piece of paper that proves you have paid for something",
+    "vietnamese": "hóa đơn / biên lai thanh toán",
+    "example": "Always keep your receipt in case you want to return the product."
+  },
+  {
+    "id": "VOC324",
+    "level": "A2",
+    "topic": "Shopping & Money",
+    "word": "discount",
+    "type": "noun",
+    "meaning": "a reduction in the usual price of something",
+    "vietnamese": "sự giảm giá / chiết khấu",
+    "example": "Students get a 10% discount on movie tickets."
+  },
+  {
+    "id": "VOC325",
+    "level": "A1",
+    "topic": "Entertainment & Hobbies",
+    "word": "game",
+    "type": "noun",
+    "meaning": "an entertaining activity or sport with specific rules",
+    "vietnamese": "trò chơi / trận đấu",
+    "example": "Let's play a board game tonight."
+  },
+  {
+    "id": "VOC326",
+    "level": "A1",
+    "topic": "Entertainment & Hobbies",
+    "word": "music",
+    "type": "noun",
+    "meaning": "a pattern of sounds made by instruments or voices in a pleasant way",
+    "vietnamese": "âm nhạc",
+    "example": "Listening to classical music helps me relax."
+  },
+  {
+    "id": "VOC327",
+    "level": "A1",
+    "topic": "Entertainment & Hobbies",
+    "word": "read",
+    "type": "verb",
+    "meaning": "to look at and understand words in a book, magazine, or website",
+    "vietnamese": "đọc",
+    "example": "He reads a chapter of a book before sleeping."
+  },
+  {
+    "id": "VOC328",
+    "level": "A2",
+    "topic": "Entertainment & Hobbies",
+    "word": "instrument",
+    "type": "noun",
+    "meaning": "an object such as a piano or guitar that is used for playing music",
+    "vietnamese": "nhạc cụ",
+    "example": "Can you play any musical instrument?"
+  },
+  {
+    "id": "VOC329",
+    "level": "A2",
+    "topic": "Entertainment & Hobbies",
+    "word": "photography",
+    "type": "noun",
+    "meaning": "the skill, job, or hobby of taking photographs",
+    "vietnamese": "nhiếp ảnh / việc chụp ảnh",
+    "example": "He is taking a course to improve his photography."
+  },
+  {
+    "id": "VOC330",
+    "level": "A2",
+    "topic": "Entertainment & Hobbies",
+    "word": "concert",
+    "type": "noun",
+    "meaning": "a performance of music by one or more musicians or singers",
+    "vietnamese": "buổi hòa nhạc / concert",
+    "example": "We are going to a live rock concert this weekend."
+  },
+  {
+    "id": "VOC331",
+    "level": "A1",
+    "topic": "Time & Calendar",
+    "word": "week",
+    "type": "noun",
+    "meaning": "a period of seven days",
+    "vietnamese": "tuần / một tuần",
+    "example": "There are 52 weeks in a year."
+  },
+  {
+    "id": "VOC332",
+    "level": "A1",
+    "topic": "Time & Calendar",
+    "word": "month",
+    "type": "noun",
+    "meaning": "one of the twelve periods of time into which a year is divided",
+    "vietnamese": "tháng / một tháng",
+    "example": "My birthday is next month."
+  },
+  {
+    "id": "VOC333",
+    "level": "A1",
+    "topic": "Time & Calendar",
+    "word": "year",
+    "type": "noun",
+    "meaning": "a period of 365 or 366 days",
+    "vietnamese": "năm",
+    "example": "He moved to Singapore last year."
+  },
+  {
+    "id": "VOC334",
+    "level": "A2",
+    "topic": "Time & Calendar",
+    "word": "calendar",
+    "type": "noun",
+    "meaning": "a table showing the days, weeks, and months of a specific year",
+    "vietnamese": "lịch / tờ lịch",
+    "example": "Mark the meeting date on your calendar."
+  },
+  {
+    "id": "VOC335",
+    "level": "A2",
+    "topic": "Time & Calendar",
+    "word": "future",
+    "type": "noun",
+    "meaning": "the period of time that will come after the present time",
+    "vietnamese": "tương lai",
+    "example": "We need to plan carefully for the future."
+  },
+  {
+    "id": "VOC336",
+    "level": "A2",
+    "topic": "Time & Calendar",
+    "word": "century",
+    "type": "noun",
+    "meaning": "a period of 100 years",
+    "vietnamese": "thế kỷ",
+    "example": "We are living in the 21st century."
+  },
+  {
+    "id": "VOC337",
+    "level": "A1",
+    "topic": "Family & Relationships",
+    "word": "child",
+    "type": "noun",
+    "meaning": "a young human being below the age of full development",
+    "vietnamese": "đứa trẻ / đứa con",
+    "example": "As a child, she loved climbing trees."
+  },
+  {
+    "id": "VOC338",
+    "level": "A1",
+    "topic": "Family & Relationships",
+    "word": "parent",
+    "type": "noun",
+    "meaning": "a mother or father of a person",
+    "vietnamese": "cha mẹ / phụ huynh",
+    "example": "Her parents are both high school teachers."
+  },
+  {
+    "id": "VOC339",
+    "level": "A1",
+    "topic": "Family & Relationships",
+    "word": "friend",
+    "type": "noun",
+    "meaning": "a person who you know well and like, but who is not a family member",
+    "vietnamese": "người bạn",
+    "example": "He is my best friend from high school."
+  },
+  {
+    "id": "VOC340",
+    "level": "A2",
+    "topic": "Family & Relationships",
+    "word": "neighbor",
+    "type": "noun",
+    "meaning": "a person who lives near or next to you",
+    "vietnamese": "hàng xóm",
+    "example": "Our neighbors are very quiet and helpful."
+  },
+  {
+    "id": "VOC341",
+    "level": "A2",
+    "topic": "Family & Relationships",
+    "word": "partner",
+    "type": "noun",
+    "meaning": "a person you are closely involved with in a relationship or business",
+    "vietnamese": "bạn đời / đối tác",
+    "example": "They have been business partners for ten years."
+  },
+  {
+    "id": "VOC342",
+    "level": "A2",
+    "topic": "Family & Relationships",
+    "word": "relative",
+    "type": "noun",
+    "meaning": "a member of your family, such as an aunt or cousin",
+    "vietnamese": "họ hàng / người thân",
+    "example": "All our relatives gathered for the New Year dinner."
+  },
+  {
+    "id": "VOC343",
+    "level": "A1",
+    "topic": "Materials & Shapes",
+    "word": "wood",
+    "type": "noun",
+    "meaning": "the hard substance that forms the main frame of a tree",
+    "vietnamese": "gỗ",
+    "example": "This beautiful dining table is made of solid wood."
+  },
+  {
+    "id": "VOC344",
+    "level": "A1",
+    "topic": "Materials & Shapes",
+    "word": "stone",
+    "type": "noun",
+    "meaning": "hard solid substance found in the ground",
+    "vietnamese": "đá / viên đá",
+    "example": "The ancient path was paved with smooth stones."
+  },
+  {
+    "id": "VOC345",
+    "level": "A1",
+    "topic": "Materials & Shapes",
+    "word": "glass",
+    "type": "noun",
+    "meaning": "a hard, transparent material used to make windows or bottles",
+    "vietnamese": "thủy tinh / ly thủy tinh",
+    "example": "Be careful, the glass cup is fragile."
+  },
+  {
+    "id": "VOC346",
+    "level": "A2",
+    "topic": "Materials & Shapes",
+    "word": "plastic",
+    "type": "noun",
+    "meaning": "a light, strong material made chemically that can be shaped easily",
+    "vietnamese": "nhựa / chất dẻo",
+    "example": "We should reduce the use of single-use plastic bags."
+  },
+  {
+    "id": "VOC347",
+    "level": "A2",
+    "topic": "Materials & Shapes",
+    "word": "metal",
+    "type": "noun",
+    "meaning": "a chemical element such as iron or gold that is hard and shiny",
+    "vietnamese": "kim loại",
+    "example": "The key is made of a strong metal alloy."
+  },
+  {
+    "id": "VOC348",
+    "level": "A2",
+    "topic": "Materials & Shapes",
+    "word": "circle",
+    "type": "noun",
+    "meaning": "a completely round flat shape",
+    "vietnamese": "hình tròn",
+    "example": "The children sat in a circle around the teacher."
+  },
+  {
+    "id": "VOC349",
+    "level": "A1",
+    "topic": "Transportation",
+    "word": "bus",
+    "type": "noun",
+    "meaning": "a large motor vehicle carrying passengers by road",
+    "vietnamese": "xe buýt",
+    "example": "I take the bus to go to work every day."
+  },
+  {
+    "id": "VOC350",
+    "level": "A1",
+    "topic": "Transportation",
+    "word": "train",
+    "type": "noun",
+    "meaning": "a railway engine connected to carriages for carrying passengers or goods",
+    "vietnamese": "tau hoả / tàu lửa",
+    "example": "The train arrived at the station right on time."
+  },
+  {
+    "id": "VOC351",
+    "level": "A1",
+    "topic": "Transportation",
+    "word": "car",
+    "type": "noun",
+    "meaning": "a road vehicle with four wheels, powered by an engine",
+    "vietnamese": "xe ô tô",
+    "example": "He bought a brand new electric car."
+  },
+  {
+    "id": "VOC352",
+    "level": "A2",
+    "topic": "Transportation",
+    "word": "bicycle",
+    "type": "noun",
+    "meaning": "a vehicle with two wheels that you ride by pushing pedals with your feet",
+    "vietnamese": "xe đạp",
+    "example": "Riding a bicycle is good for the environment."
+  },
+  {
+    "id": "VOC353",
+    "topic": "Transportation",
+    "level": "A2",
+    "word": "traffic",
+    "type": "noun",
+    "meaning": "the vehicles moving along a road or street",
+    "vietnamese": "giao thông / lượng xe cộ",
+    "example": "The morning traffic was very heavy today."
+  },
+  {
+    "id": "VOC354",
+    "level": "A2",
+    "topic": "Transportation",
+    "word": "ticket",
+    "type": "noun",
+    "meaning": "a small piece of paper that shows you have paid for a journey",
+    "vietnamese": "vé (xe, tàu, máy bay...)",
+    "example": "Show your train ticket to the inspector."
+  },
+  {
+    "id": "VOC355",
+    "level": "A1",
+    "topic": "Clothes & Fashion",
+    "word": "shirt",
+    "type": "noun",
+    "meaning": "a piece of clothing worn on the upper part of the body",
+    "vietnamese": "áo sơ mi / áo thun",
+    "example": "He wore a crisp white shirt to the interview."
+  },
+  {
+    "id": "VOC356",
+    "level": "A1",
+    "topic": "Clothes & Fashion",
+    "word": "shoes",
+    "type": "noun",
+    "meaning": "coverings for the feet, typically made of leather or plastic",
+    "vietnamese": "đôi giày",
+    "example": "Please take off your shoes before entering the house."
+  },
+  {
+    "id": "VOC357",
+    "level": "A1",
+    "topic": "Clothes & Fashion",
+    "word": "hat",
+    "type": "noun",
+    "meaning": "a covering for the head that is not part of a coat",
+    "vietnamese": "chiếc mũ / cái nón",
+    "example": "Wear a hat to protect your face from the sun."
+  },
+  {
+    "id": "VOC358",
+    "level": "A2",
+    "topic": "Clothes & Fashion",
+    "word": "jacket",
+    "type": "noun",
+    "meaning": "a short coat that only goes down to your waist",
+    "vietnamese": "áo khoác ngắn",
+    "example": "Bring a leather jacket because it gets cold at night."
+  },
+  {
+    "id": "VOC359",
+    "level": "A2",
+    "topic": "Clothes & Fashion",
+    "word": "uniform",
+    "type": "noun",
+    "meaning": "a special set of clothes worn by all members of an organization",
+    "vietnamese": "đồng phục",
+    "example": "Students are required to wear school uniforms."
+  },
+  {
+    "id": "VOC360",
+    "level": "A2",
+    "topic": "Clothes & Fashion",
+    "word": "fashion",
+    "type": "noun",
+    "meaning": "the most popular style of clothing, hair, or behavior at a particular time",
+    "vietnamese": "thời trang",
+    "example": "She is very interested in high-end fashion."
+  },
+  {
+    "id": "VOC361",
+    "level": "A1",
+    "topic": "Entertainment & Media",
+    "word": "movie",
+    "type": "noun",
+    "meaning": "a cinema film",
+    "vietnamese": "bộ phim",
+    "example": "Do you want to go out and watch a movie tonight?"
+  },
+  {
+    "id": "VOC362",
+    "level": "A1",
+    "topic": "Entertainment & Media",
+    "word": "news",
+    "type": "noun",
+    "meaning": "information about recent events, reported in newspapers or on TV",
+    "vietnamese": "tin tức",
+    "example": "I always check the international news in the morning."
+  },
+  {
+    "id": "VOC363",
+    "level": "A1",
+    "topic": "Entertainment & Media",
+    "word": "radio",
+    "type": "noun",
+    "meaning": "a piece of electronic equipment used for listening to programs",
+    "vietnamese": "đài phát thanh / radio",
+    "example": "He listens to the radio while driving to work."
+  },
+  {
+    "id": "VOC364",
+    "level": "A2",
+    "topic": "Entertainment & Media",
+    "word": "magazine",
+    "type": "noun",
+    "meaning": "a large thin book with a paper cover contains articles and photographs",
+    "vietnamese": "tạp chí",
+    "example": "She bought a fashion magazine at the airport."
+  },
+  {
+    "id": "VOC365",
+    "level": "A2",
+    "topic": "Entertainment & Media",
+    "word": "channel",
+    "type": "noun",
+    "meaning": "a television station and its programs",
+    "vietnamese": "kênh truyền hình / kênh youtube",
+    "example": "Please change the TV channel, this show is boring."
+  },
+  {
+    "id": "VOC366",
+    "level": "A2",
+    "topic": "Entertainment & Media",
+    "word": "interview",
+    "type": "noun",
+    "meaning": "a meeting in which someone is asked questions for a newspaper article or TV show",
+    "vietnamese": "cuộc phỏng vấn",
+    "example": "The famous actor gave a live interview yesterday."
+  },
+  {
+    "id": "VOC367",
+    "level": "A1",
+    "topic": "Daily Routines",
+    "word": "wake up",
+    "type": "verb",
+    "meaning": "to open your eyes and become conscious after sleeping",
+    "vietnamese": "thức dậy",
+    "example": "I usually wake up at 6 AM every morning."
+  },
+  {
+    "id": "VOC368",
+    "level": "A1",
+    "topic": "Daily Routines",
+    "word": "shower",
+    "type": "noun",
+    "meaning": "an act of washing your body while standing under a spray of water",
+    "vietnamese": "tắm vòi hoa sen",
+    "example": "Taking a cold shower in the morning makes me feel fresh."
+  },
+  {
+    "id": "VOC369",
+    "level": "A1",
+    "topic": "Daily Routines",
+    "word": "sleep",
+    "type": "verb",
+    "meaning": "to rest your mind and body in a natural state of unconsciousness",
+    "vietnamese": "ngủ",
+    "example": "It is important to sleep at least eight hours a night."
+  },
+  {
+    "id": "VOC370",
+    "level": "A2",
+    "topic": "Daily Routines",
+    "word": "exercise",
+    "type": "verb",
+    "meaning": "to do physical activities to stay healthy and strong",
+    "vietnamese": "tập thể dục",
+    "example": "She exercises regularly at the local gym."
+  },
+  {
+    "id": "VOC371",
+    "level": "A2",
+    "topic": "Daily Routines",
+    "word": "habit",
+    "type": "noun",
+    "meaning": "something that you do often and regularly, sometimes without knowing",
+    "vietnamese": "thói quen",
+    "example": "Reading books before sleeping is a great habit."
+  },
+  {
+    "id": "VOC372",
+    "level": "A2",
+    "topic": "Daily Routines",
+    "word": "relax",
+    "type": "verb",
+    "meaning": "to rest and grow calm after working or feeling stressed",
+    "vietnamese": "thư giãn / nghỉ ngơi",
+    "example": "I like to relax on the sofa and listen to music."
+  },
+  {
+    "id": "VOC373",
+    "level": "A1",
+    "topic": "Animals & Nature",
+    "word": "dog",
+    "type": "noun",
+    "meaning": "a common domestic animal with four legs, often kept as a pet",
+    "vietnamese": "con chó",
+    "example": "He feeds his pet dog twice a day."
+  },
+  {
+    "id": "VOC374",
+    "level": "A1",
+    "topic": "Animals & Nature",
+    "word": "cat",
+    "type": "noun",
+    "meaning": "a small animal with fur, four legs, and a tail, kept as a pet",
+    "vietnamese": "con mèo",
+    "example": "The cat is sleeping on the window sill."
+  },
+  {
+    "id": "VOC375",
+    "level": "A1",
+    "topic": "Animals & Nature",
+    "word": "tree",
+    "type": "noun",
+    "meaning": "a tall plant with a thick wooden stem and many branches",
+    "vietnamese": "cây cối / cây lớn",
+    "example": "They planted an apple tree in the garden."
+  },
+  {
+    "id": "VOC376",
+    "level": "A2",
+    "topic": "Animals & Nature",
+    "word": "nature",
+    "type": "noun",
+    "meaning": "all the animals, plants, and other things in the world not made by people",
+    "vietnamese": "tự nhiên / thiên nhiên",
+    "example": "We should go hiking to get closer to nature."
+  },
+  {
+    "id": "VOC377",
+    "level": "A2",
+    "topic": "Animals & Nature",
+    "word": "wild",
+    "type": "adjective",
+    "meaning": "living or growing in natural conditions, not controlled by humans",
+    "vietnamese": "hoang dã",
+    "example": "You can see many wild animals in this national park."
+  },
+  {
+    "id": "VOC378",
+    "level": "A2",
+    "topic": "Animals & Nature",
+    "word": "forest",
+    "type": "noun",
+    "meaning": "a large area of land covered with trees and plants",
+    "vietnamese": "khu rừng",
+    "example": "Don't go into the deep forest without a guide."
+  },
+  {
+    "id": "VOC379",
+    "level": "A1",
+    "topic": "Shopping & Services",
+    "word": "buy",
+    "type": "verb",
+    "meaning": "to get something by paying money for it",
+    "vietnamese": "mua",
+    "example": "I need to buy some fresh vegetables for lunch."
+  },
+  {
+    "id": "VOC380",
+    "level": "A1",
+    "topic": "Shopping & Services",
+    "word": "cost",
+    "type": "noun",
+    "meaning": "the amount of money needed to buy or do something",
+    "vietnamese": "giá tiền / chi phí",
+    "example": "The total cost of the trip was very low."
+  },
+  {
+    "id": "VOC381",
+    "level": "A1",
+    "topic": "Shopping & Services",
+    "word": "market",
+    "type": "noun",
+    "meaning": "a place where people meet to buy and sell goods",
+    "vietnamese": "chợ",
+    "example": "My mother goes to the traditional market every weekend."
+  },
+  {
+    "id": "VOC382",
+    "level": "A2",
+    "topic": "Shopping & Services",
+    "word": "online shopping",
+    "type": "noun",
+    "meaning": "the activity of buying goods or services over the internet",
+    "vietnamese": "mua sắm trực tuyến",
+    "example": "Online shopping has become extremely popular nowadays."
+  },
+  {
+    "id": "VOC383",
+    "level": "A2",
+    "topic": "Shopping & Services",
+    "word": "delivery",
+    "type": "noun",
+    "meaning": "the act of taking goods or letters to a person or place",
+    "vietnamese": "sự giao hàng / vận chuyển",
+    "example": "They offer free delivery for orders over fifty dollars."
+  },
+  {
+    "id": "VOC384",
+    "level": "A2",
+    "topic": "Shopping & Services",
+    "word": "return",
+    "type": "verb",
+    "meaning": "to give or send something back to the place or person you got it from",
+    "vietnamese": "trả lại hàng",
+    "example": "If the shoes don't fit, you can return them within seven days."
+  },
+  {
+    "id": "VOC385",
+    "level": "A1",
+    "topic": "Places in Town",
+    "word": "park",
+    "type": "noun",
+    "meaning": "a large public garden or area of land used for recreation",
+    "vietnamese": "công viên",
+    "example": "Children love to play on the swings in the park."
+  },
+  {
+    "id": "VOC386",
+    "level": "A1",
+    "topic": "Places in Town",
+    "word": "hospital",
+    "type": "noun",
+    "meaning": "a place where people who are ill are treated by doctors and nurses",
+    "vietnamese": "bệnh viện",
+    "example": "The ambulance took the injured man to the nearest hospital."
+  },
+  {
+    "id": "VOC387",
+    "level": "A1",
+    "topic": "Places in Town",
+    "word": "school",
+    "type": "noun",
+    "meaning": "a place where children go to be educated",
+    "vietnamese": "trường học",
+    "example": "She walks her children to school every morning."
+  },
+  {
+    "id": "VOC388",
+    "level": "A2",
+    "topic": "Places in Town",
+    "word": "pharmacy",
+    "type": "noun",
+    "meaning": "a shop where medicines are prepared and sold",
+    "vietnamese": "tiệm thuốc tây / nhà thuốc",
+    "example": "I need to stop by the pharmacy to buy some cold medicine."
+  },
+  {
+    "id": "VOC389",
+    "level": "A2",
+    "topic": "Places in Town",
+    "word": "supermarket",
+    "type": "noun",
+    "meaning": "a large shop that sells food, drinks, and goods for the home",
+    "vietnamese": "siêu thị",
+    "example": "We do our weekly grocery shopping at the supermarket."
+  },
+  {
+    "id": "VOC390",
+    "level": "A2",
+    "topic": "Places in Town",
+    "word": "cinema",
+    "type": "noun",
+    "meaning": "a building where movies are shown to the public",
+    "vietnamese": "rạp chiếu phim",
+    "example": "Let's meet outside the cinema at 7 PM."
+  },
+  {
+    "id": "VOC391",
+    "level": "A1",
+    "topic": "House & Furniture",
+    "word": "bed",
+    "type": "noun",
+    "meaning": "a piece of furniture that you sleep on",
+    "vietnamese": "cái giường",
+    "example": "He jumped into bed and turned off the light."
+  },
+  {
+    "id": "VOC392",
+    "level": "A1",
+    "topic": "House & Furniture",
+    "word": "chair",
+    "type": "noun",
+    "meaning": "a seat for one person that has a back, legs, and sometimes arms",
+    "vietnamese": "cái ghế",
+    "example": "Pull up a chair and join our conversation."
+  },
+  {
+    "id": "VOC393",
+    "level": "A1",
+    "topic": "House & Furniture",
+    "word": "window",
+    "type": "noun",
+    "meaning": "a space in the wall of a building filled with glass to let in light",
+    "vietnamese": "cửa sổ",
+    "example": "Can you open the window? It's a bit stuffy here."
+  },
+  {
+    "id": "VOC394",
+    "level": "A2",
+    "topic": "House & Furniture",
+    "word": "wardrobe",
+    "type": "noun",
+    "meaning": "a large tall cupboard in which clothes may be hung or stored",
+    "vietnamese": "tủ quần áo",
+    "example": "She organized all her winter coats in the wardrobe."
+  },
+  {
+    "id": "VOC395",
+    "level": "A2",
+    "topic": "House & Furniture",
+    "word": "sofa",
+    "type": "noun",
+    "meaning": "a long comfortable seat with a back and arms for two or more people",
+    "vietnamese": "ghế sofa / ghế bành lớn",
+    "example": "We sat on the comfortable sofa and watched a game."
+  },
+  {
+    "id": "VOC396",
+    "level": "A2",
+    "topic": "House & Furniture",
+    "word": "curtain",
+    "type": "noun",
+    "meaning": "a piece of material hung to cover a window or a door",
+    "vietnamese": "rèm cửa / màn cửa",
+    "example": "Draw the curtains to block out the bright morning sun."
+  },
+  {
+    "id": "VOC397",
+    "level": "A1",
+    "topic": "Sports & Fitness",
+    "word": "sport",
+    "type": "noun",
+    "meaning": "a game or activity that needs physical effort and skill",
+    "vietnamese": "thể thao",
+    "example": "Playing sport is a good way to stay healthy."
+  },
+  {
+    "id": "VOC398",
+    "level": "A1",
+    "topic": "Sports & Fitness",
+    "word": "walk",
+    "type": "verb",
+    "meaning": "to move along on foot at a regular pace",
+    "vietnamese": "đi bộ",
+    "example": "They walk around the lake every evening."
+  },
+  {
+    "id": "VOC399",
+    "level": "A1",
+    "topic": "Sports & Fitness",
+    "word": "ball",
+    "type": "noun",
+    "meaning": "a round object used in games and sports",
+    "vietnamese": "quả bóng",
+    "example": "He kicked the ball straight into the goal."
+  },
+  {
+    "id": "VOC400",
+    "level": "A2",
+    "topic": "Sports & Fitness",
+    "word": "gym",
+    "type": "noun",
+    "meaning": "a room or building equipped for physical exercise",
+    "vietnamese": "phòng tập gym / phòng thể hình",
+    "example": "He goes to the gym three times a week to lift weights."
+  },
+  {
+    "id": "VOC401",
+    "level": "A2",
+    "topic": "Sports & Fitness",
+    "word": "healthy",
+    "type": "adjective",
+    "meaning": "physically strong and not likely to become ill easily",
+    "vietnamese": "khỏe mạnh / lành mạnh",
+    "example": "Eating fruits and working out will keep you healthy."
+  },
+  {
+    "id": "VOC402",
+    "level": "A2",
+    "topic": "Sports & Fitness",
+    "word": "player",
+    "type": "noun",
+    "meaning": "someone who takes part in a game or sport",
+    "vietnamese": "người chơi / vận động viên",
+    "example": "He is the best basketball player in our school team."
+  },
+  {
+    "id": "VOC403",
+    "level": "A1",
+    "topic": "Travel & Directions",
+    "word": "left",
+    "type": "noun",
+    "meaning": "the side of your body that is towards the west when you face north",
+    "vietnamese": "bên trái",
+    "example": "Turn left at the next traffic light."
+  },
+  {
+    "id": "VOC404",
+    "level": "A1",
+    "topic": "Travel & Directions",
+    "word": "right",
+    "type": "noun",
+    "meaning": "the side of your body that is towards the east when you face north",
+    "vietnamese": "bên phải",
+    "example": "The post office is on the right side of the street."
+  },
+  {
+    "id": "VOC405",
+    "level": "A1",
+    "topic": "Travel & Directions",
+    "word": "go",
+    "type": "verb",
+    "meaning": "to move or travel from one place to another",
+    "vietnamese": "đi / di chuyển",
+    "example": "We plan to go to Da Nang for our summer vacation."
+  },
+  {
+    "id": "VOC406",
+    "level": "A2",
+    "topic": "Travel & Directions",
+    "word": "straight",
+    "type": "adverb",
+    "meaning": "immediately or in a direct line without turning",
+    "vietnamese": "đi thẳng",
+    "example": "Go straight ahead for about two hundred meters."
+  },
+  {
+    "id": "VOC407",
+    "level": "A2",
+    "topic": "Travel & Directions",
+    "word": "corner",
+    "type": "noun",
+    "meaning": "the point, area, or line where two lines or streets meet",
+    "vietnamese": "góc đường / góc tường",
+    "example": "There is a lovely coffee shop at the corner of the street."
+  },
+  {
+    "id": "VOC408",
+    "level": "A2",
+    "topic": "Travel & Directions",
+    "word": "sign",
+    "type": "noun",
+    "meaning": "a notice giving information, directions, a warning, etc.",
+    "vietnamese": "biển hiệu / biển chỉ dẫn",
+    "example": "Follow the road signs to find the highway."
+  },
+  {
+    "id": "VOC409",
+    "level": "A1",
+    "topic": "Technology & Communication",
+    "word": "call",
+    "type": "verb",
+    "meaning": "to telephone someone",
+    "vietnamese": "gọi điện thoại",
+    "example": "I will call you as soon as I arrive at the station."
+  },
+  {
+    "id": "VOC410",
+    "level": "A1",
+    "topic": "Technology & Communication",
+    "word": "message",
+    "type": "noun",
+    "meaning": "a short piece of information that you give or send to a person",
+    "vietnamese": "tin nhắn / thông điệp",
+    "example": "She sent me a text message on Zalo."
+  },
+  {
+    "id": "VOC411",
+    "level": "A1",
+    "topic": "Technology & Communication",
+    "word": "online",
+    "type": "adjective",
+    "meaning": "connected to the internet",
+    "vietnamese": "trực tuyến / có kết nối mạng",
+    "example": "We have an online meeting with the client at 2 PM."
+  },
+  {
+    "id": "VOC412",
+    "level": "A2",
+    "topic": "Technology & Communication",
+    "word": "app",
+    "type": "noun",
+    "meaning": "a software program designed for a mobile device or computer",
+    "vietnamese": "ứng dụng di động / app",
+    "example": "I use a language learning app to practice English daily."
+  },
+  {
+    "id": "VOC413",
+    "level": "A2",
+    "topic": "Technology & Communication",
+    "word": "connect",
+    "type": "verb",
+    "meaning": "to join or link two or more things together",
+    "vietnamese": "kết nối",
+    "example": "You need a stable internet connection to connect to the server."
+  },
+  {
+    "id": "VOC414",
+    "level": "A2",
+    "topic": "Technology & Communication",
+    "word": "device",
+    "type": "noun",
+    "meaning": "an object or piece of equipment made for a special purpose",
+    "vietnamese": "thiết bị điện tử",
+    "example": "Smartphones and tablets are highly portable devices."
+  },
+  {
+    "id": "VOC415",
+    "level": "A1",
+    "topic": "Weather & Environment",
+    "word": "hot",
+    "type": "adjective",
+    "meaning": "having a high temperature",
+    "vietnamese": "nóng nực",
+    "example": "The weather is extremely hot in July."
+  },
+  {
+    "id": "VOC416",
+    "level": "A1",
+    "topic": "Weather & Environment",
+    "word": "cold",
+    "type": "adjective",
+    "meaning": "having a low temperature or a temperature below normal",
+    "vietnamese": "lạnh giá",
+    "example": "Remember to wear a warm coat, it's very cold outside."
+  },
+  {
+    "id": "VOC417",
+    "level": "A1",
+    "topic": "Weather & Environment",
+    "word": "cloud",
+    "type": "noun",
+    "meaning": "a grey or white shape in the sky made of tiny drops of water",
+    "vietnamese": "đám mây",
+    "example": "There are dark clouds in the sky, it might rain soon."
+  },
+  {
+    "id": "VOC418",
+    "level": "A2",
+    "topic": "Weather & Environment",
+    "word": "temperature",
+    "type": "noun",
+    "meaning": "the measurement of how hot or cold something is",
+    "vietnamese": "nhiệt độ",
+    "example": "The temperature dropped suddenly last night."
+  },
+  {
+    "id": "VOC419",
+    "level": "A2",
+    "topic": "Weather & Environment",
+    "word": "forecast",
+    "type": "noun",
+    "meaning": "a statement of what is judged likely to happen in the future weather",
+    "vietnamese": "dự báo thời tiết",
+    "example": "According to the weather forecast, it will be sunny all week."
+  },
+  {
+    "id": "VOC420",
+    "level": "A2",
+    "topic": "Weather & Environment",
+    "word": "environment",
+    "type": "noun",
+    "meaning": "the air, water, and land in or on which people, animals, and plants live",
+    "vietnamese": "môi trường tự nhiên",
+    "example": "We must take action to protect the environment."
+  },
+  {
+    "id": "VOC421",
+    "level": "A1",
+    "topic": "People & Society",
+    "word": "people",
+    "type": "noun",
+    "meaning": "men, women, and children inside a society",
+    "vietnamese": "con người / mọi người",
+    "example": "There were a lot of people at the concert."
+  },
+  {
+    "id": "VOC422",
+    "level": "A1",
+    "topic": "People & Society",
+    "word": "world",
+    "type": "noun",
+    "meaning": "the earth, together with all of its countries and peoples",
+    "vietnamese": "the giới",
+    "example": "English is spoken all over the world."
+  },
+  {
+    "id": "VOC423",
+    "level": "A1",
+    "topic": "People & Society",
+    "word": "country",
+    "type": "noun",
+    "meaning": "an area of land that has its own government and laws",
+    "vietnamese": "quốc gia / đất nước",
+    "example": "Which country do you want to visit next summer?"
+  },
+  {
+    "id": "VOC424",
+    "level": "A2",
+    "topic": "People & Society",
+    "word": "society",
+    "type": "noun",
+    "meaning": "a large group of people who live together in an organized way",
+    "vietnamese": "xã hội",
+    "example": "Technology has a huge impact on modern society."
+  },
+  {
+    "id": "VOC425",
+    "level": "A2",
+    "topic": "People & Society",
+    "word": "government",
+    "type": "noun",
+    "meaning": "the group of people who officially rule a country or state",
+    "vietnamese": "chính phủ / chính quyền",
+    "example": "The government announced a new plan to build more schools."
+  },
+  {
+    "id": "VOC426",
+    "level": "A2",
+    "topic": "People & Society",
+    "word": "population",
+    "type": "noun",
+    "meaning": "all the people who live in a particular area or city",
+    "vietnamese": "dân số",
+    "example": "The population of Tokyo is very large."
+  },
+  {
+    "id": "VOC427",
+    "level": "A1",
+    "topic": "Shopping & Fashion",
+    "word": "skirt",
+    "type": "noun",
+    "meaning": "a piece of clothing for women and girls that hangs from the waist",
+    "vietnamese": "chân váy / váy ngắn",
+    "example": "She bought a beautiful pleated skirt for the party."
+  },
+  {
+    "id": "VOC428",
+    "level": "A1",
+    "topic": "Shopping & Fashion",
+    "word": "coat",
+    "type": "noun",
+    "meaning": "an outer piece of clothing with sleeves, worn to keep warm",
+    "vietnamese": "áo khoác dáng dài / áo choàng",
+    "example": "He put on his warm coat before going out into the snow."
+  },
+  {
+    "id": "VOC429",
+    "level": "A1",
+    "topic": "Shopping & Fashion",
+    "word": "t-shirt",
+    "type": "noun",
+    "meaning": "a simple piece of clothing for the upper body with short sleeves and no collar",
+    "vietnamese": "áo thun / áo phông",
+    "example": "I prefer wearing a comfortable t-shirt and jeans on weekends."
+  },
+  {
+    "id": "VOC430",
+    "level": "A2",
+    "topic": "Shopping & Fashion",
+    "word": "style",
+    "type": "noun",
+    "meaning": "a particular shape, form, or design of something like clothing",
+    "vietnamese": "phong cách / kiểu dáng",
+    "example": "I really like the simple style of this jacket."
+  },
+  {
+    "id": "VOC431",
+    "level": "A2",
+    "topic": "Shopping & Fashion",
+    "word": "jewelry",
+    "type": "noun",
+    "meaning": "decorative objects such as rings, necklaces, and bracelets that people wear",
+    "vietnamese": "trang sức / nữ trang",
+    "example": "She inherited some beautiful silver jewelry from her grandmother."
+  },
+  {
+    "id": "VOC432",
+    "level": "A2",
+    "topic": "Shopping & Fashion",
+    "word": "fitting room",
+    "type": "noun",
+    "meaning": "a room in a shop where you can put on clothes to see if they fit",
+    "vietnamese": "phòng thử đồ",
+    "example": "The line for the fitting room was quite long during the sale."
+  },
+  {
+    "id": "VOC433",
+    "level": "A1",
+    "topic": "Entertainment & Leisure",
+    "word": "dance",
+    "type": "verb",
+    "meaning": "to move your body and feet to the rhythm of music",
+    "vietnamese": "nhảy múa / khiêu vũ",
+    "example": "They love to dance together at parties."
+  },
+  {
+    "id": "VOC434",
+    "level": "A1",
+    "topic": "Entertainment & Leisure",
+    "word": "listen",
+    "type": "verb",
+    "meaning": "to give your attention to a sound or a person talking",
+    "vietnamese": "nghe / lắng nghe",
+    "example": "Listen carefully to the instructions before starting the test."
+  },
+  {
+    "id": "VOC435",
+    "level": "A1",
+    "topic": "Entertainment & Leisure",
+    "word": "sing",
+    "type": "verb",
+    "meaning": "to make musical sounds with your voice",
+    "vietnamese": "hát / ca hát",
+    "example": "She can sing English songs beautifully."
+  },
+  {
+    "id": "VOC436",
+    "level": "A2",
+    "topic": "Entertainment & Leisure",
+    "word": "festival",
+    "type": "noun",
+    "meaning": "a special day or period, usually in honor of a religious or cultural event",
+    "vietnamese": "lễ hội",
+    "example": "The mid-autumn festival is a great time for children."
+  },
+  {
+    "id": "VOC437",
+    "level": "A2",
+    "topic": "Entertainment & Leisure",
+    "word": "instrument",
+    "type": "noun",
+    "meaning": "a tool or device used for playing musical notes",
+    "vietnamese": "nhạc cụ",
+    "example": "The violin is a very difficult musical instrument to learn."
+  },
+  {
+    "id": "VOC438",
+    "level": "A2",
+    "topic": "Entertainment & Leisure",
+    "word": "celebrate",
+    "type": "verb",
+    "meaning": "to do something special or enjoyable for an important event",
+    "vietnamese": "ăn mừng / kỷ niệm",
+    "example": "They threw a big party to celebrate his promotion."
+  },
+  {
+    "id": "VOC439",
+    "level": "A1",
+    "topic": "Health & Lifestyle",
+    "word": "healthy",
+    "type": "adjective",
+    "meaning": "physically strong and not sick",
+    "vietnamese": "khỏe mạnh",
+    "example": "Eating a balanced diet is key to a healthy life."
+  },
+  {
+    "id": "VOC440",
+    "level": "A1",
+    "topic": "Health & Lifestyle",
+    "word": "doctor",
+    "type": "noun",
+    "meaning": "a person whose job is to treat people who are ill or injured",
+    "vietnamese": "bác sĩ",
+    "example": "You should see a doctor if your fever doesn't go away."
+  },
+  {
+    "id": "VOC441",
+    "level": "A1",
+    "topic": "Health & Lifestyle",
+    "word": "medicine",
+    "type": "noun",
+    "meaning": "substances used to treat an illness or a medical condition",
+    "vietnamese": "thuốc uống / y học",
+    "example": "Take this medicine after breakfast."
+  },
+  {
+    "id": "VOC442",
+    "level": "A2",
+    "topic": "Health & Lifestyle",
+    "word": "appointment",
+    "type": "noun",
+    "meaning": "a formal arrangement to meet or visit someone at a particular time",
+    "vietnamese": "cuộc hẹn (khám bệnh, công việc...)",
+    "example": "I have a dentist appointment tomorrow at 10 AM."
+  },
+  {
+    "id": "VOC443",
+    "level": "A2",
+    "topic": "Health & Lifestyle",
+    "word": "stress",
+    "type": "noun",
+    "meaning": "mental or emotional pressure caused by a difficult situation",
+    "vietnamese": "sự căng thẳng / stress",
+    "example": "Too much work can cause a lot of severe stress."
+  },
+  {
+    "id": "VOC444",
+    "level": "A2",
+    "topic": "Health & Lifestyle",
+    "word": "symptom",
+    "type": "noun",
+    "meaning": "a physical or mental feature that indicates a condition or disease",
+    "vietnamese": "triệu chứng",
+    "example": "A high temperature and cough are common symptoms of the flu."
+  },
+  {
+    "id": "VOC445",
+    "level": "A1",
+    "topic": "Food & Restaurants",
+    "word": "menu",
+    "type": "noun",
+    "meaning": "a list of the food and drinks that you can order in a restaurant",
+    "vietnamese": "thực đơn / menu",
+    "example": "Could we have the menu, please?"
+  },
+  {
+    "id": "VOC446",
+    "level": "A1",
+    "topic": "Food & Restaurants",
+    "word": "order",
+    "type": "verb",
+    "meaning": "to ask for food or drink to be served in a restaurant",
+    "vietnamese": "gọi món / đặt hàng",
+    "example": "Are you ready to order your main course?"
+  },
+  {
+    "id": "VOC447",
+    "level": "A1",
+    "topic": "Food & Restaurants",
+    "word": "bill",
+    "type": "noun",
+    "meaning": "a piece of paper that shows how much money you have to pay for a meal",
+    "vietnamese": "hóa đơn thanh toán (tiền ăn, điện, nước...)",
+    "example": "Excuse me, waiter, can I get the bill, please?"
+  },
+  {
+    "id": "VOC448",
+    "level": "A2",
+    "topic": "Food & Restaurants",
+    "word": "dessert",
+    "type": "noun",
+    "meaning": "sweet food eaten at the end of a meal",
+    "vietnamese": "món tráng miệng",
+    "example": "We ordered chocolate ice cream for dessert."
+  },
+  {
+    "id": "VOC449",
+    "level": "A2",
+    "topic": "Food & Restaurants",
+    "word": "delicious",
+    "type": "adjective",
+    "meaning": "having an excellent and very pleasant taste",
+    "vietnamese": "thơm ngon / ngon miệng",
+    "example": "The steak at this restaurant is absolutely delicious."
+  },
+  {
+    "id": "VOC450",
+    "level": "A2",
+    "topic": "Food & Restaurants",
+    "word": "reservation",
+    "type": "noun",
+    "meaning": "an arrangement to have something kept for you, such as a table in a restaurant",
+    "vietnamese": "sự đặt bàn trước / đặt phòng trước",
+    "example": "I made a dinner reservation for two at 8 PM."
+  },
+  {
+    "id": "VOC451",
+    "level": "A1",
+    "topic": "Education & Studies",
+    "word": "book",
+    "type": "noun",
+    "meaning": "written or printed pages fastened together inside a cover",
+    "vietnamese": "cuốn sách",
+    "example": "She is reading an interesting history book."
+  },
+  {
+    "id": "VOC452",
+    "level": "A1",
+    "topic": "Education & Studies",
+    "word": "student",
+    "type": "noun",
+    "meaning": "a person who is studying at a school, college, or university",
+    "vietnamese": "học sinh / sinh viên",
+    "example": "The new student in our class comes from Da Nang."
+  },
+  {
+    "id": "VOC453",
+    "level": "A1",
+    "topic": "Education & Studies",
+    "word": "teacher",
+    "type": "noun",
+    "meaning": "someone whose job is to teach people, especially in a school",
+    "vietnamese": "giáo viên / thầy cô",
+    "example": "Our English teacher is extremely friendly and patient."
+  },
+  {
+    "id": "VOC454",
+    "level": "A2",
+    "topic": "Education & Studies",
+    "word": "subject",
+    "type": "noun",
+    "meaning": "an area of knowledge that is studied in a school or university",
+    "vietnamese": "môn học",
+    "example": "Math and computer science are my favorite subjects."
+  },
+  {
+    "id": "VOC455",
+    "level": "A2",
+    "topic": "Education & Studies",
+    "word": "exam",
+    "type": "noun",
+    "meaning": "a formal test of a person's knowledge or proficiency in a subject",
+    "vietnamese": "kỳ thi / bài kiểm tra lớn",
+    "example": "He passed the final graduation exam with high scores."
+  },
+  {
+    "id": "VOC456",
+    "level": "A2",
+    "topic": "Education & Studies",
+    "word": "course",
+    "type": "noun",
+    "meaning": "a series of lessons or lectures on a particular subject",
+    "vietnamese": "khóa học",
+    "example": "I'm taking an online course to learn web programming."
+  },
+  {
+    "id": "VOC457",
+    "level": "A1",
+    "topic": "Nature & Wildlife",
+    "word": "bird",
+    "type": "noun",
+    "meaning": "an animal with feathers and wings, usually able to fly",
+    "vietnamese": "con chim",
+    "example": "A little bird is singing sweetly outside my window."
+  },
+  {
+    "id": "VOC458",
+    "level": "A1",
+    "topic": "Nature & Wildlife",
+    "word": "flower",
+    "type": "noun",
+    "meaning": "the brightly colored part of a plant from which seed or fruit develops",
+    "vietnamese": "bông hoa",
+    "example": "He gave her a beautiful bouquet of red flowers."
+  },
+  {
+    "id": "VOC459",
+    "level": "A1",
+    "topic": "Nature & Wildlife",
+    "word": "river",
+    "type": "noun",
+    "meaning": "a large natural stream of water flowing in a channel to the sea or a lake",
+    "vietnamese": "con sông",
+    "example": "They went fishing by the river last weekend."
+  },
+  {
+    "id": "VOC460",
+    "level": "A2",
+    "topic": "Nature & Wildlife",
+    "word": "mountain",
+    "type": "noun",
+    "meaning": "a very high hill, often with steep sides and a pointed top",
+    "vietnamese": "ngọn núi",
+    "example": "Mount Everest is the highest mountain in the world."
+  },
+  {
+    "id": "VOC461",
+    "level": "A2",
+    "topic": "Nature & Wildlife",
+    "word": "ocean",
+    "type": "noun",
+    "meaning": "the massive body of salt water that covers most of the earth's surface",
+    "vietnamese": "đại dương",
+    "example": "Blue whales are the largest creatures living in the ocean."
+  },
+  {
+    "id": "VOC462",
+    "level": "A2",
+    "topic": "Nature & Wildlife",
+    "word": "protect",
+    "type": "verb",
+    "meaning": "to keep someone or something safe from injury, damage, or loss",
+    "vietnamese": "bảo vệ / gìn giữ",
+    "example": "We need stricter laws to protect endangered wild animals."
+  },
+  {
+    "id": "VOC463",
+    "level": "A1",
+    "topic": "Technology & Media",
+    "word": "computer",
+    "type": "noun",
+    "meaning": "an electronic machine that can store, organize, and find information",
+    "vietnamese": "máy tính",
+    "example": "I spend about eight hours a day working on my computer."
+  },
+  {
+    "id": "VOC464",
+    "level": "A1",
+    "topic": "Technology & Media",
+    "word": "internet",
+    "type": "noun",
+    "meaning": "the global network connecting millions of computers",
+    "vietnamese": "mạng internet",
+    "example": "The internet allows people to search for information instantly."
+  },
+  {
+    "id": "VOC465",
+    "level": "A1",
+    "topic": "Technology & Media",
+    "word": "video",
+    "type": "noun",
+    "meaning": "a recording of moving visual images",
+    "vietnamese": "đoạn phim ngắn / video",
+    "example": "This video template has gone viral on social media."
+  },
+  {
+    "id": "VOC466",
+    "level": "A2",
+    "topic": "Technology & Media",
+    "word": "software",
+    "type": "noun",
+    "meaning": "programs and other operating information used by a computer",
+    "vietnamese": "phần mềm máy tính",
+    "example": "He updates his anti-virus software regularly."
+  },
+  {
+    "id": "VOC467",
+    "level": "A2",
+    "topic": "Technology & Media",
+    "word": "hacker",
+    "type": "noun",
+    "meaning": "a person who uses computers to gain unauthorized access to data",
+    "vietnamese": "tin tặc / hacker",
+    "example": "The company server was attacked by an unknown hacker."
+  },
+  {
+    "id": "VOC468",
+    "level": "A2",
+    "topic": "Technology & Media",
+    "word": "privacy",
+    "type": "noun",
+    "meaning": "the state of being free from public attention or unwanted observation",
+    "vietnamese": "sự riêng tư / quyền riêng tư",
+    "example": "Users should configure their accounts to protect online privacy."
+  },
+  {
+    "id": "VOC469",
+    "level": "A1",
+    "topic": "Travel & Transportation",
+    "word": "plane",
+    "type": "noun",
+    "meaning": "a vehicle with wings and one or more engines that flies through the air",
+    "vietnamese": "máy bay",
+    "example": "The plane landed safely at the airport despite the heavy wind."
+  },
+  {
+    "id": "VOC470",
+    "level": "A1",
+    "topic": "Travel & Transportation",
+    "word": "station",
+    "type": "noun",
+    "meaning": "a place where trains or buses stop so passengers can get on or off",
+    "vietnamese": "nhà ga / bến xe",
+    "example": "I will meet you at the central train station."
+  },
+  {
+    "id": "VOC471",
+    "level": "A1",
+    "topic": "Travel & Transportation",
+    "word": "map",
+    "type": "noun",
+    "meaning": "a visual representation of an entire area or a part of an area",
+    "vietnamese": "bản đồ",
+    "example": "Let's check the map to see which highway we should take."
+  },
+  {
+    "id": "VOC472",
+    "level": "A2",
+    "topic": "Travel & Transportation",
+    "word": "passenger",
+    "type": "noun",
+    "meaning": "a person who is traveling in a vehicle but is not driving it",
+    "vietnamese": "hành khách",
+    "example": "The bus was fully packed with morning passengers."
+  },
+  {
+    "id": "VOC473",
+    "level": "A2",
+    "topic": "Travel & Transportation",
+    "word": "luggage",
+    "type": "noun",
+    "meaning": "bags and suitcases that you take on a journey",
+    "vietnamese": "hành lý",
+    "example": "They checked in their heavy luggage at the airport counter."
+  },
+  {
+    "id": "VOC474",
+    "level": "A2",
+    "topic": "Travel & Transportation",
+    "word": "delay",
+    "type": "verb",
+    "meaning": "to make something happen at a later time than planned",
+    "vietnamese": "trì hoãn / làm chậm trễ",
+    "example": "Our flight was delayed for two hours because of the thick fog."
+  },
+  {
+    "id": "VOC475",
+    "level": "A1",
+    "topic": "Home & Lifestyle",
+    "word": "house",
+    "type": "noun",
+    "meaning": "a building that people, usually a family, live in",
+    "vietnamese": "ngôi nhà",
+    "example": "They live in a beautiful house near the park."
+  },
+  {
+    "id": "VOC476",
+    "level": "A1",
+    "topic": "Home & Lifestyle",
+    "word": "kitchen",
+    "type": "noun",
+    "meaning": "a room where food is kept, prepared, and cooked",
+    "vietnamese": "nhà bếp / phòng bếp",
+    "example": "The kitchen is equipped with a modern oven and a huge fridge."
+  },
+  {
+    "id": "VOC477",
+    "level": "A1",
+    "topic": "Home & Lifestyle",
+    "word": "clean",
+    "type": "verb",
+    "meaning": "to remove dirt, dust, or unwanted stains from something",
+    "vietnamese": "lau chùi / dọn dẹp sạch sẽ",
+    "example": "We always clean the whole house before the Lunar New Year."
+  },
+  {
+    "id": "VOC478",
+    "level": "A2",
+    "topic": "Home & Lifestyle",
+    "word": "apartment",
+    "type": "noun",
+    "meaning": "a set of rooms for living in, usually on one floor of a large building",
+    "vietnamese": "căn hộ chung cư",
+    "example": "He rented a small but cozy studio apartment in the city center."
+  },
+  {
+    "id": "VOC479",
+    "level": "A2",
+    "topic": "Home & Lifestyle",
+    "word": "furniture",
+    "type": "noun",
+    "meaning": "items such as chairs, tables, and beds that are put into a house",
+    "vietnamese": "đồ nội thất / đồ đạc trong nhà",
+    "example": "The wooden furniture gives the living room a cozy feel."
+  },
+  {
+    "id": "VOC480",
+    "level": "A2",
+    "topic": "Home & Lifestyle",
+    "word": "rent",
+    "type": "verb",
+    "meaning": "to pay a fixed amount of money regularly to use a room, house, or car",
+    "vietnamese": "thuê (nhà, xe...)",
+    "example": "They decided to rent a car to explore the countryside easily."
+  },
+  {
+    "id": "VOC481",
+    "level": "A1",
+    "topic": "Shopping & Services",
+    "word": "shop",
+    "type": "noun",
+    "meaning": "a place where you can buy goods or services",
+    "vietnamese": "cửa hàng / tiệm",
+    "example": "He runs a small coffee shop near the train station."
+  },
+  {
+    "id": "VOC482",
+    "level": "A1",
+    "topic": "Shopping & Services",
+    "word": "pay",
+    "type": "verb",
+    "meaning": "to give money to someone for something you can buy",
+    "vietnamese": "thanh toán / trả tiền",
+    "example": "You can pay by cash or scanning a QR code."
+  },
+  {
+    "id": "VOC483",
+    "level": "A1",
+    "topic": "Shopping & Services",
+    "word": "bag",
+    "type": "noun",
+    "meaning": "a container made of paper, plastic, or cloth, used for carrying things",
+    "vietnamese": "túi xách / cái bao",
+    "example": "She packed her shopping bags into the back of the car."
+  },
+  {
+    "id": "VOC482",
+    "level": "A2",
+    "topic": "Shopping & Services",
+    "word": "customer",
+    "type": "noun",
+    "meaning": "a person who buys goods or services from a shop or business",
+    "vietnamese": "khách hàng",
+    "example": "The shop assistant is always polite to customers."
+  },
+  {
+    "id": "VOC485",
+    "level": "A2",
+    "topic": "Shopping & Services",
+    "word": "complain",
+    "type": "verb",
+    "meaning": "to say that something is wrong or not satisfactory",
+    "vietnamese": "phàn nàn / khiếu nại",
+    "example": "Customers often complain about the slow delivery service."
+  },
+  {
+    "id": "VOC486",
+    "level": "A2",
+    "topic": "Shopping & Services",
+    "word": "service",
+    "type": "noun",
+    "meaning": "the amount of help that people give you in a restaurant or shop",
+    "vietnamese": "dịch vụ / sự phục vụ",
+    "example": "The food was great but the service was extremely slow."
+  },
+  {
+    "id": "VOC487",
+    "level": "A1",
+    "topic": "Work & Business",
+    "word": "worker",
+    "type": "noun",
+    "meaning": "a person who does a specified type of work or job",
+    "vietnamese": "người lao động / công nhân",
+    "example": "The factory workers are demanding safer working conditions."
+  },
+  {
+    "id": "VOC488",
+    "level": "A1",
+    "topic": "Work & Business",
+    "word": "office",
+    "type": "noun",
+    "meaning": "a room or building where people work at desks",
+    "vietnamese": "văn phòng",
+    "example": "Our head office is located in the city center."
+  },
+  {
+    "id": "VOC489",
+    "level": "A1",
+    "topic": "Work & Business",
+    "word": "company",
+    "type": "noun",
+    "meaning": "an organization that sells goods or services in order to make money",
+    "vietnamese": "công ty",
+    "example": "He works for an international software company."
+  },
+  {
+    "id": "VOC490",
+    "level": "A2",
+    "topic": "Work & Business",
+    "word": "business",
+    "type": "noun",
+    "meaning": "the activity of buying and selling goods and services",
+    "vietnamese": "việc kinh doanh / doanh nghiệp",
+    "example": "She decided to start her own online fashion business."
+  },
+  {
+    "id": "VOC491",
+    "level": "A2",
+    "topic": "Work & Business",
+    "word": "meeting",
+    "type": "noun",
+    "meaning": "an occasion when people come together to discuss something officially",
+    "vietnamese": "cuộc họp",
+    "example": "The morning meeting was canceled because the boss was late."
+  },
+  {
+    "id": "VOC492",
+    "level": "A2",
+    "topic": "Work & Business",
+    "word": "project",
+    "type": "noun",
+    "meaning": "a piece of planned work or an activity that is finished over a period of time",
+    "vietnamese": "dự án",
+    "example": "We are working hard to complete this project on time."
+  },
+  {
+    "id": "VOC493",
+    "level": "A1",
+    "topic": "Socializing & Feelings",
+    "word": "happy",
+    "type": "adjective",
+    "meaning": "feeling, showing, or causing pleasure or satisfaction",
+    "vietnamese": "vui vẻ / hạnh phúc",
+    "example": "I'm so happy to hear that you passed your exam."
+  },
+  {
+    "id": "VOC494",
+    "level": "A1",
+    "topic": "Socializing & Feelings",
+    "word": "sad",
+    "type": "adjective",
+    "meaning": "feeling or showing sorrow; unhappy",
+    "vietnamese": "buồn bã",
+    "example": "The movie has a very sad ending that made everyone cry."
+  },
+  {
+    "id": "VOC495",
+    "level": "A1",
+    "topic": "Socializing & Feelings",
+    "word": "smile",
+    "type": "verb",
+    "meaning": "to make the corners of your mouth turn up because you are happy",
+    "vietnamese": "mỉm cười",
+    "example": "She always smiles when she greets customers."
+  },
+  {
+    "id": "VOC496",
+    "level": "A2",
+    "topic": "Socializing & Feelings",
+    "word": "angry",
+    "type": "adjective",
+    "meaning": "having a strong feeling against someone who has behaved badly",
+    "vietnamese": "tức giận",
+    "example": "He got angry when they kept delaying the meeting."
+  },
+  {
+    "id": "VOC497",
+    "level": "A2",
+    "topic": "Socializing & Feelings",
+    "word": "lonely",
+    "type": "adjective",
+    "meaning": "unhappy because you are alone or have no friends",
+    "vietnamese": "cô đơn",
+    "example": "Living in a strange city can make you feel very lonely."
+  },
+  {
+    "id": "VOC498",
+    "level": "A2",
+    "topic": "Socializing & Feelings",
+    "word": "nervous",
+    "type": "adjective",
+    "meaning": "worried or anxious about something that is going to happen",
+    "vietnamese": "lo lắng / hồi hộp",
+    "example": "I felt nervous before giving my first presentation."
+  },
+  {
+    "id": "VOC499",
+    "level": "A1",
+    "topic": "Urban Life",
+    "word": "city",
+    "type": "noun",
+    "meaning": "a large and important town",
+    "vietnamese": "thành phố",
+    "example": "Ho Chi Minh City is the largest city in Vietnam."
+  },
+  {
+    "id": "VOC500",
+    "level": "A1",
+    "topic": "Urban Life",
+    "word": "road",
+    "type": "noun",
+    "meaning": "a long piece of hard ground built for cars and other vehicles to travel on",
+    "vietnamese": "con đường",
+    "example": "The road to the village is narrow and bumpy."
+  },
+  {
+    "id": "VOC501",
+    "level": "A1",
+    "topic": "Urban Life",
+    "word": "shop",
+    "type": "noun",
+    "meaning": "a building or room where goods are sold",
+    "vietnamese": "cửa hiệu / shop",
+    "example": "There is a convenience shop right next to my apartment."
+  },
+  {
+    "id": "VOC502",
+    "level": "A2",
+    "topic": "Urban Life",
+    "word": "building",
+    "type": "noun",
+    "meaning": "a structure with a roof and walls, such as a house or factory",
+    "vietnamese": "tòa nhà / công trình",
+    "example": "Landmark 81 is one of the tallest buildings in Southeast Asia."
+  },
+  {
+    "id": "VOC503",
+    "level": "A2",
+    "topic": "Urban Life",
+    "word": "crowded",
+    "type": "adjective",
+    "meaning": "completely full of people or things",
+    "vietnamese": "đông đúc / chật ních",
+    "example": "The buses are always crowded during rush hours."
+  },
+  {
+    "id": "VOC504",
+    "level": "A2",
+    "topic": "Urban Life",
+    "word": "subway",
+    "type": "noun",
+    "meaning": "an underground railway system in a city",
+    "vietnamese": "tàu điện ngầm",
+    "example": "Taking the subway is the fastest way to travel across New York."
+  },
+  {
+    "id": "VOC505",
+    "level": "A1",
+    "topic": "Leisure & Entertainment",
+    "word": "party",
+    "type": "noun",
+    "meaning": "a social occasion with music, food, and drinks",
+    "vietnamese": "bữa tiệc",
+    "example": "Are you coming to my birthday party this Friday?"
+  },
+  {
+    "id": "VOC506",
+    "level": "A1",
+    "topic": "Leisure & Entertainment",
+    "word": "watch",
+    "type": "verb",
+    "meaning": "to look at something for a period of time, especially something that moves",
+    "vietnamese": "xem / theo dõi",
+    "example": "They like to watch football matches together."
+  },
+  {
+    "id": "VOC507",
+    "level": "A1",
+    "topic": "Leisure & Entertainment",
+    "word": "funny",
+    "type": "adjective",
+    "meaning": "making you laugh; humorous",
+    "vietnamese": "buồn cười / hài hước",
+    "example": "The comedian told a very funny story."
+  },
+  {
+    "id": "VOC508",
+    "level": "A2",
+    "topic": "Leisure & Entertainment",
+    "word": "hobby",
+    "type": "noun",
+    "meaning": "an activity that you do for pleasure when you are not working",
+    "vietnamese": "sở thích lúc rảnh rỗi",
+    "example": "My main hobby is building small electronic devices."
+  },
+  {
+    "id": "VOC509",
+    "level": "A2",
+    "topic": "Leisure & Entertainment",
+    "word": "museum",
+    "type": "noun",
+    "meaning": "a building where objects of historical or scientific interest are kept",
+    "vietnamese": "bảo tàng",
+    "example": "We visited the war remnants museum yesterday."
+  },
+  {
+    "id": "VOC510",
+    "level": "A2",
+    "topic": "Leisure & Entertainment",
+    "word": "theatre",
+    "type": "noun",
+    "meaning": "a building with a stage where plays and dramatic performances are shown",
+    "vietnamese": "nhà hát / rạp kịch",
+    "example": "They bought tickets to see a famous play at the local theatre."
+  },
+  {
+    "id": "VOC511",
+    "level": "A1",
+    "topic": "Body & Appearance",
+    "word": "hair",
+    "type": "noun",
+    "meaning": "the mass of thin structures that grows on a person's head",
+    "vietnamese": "tóc",
+    "example": "She has long black hair and beautiful eyes."
+  },
+  {
+    "id": "VOC512",
+    "level": "A1",
+    "topic": "Body & Appearance",
+    "word": "face",
+    "type": "noun",
+    "meaning": "the front part of the head, from the chin to the forehead",
+    "vietnamese": "khuôn mặt",
+    "example": "He washed his face with cold water to wake up."
+  },
+  {
+    "id": "VOC513",
+    "level": "A1",
+    "topic": "Body & Appearance",
+    "word": "tall",
+    "type": "adjective",
+    "meaning": "having a higher than average height",
+    "vietnamese": "cao ráo",
+    "example": "He is the tallest player in our basketball club."
+  },
+  {
+    "id": "VOC514",
+    "level": "A2",
+    "topic": "Body & Appearance",
+    "word": "height",
+    "type": "noun",
+    "meaning": "the measurement of how tall a person or thing is",
+    "vietnamese": "chiều cao",
+    "example": "What is your exact height and weight?"
+  },
+  {
+    "id": "VOC515",
+    "level": "A2",
+    "topic": "Body & Appearance",
+    "word": "slim",
+    "type": "adjective",
+    "meaning": "attractively thin",
+    "vietnamese": "mảnh khảnh / thon gọn",
+    "example": "She stays slim by exercising and eating clean every day."
+  },
+  {
+    "id": "VOC516",
+    "level": "A2",
+    "topic": "Body & Appearance",
+    "word": "attractive",
+    "type": "adjective",
+    "meaning": "very pleasing or appealing to look at",
+    "vietnamese": "cuốn hút / lôi cuốn / hấp dẫn",
+    "example": "The company has an attractive logo design."
+  },
+  {
+    "id": "VOC517",
+    "level": "A1",
+    "topic": "School & Education",
+    "word": "class",
+    "type": "noun",
+    "meaning": "a group of students who are taught together",
+    "vietnamese": "lớp học / tiết học",
+    "example": "The history class starts at exactly 8 AM."
+  },
+  {
+    "id": "VOC518",
+    "level": "A1",
+    "topic": "School & Education",
+    "word": "lesson",
+    "type": "noun",
+    "meaning": "a period of time when somebody is teaching students",
+    "vietnamese": "bài học",
+    "example": "Today's grammar lesson is extremely important."
+  },
+  {
+    "id": "VOC519",
+    "level": "A1",
+    "topic": "School & Education",
+    "word": "learn",
+    "type": "verb",
+    "meaning": "to get knowledge or skill in a specific subject by studying",
+    "vietnamese": "học / tiếp thu kiến thức",
+    "example": "It is never too late to learn a new language."
+  },
+  {
+    "id": "VOC520",
+    "level": "A2",
+    "topic": "School & Education",
+    "word": "homework",
+    "type": "noun",
+    "meaning": "work that teachers give to students to do at home",
+    "vietnamese": "bài tập về nhà",
+    "example": "He forgot to finish his math homework last night."
+  },
+  {
+    "id": "VOC521",
+    "level": "A2",
+    "topic": "School & Education",
+    "word": "grade",
+    "type": "noun",
+    "meaning": "a number or letter that shows how good your work is",
+    "vietnamese": "điểm số / thứ hạng",
+    "example": "She got a perfect grade on her final test."
+  },
+  {
+    "id": "VOC522",
+    "level": "A2",
+    "topic": "School & Education",
+    "word": "uniform",
+    "type": "noun",
+    "meaning": "a set of clothes that all students wear at a school",
+    "vietnamese": "đồng phục trường",
+    "example": "Students must wear white shirts as part of the school uniform."
+  },
+  {
+    "id": "VOC523",
+    "level": "A1",
+    "topic": "Nature & Plants",
+    "word": "leaf",
+    "type": "noun",
+    "meaning": "one of the flat, green parts of a plant that grow from a stem",
+    "vietnamese": "chiếc lá",
+    "example": "The leaves turn beautiful shades of yellow and red in autumn."
+  },
+  {
+    "id": "VOC524",
+    "level": "A1",
+    "topic": "Nature & Plants",
+    "word": "grass",
+    "type": "noun",
+    "meaning": "a low green plant that grows on lawns and fields",
+    "vietnamese": "bãi cỏ / ngọn cỏ",
+    "example": "Please do not walk on the green grass."
+  },
+  {
+    "id": "VOC525",
+    "level": "A1",
+    "topic": "Nature & Plants",
+    "word": "plant",
+    "type": "noun",
+    "meaning": "a living thing that grows in earth, in water, or on other plants",
+    "vietnamese": "cây nhỏ / thực vật",
+    "example": "She waters her indoor plants twice a week."
+  },
+  {
+    "id": "VOC526",
+    "level": "A2",
+    "topic": "Nature & Plants",
+    "word": "garden",
+    "type": "noun",
+    "meaning": "an area of ground where plants, flowers, or vegetables are grown",
+    "vietnamese": "khu vườn",
+    "example": "They grow fresh organic vegetables in their backyard garden."
+  },
+  {
+    "id": "VOC527",
+    "level": "A2",
+    "topic": "Nature & Plants",
+    "word": "agriculture",
+    "type": "noun",
+    "meaning": "the science or practice of farming",
+    "vietnamese": "ngành nông nghiệp",
+    "example": "Modern technology has completely changed traditional agriculture."
+  },
+  {
+    "id": "VOC528",
+    "level": "A2",
+    "topic": "Nature & Plants",
+    "word": "environment",
+    "type": "noun",
+    "meaning": "the natural conditions in which plants and animals live",
+    "vietnamese": "môi trường sống",
+    "example": "We should reduce waste to preserve our clean environment."
+  },
+  {
+    "id": "VOC529",
+    "level": "A1",
+    "topic": "Everyday Objects",
+    "word": "key",
+    "type": "noun",
+    "meaning": "a piece of metal used for locking or unlocking a door",
+    "vietnamese": "chìa khóa",
+    "example": "I can't find my car keys anywhere."
+  },
+  {
+    "id": "VOC530",
+    "level": "A1",
+    "topic": "Everyday Objects",
+    "word": "clock",
+    "type": "noun",
+    "meaning": "a device used for measuring and showing time",
+    "vietnamese": "đồng hồ treo tường",
+    "example": "The big clock on the wall says it is 10 PM."
+  },
+  {
+    "id": "VOC531",
+    "level": "A1",
+    "topic": "Everyday Objects",
+    "word": "bag",
+    "type": "noun",
+    "meaning": "a flexible container used for carrying things",
+    "vietnamese": "cái cặp / túi xách",
+    "example": "He put his laptop into his leather bag."
+  },
+  {
+    "id": "VOC532",
+    "level": "A2",
+    "topic": "Everyday Objects",
+    "word": "umbrella",
+    "type": "noun",
+    "meaning": "a folding light frame covered in cloth, used for protection against rain or sun",
+    "vietnamese": "cây dù / chiếc ô",
+    "example": "Take an umbrella with you because it's starting to rain."
+  },
+  {
+    "id": "VOC533",
+    "level": "A2",
+    "topic": "Everyday Objects",
+    "word": "wallet",
+    "type": "noun",
+    "meaning": "a small flat folding case used for keeping money and credit cards",
+    "vietnamese": "cái bóp / ví tiền",
+    "example": "He left his wallet at home so I had to pay for lunch."
+  },
+  {
+    "id": "VOC534",
+    "level": "A2",
+    "topic": "Everyday Objects",
+    "word": "mirror",
+    "type": "noun",
+    "meaning": "a piece of special glass that reflects images",
+    "vietnamese": "cái gương soi",
+    "example": "She looked at herself in the mirror before leaving."
+  },
+  {
+    "id": "VOC535",
+    "level": "A1",
+    "topic": "Eating Out",
+    "word": "food",
+    "type": "noun",
+    "meaning": "something that people and animals eat to keep alive",
+    "vietnamese": "thức ăn / đồ ăn",
+    "example": "Traditional Vietnamese food is famous for its fresh ingredients."
+  },
+  {
+    "id": "VOC536",
+    "level": "A1",
+    "topic": "Eating Out",
+    "word": "drink",
+    "type": "noun",
+    "meaning": "liquid that you can swallow",
+    "vietnamese": "đồ uống / thức uống",
+    "example": "Would you like a hot drink or something cold?"
+  },
+  {
+    "id": "VOC537",
+    "level": "A1",
+    "topic": "Eating Out",
+    "word": "eat",
+    "type": "verb",
+    "meaning": "to put food into your mouth and chew and swallow it",
+    "vietnamese": "ăn uống",
+    "example": "We usually eat dinner together at 7 PM."
+  },
+  {
+    "id": "VOC538",
+    "level": "A2",
+    "topic": "Eating Out",
+    "word": "restaurant",
+    "type": "noun",
+    "meaning": "a place where you can sit and buy meals that are cooked there",
+    "vietnamese": "nhà hàng / tiệm ăn",
+    "example": "They opened a new seafood restaurant near the river."
+  },
+  {
+    "id": "VOC539",
+    "level": "A2",
+    "topic": "Eating Out",
+    "word": "chef",
+    "type": "noun",
+    "meaning": "a skilled and trained cook who works in a hotel or restaurant",
+    "vietnamese": "đầu bếp trưởng / chef",
+    "example": "The head chef prepared a special dish for our party."
+  },
+  {
+    "id": "VOC540",
+    "level": "A2",
+    "topic": "Eating Out",
+    "word": "tip",
+    "type": "noun",
+    "meaning": "an extra amount of money given to someone to thank them for a service",
+    "vietnamese": "tiền boa / tiền tip",
+    "example": "We left a generous tip for the friendly waiter."
+  },
+  {
+    "id": "VOC541",
+    "level": "A1",
+    "topic": "Entertainment & Events",
+    "word": "film",
+    "type": "noun",
+    "meaning": "a story represented by pictures and sound, shown in a cinema or on TV",
+    "vietnamese": "bộ phim",
+    "example": "What is your favorite romantic comedy film?"
+  },
+  {
+    "id": "VOC542",
+    "level": "A1",
+    "topic": "Entertainment & Events",
+    "word": "show",
+    "type": "noun",
+    "meaning": "a television or radio program, or a theater performance",
+    "vietnamese": "chương trình / buổi biểu diễn",
+    "example": "The late-night talk show is very popular."
+  },
+  {
+    "id": "VOC543",
+    "level": "A1",
+    "topic": "Entertainment & Events",
+    "word": "sing",
+    "type": "verb",
+    "meaning": "to make musical sounds with the voice",
+    "vietnamese": "ca hát",
+    "example": "The children love to sing along with the music."
+  },
+  {
+    "id": "VOC544",
+    "level": "A2",
+    "topic": "Entertainment & Events",
+    "word": "event",
+    "type": "noun",
+    "meaning": "anything that happens, especially something important or unusual",
+    "vietnamese": "sự kiện",
+    "example": "The company is organizing a big tech event next month."
+  },
+  {
+    "id": "VOC545",
+    "level": "A2",
+    "topic": "Entertainment & Events",
+    "word": "audience",
+    "type": "noun",
+    "meaning": "the group of people together in one place to watch or listen to a play, film, or someone speaking",
+    "vietnamese": "khán giả / thính giả",
+    "example": "The audience clapped loudly at the end of the show."
+  },
+  {
+    "id": "VOC546",
+    "level": "A2",
+    "topic": "Entertainment & Events",
+    "word": "performance",
+    "type": "noun",
+    "meaning": "the action of entertaining other people by dancing, singing, or acting",
+    "vietnamese": "màn trình diễn / buổi biểu diễn",
+    "example": "Her piano performance at the concert was brilliant."
+  },
+  {
+    "id": "VOC547",
+    "level": "A1",
+    "topic": "Housework & Living",
+    "word": "cook",
+    "type": "verb",
+    "meaning": "to prepare food by heating it",
+    "vietnamese": "nấu ăn",
+    "example": "My father loves to cook a big breakfast on Sundays."
+  },
+  {
+    "id": "VOC548",
+    "level": "A1",
+    "topic": "Housework & Living",
+    "word": "wash",
+    "type": "verb",
+    "meaning": "to clean something using water and usually soap",
+    "vietnamese": "rửa / giặt giũ",
+    "example": "Please wash your hands before eating dinner."
+  },
+  {
+    "id": "VOC549",
+    "level": "A1",
+    "topic": "Housework & Living",
+    "word": "room",
+    "type": "noun",
+    "meaning": "a part of the inside of a building that is separated from other parts by walls",
+    "vietnamese": "căn phòng",
+    "example": "My bedroom is the smallest room in the house."
+  },
+  {
+    "id": "VOC550",
+    "level": "A2",
+    "topic": "Housework & Living",
+    "word": "tidy",
+    "type": "verb",
+    "meaning": "to make a place look clean and organized by putting things in their proper places",
+    "vietnamese": "dọn dẹp / làm cho gọn gàng",
+    "example": "I need to tidy my desk before I start studying."
+  },
+  {
+    "id": "VOC551",
+    "level": "A2",
+    "topic": "Housework & Living",
+    "word": "fridge",
+    "type": "noun",
+    "meaning": "a large electric piece of kitchen equipment used for keeping food and drinks cold",
+    "vietnamese": "tủ lạnh",
+    "example": "There is some fresh milk in the fridge."
+  },
+  {
+    "id": "VOC552",
+    "level": "A2",
+    "topic": "Housework & Living",
+    "word": "blanket",
+    "type": "noun",
+    "meaning": "a thick covers made of wool or soft material used to keep warm in bed",
+    "vietnamese": "chiếc chăn / mền",
+    "example": "It's cold tonight, so I need another blanket."
+  },
+  {
+    "id": "VOC553",
+    "level": "A1",
+    "topic": "Animals & Habitats",
+    "word": "fish",
+    "type": "noun",
+    "meaning": "an animal that lives in water, is covered with scales, and breathes through gills",
+    "vietnamese": "con cá",
+    "example": "He keeps some colorful gold fish in a small tank."
+  },
+  {
+    "id": "VOC554",
+    "level": "A1",
+    "topic": "Animals & Habitats",
+    "word": "cow",
+    "type": "noun",
+    "meaning": "a large female farm animal kept for its milk or meat",
+    "vietnamese": "con bò",
+    "example": "The cows are eating green grass in the field."
+  },
+  {
+    "id": "VOC555",
+    "level": "A1",
+    "topic": "Animals & Habitats",
+    "word": "sea",
+    "type": "noun",
+    "meaning": "the large body of salty water that covers most of the earth's surface",
+    "vietnamese": "biển / đại dương",
+    "example": "The hotel room has a beautiful view of the sea."
+  },
+  {
+    "id": "VOC556",
+    "level": "A2",
+    "topic": "Animals & Habitats",
+    "word": "monkey",
+    "type": "noun",
+    "meaning": "an animal with a long tail that climbs trees and lives in hot countries",
+    "vietnamese": "con khỉ",
+    "example": "Monkeys are highly intelligent and curious animals."
+  },
+  {
+    "id": "VOC557",
+    "level": "A2",
+    "topic": "Animals & Habitats",
+    "word": "dolphin",
+    "type": "noun",
+    "meaning": "a sea animal that looks like a large fish with a pointed mouth",
+    "vietnamese": "con cá heo",
+    "example": "We saw a group of dolphins swimming near our boat."
+  },
+  {
+    "id": "VOC558",
+    "level": "A2",
+    "topic": "Animals & Habitats",
+    "word": "habitat",
+    "type": "noun",
+    "meaning": "the natural environment in which an animal or plant usually lives",
+    "vietnamese": "môi trường sống tự nhiên",
+    "example": "Deforestation is destroying the natural habitat of wild animals."
+  },
+  {
+    "id": "VOC559",
+    "level": "A1",
+    "topic": "Shopping & Finance",
+    "word": "store",
+    "type": "noun",
+    "meaning": "a large shop where you can buy many different goods",
+    "vietnamese": "cửa hàng / bách hóa",
+    "example": "The department store opens at 9 AM every day."
+  },
+  {
+    "id": "VOC560",
+    "level": "A1",
+    "topic": "Shopping & Finance",
+    "word": "spend",
+    "type": "verb",
+    "meaning": "to give money as a payment for something",
+    "vietnamese": "tiêu tiền / dành thời gian",
+    "example": "She spends a lot of money on books."
+  },
+  {
+    "id": "VOC561",
+    "level": "A1",
+    "topic": "Shopping & Finance",
+    "word": "coin",
+    "type": "noun",
+    "meaning": "a small, round, flat piece of metal used as money",
+    "vietnamese": "tiền xu / đồng xu",
+    "example": "I found a rare old coin on the street."
+  },
+  {
+    "id": "VOC562",
+    "level": "A2",
+    "topic": "Shopping & Finance",
+    "word": "credit card",
+    "type": "noun",
+    "meaning": "a small plastic card that can be used to buy goods and pay for them later",
+    "vietnamese": "thẻ tín dụng",
+    "example": "Do you accept payment by credit card?"
+  },
+  {
+    "id": "VOC563",
+    "level": "A2",
+    "topic": "Shopping & Finance",
+    "word": "bill",
+    "type": "noun",
+    "meaning": "a piece of paper that shows how much money you owe for goods or services",
+    "vietnamese": "hóa đơn",
+    "example": "The monthly electricity bill was higher than usual."
+  },
+  {
+    "id": "VOC564",
+    "level": "A2",
+    "topic": "Shopping & Finance",
+    "word": "save",
+    "type": "verb",
+    "meaning": "to keep money for use in the future",
+    "vietnamese": "tiết kiệm tiền",
+    "example": "He is trying to save money to buy a new laptop."
+  },
+  {
+    "id": "VOC565",
+    "level": "A1",
+    "topic": "Travel & Tourism",
+    "word": "trip",
+    "type": "noun",
+    "meaning": "a journey in which you go to a place, spend some time there, and return",
+    "vietnamese": "chuyến đi / chuyến du lịch ngắn",
+    "example": "How was your business trip to Hanoi?"
+  },
+  {
+    "id": "VOC566",
+    "level": "A1",
+    "topic": "Travel & Tourism",
+    "word": "fly",
+    "type": "verb",
+    "meaning": "to travel through the air in an aircraft",
+    "vietnamese": "bay / đi máy bay",
+    "example": "We plan to fly to Da Nang this summer."
+  },
+  {
+    "id": "VOC567",
+    "level": "A1",
+    "topic": "Travel & Tourism",
+    "word": "beach",
+    "type": "noun",
+    "meaning": "an area of sand or small stones next to the sea",
+    "vietnamese": "bãi biển",
+    "example": "The kids love building sandcastles on the beach."
+  },
+  {
+    "id": "VOC568",
+    "level": "A2",
+    "topic": "Travel & Tourism",
+    "word": "tourist",
+    "type": "noun",
+    "meaning": "someone who visits a place for pleasure and does not live there",
+    "vietnamese": "khách du lịch",
+    "example": "The ancient town attracts thousands of tourists every year."
+  },
+  {
+    "id": "VOC569",
+    "level": "A2",
+    "topic": "Travel & Tourism",
+    "word": "guidebook",
+    "type": "noun",
+    "meaning": "a book that gives information about a place for tourists or travelers",
+    "vietnamese": "sách hướng dẫn du lịch",
+    "example": "This guidebook is full of useful recommendations for local restaurants."
+  },
+  {
+    "id": "VOC570",
+    "level": "A2",
+    "topic": "Travel & Tourism",
+    "word": "passport",
+    "type": "noun",
+    "meaning": "an official document that identifies you and allows you to travel to other countries",
+    "vietnamese": "hộ chiếu",
+    "example": "Don't forget to check your passport expiration date."
+  },
+  {
+    "id": "VOC571",
+    "level": "A1",
+    "topic": "Emotions & Mind",
+    "word": "love",
+    "type": "verb",
+    "meaning": "to have a strong affection or deep liking for someone or something",
+    "vietnamese": "yêu thích / yêu thương",
+    "example": "I absolutely love listening to live acoustic music."
+  },
+  {
+    "id": "VOC572",
+    "level": "A1",
+    "topic": "Emotions & Mind",
+    "word": "hate",
+    "type": "verb",
+    "meaning": "to dislike someone or something intensely",
+    "vietnamese": "ghét / không thích chút nào",
+    "example": "I hate waiting in long lines at the supermarket."
+  },
+  {
+    "id": "VOC573",
+    "level": "A1",
+    "topic": "Emotions & Mind",
+    "word": "think",
+    "type": "verb",
+    "meaning": "to use your mind to consider something or form an opinion",
+    "vietnamese": "suy nghĩ / nghĩ rằng",
+    "example": "What do you think about the new office project?"
+  },
+  {
+    "id": "VOC574",
+    "level": "A2",
+    "topic": "Emotions & Mind",
+    "word": "afraid",
+    "type": "adjective",
+    "meaning": "feeling fear or anxiety about something",
+    "vietnamese": "lo sợ / e ngại",
+    "example": "She is afraid of spiders and dark rooms."
+  },
+  {
+    "id": "VOC575",
+    "level": "A2",
+    "topic": "Emotions & Mind",
+    "word": "bored",
+    "type": "adjective",
+    "meaning": "feeling tired and unhappy because something is not interesting",
+    "vietnamese": "buồn chán",
+    "example": "He got bored because the meeting lasted for three hours."
+  },
+  {
+    "id": "VOC576",
+    "level": "A2",
+    "topic": "Emotions & Mind",
+    "word": "remember",
+    "type": "verb",
+    "meaning": "to bring back into one's mind an awareness of someone or something",
+    "vietnamese": "ghi nhớ / nhớ lại",
+    "example": "Please remember to lock the door before you leave."
+  },
+  {
+    "id": "VOC577",
+    "level": "A1",
+    "topic": "Social Labels & Roles",
+    "word": "man",
+    "type": "noun",
+    "meaning": "an adult male human being",
+    "vietnamese": "người đàn ông",
+    "example": "The man in the black suit is our new manager."
+  },
+  {
+    "id": "VOC578",
+    "level": "A1",
+    "topic": "Social Labels & Roles",
+    "word": "woman",
+    "type": "noun",
+    "meaning": "an adult female human being",
+    "vietnamese": "người phụ nữ",
+    "example": "She is a very successful and talented business woman."
+  },
+  {
+    "id": "VOC579",
+    "level": "A1",
+    "topic": "Social Labels & Roles",
+    "word": "boy",
+    "type": "noun",
+    "meaning": "a male child or young man",
+    "vietnamese": "cậu bé / chàng trai trẻ",
+    "example": "The little boy is playing with a remote-controlled car."
+  },
+  {
+    "id": "VOC580",
+    "level": "A2",
+    "topic": "Social Labels & Roles",
+    "word": "guest",
+    "type": "noun",
+    "meaning": "a person who is invited to visit someone's home or attend an event",
+    "vietnamese": "khách mời / khách khứa",
+    "example": "We welcomed over fifty guests to our housewarming party."
+  },
+  {
+    "id": "VOC581",
+    "level": "A2",
+    "topic": "Social Labels & Roles",
+    "word": "stranger",
+    "type": "noun",
+    "meaning": "someone you do not know",
+    "vietnamese": "người lạ",
+    "example": "Don't accept gifts or candy from a stranger."
+  },
+  {
+    "id": "VOC582",
+    "level": "A2",
+    "topic": "Social Labels & Roles",
+    "word": "expert",
+    "type": "noun",
+    "meaning": "a person with a high level of knowledge or skill relating to a particular subject",
+    "vietnamese": "chuyên gia",
+    "example": "He is a technical expert in cybersecurity systems."
+  },
+  {
+    "id": "VOC583",
+    "level": "A1",
+    "topic": "Objects & Materials",
+    "word": "box",
+    "type": "noun",
+    "meaning": "a square or rectangular container with stiff sides and sometimes a lid",
+    "vietnamese": "cái hộp / thùng các-tông",
+    "example": "Put all the old books into this cardboard box."
+  },
+  {
+    "id": "VOC584",
+    "level": "A1",
+    "topic": "Objects & Materials",
+    "word": "cup",
+    "type": "noun",
+    "meaning": "a small round container, often with a handle, used for drinking tea or coffee",
+    "vietnamese": "cái tách / cái ly nhỏ",
+    "example": "He drank a hot cup of green tea this morning."
+  },
+  {
+    "id": "VOC585",
+    "level": "A1",
+    "topic": "Objects & Materials",
+    "word": "paper",
+    "type": "noun",
+    "meaning": "material manufactured in thin sheets from the pulp of wood, used for writing",
+    "vietnamese": "giấy tờ / tờ giấy",
+    "example": "Could you print this document on a clean sheet of paper?"
+  },
+  {
+    "id": "VOC586",
+    "level": "A2",
+    "topic": "Objects & Materials",
+    "word": "leather",
+    "type": "noun",
+    "meaning": "animal skin treated in order to preserve it, used to make shoes, bags, or jackets",
+    "vietnamese": "chất liệu da",
+    "example": "This fashionable wallet is made of genuine leather."
+  },
+  {
+    "id": "VOC587",
+    "level": "A2",
+    "topic": "Objects & Materials",
+    "word": "rubber",
+    "type": "noun",
+    "meaning": "an elastic substance made from the juice of a tropical tree",
+    "vietnamese": "cao su",
+    "example": "The soles of these running shoes are made of durable rubber."
+  },
+  {
+    "id": "VOC588",
+    "level": "A2",
+    "topic": "Objects & Materials",
+    "word": "silver",
+    "type": "noun",
+    "meaning": "a valuable shiny, white metal used for making jewelry, coins, and knives",
+    "vietnamese": "bạc / chất liệu bạc",
+    "example": "She bought a lovely silver necklace at the market."
+  },
+  {
+    "id": "VOC589",
+    "level": "A1",
+    "topic": "Places & Buildings",
+    "word": "shop",
+    "type": "noun",
+    "meaning": "a building or room where goods are sold to the public",
+    "vietnamese": "tiệm / cửa hàng hiệu",
+    "example": "There is a small bakery shop at the corner."
+  },
+  {
+    "id": "VOC590",
+    "level": "A1",
+    "topic": "Places & Buildings",
+    "word": "flat",
+    "type": "noun",
+    "meaning": "a set of rooms for living in, usually on one floor of a building",
+    "vietnamese": "căn hộ flat (tiếng Anh-Anh)",
+    "example": "They shared a cozy flat when they were university students."
+  },
+  {
+    "id": "VOC591",
+    "level": "A1",
+    "topic": "Places & Buildings",
+    "word": "bank",
+    "type": "noun",
+    "meaning": "a financial establishment that invests money deposited by customers",
+    "vietnamese": "ngân hàng công",
+    "example": "He went to the local bank to deposit some money."
+  },
+  {
+    "id": "VOC592",
+    "level": "A2",
+    "topic": "Places & Buildings",
+    "word": "castle",
+    "type": "noun",
+    "meaning": "a large strong building, built in the past by a ruler or important person",
+    "vietnamese": "lâu đài / thành trì",
+    "example": "The ancient royal family lived in a magnificent stone castle."
+  },
+  {
+    "id": "VOC593",
+    "level": "A2",
+    "topic": "Places & Buildings",
+    "word": "factory",
+    "type": "noun",
+    "meaning": "a building or set of buildings where large amounts of goods are made using machines",
+    "vietnamese": "nhà máy / xưởng sản xuất",
+    "example": "The automobile company built a massive new electric car factory."
+  },
+  {
+    "id": "VOC594",
+    "level": "A2",
+    "topic": "Places & Buildings",
+    "word": "gallery",
+    "type": "noun",
+    "meaning": "a room or building which is used for showing works of art",
+    "vietnamese": "triển lãm nghệ thuật / gallery",
+    "example": "We spent the whole afternoon browsing the local art gallery."
+  },
+  {
+    "id": "VOC595",
+    "level": "A1",
+    "topic": "Time & Scheduling",
+    "word": "time",
+    "type": "noun",
+    "meaning": "the period of hours, days, or years in which actions and events happen",
+    "vietnamese": "thời gian / giờ giấc",
+    "example": "Do you have time to grab a coffee before work?"
+  },
+  {
+    "id": "VOC596",
+    "level": "A1",
+    "topic": "Time & Scheduling",
+    "word": "hour",
+    "type": "noun",
+    "meaning": "a period of time equal to sixty minutes",
+    "vietnamese": "tiếng đồng hồ / một giờ",
+    "example": "It takes about an hour to drive to the airport."
+  },
+  {
+    "id": "VOC597",
+    "level": "A1",
+    "topic": "Time & Scheduling",
+    "word": "day",
+    "type": "noun",
+    "meaning": "a period of twenty-four hours",
+    "vietnamese": "ngày",
+    "example": "I go to the local gym three days a week."
+  },
+  {
+    "id": "VOC598",
+    "level": "A2",
+    "topic": "Time & Scheduling",
+    "word": "schedule",
+    "type": "noun",
+    "meaning": "a list of planned activities or things to be done showing the times",
+    "vietnamese": "lịch trình / thời gian biểu",
+    "example": "The manager has an extremely tight schedule today."
+  },
+  {
+    "id": "VOC599",
+    "level": "A2",
+    "topic": "Time & Scheduling",
+    "word": "period",
+    "type": "noun",
+    "meaning": "a length of time or a particular stage in history or a person's life",
+    "vietnamese": "giai đoạn / khoảng thời gian",
+    "example": "He went through a difficult financial period last year."
+  },
+  {
+    "id": "VOC600",
+    "level": "A2",
+    "topic": "Time & Scheduling",
+    "word": "moment",
+    "type": "noun",
+    "meaning": "a very brief period of time",
+    "vietnamese": "khoảnh khắc / một lát",
+    "example": "Please wait a moment, the system is loading data."
+  }
+]
