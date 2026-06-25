@@ -639,7 +639,7 @@ linear-gradient(
 var(--primary),
 var(--secondary)
 );
-
+border: 1px solid white;
 
 color:white;
 
@@ -649,9 +649,18 @@ cursor:pointer;
 
 font-weight:600;
 
+transition:.2s;
 
 }
 
+.lesson-card > button:hover{
+    background:white; 
+    border: 1px solid #ddd;
+    
+
+color:black;
+
+}
 
 
 .note-item{
