@@ -90,7 +90,7 @@ console.error = function(...args) {
 // Demo credentials (in production, use backend authentication)
 const DEMO_CREDENTIALS = {
   username: "student",
-  password: "123456"
+  password: "140422"
 };
 
 let currentUser = null;
@@ -132,8 +132,20 @@ function handleLogin(event) {
     passwordInput.value = "";
     document.getElementById("loginForm").reset();
     
-    // Show app screen
+    // Show app screen with loading indicator
     showAppScreen();
+    
+    // Show loading message while database loads
+    // document.getElementById("content").innerHTML = `
+    //   <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    //     <div style="font-size: 48px; margin-bottom: 20px;">⏳</div>
+    //     <h2>Loading lessons...</h2>
+    //     <p style="color: var(--muted);">Please wait while we prepare your content</p>
+    //   </div>
+    // `;
+    
+    // Load database immediately
+    loadDatabase();
   } else {
     // Generic error message - don't reveal which field failed
     alert("❌ Invalid credentials!");
@@ -281,11 +293,70 @@ async function loadDatabase() {
 
     updateDashboard();
 
-    console.log("DATABASE READY");
+    // Show welcome screen after database is ready
+    // showWelcomeScreen();
   } catch (error) {
-    console.error(error);
+    // Fallback error handling
+    document.getElementById("content").innerHTML = `
+      <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+        <div style="font-size: 48px; margin-bottom: 20px;">❌</div>
+        <h2>Failed to load lessons</h2>
+        <p style="color: var(--muted);">Please refresh the page and try again</p>
+      </div>
+    `;
   }
 }
+
+// ======================================
+// SHOW WELCOME SCREEN
+// ======================================
+
+// function showWelcomeScreen() {
+//   document.getElementById("content").innerHTML = `
+//     <section class="stats">
+//       <div class="stat-card">
+//         <div class="stat-icon">📘</div>
+//         <div>
+//           <span> Grammar </span>
+//           <h2 id="grammarCount">0</h2>
+//         </div>
+//       </div>
+
+//       <div class="stat-card">
+//         <div class="stat-icon">📚</div>
+//         <div>
+//           <span> Vocabulary </span>
+//           <h2 id="vocabCount">0</h2>
+//         </div>
+//       </div>
+
+//       <div class="stat-card">
+//         <div class="stat-icon">🔗</div>
+//         <div>
+//           <span> Collocations </span>
+//           <h2 id="collocationCount">0</h2>
+//         </div>
+//       </div>
+
+//       <div class="stat-card">
+//         <div class="stat-icon">⚡</div>
+//         <div>
+//           <span> Phrasal Verbs </span>
+//           <h2 id="phrasalCount">0</h2>
+//         </div>
+//       </div>
+//     </section>
+
+//     <section id="content">
+//       <div class="welcome">
+//         <h2>Welcome to English Journey 🚀</h2>
+//         <p>Choose a lesson to start learning.</p>
+//       </div>
+//     </section>
+//   `;
+  
+//   updateDashboard();
+// }
 
 // ======================================
 // PROGRESS
