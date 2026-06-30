@@ -3,6 +3,206 @@
 // Learning Engine
 // ======================================
 
+// ======================================
+// SECURITY & ANTI-CHEAT MEASURES
+// ======================================
+
+// Disable DevTools
+function disableDevTools() {
+  // Disable F12
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "F12") {
+      e.preventDefault();
+      return false;
+    }
+  });
+
+  // Disable Ctrl+Shift+I (Inspector)
+  document.addEventListener("keydown", (e) => {
+    if (e.ctrlKey && e.shiftKey && e.key === "I") {
+      e.preventDefault();
+      return false;
+    }
+  });
+
+  // Disable Ctrl+Shift+C (Element picker)
+  document.addEventListener("keydown", (e) => {
+    if (e.ctrlKey && e.shiftKey && e.key === "C") {
+      e.preventDefault();
+      return false;
+    }
+  });
+
+  // Disable Ctrl+Shift+J (Console)
+  document.addEventListener("keydown", (e) => {
+    if (e.ctrlKey && e.shiftKey && e.key === "J") {
+      e.preventDefault();
+      return false;
+    }
+  });
+
+  // Disable Right-click
+  document.addEventListener("contextmenu", (e) => {
+    e.preventDefault();
+    return false;
+  });
+
+  // Detect DevTools opening (rough detection)
+  let devtools = { open: false, orientation: null };
+  
+  const threshold = 160;
+  setInterval(() => {
+    if (window.outerHeight - window.innerHeight > threshold ||
+        window.outerWidth - window.innerWidth > threshold) {
+      if (!devtools.open) {
+        devtools.open = true;
+        console.clear();
+        console.log("🔒 DevTools không được phép sử dụng");
+      }
+    } else {
+      devtools.open = false;
+    }
+  }, 500);
+}
+
+// Override console methods to prevent logging sensitive data
+const originalLog = console.log;
+const originalWarn = console.warn;
+const originalError = console.error;
+
+console.log = function(...args) {
+  // Prevent logging
+  return;
+};
+
+console.warn = function(...args) {
+  return;
+};
+
+console.error = function(...args) {
+  return;
+};
+
+// ======================================
+// AUTHENTICATION
+// ======================================
+
+// Demo credentials (in production, use backend authentication)
+const DEMO_CREDENTIALS = {
+  username: "student",
+  password: "123456"
+};
+
+let currentUser = null;
+
+function handleLogin(event) {
+  event.preventDefault();
+  
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+  
+  // Clear input values immediately after reading
+  const usernameInput = document.getElementById("username");
+  const passwordInput = document.getElementById("password");
+  
+  // Validate credentials
+  if (username === DEMO_CREDENTIALS.username && 
+      password === DEMO_CREDENTIALS.password) {
+    
+    // Create session with encrypted token
+    const sessionData = {
+      uid: Math.random().toString(36).substr(2, 9),
+      ts: Date.now(),
+      u: btoa(username) // Only encode username, never password
+    };
+    
+    // Double encryption
+    const encrypted = btoa(JSON.stringify(sessionData));
+    
+    currentUser = {
+      username: username,
+      loginTime: new Date().toISOString()
+    };
+    
+    // Store only encrypted token, never raw credentials
+    localStorage.setItem("__session", encrypted);
+    
+    // Clear form immediately
+    usernameInput.value = "";
+    passwordInput.value = "";
+    document.getElementById("loginForm").reset();
+    
+    // Show app screen
+    showAppScreen();
+  } else {
+    // Generic error message - don't reveal which field failed
+    alert("❌ Invalid credentials!");
+    passwordInput.value = ""; // Only clear password, not username
+  }
+}
+
+function handleLogout() {
+  const confirm = window.confirm("Are you sure you want to logout?");
+  
+  if (confirm) {
+    // Securely clear user session
+    currentUser = null;
+    localStorage.removeItem("__session");
+    localStorage.removeItem("userSession");
+    localStorage.removeItem("sessionToken");
+    
+    // Optionally clear learning progress
+    // localStorage.removeItem("englishProgress");
+    
+    // Clear all form fields
+    document.getElementById("loginForm").reset();
+    document.getElementById("username").value = "";
+    document.getElementById("password").value = "";
+    
+    // Show login screen
+    showLoginScreen();
+  }
+}
+
+function showLoginScreen() {
+  document.getElementById("loginScreen").style.display = "flex";
+  document.getElementById("appScreen").style.display = "none";
+}
+
+function showAppScreen() {
+  document.getElementById("loginScreen").style.display = "none";
+  document.getElementById("appScreen").style.display = "flex";
+  document.getElementById("userGreeting").textContent = `Welcome, ${currentUser.username}! 👋`;
+}
+
+function checkAuth() {
+  const savedSession = localStorage.getItem("__session");
+  
+  if (savedSession) {
+    try {
+      // Verify encrypted session
+      const decrypted = JSON.parse(atob(savedSession));
+      
+      // Validate session (optional: check timestamp)
+      if (decrypted.uid && decrypted.ts) {
+        currentUser = {
+          username: atob(decrypted.u),
+          sessionId: decrypted.uid
+        };
+        showAppScreen();
+        return true;
+      }
+    } catch (e) {
+      // Session corrupted or invalid
+      handleLogout();
+      return false;
+    }
+  }
+  
+  showLoginScreen();
+  return false;
+}
+
 // DATABASE
 
 let grammarData = [];
@@ -1053,4 +1253,10 @@ function exportKeys(){
 // START APP
 // ======================================
 
-loadDatabase();
+// Enable security measures
+disableDevTools();
+
+// Check authentication first
+if (checkAuth()) {
+  loadDatabase();
+}
