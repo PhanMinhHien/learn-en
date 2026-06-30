@@ -224,6 +224,9 @@ let phrasalVerbData = [];
 
 let databaseReady = false;
 
+// Track current lesson type for navigation
+let currentLessonType = null;
+
 // ======================================
 // USER DATA
 // ======================================
@@ -428,6 +431,9 @@ function loadLesson(type) {
 
     return;
   }
+
+  // Save current lesson type for navigation
+  currentLessonType = type;
 
   let item;
 
@@ -765,6 +771,38 @@ ${fields}
   }
 
   document.getElementById("content").innerHTML = html;
+  
+  // Show navigation bar
+  showLessonNav(type);
+}
+
+// ======================================
+// LESSON NAVIGATION
+// ======================================
+
+function showLessonNav(type) {
+  let navHTML = `
+    <div class="lesson-bottom-nav">
+      <button onclick="loadLesson('${type}')" class="nav-btn prev-btn">⬅️ Previous</button>
+      <button onclick="loadLesson('${type}')" class="nav-btn next-btn">Next ➡️</button>
+    </div>
+  `;
+  
+  // Create or update nav bar
+  let navBar = document.getElementById("lessonNav");
+  if (!navBar) {
+    navBar = document.createElement("div");
+    navBar.id = "lessonNav";
+    document.body.appendChild(navBar);
+  }
+  navBar.innerHTML = navHTML;
+}
+
+function hideLessonNav() {
+  let navBar = document.getElementById("lessonNav");
+  if (navBar) {
+    navBar.innerHTML = "";
+  }
 }
 // ======================================
 // SAVE TO NOTES
@@ -972,6 +1010,8 @@ ${option}
 
 
 `;
+  
+  hideLessonNav();
 }
 
 // ======================================
@@ -1153,6 +1193,7 @@ onclick="deleteNote('${item.id}')"
 `;
 
   document.getElementById("content").innerHTML = html;
+  hideLessonNav();
 }
 // ======================================
 // DELETE NOTE
