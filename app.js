@@ -25,6 +25,19 @@ let userProgress = {
 };
 
 // ======================================
+// UTILITIES
+// ======================================
+
+function escapeQuote(str) {
+  if (!str) return "";
+  return String(str)
+    .replace(/\\/g, "\\\\")
+    .replace(/'/g, "\\'")
+    .replace(/"/g, "&quot;")
+    .replace(/\n/g, "\\n");
+}
+
+// ======================================
 // LOAD JSON
 // ======================================
 
@@ -202,7 +215,7 @@ ${ex.english}
 
 <button
 class="speak-btn"
-onclick="speak('${ex.english.replace(/'/g, "\\'")}')"
+onclick="speak('${escapeQuote(ex.english)}')"
 >
 🔊
 </button>
@@ -260,11 +273,11 @@ class="option"
 onclick="
 checkGrammarAnswer(
 this,
-'${option}',
-'${q.answer}',
-'${q.question}',
+'${escapeQuote(option)}',
+'${escapeQuote(q.answer)}',
+'${escapeQuote(q.question)}',
 '${item.id}',
-'${item.rule.replace(/'/g, "\\'")}'
+'${escapeQuote(item.rule)}'
 )
 "
 
@@ -340,7 +353,7 @@ ${practice}
 
 
 
-<button onclick='noteLesson(${JSON.stringify(item)})'>
+<button onclick='noteLesson(${JSON.stringify(item).replace(/'/g, "&apos;")})'>
 
 📌 Save to Notes
 
@@ -400,7 +413,7 @@ ${value}
 
 class="speak-btn"
 
-onclick="speak('${value.replace(/'/g, "\\'")}')"
+onclick="speak('${escapeQuote(value)}')"
 
 >
 
@@ -450,7 +463,7 @@ ${title}
 
 <button
 class="speak-btn"
-onclick="speak('${title.replace(/'/g, "\\'")}')"
+onclick="speak('${escapeQuote(title)}')"
 >
 
 🔊
@@ -658,11 +671,11 @@ class="option"
 onclick="
 checkGrammarAnswer(
 this,
-'${option}',
-'${q.answer}',
-'${q.question}',
+'${escapeQuote(option)}',
+'${escapeQuote(q.answer)}',
+'${escapeQuote(q.question)}',
 '${lesson.id}',
-'${lesson.rule.replace(/'/g, "\\'")}'
+'${escapeQuote(lesson.rule)}'
 )
 
 "
@@ -788,6 +801,8 @@ You haven't saved any lessons yet.
 
     let title = data.word || data.phrase || data.topic || item.id;
 
+    const safeData = JSON.stringify(data).replace(/'/g, "&apos;");
+
     html += `
 
 
@@ -824,7 +839,7 @@ ${new Date(item.learnedAt).toLocaleDateString()}
 
 <button
 
-onclick='loadNote(${JSON.stringify(data)})'
+onclick='loadNote(${safeData})'
 
 >
 
