@@ -1487,8 +1487,35 @@ function exportKeys(){
 
 }
 // ======================================
+// DARK MODE
+// ======================================
+
+const DARK_MODE_KEY = 'darkMode';
+
+function initDarkMode() {
+  const isDarkMode = localStorage.getItem(DARK_MODE_KEY) === 'true';
+  if (isDarkMode) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+}
+
+function toggleDarkMode() {
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  if (isDark) {
+    document.documentElement.removeAttribute('data-theme');
+    localStorage.setItem(DARK_MODE_KEY, 'false');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    localStorage.setItem(DARK_MODE_KEY, 'true');
+  }
+}
+
+// ======================================
 // START APP
 // ======================================
+
+// Initialize dark mode
+initDarkMode();
 
 // Enable security measures
 // disableDevTools();
