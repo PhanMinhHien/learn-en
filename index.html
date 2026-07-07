@@ -42,23 +42,25 @@
     </div>
 
     <div id="appScreen" class="app-screen" style="display: none;">
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <div id="menuBackdrop"></div>
     <aside>
-      <h1>📚 English</h1>
+      <!-- <h1>📚 English</h1> -->
       <div class="user-info">
         <p id="userGreeting">Welcome!</p>
         <button onclick="handleLogout()" class="logout-btn">🚪 Logout</button>
       </div>
 
-      <button onclick="loadLesson('grammar')">📘 Grammar</button>
+      <button data-lesson="grammar" onclick="loadLesson('grammar')">📘 Grammar</button>
 
-      <button onclick="loadLesson('vocabulary')">📚 Vocabulary</button>
+      <button data-lesson="vocabulary" onclick="loadLesson('vocabulary')">📚 Vocabulary</button>
 
-      <button onclick="loadLesson('collocation')">🔗 Collocations</button>
+      <button data-lesson="collocation" onclick="loadLesson('collocation')">🔗 Collocations</button>
 
-      <button onclick="loadLesson('phrasal')">⚡ Phrasal Verbs</button>
+      <button data-lesson="phrasal" onclick="loadLesson('phrasal')">⚡ Phrasal Verbs</button>
 
-      <button onclick="startQuiz()">📝 Quiz</button>
-      <button onclick="showNotes()">
+      <button data-lesson="quiz" onclick="startQuiz()">📝 Quiz</button>
+      <button data-lesson="notes" onclick="showNotes()">
       
 📌 My Notes
 </button>

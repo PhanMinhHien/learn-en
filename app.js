@@ -8,80 +8,80 @@
 // ======================================
 
 // Disable DevTools
-function disableDevTools() {
-  // Disable F12
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "F12") {
-      e.preventDefault();
-      return false;
-    }
-  });
+// function disableDevTools() {
+//   // Disable F12
+//   document.addEventListener("keydown", (e) => {
+//     if (e.key === "F12") {
+//       e.preventDefault();
+//       return false;
+//     }
+//   });
 
-  // Disable Ctrl+Shift+I (Inspector)
-  document.addEventListener("keydown", (e) => {
-    if (e.ctrlKey && e.shiftKey && e.key === "I") {
-      e.preventDefault();
-      return false;
-    }
-  });
+//   // Disable Ctrl+Shift+I (Inspector)
+//   document.addEventListener("keydown", (e) => {
+//     if (e.ctrlKey && e.shiftKey && e.key === "I") {
+//       e.preventDefault();
+//       return false;
+//     }
+//   });
 
-  // Disable Ctrl+Shift+C (Element picker)
-  document.addEventListener("keydown", (e) => {
-    if (e.ctrlKey && e.shiftKey && e.key === "C") {
-      e.preventDefault();
-      return false;
-    }
-  });
+//   // Disable Ctrl+Shift+C (Element picker)
+//   document.addEventListener("keydown", (e) => {
+//     if (e.ctrlKey && e.shiftKey && e.key === "C") {
+//       e.preventDefault();
+//       return false;
+//     }
+//   });
 
-  // Disable Ctrl+Shift+J (Console)
-  document.addEventListener("keydown", (e) => {
-    if (e.ctrlKey && e.shiftKey && e.key === "J") {
-      e.preventDefault();
-      return false;
-    }
-  });
+//   // Disable Ctrl+Shift+J (Console)
+//   document.addEventListener("keydown", (e) => {
+//     if (e.ctrlKey && e.shiftKey && e.key === "J") {
+//       e.preventDefault();
+//       return false;
+//     }
+//   });
 
-  // Disable Right-click
-  document.addEventListener("contextmenu", (e) => {
-    e.preventDefault();
-    return false;
-  });
+//   // Disable Right-click
+//   document.addEventListener("contextmenu", (e) => {
+//     e.preventDefault();
+//     return false;
+//   });
 
-  // Detect DevTools opening (rough detection)
-  let devtools = { open: false, orientation: null };
+//   // Detect DevTools opening (rough detection)
+//   let devtools = { open: false, orientation: null };
   
-  const threshold = 160;
-  setInterval(() => {
-    if (window.outerHeight - window.innerHeight > threshold ||
-        window.outerWidth - window.innerWidth > threshold) {
-      if (!devtools.open) {
-        devtools.open = true;
-        console.clear();
-        console.log("🔒 DevTools không được phép sử dụng");
-      }
-    } else {
-      devtools.open = false;
-    }
-  }, 500);
-}
+//   const threshold = 160;
+//   setInterval(() => {
+//     if (window.outerHeight - window.innerHeight > threshold ||
+//         window.outerWidth - window.innerWidth > threshold) {
+//       if (!devtools.open) {
+//         devtools.open = true;
+//         console.clear();
+//         console.log("🔒 DevTools không được phép sử dụng");
+//       }
+//     } else {
+//       devtools.open = false;
+//     }
+//   }, 500);
+// }
 
-// Override console methods to prevent logging sensitive data
-const originalLog = console.log;
-const originalWarn = console.warn;
-const originalError = console.error;
+// // Override console methods to prevent logging sensitive data
+// const originalLog = console.log;
+// const originalWarn = console.warn;
+// const originalError = console.error;
 
-console.log = function(...args) {
-  // Prevent logging
-  return;
-};
+// console.log = function(...args) {
+//   // Prevent logging
+//   return;
+// };
 
-console.warn = function(...args) {
-  return;
-};
+// console.warn = function(...args) {
+//   return;
+// };
 
-console.error = function(...args) {
-  return;
-};
+// console.error = function(...args) {
+//   return;
+// };
 
 // ======================================
 // AUTHENTICATION
@@ -434,6 +434,7 @@ function loadLesson(type) {
 
   // Save current lesson type for navigation
   currentLessonType = type;
+  updateLessonSelection();
 
   let item;
 
@@ -460,6 +461,13 @@ function loadLesson(type) {
   }
 
   renderLesson(type, item);
+}
+
+function updateLessonSelection() {
+  document.querySelectorAll('aside button[data-lesson]').forEach((button) => {
+    const isActive = button.dataset.lesson === currentLessonType;
+    button.classList.toggle('active', isActive);
+  });
 }
 
 // ======================================
@@ -796,6 +804,47 @@ function showLessonNav(type) {
     document.body.appendChild(navBar);
   }
   navBar.innerHTML = navHTML;
+  // adjust bottom padding to fit nav height
+  updateBottomNavPadding();
+  // observe nav size changes
+  if (window.ResizeObserver) {
+    if (window.__lessonNavObserver) window.__lessonNavObserver.disconnect();
+    window.__lessonNavObserver = new ResizeObserver(updateBottomNavPadding);
+    window.__lessonNavObserver.observe(navBar);
+  }
+}
+
+// update CSS var for bottom nav height so `main` adjusts automatically
+function updateBottomNavPadding() {
+  const nav = document.getElementById('lessonNav');
+  const root = document.documentElement;
+  if (nav) {
+    const rect = nav.getBoundingClientRect();
+    const h = Math.ceil(rect.height || nav.offsetHeight || 0);
+    // add a small buffer so content doesn't touch the nav
+    const buffer = 24;
+    const val = Math.max(h + buffer, 64);
+    root.style.setProperty('--bottom-nav-height', `${val}px`);
+  } else {
+    root.style.setProperty('--bottom-nav-height', '0px');
+  }
+}
+
+// Watch for lesson nav insertion if it's created later
+function observeLessonNavInsertion() {
+  if (window.__lessonNavMutObserver) return;
+  const obs = new MutationObserver(() => {
+    const nav = document.getElementById('lessonNav');
+    if (nav) {
+      updateBottomNavPadding();
+      if (window.ResizeObserver && !window.__lessonNavObserver) {
+        window.__lessonNavObserver = new ResizeObserver(updateBottomNavPadding);
+        window.__lessonNavObserver.observe(nav);
+      }
+    }
+  });
+  obs.observe(document.body, { childList: true, subtree: true });
+  window.__lessonNavMutObserver = obs;
 }
 
 function hideLessonNav() {
@@ -932,6 +981,8 @@ function saveGrammarNote(id) {
 // ======================================
 
 function startQuiz() {
+  currentLessonType = 'quiz';
+  updateLessonSelection();
   const list = grammarData.filter(
     (item) => item.practice && item.practice.length,
   );
@@ -1069,6 +1120,8 @@ function speak(text) {
 // ======================================
 
 function showNotes() {
+  currentLessonType = 'notes';
+  updateLessonSelection();
   const notes = userProgress.learnedItems || [];
 
   if (notes.length === 0) {
@@ -1366,9 +1419,38 @@ function exportKeys(){
 // ======================================
 
 // Enable security measures
-disableDevTools();
+// disableDevTools();
 
 // Check authentication first
 if (checkAuth()) {
   loadDatabase();
 }
+
+// Mobile menu toggle
+function toggleMenu() {
+  const app = document.querySelector('.app-screen');
+  if (!app) return;
+  app.classList.toggle('menu-open');
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  const btn = document.getElementById('menuToggle');
+  if (btn) btn.addEventListener('click', toggleMenu);
+
+  // Close menu when a nav action is clicked
+  document.querySelectorAll('aside button').forEach((b) => {
+    b.addEventListener('click', () => {
+      const app = document.querySelector('.app-screen');
+      if (app) app.classList.remove('menu-open');
+    });
+  });
+  // Backdrop click closes menu
+  const backdrop = document.getElementById('menuBackdrop');
+  if (backdrop) backdrop.addEventListener('click', () => {
+    const app = document.querySelector('.app-screen');
+    if (app) app.classList.remove('menu-open');
+  });
+  // initial bottom padding adjustment
+  updateBottomNavPadding();
+  window.addEventListener('resize', updateBottomNavPadding);
+});
