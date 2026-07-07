@@ -681,6 +681,14 @@ color:black;
 
 }
 
+.lesson-card > button.save-note-btn.saved,
+.lesson-card > button.save-note-btn:disabled {
+  background: #c4c4c4;
+  border-color: #b8b8b8;
+  color: #4a4a4a;
+  cursor: not-allowed;
+}
+
 
 .note-item{
 

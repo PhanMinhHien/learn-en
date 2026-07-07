@@ -225,6 +225,7 @@ let phrasalVerbData = [];
 let databaseReady = false;
 
 // Track current lesson type for navigation
+const LESSON_STORAGE_KEY = "currentLessonType";
 let currentLessonType = null;
 
 // ======================================
@@ -295,6 +296,8 @@ async function loadDatabase() {
     loadProgress();
 
     updateDashboard();
+
+    restoreLastLesson();
 
     // Show welcome screen after database is ready
     // showWelcomeScreen();
@@ -434,6 +437,7 @@ function loadLesson(type) {
 
   // Save current lesson type for navigation
   currentLessonType = type;
+  localStorage.setItem(LESSON_STORAGE_KEY, type);
   updateLessonSelection();
 
   let item;
@@ -468,6 +472,58 @@ function updateLessonSelection() {
     const isActive = button.dataset.lesson === currentLessonType;
     button.classList.toggle('active', isActive);
   });
+}
+
+function isItemSaved(itemId) {
+  if (!userProgress.learnedItems) return false;
+  return userProgress.learnedItems.some((x) => x.id === itemId);
+}
+
+function getNoteButtonHtml(item) {
+  const saved = isItemSaved(item.id);
+  const buttonClass = saved ? "save-note-btn saved" : "save-note-btn";
+
+  if (saved) {
+    return `<button class="${buttonClass}" disabled>✔️ Saved in Notes</button>`;
+  }
+
+  const itemJson = JSON.stringify(item).replace(/'/g, "&apos;");
+  return `<button class="${buttonClass}" onclick='noteLesson(${itemJson})'>📌 Save to Notes</button>`;
+}
+
+function updateSaveButtonState(itemId) {
+  const btn = document.querySelector("button.save-note-btn");
+  if (!btn) return;
+  btn.classList.add("saved");
+  btn.disabled = true;
+  btn.textContent = "✔️ Saved in Notes";
+  btn.removeAttribute("onclick");
+}
+
+function restoreLastLesson() {
+  const savedType = localStorage.getItem(LESSON_STORAGE_KEY);
+  if (!savedType) {
+    return;
+  }
+
+  currentLessonType = savedType;
+  switch (savedType) {
+    case "grammar":
+    case "vocabulary":
+    case "collocation":
+    case "phrasal":
+      loadLesson(savedType);
+      break;
+    case "quiz":
+      startQuiz();
+      break;
+    case "notes":
+      showNotes();
+      break;
+    default:
+      updateLessonSelection();
+      break;
+  }
 }
 
 // ======================================
@@ -638,11 +694,7 @@ ${practice}
 
 
 
-<button onclick='noteLesson(${JSON.stringify(item).replace(/'/g, "&apos;")})'>
-
-📌 Save to Notes
-
-</button>
+${getNoteButtonHtml(item)}
 
 
 
@@ -764,11 +816,7 @@ ${fields}
 
 
 
-<button onclick='noteLesson(${JSON.stringify(item)})'>
-
-📌 Save to Notes
-
-</button>
+${getNoteButtonHtml(item)}
 
 
 
@@ -880,7 +928,7 @@ function noteLesson(item) {
     });
 
     saveProgress();
-
+    updateSaveButtonState(item.id);
     alert("📌 Added to your notes!");
   } else {
     alert("Already saved in your notes.");
@@ -982,6 +1030,7 @@ function saveGrammarNote(id) {
 
 function startQuiz() {
   currentLessonType = 'quiz';
+  localStorage.setItem(LESSON_STORAGE_KEY, 'quiz');
   updateLessonSelection();
   const list = grammarData.filter(
     (item) => item.practice && item.practice.length,
@@ -1121,6 +1170,7 @@ function speak(text) {
 
 function showNotes() {
   currentLessonType = 'notes';
+  localStorage.setItem(LESSON_STORAGE_KEY, 'notes');
   updateLessonSelection();
   const notes = userProgress.learnedItems || [];
 
