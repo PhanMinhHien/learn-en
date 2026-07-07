@@ -440,6 +440,12 @@ function loadLesson(type) {
   localStorage.setItem(LESSON_STORAGE_KEY, type);
   updateLessonSelection();
 
+  // Handle quiz separately
+  if (type === 'quiz') {
+    startQuiz();
+    return;
+  }
+
   let item;
 
   switch (type) {
@@ -462,6 +468,11 @@ function loadLesson(type) {
       item = randomItem(phrasalVerbData);
 
       break;
+  }
+
+  if (!item) {
+    alert("No lessons available. Please try again.");
+    return;
   }
 
   renderLesson(type, item);
@@ -1029,12 +1040,22 @@ function saveGrammarNote(id) {
 // ======================================
 
 function startQuiz() {
+  if (!databaseReady) {
+    alert("Database loading...");
+    return;
+  }
+
   currentLessonType = 'quiz';
   localStorage.setItem(LESSON_STORAGE_KEY, 'quiz');
   updateLessonSelection();
   const list = grammarData.filter(
     (item) => item.practice && item.practice.length,
   );
+
+  if (!list || list.length === 0) {
+    alert("No quiz available");
+    return;
+  }
 
   const lesson = randomItem(list);
 
@@ -1111,7 +1132,7 @@ ${option}
 
 `;
   
-  hideLessonNav();
+  showLessonNav('quiz');
 }
 
 // ======================================
@@ -1119,6 +1140,7 @@ ${option}
 // ======================================
 
 function randomItem(array) {
+  if (!array || array.length === 0) return undefined;
   return array[Math.floor(Math.random() * array.length)];
 }
 
