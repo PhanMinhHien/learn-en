@@ -1518,7 +1518,7 @@ function toggleDarkMode() {
 initDarkMode();
 
 // Enable security measures
-// disableDevTools();
+disableDevTools();
 
 // Check authentication first
 if (checkAuth()) {
