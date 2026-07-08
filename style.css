@@ -1084,7 +1084,7 @@ repeat(2,1fr);
  #lessonNav {
   position: fixed;
   bottom: 0;
-  left: 0;
+  left: 250px;
   right: 0;
   display: flex;
   justify-content: center;
@@ -1121,6 +1121,10 @@ repeat(2,1fr);
 
   body{
     display:block;
+  }
+  
+  #lessonNav{
+    left: 0;
   }
 
   /* Stack app layout vertically on small screens */
