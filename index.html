@@ -64,9 +64,17 @@
       
 📌 My Notes
 </button>
-  <!-- <button onclick="exportKeys()">
+
+<button
+    id="adminBtn"
+    onclick="showAdminPanel()"
+    style="display:none;"
+>
+    👨‍💼 Admin
+</button>
+  <button onclick="exportKeys()">
 Export English Journey Keys
-</button> -->
+</button>
 
       <button onclick="toggleDarkMode()" class="dark-mode-toggle" title="Toggle Dark Mode">
         🌙
@@ -126,6 +134,92 @@ Export English Journey Keys
     </main>
     </div>
 
+
+    <!-- ======================================
+ADMIN MODAL
+====================================== -->
+
+<div id="adminModal" class="modal-overlay">
+
+    <div class="modal-card">
+
+        <div class="modal-header">
+
+            <h2>Create User</h2>
+
+            <button class="modal-close" onclick="closeAdminModal()">
+                ✕
+            </button>
+
+        </div>
+
+        <div class="modal-body">
+
+            <label>Username</label>
+
+            <input
+                id="newUsername"
+                type="text"
+                placeholder="Enter username"
+            >
+
+            <label>Password</label>
+
+            <input
+                id="newPassword"
+                type="password"
+                placeholder="Enter password"
+            >
+
+            <label>Role</label>
+
+            <select id="newRole">
+
+                <option value="student">Student</option>
+
+                <option value="teacher">Teacher</option>
+
+                <option value="admin">Admin</option>
+
+            </select>
+
+            <label>Status</label>
+
+            <select id="newStatus">
+
+                <option value="active">Active</option>
+
+                <option value="inactive">Inactive</option>
+
+            </select>
+
+        </div>
+
+        <div class="modal-footer">
+
+            <button
+                class="btn-secondary"
+                onclick="closeAdminModal()"
+            >
+                Cancel
+            </button>
+
+            <button
+                class="btn-primary"
+                onclick="createUser()"
+            >
+                Create User
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bcryptjs@2.4.3/dist/bcrypt.min.js"></script>
+
+<!-- <script src="app.js"></script> -->
     <script src="app.js"></script>
   </body>
 </html>

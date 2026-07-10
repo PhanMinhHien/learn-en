@@ -87,69 +87,274 @@ console.error = function(...args) {
 // AUTHENTICATION
 // ======================================
 
-// Demo credentials (in production, use backend authentication)
-const DEMO_CREDENTIALS = {
-  username: "student",
-  password: "140422"
-};
+const MAX_LOGIN_ATTEMPTS = 5;
+const LOCK_DURATION = 5 * 60 * 1000;
+
+// let loginAttempts =
+//   Number(localStorage.getItem("loginAttempts")) || 0;
+
+// let lockUntil =
+//   Number(localStorage.getItem("lockUntil")) || 0;
+
+// const DEMO_CREDENTIALS = {
+//   username: "student",
+//   passwordHash:
+//     "$2a$10$CkyNtcnBF2dtJfNe5KcNgu1rwv3TEgK0/D/E3OppPF8OfrB0mn5iu"
+// };
 
 let currentUser = null;
 
-function handleLogin(event) {
+function findUser(username) {
+
+    return usersDatabase.find(user =>
+        user.username.toLowerCase() === username.toLowerCase()
+    );
+
+}
+function checkUserLock(user){
+
+
+    if(user.status !== "locked"){
+
+        return false;
+
+    }
+
+
+    // Nếu có thời gian lock và đã hết hạn
+
+    if(
+        user.lockedUntil &&
+        Date.now() > user.lockedUntil
+    ){
+
+
+        user.status = "active";
+
+        user.failedAttempts = 0;
+
+        user.lockedUntil = 0;
+
+
+        saveUsers();
+
+
+        return false;
+
+    }
+
+
+    return true;
+
+
+}
+
+function getProgressKey() {
+
+    if (!currentUser) {
+        return "englishProgress_guest";
+    }
+
+    return `englishProgress_${currentUser.id}`;
+
+}
+async function handleLogin(event) {
+  if(usersDatabase.length===0){
+
+    await loadUsers();
+
+}
   event.preventDefault();
-  
-  const username = document.getElementById("username").value;
+
+  // ==========================
+  // Check account lock
+  // ==========================
+  // if (Date.now() < lockUntil) {
+  //   const remainingSeconds = Math.ceil(
+  //     (lockUntil - Date.now()) / 1000
+  //   );
+
+  //   const minutes = Math.floor(remainingSeconds / 60);
+  //   const seconds = remainingSeconds % 60;
+
+  //   alert(
+  //     `🔒 Too many failed attempts.\n\nPlease try again in ${minutes}m ${seconds}s.`
+  //   );
+
+  //   return;
+  // }
+
+  const username = document.getElementById("username").value.trim();
   const password = document.getElementById("password").value;
-  
-  // Clear input values immediately after reading
+
   const usernameInput = document.getElementById("username");
   const passwordInput = document.getElementById("password");
-  
-  // Validate credentials
-  if (username === DEMO_CREDENTIALS.username && 
-      password === DEMO_CREDENTIALS.password) {
-    
-    // Create session with encrypted token
+
+  // ==========================
+  // Check password
+  // ==========================
+ const user = findUser(username);
+
+
+if (!user) {
+
+    alert("User not found.");
+
+    return;
+
+}
+
+
+
+if(checkUserLock(user)){
+
+
+    let message =
+        "🔒 This account is locked.";
+
+
+    if(user.lockedUntil){
+
+        const remaining =
+            Math.ceil(
+                (user.lockedUntil - Date.now())
+                /
+                60000
+            );
+
+
+        message +=
+        `\nTry again in ${remaining} minute(s).`;
+
+    }
+
+
+    alert(message);
+
+
+    return;
+
+}
+
+const passwordOK =
+dcodeIO.bcrypt.compareSync(
+password,
+user.passwordHash
+);
+
+if(passwordOK) {
+
+
+    user.lastLogin =
+        new Date().toISOString();
+
+
+    user.failedAttempts = 0;
+
+    user.lockedUntil = 0;
+
+    user.status = "active";
+
+
+    saveUsers();
+
+    // ==========================
+    // Reset login attempts
+    // ==========================
+    loginAttempts = 0;
+    lockUntil = 0;
+
+    localStorage.removeItem("loginAttempts");
+    localStorage.removeItem("lockUntil");
+
+    // ==========================
+    // Create session
+    // ==========================
     const sessionData = {
-      uid: Math.random().toString(36).substr(2, 9),
-      ts: Date.now(),
-      u: btoa(username) // Only encode username, never password
-    };
-    
-    // Double encryption
+
+    uid:user.id,
+
+    username:btoa(user.username),
+
+    role:btoa(user.role),
+
+    ts:Date.now()
+
+};
+
     const encrypted = btoa(JSON.stringify(sessionData));
-    
-    currentUser = {
-      username: username,
-      loginTime: new Date().toISOString()
-    };
-    
-    // Store only encrypted token, never raw credentials
+
+   currentUser = {
+
+    id:user.id,
+
+    username:user.username,
+
+    role:user.role,
+
+    loginTime:new Date().toISOString()
+
+};
     localStorage.setItem("__session", encrypted);
-    
-    // Clear form immediately
+
     usernameInput.value = "";
     passwordInput.value = "";
     document.getElementById("loginForm").reset();
-    
-    // Show app screen with loading indicator
+
     showAppScreen();
-    
-    // Show loading message while database loads
-    // document.getElementById("content").innerHTML = `
-    //   <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
-    //     <div style="font-size: 48px; margin-bottom: 20px;">⏳</div>
-    //     <h2>Loading lessons...</h2>
-    //     <p style="color: var(--muted);">Please wait while we prepare your content</p>
-    //   </div>
-    // `;
-    
-    // Load database immediately
     loadDatabase();
+
   } else {
-    // Generic error message - don't reveal which field failed
-    alert("❌ Invalid credentials!");
-    passwordInput.value = ""; // Only clear password, not username
+
+    // ==========================
+    // Failed login
+    // ==========================
+
+
+    user.failedAttempts =
+        (user.failedAttempts || 0) + 1;
+
+
+
+    if(
+        user.failedAttempts >= MAX_LOGIN_ATTEMPTS
+    ){
+
+        user.status = "locked";
+
+
+        user.lockedUntil =
+            Date.now() + LOCK_DURATION;
+
+
+    }
+
+
+    saveUsers();
+
+   const remaining =
+    MAX_LOGIN_ATTEMPTS - user.failedAttempts;
+
+
+if(user.status === "locked"){
+
+
+    alert(
+        "🔒 Too many failed attempts!\n\nYour account has been locked for 5 minutes."
+    );
+
+
+}else{
+
+
+    alert(
+        `❌ Invalid credentials!\n\nRemaining attempts: ${remaining}`
+    );
+
+
+}
+
+    passwordInput.value = "";
   }
 }
 
@@ -185,6 +390,14 @@ function showAppScreen() {
   document.getElementById("loginScreen").style.display = "none";
   document.getElementById("appScreen").style.display = "flex";
   document.getElementById("userGreeting").textContent = `Welcome, ${currentUser.username}! 👋`;
+
+  const adminBtn = document.getElementById("adminBtn");
+
+if (currentUser.role === "admin") {
+    adminBtn.style.display = "flex";
+} else {
+    adminBtn.style.display = "none";
+}
 }
 
 function checkAuth() {
@@ -196,11 +409,21 @@ function checkAuth() {
       const decrypted = JSON.parse(atob(savedSession));
       
       // Validate session (optional: check timestamp)
-      if (decrypted.uid && decrypted.ts) {
+      const SESSION_EXPIRE = 24 * 60 * 60 * 1000;
+
+if (
+    decrypted.uid &&
+    Date.now() - decrypted.ts < SESSION_EXPIRE
+) {
         currentUser = {
-          username: atob(decrypted.u),
-          sessionId: decrypted.uid
-        };
+
+    id:decrypted.uid,
+
+    username:atob(decrypted.username),
+
+    role:atob(decrypted.role)
+
+};
         showAppScreen();
         return true;
       }
@@ -213,6 +436,54 @@ function checkAuth() {
   
   showLoginScreen();
   return false;
+}
+
+// ======================================
+// USERS DATABASE
+// ======================================
+
+let usersDatabase = [];
+
+async function loadUsers() {
+
+
+    const savedUsers =
+        localStorage.getItem("usersDatabase");
+
+
+    if(savedUsers){
+
+        usersDatabase =
+            JSON.parse(savedUsers);
+
+
+        console.log(
+            "✅ Loaded users from localStorage",
+            usersDatabase
+        );
+
+
+        return;
+
+    }
+
+
+
+    usersDatabase =
+        await loadJSON("./data/users.json");
+
+
+
+    saveUsers();
+
+
+
+    console.log(
+        "✅ Loaded users from users.json",
+        usersDatabase
+    );
+
+
 }
 
 // DATABASE
@@ -273,15 +544,21 @@ async function loadJSON(file) {
 
 async function loadDatabase() {
   try {
-    const [grammar, vocabulary, collocation, phrasal] = await Promise.all([
-      loadJSON("./data/grammar_a1_a2.json"),
+const [
+grammar,
+vocabulary,
+collocation,
+phrasal
+] =
+await Promise.all([
 
-      loadJSON("./data/vocabulary_a1_a2.json"),
+loadJSON("./data/grammar_a1_a2.json"),
+loadJSON("./data/vocabulary_a1_a2.json"),
+loadJSON("./data/collocations_a1_a2.json"),
+loadJSON("./data/phrasal_verbs_a1_a2.json")
 
-      loadJSON("./data/collocations_a1_a2.json"),
-
-      loadJSON("./data/phrasal_verbs_a1_a2.json"),
-    ]);
+]);
+// usersDatabase = users;
 
     grammarData = grammar;
 
@@ -313,6 +590,810 @@ async function loadDatabase() {
   }
 }
 
+function saveUsers(){
+
+    localStorage.setItem(
+        "usersDatabase",
+        JSON.stringify(usersDatabase)
+    );
+
+}
+
+
+
+function loadUsersFromStorage(){
+
+    const savedUsers =
+        localStorage.getItem("usersDatabase");
+
+
+    if(savedUsers){
+
+        usersDatabase =
+            JSON.parse(savedUsers);
+
+        console.log(
+            "Loaded users from localStorage",
+            usersDatabase
+        );
+
+    }
+
+}
+
+let editingUserId = null;
+function getUserById(id) {
+
+    return usersDatabase.find(user => user.id === id);
+
+}
+
+function showAdminPanel() {
+
+    if (!currentUser || currentUser.role !== "admin") {
+
+        alert("⛔ Access denied.");
+
+        return;
+
+    }
+
+    document.getElementById("content").innerHTML = `
+
+<div class="lesson-card admin-panel">
+
+    <div class="admin-header">
+
+        <h2>
+
+            👨‍💼 English Journey Admin
+
+        </h2>
+
+       <button
+    id="createUserBtn"
+    onclick="showCreateUserModal()"
+>
+
+    ➕ Create User
+
+</button>
+
+<button
+onclick="exportUsersJSON()"
+>
+⬇️ Export users.json
+</button>
+
+<button
+onclick="triggerImportUsers()"
+>
+⬆️ Import users.json
+</button>
+
+
+<input
+type="file"
+id="importUsersFile"
+accept=".json"
+style="display:none"
+onchange="importUsersJSON(event)"
+>
+</div>
+
+
+    </div>
+
+    ${renderUsersTable()}
+
+</div>
+
+`;
+
+    hideLessonNav();
+
+}
+function renderUsersTable() {
+
+    if (!usersDatabase.length) {
+        return "<p>No users found.</p>";
+    }
+
+    let rows = "";
+
+    usersDatabase.forEach(user => {
+
+        rows += `
+            <tr>
+                <td>${user.username}</td>
+                <td>${capitalize(user.role)}</td>
+                <td>${user.status}</td>
+                <td>${formatDate(user.createdAt)}</td>
+                <td>${user.lastLogin ? formatDate(user.lastLogin) : "Never"}</td>
+                <td>
+
+<button
+class="action-btn"
+onclick="toggleUserMenu(${user.id})"
+>
+
+⚙️
+
+</button>
+
+<div
+id="userMenu-${user.id}"
+class="user-menu"
+>
+
+<button onclick="editUser(${user.id})">
+
+✏️ Edit
+
+</button>
+
+<button onclick="toggleLockUser(${user.id})">
+
+${user.status==="active"
+? "🔒 Lock"
+: "🔓 Unlock"}
+
+</button>
+
+<button onclick="resetPassword(${user.id})">
+
+🔑 Reset Password
+
+</button>
+
+<button
+class="danger"
+onclick="deleteUser(${user.id})"
+>
+
+🗑 Delete
+
+</button>
+
+</div>
+
+</td>
+            </tr>
+        `;
+
+    });
+
+    return `
+        <table class="admin-table">
+
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                    <th>Created</th>
+                    <th>Last Login</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                ${rows}
+
+            </tbody>
+
+        </table>
+    `;
+}
+
+function capitalize(text){
+
+    if(!text) return "";
+
+    return text.charAt(0).toUpperCase()+text.slice(1);
+
+}
+    function formatDate(date){
+
+    if(!date) return "-";
+
+    return new Date(date).toLocaleDateString();
+
+}
+function exportUsersJSON(){
+
+    if(!usersDatabase.length){
+
+        alert("No users data.");
+
+        return;
+
+    }
+
+
+    const data =
+        JSON.stringify(
+            usersDatabase,
+            null,
+            4
+        );
+
+
+    const blob =
+        new Blob(
+            [data],
+            {
+                type:"application/json"
+            }
+        );
+
+
+    const url =
+        URL.createObjectURL(blob);
+
+
+    const link =
+        document.createElement("a");
+
+
+    link.href = url;
+
+
+    link.download =
+        "users.json";
+
+
+    document.body.appendChild(link);
+
+
+    link.click();
+
+
+    document.body.removeChild(link);
+
+
+    URL.revokeObjectURL(url);
+
+
+    alert("✅ users.json exported successfully.");
+
+}
+
+function triggerImportUsers(){
+
+    document
+    .getElementById("importUsersFile")
+    .click();
+
+}
+function importUsersJSON(event){
+
+
+    const file =
+        event.target.files[0];
+
+
+    if(!file){
+
+        return;
+
+    }
+
+
+
+    const reader =
+        new FileReader();
+
+
+
+    reader.onload = function(e){
+
+
+        try{
+
+
+            const importedUsers =
+                JSON.parse(
+                    e.target.result
+                );
+
+
+
+            if(
+                !Array.isArray(importedUsers)
+            ){
+
+                throw new Error(
+                    "Invalid format"
+                );
+
+            }
+
+
+
+            const valid =
+                importedUsers.every(
+                    user =>
+                    user.id &&
+                    user.username &&
+                    user.passwordHash &&
+                    user.role &&
+                    user.status
+                );
+
+
+
+            if(!valid){
+
+
+                throw new Error(
+                    "Missing user fields"
+                );
+
+
+            }
+
+
+
+            const confirmImport =
+                confirm(
+                `Import ${importedUsers.length} users?\n\nCurrent users will be replaced.`
+                );
+
+
+
+            if(!confirmImport){
+
+                return;
+
+            }
+
+
+
+            usersDatabase =
+                importedUsers;
+
+
+
+            saveUsers();
+
+
+
+            alert(
+                "✅ Users imported successfully."
+            );
+
+
+
+            showAdminPanel();
+
+
+
+        }catch(error){
+
+
+            alert(
+                "❌ Invalid users.json file."
+            );
+
+
+            console.error(error);
+
+
+        }
+
+
+
+    };
+
+
+
+    reader.readAsText(file);
+
+
+
+}
+function toggleLockUser(id){
+
+    const user =
+        getUserById(id);
+
+
+    if(!user) return;
+
+
+
+    if(user.status==="active"){
+
+
+        user.status="locked";
+
+
+        user.lockedUntil =
+            0;
+
+    //         user.lockedUntil =
+    // Date.now() + LOCK_DURATION;
+
+
+    }else{
+
+
+        user.status="active";
+
+
+        user.failedAttempts=0;
+
+
+        user.lockedUntil=0;
+
+
+    }
+
+
+
+    saveUsers();
+
+
+    showAdminPanel();
+
+}
+function deleteUser(id){
+
+
+    const confirmDelete =
+        confirm(
+            "Are you sure you want to delete this user?"
+        );
+
+
+    if(!confirmDelete)
+        return;
+
+
+
+    usersDatabase =
+        usersDatabase.filter(
+            user => user.id !== id
+        );
+
+
+    saveUsers();
+
+
+    showAdminPanel();
+
+
+}
+function resetPassword(id){
+
+
+    const user =
+        getUserById(id);
+
+
+    if(!user){
+
+        alert("User not found.");
+
+        return;
+
+    }
+
+
+    const newPassword =
+        prompt(
+            `Enter new password for ${user.username}:`
+        );
+
+
+    if(!newPassword){
+
+        return;
+
+    }
+
+
+
+    user.passwordHash =
+        dcodeIO.bcrypt.hashSync(
+            newPassword,
+            10
+        );
+
+
+
+    // reset security status
+
+    user.failedAttempts = 0;
+
+    user.lockedUntil = 0;
+user.status = "active";
+
+    saveUsers();
+
+
+    alert(
+        "✅ Password reset successfully."
+    );
+
+
+}
+// function showCreateUserModal() {
+
+//     const username = prompt("Username:");
+
+//     if (!username) return;
+
+//     const password = prompt("Password:");
+
+//     if (!password) return;
+
+//     const role = prompt("Role (student / teacher / admin):", "student");
+
+//     if (!role) return;
+
+//     const user = {
+
+//         id: Date.now(),
+
+//         username,
+
+//         passwordHash: dcodeIO.bcrypt.hashSync(password, 10),
+
+//         role,
+
+//         status: "active",
+
+//         createdAt: new Date().toISOString(),
+
+//         lastLogin: null,
+
+//         failedAttempts: 0,
+
+//         lockedUntil: 0
+
+//     };
+
+//     usersDatabase.push(user);
+
+//     showAdminPanel();
+
+// }
+
+
+function showCreateUserModal() {
+
+    const modal = document.getElementById("adminModal");
+
+    console.log("Modal:", modal);
+
+    if (!modal) {
+        alert("adminModal not found");
+        return;
+    }
+
+    modal.classList.add("show");
+
+}
+function closeAdminModal() {
+
+    editingUserId = null;
+
+    document
+        .getElementById("adminModal")
+        .classList.remove("show");
+
+    document.getElementById("newUsername").value = "";
+
+    document.getElementById("newPassword").value = "";
+
+    document.getElementById("newRole").value = "student";
+
+    document.getElementById("newStatus").value = "active";
+
+    document.querySelector("#adminModal h2").textContent =
+        "Create User";
+
+    document.querySelector(".btn-primary").textContent =
+        "Create User";
+
+}
+function createUser(){
+
+    const username =
+        document.getElementById("newUsername").value.trim();
+
+    const password =
+        document.getElementById("newPassword").value;
+
+    const role =
+        document.getElementById("newRole").value;
+
+    const status =
+        document.getElementById("newStatus").value;
+
+
+        if (editingUserId !== null) {
+
+    const user = getUserById(editingUserId);
+
+    user.username =
+        username;
+
+    user.role =
+        role;
+
+    user.status =
+        status;
+
+    if (password.trim()) {
+
+        user.passwordHash =
+            dcodeIO.bcrypt.hashSync(password, 10);
+
+    }
+saveUsers();
+    editingUserId = null;
+
+    closeAdminModal();
+
+    showAdminPanel();
+
+    return;
+
+}
+    if(!username || !password){
+
+        alert("Please fill all fields.");
+
+        return;
+
+    }
+
+    const existed =
+        usersDatabase.some(user =>
+            user.username.toLowerCase() === username.toLowerCase()
+        );
+
+    if(existed){
+
+        alert("Username already exists.");
+
+        return;
+
+    }
+
+    usersDatabase.push({
+
+        id:Date.now(),
+
+        username,
+
+        passwordHash:dcodeIO.bcrypt.hashSync(password,10),
+
+        role,
+
+        status,
+
+        createdAt:new Date().toISOString(),
+
+        lastLogin:null,
+
+        failedAttempts:0,
+
+        lockedUntil:0
+
+    });
+saveUsers();
+    closeAdminModal();
+
+    showAdminPanel();
+
+}
+function toggleUserMenu(id){
+
+
+    const currentMenu =
+        document.getElementById(
+            `userMenu-${id}`
+        );
+
+
+
+    // Close all other menus
+
+    document
+    .querySelectorAll(".user-menu")
+    .forEach(menu => {
+
+        if(menu !== currentMenu){
+
+            menu.classList.remove("show");
+
+        }
+
+    });
+
+
+
+    // Toggle current menu
+
+    currentMenu.classList.toggle("show");
+
+
+}
+
+function editUser(id) {
+
+    const user = getUserById(id);
+
+    if (!user) return;
+
+    editingUserId = id;
+
+    document.querySelector("#adminModal h2").textContent =
+        "Edit User";
+
+    document.getElementById("newUsername").value =
+        user.username;
+
+    document.getElementById("newPassword").value = "";
+
+    document.getElementById("newRole").value =
+        user.role;
+
+    document.getElementById("newStatus").value =
+        user.status;
+
+    document.querySelector(".btn-primary").textContent =
+        "Save Changes";
+
+    document
+        .getElementById("adminModal")
+        .classList.add("show");
+
+}
+
+document.addEventListener(
+    "click",
+    function(event){
+
+
+        const isMenuButton =
+            event.target.closest(
+                ".action-btn"
+            );
+
+
+        const isMenu =
+            event.target.closest(
+                ".user-menu"
+            );
+
+
+
+        if(
+            !isMenu &&
+            !isMenuButton
+        ){
+
+            document
+            .querySelectorAll(".user-menu")
+            .forEach(menu=>{
+
+                menu.classList.remove(
+                    "show"
+                );
+
+            });
+
+        }
+
+
+    }
+);
 // ======================================
 // SHOW WELCOME SCREEN
 // ======================================
@@ -369,7 +1450,7 @@ async function loadDatabase() {
 // ======================================
 
 function loadProgress() {
-  const saved = localStorage.getItem("englishProgress");
+  const saved = localStorage.getItem(getProgressKey());
 
   if (saved) {
     userProgress = JSON.parse(saved);
@@ -382,10 +1463,9 @@ function loadProgress() {
 
 function saveProgress() {
   localStorage.setItem(
-    "englishProgress",
-
-    JSON.stringify(userProgress),
-  );
+    getProgressKey(),
+    JSON.stringify(userProgress)
+);
 }
 
 // ======================================
@@ -860,7 +1940,7 @@ function showLessonNav(type) {
   if (!navBar) {
     navBar = document.createElement("div");
     navBar.id = "lessonNav";
-    document.body.appendChild(navBar);
+document.getElementById("appScreen").appendChild(navBar);
   }
   navBar.innerHTML = navHTML;
   // adjust bottom padding to fit nav height
@@ -1521,9 +2601,15 @@ initDarkMode();
 disableDevTools();
 
 // Check authentication first
-if (checkAuth()) {
-  loadDatabase();
-}
+(async function(){
+
+    await loadUsers();
+
+    if(checkAuth()){
+        await loadDatabase();
+    }
+
+})();
 
 // Mobile menu toggle
 function toggleMenu() {

@@ -27,7 +27,290 @@
 /* ======================================
    English Journey v1.7
 ====================================== */
+.admin-header{
 
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+.admin-header h2{
+  margin-bottom: 0;
+}
+
+.admin-table{
+margin-top: 30px;
+width:100%;
+
+border-collapse:collapse;
+
+}
+
+.admin-table th{
+
+background:var(--primary);
+
+
+color:#fff;
+
+padding:12px;
+
+text-align:left;
+
+}
+
+.admin-table td{
+
+padding:12px;
+
+border-bottom:1px solid #ddd;
+
+}
+
+.admin-table tr:hover{
+
+background:var(--success);
+
+
+}
+
+.admin-header button, #createUserBtn{
+
+padding:10px 18px;
+
+border:none;
+
+border-radius:8px;
+
+cursor:pointer;
+
+font-weight:600;
+
+}
+
+/* ======================================
+ADMIN MODAL
+====================================== */
+
+.modal-overlay{
+
+position:fixed;
+
+inset:0;
+
+background:rgba(0,0,0,.45);
+
+display:none;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:9999;
+
+backdrop-filter:blur(6px);
+
+}
+
+.modal-overlay.show{
+
+display:flex;
+
+}
+
+.modal-card{
+
+width:min(460px,92vw);
+
+background:var(--card);
+
+border-radius:18px;
+
+padding:24px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.25);
+
+animation:modalShow .25s ease;
+
+}
+
+@keyframes modalShow{
+
+from{
+
+opacity:0;
+
+transform:translateY(25px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:none;
+
+}
+
+}
+
+.modal-header{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:20px;
+
+}
+
+.modal-close{
+
+background:none;
+
+border:none;
+
+font-size:22px;
+
+cursor:pointer;
+
+}
+
+.modal-body{
+
+display:flex;
+
+flex-direction:column;
+
+gap:12px;
+
+}
+
+.modal-body input,
+.modal-body select{
+
+padding:12px;
+
+border-radius:10px;
+
+border:1px solid #ccc;
+
+font-size:15px;
+
+}
+
+.modal-footer{
+
+margin-top:24px;
+
+display:flex;
+
+justify-content:flex-end;
+
+gap:12px;
+
+}
+
+.btn-primary{
+
+background:#2b7fff;
+
+color:#fff;
+
+border:none;
+
+padding:10px 18px;
+
+border-radius:10px;
+
+cursor:pointer;
+
+}
+
+.btn-secondary{
+
+background:#ddd;
+
+border:none;
+
+padding:10px 18px;
+
+border-radius:10px;
+
+cursor:pointer;
+
+}
+
+.action-btn{
+
+cursor:pointer;
+
+border:none;
+
+background:none;
+
+font-size:18px;
+
+}
+
+.user-menu{
+
+display: none;
+    position: absolute;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+    padding: 8px;
+    width: 180px;
+    z-index: 100;
+    right: 40px;
+
+}
+
+.user-menu.show{
+
+display:block;
+
+}
+
+.user-menu button{
+
+width:100%;
+
+text-align:left;
+
+background:none;
+
+border:none;
+
+padding:10px;
+
+cursor:pointer;
+
+border-radius:8px;
+
+}
+
+.user-menu button:hover{
+
+background:#f3f3f3;
+
+}
+
+.danger{
+
+color:#d32f2f;
+
+}
 
 *{
 
@@ -591,6 +874,8 @@ margin:10px 0;
 border-radius:16px;
 border:1px solid var(--border);
 background:var(--card);
+color:var(--text);
+
 cursor:pointer;
 text-align:left;
 transition: background-color 0.25s ease, border-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
