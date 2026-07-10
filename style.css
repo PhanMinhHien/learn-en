@@ -1326,7 +1326,7 @@ repeat(2,1fr);
   width: 100%;
   padding: 10px;
   background: white;
-  color: var(--primary);
+  color: var(--secondary);
   border: none;
   border-radius: 6px;
   font-size: 14px;
@@ -1337,6 +1337,8 @@ repeat(2,1fr);
 
 .logout-btn:hover {
   background: #f1f5f9;
+    color: var(--secondary);
+
   transform: translateY(-1px);
 }
 
