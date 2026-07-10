@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "username": "tiutiu",
+        "passwordHash": "$2a$10$CkyNtcnBF2dtJfNe5KcNgu1rwv3TEgK0/D/E3OppPF8OfrB0mn5iu",
+        "role": "student",
+        "status": "active",
+        "failedAttempts": 0,
+        "lockedUntil": 0,
+        "createdAt": "2026-07-10T00:00:00Z",
+        "lastLogin": null
+    },
+    {
+        "id": 2,
+        "username": "teacher",
+        "passwordHash": "$2a$10$CkyNtcnBF2dtJfNe5KcNgu1rwv3TEgK0/D/E3OppPF8OfrB0mn5iu",
+        "role": "teacher",
+        "status": "active",
+        "failedAttempts": 0,
+        "lockedUntil": 0,
+        "createdAt": "2026-07-10T00:00:00Z",
+        "lastLogin": null
+    },
+    {
+        "id": 3,
+        "username": "admin",
+        "passwordHash": "$2a$10$CkyNtcnBF2dtJfNe5KcNgu1rwv3TEgK0/D/E3OppPF8OfrB0mn5iu",
+        "role": "admin",
+        "status": "active",
+        "failedAttempts": 0,
+        "lockedUntil": 0,
+        "createdAt": "2026-07-10T00:00:00Z",
+        "lastLogin": null
+    }
+]
