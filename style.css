@@ -1404,6 +1404,61 @@ repeat(2,1fr);
   flex: 1;
 }
 
+
+.modal-small{
+
+    width:420px;
+    max-width:92vw;
+
+}
+
+.modal-input{
+
+    width:100%;
+    margin-top:18px;
+    padding:12px;
+
+    border-radius:8px;
+
+    border:1px solid #ccc;
+
+    font-size:15px;
+
+    outline:none;
+
+    box-sizing:border-box;
+
+}
+
+.modal-overlay{
+
+    opacity:0;
+    pointer-events:none;
+
+    transition:.25s;
+
+}
+
+.modal-overlay.show{
+
+    opacity:1;
+    pointer-events:auto;
+
+}
+
+.modal-card{
+
+    transform:translateY(20px);
+
+    transition:.25s;
+
+}
+
+.modal-overlay.show .modal-card{
+
+    transform:translateY(0);
+
+}
 @media (max-width:900px) {
 
   body{

@@ -217,6 +217,65 @@ ADMIN MODAL
 
 </div>
 
+<!-- ======================================
+GLOBAL MODAL
+====================================== -->
+
+<div id="globalModal" class="modal-overlay">
+
+    <div class="modal-card modal-small">
+
+        <div class="modal-header">
+
+            <h2 id="modalTitle">
+                Notification
+            </h2>
+
+            <button
+                class="modal-close"
+                onclick="closeModal(false)"
+            >
+                ✕
+            </button>
+
+        </div>
+
+        <div class="modal-body">
+
+            <p id="modalMessage"></p>
+
+            <input
+                id="modalInput"
+                class="modal-input"
+                type="text"
+                style="display:none"
+            >
+
+        </div>
+
+        <div class="modal-footer">
+
+            <button
+                id="modalCancel"
+                class="btn-secondary"
+                style="display:none"
+            >
+                Cancel
+            </button>
+
+            <button
+                id="modalOK"
+                class="btn-primary"
+            >
+                OK
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/bcryptjs@2.4.3/dist/bcrypt.min.js"></script>
 
 <!-- <script src="app.js"></script> -->

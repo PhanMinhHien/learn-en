@@ -198,7 +198,7 @@ async function handleLogin(event) {
 
 if (!user) {
 
-    alert("User not found.");
+    await showAlert("User not found.");
 
     return;
 
@@ -229,8 +229,7 @@ if(checkUserLock(user)){
     }
 
 
-    alert(message);
-
+await showAlert(message);
 
     return;
 
@@ -339,15 +338,15 @@ if(passwordOK) {
 if(user.status === "locked"){
 
 
-    alert(
-        "🔒 Too many failed attempts!\n\nYour account has been locked for 5 minutes."
-    );
-
+   await showAlert(
+"🔒 Too many failed attempts..."
+);
 
 }else{
 
 
-    alert(
+    await showAlert(
+
         `❌ Invalid credentials!\n\nRemaining attempts: ${remaining}`
     );
 
@@ -358,10 +357,13 @@ if(user.status === "locked"){
   }
 }
 
-function handleLogout() {
-  const confirm = window.confirm("Are you sure you want to logout?");
-  
-  if (confirm) {
+async function handleLogout() {
+const ok =
+await showConfirm(
+"Are you sure you want to logout?"
+);
+
+if(!ok) return;  
     // Securely clear user session
     currentUser = null;
     localStorage.removeItem("__session");
@@ -378,7 +380,7 @@ function handleLogout() {
     
     // Show login screen
     showLoginScreen();
-  }
+
 }
 
 function showLoginScreen() {
@@ -622,18 +624,234 @@ function loadUsersFromStorage(){
 }
 
 let editingUserId = null;
+let modalResolver = null;
+
+let modalMode = "alert";
+
+function showModal({
+
+    title="Notification",
+
+    message="",
+
+    mode="alert",
+
+    placeholder="",
+
+    value=""
+
+}){
+
+    modalMode = mode;
+
+    return new Promise(resolve=>{
+
+        modalResolver = resolve;
+
+        document
+        .getElementById("modalTitle")
+        .textContent = title;
+
+        document
+        .getElementById("modalMessage")
+        .textContent = message;
+
+        const input =
+        document.getElementById("modalInput");
+
+        const cancel =
+        document.getElementById("modalCancel");
+
+        if(mode==="prompt"){
+
+            input.style.display="block";
+
+            input.placeholder=placeholder;
+
+            input.value=value;
+
+            setTimeout(()=>input.focus(),50);
+
+        }else{
+
+            input.style.display="none";
+
+        }
+
+        cancel.style.display =
+        mode==="confirm" || mode==="prompt"
+        ? "inline-flex"
+        : "none";
+
+        document
+        .getElementById("globalModal")
+        .classList.add("show");
+
+    });
+
+}
+
+function closeModal(ok){
+
+    document
+    .getElementById("globalModal")
+    .classList.remove("show");
+
+    if(!modalResolver) return;
+
+    if(modalMode==="alert"){
+
+        modalResolver(true);
+
+    }
+
+    if(modalMode==="confirm"){
+
+        modalResolver(ok);
+
+    }
+
+    if(modalMode==="prompt"){
+
+        if(ok){
+
+            modalResolver(
+
+                document
+                .getElementById("modalInput")
+                .value
+
+            );
+
+        }else{
+
+            modalResolver(null);
+
+        }
+
+    }
+
+    modalResolver=null;
+
+}
+
+function showAlert(message){
+
+    return showModal({
+
+        title:"Notification",
+
+        message,
+
+        mode:"alert"
+
+    });
+
+}
+
+function showConfirm(message){
+
+    return showModal({
+
+        title:"Confirmation",
+
+        message,
+
+        mode:"confirm"
+
+    });
+
+}
+
+function showPrompt({
+
+    title,
+
+    message,
+
+    placeholder="",
+
+    value=""
+
+}){
+
+    return showModal({
+
+        title,
+
+        message,
+
+        placeholder,
+
+        value,
+
+        mode:"prompt"
+
+    });
+
+}
+
+document
+.getElementById("modalOK")
+.onclick=()=>closeModal(true);
+
+document
+.getElementById("modalCancel")
+.onclick=()=>closeModal(false);
+
+document
+.getElementById("globalModal")
+.onclick=function(e){
+
+    if(e.target===this){
+
+        if(modalMode!=="alert"){
+
+            closeModal(false);
+
+        }
+
+    }
+
+};
+
+document
+.addEventListener("keydown",function(e){
+
+    const modal =
+    document.getElementById("globalModal");
+
+    if(!modal.classList.contains("show"))
+        return;
+
+    if(e.key==="Escape"){
+
+        closeModal(false);
+
+    }
+
+    if(
+        e.key==="Enter" &&
+        modalMode==="prompt"
+    ){
+
+        closeModal(true);
+
+    }
+
+});
+
 function getUserById(id) {
 
     return usersDatabase.find(user => user.id === id);
 
 }
 
-function showAdminPanel() {
+async function showAdminPanel() {
 
     if (!currentUser || currentUser.role !== "admin") {
 
-        alert("⛔ Access denied.");
-
+await showAlert("⛔ Access denied.");
         return;
 
     }
@@ -801,12 +1019,11 @@ function capitalize(text){
     return new Date(date).toLocaleDateString();
 
 }
-function exportUsersJSON(){
+async function exportUsersJSON(){
 
     if(!usersDatabase.length){
 
-        alert("No users data.");
-
+await showAlert("No users data.");
         return;
 
     }
@@ -856,8 +1073,7 @@ function exportUsersJSON(){
     URL.revokeObjectURL(url);
 
 
-    alert("✅ users.json exported successfully.");
-
+await showAlert("✅ users.json exported successfully.");
 }
 
 function triggerImportUsers(){
@@ -887,8 +1103,7 @@ function importUsersJSON(event){
 
 
 
-    reader.onload = function(e){
-
+reader.onload = async function(e){
 
         try{
 
@@ -937,7 +1152,7 @@ function importUsersJSON(event){
 
 
             const confirmImport =
-                confirm(
+                await showConfirm(
                 `Import ${importedUsers.length} users?\n\nCurrent users will be replaced.`
                 );
 
@@ -960,7 +1175,7 @@ function importUsersJSON(event){
 
 
 
-            alert(
+            await showAlert(
                 "✅ Users imported successfully."
             );
 
@@ -973,7 +1188,7 @@ function importUsersJSON(event){
         }catch(error){
 
 
-            alert(
+            await showAlert(
                 "❌ Invalid users.json file."
             );
 
@@ -1039,11 +1254,11 @@ function toggleLockUser(id){
     showAdminPanel();
 
 }
-function deleteUser(id){
+async function deleteUser(id){
 
 
     const confirmDelete =
-        confirm(
+        await showConfirm(
             "Are you sure you want to delete this user?"
         );
 
@@ -1066,7 +1281,7 @@ function deleteUser(id){
 
 
 }
-function resetPassword(id){
+async function resetPassword(id){
 
 
     const user =
@@ -1075,24 +1290,26 @@ function resetPassword(id){
 
     if(!user){
 
-        alert("User not found.");
+        await showAlert("User not found.");
 
         return;
 
     }
 
 
-    const newPassword =
-        prompt(
-            `Enter new password for ${user.username}:`
-        );
+  const newPassword =
+await showPrompt({
 
+    title:"Reset Password",
 
-    if(!newPassword){
+    message:`Enter new password for ${user.username}`,
 
-        return;
+    placeholder:"New password"
 
-    }
+});
+
+if(!newPassword)
+    return;
 
 
 
@@ -1114,7 +1331,7 @@ user.status = "active";
     saveUsers();
 
 
-    alert(
+    await showAlert(
         "✅ Password reset successfully."
     );
 
@@ -1170,7 +1387,7 @@ function showCreateUserModal() {
     console.log("Modal:", modal);
 
     if (!modal) {
-        alert("adminModal not found");
+        showAlert("adminModal not found");
         return;
     }
 
@@ -1200,7 +1417,7 @@ function closeAdminModal() {
         "Create User";
 
 }
-function createUser(){
+async function createUser(){
 
     const username =
         document.getElementById("newUsername").value.trim();
@@ -1246,7 +1463,7 @@ saveUsers();
 }
     if(!username || !password){
 
-        alert("Please fill all fields.");
+        await showAlert("Please fill all fields.");
 
         return;
 
@@ -1259,7 +1476,7 @@ saveUsers();
 
     if(existed){
 
-        alert("Username already exists.");
+        await showAlert("Username already exists.");
 
         return;
 
@@ -1510,7 +1727,7 @@ function updateDashboard() {
 
 function loadLesson(type) {
   if (!databaseReady) {
-    alert("Database loading...");
+    showAlert("Database loading...");
 
     return;
   }
@@ -1551,7 +1768,7 @@ function loadLesson(type) {
   }
 
   if (!item) {
-    alert("No lessons available. Please try again.");
+    showAlert("No lessons available. Please try again.");
     return;
   }
 
@@ -2020,9 +2237,9 @@ function noteLesson(item) {
 
     saveProgress();
     updateSaveButtonState(item.id);
-    alert("📌 Added to your notes!");
+    showAlert("📌 Added to your notes!");
   } else {
-    alert("Already saved in your notes.");
+    showAlert("Already saved in your notes.");
   }
 }
 
@@ -2091,7 +2308,7 @@ ${rule}
   } else {
     button.style.opacity = "0.5";
 
-    alert("❌ Not correct. Try again!");
+    showAlert("❌ Not correct. Try again!");
   }
 }
 
@@ -2121,7 +2338,7 @@ function saveGrammarNote(id) {
 
 function startQuiz() {
   if (!databaseReady) {
-    alert("Database loading...");
+    showAlert("Database loading...");
     return;
   }
 
@@ -2133,14 +2350,14 @@ function startQuiz() {
   );
 
   if (!list || list.length === 0) {
-    alert("No quiz available");
+    showAlert("No quiz available");
     return;
   }
 
   const lesson = randomItem(list);
 
   if (!lesson) {
-    alert("No quiz available");
+    showAlert("No quiz available");
 
     return;
   }
@@ -2240,7 +2457,7 @@ speechSynthesis.onvoiceschanged = loadVoices;
 
 function speak(text) {
   if (!window.speechSynthesis) {
-    alert("Your browser does not support speech");
+    showAlert("Your browser does not support speech");
 
     return;
   }
@@ -2405,11 +2622,11 @@ onclick="deleteNote('${item.id}')"
 // ======================================
 
 
-function deleteNote(id){
+async function deleteNote(id){
 
 
 const confirmDelete =
-confirm(
+await showConfirm(
 "Remove this lesson from your notes?"
 );
 
