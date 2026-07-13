@@ -15,8 +15,8 @@
       <div class="login-card">
         <h1>📚 English Journey</h1>
         <h2>Welcome Back!</h2>
-        <form id="loginForm" onsubmit="handleLogin(event)">
-          <div class="form-group">
+<form id="loginForm">
+            <div class="form-group">
             <label for="username">Username:</label>
             <input 
               type="text" 
@@ -48,35 +48,34 @@
       <!-- <h1>📚 English</h1> -->
       <div class="user-info">
         <p id="userGreeting">Welcome!</p>
-        <button onclick="handleLogout()" class="logout-btn">🚪 Logout</button>
+<button id="logoutBtn" class="logout-btn">🚪 Logout</button>
       </div>
 
-      <button data-lesson="grammar" onclick="loadLesson('grammar')">📘 Grammar</button>
+      <button id="grammarBtn" data-lesson="grammar">📘 Grammar</button>
 
-      <button data-lesson="vocabulary" onclick="loadLesson('vocabulary')">📚 Vocabulary</button>
+      <button data-lesson="vocabulary" id="vocabularyBtn">📚 Vocabulary</button>
 
-      <button data-lesson="collocation" onclick="loadLesson('collocation')">🔗 Collocations</button>
+      <button data-lesson="collocation" id="collocationBtn">🔗 Collocations</button>
 
-      <button data-lesson="phrasal" onclick="loadLesson('phrasal')">⚡ Phrasal Verbs</button>
+      <button data-lesson="phrasal" id="phrasalBtn">⚡ Phrasal Verbs</button>
 
-      <button data-lesson="quiz" onclick="startQuiz()">📝 Quiz</button>
-      <button data-lesson="notes" onclick="showNotes()">
+      <button data-lesson="quiz" id="quizBtn">📝 Quiz</button>
+      <button data-lesson="notes" id="notesBtn">
       
 📌 My Notes
 </button>
 
 <button
     id="adminBtn"
-    onclick="showAdminPanel()"
     style="display:none;"
 >
     👨‍💼 Admin
 </button>
-  <!-- <button onclick="exportKeys()">
+  <button id="exportBtn">
 Export English Journey Keys
-</button> -->
+</button>
 
-      <button onclick="toggleDarkMode()" class="dark-mode-toggle" title="Toggle Dark Mode">
+      <button     id="darkModeBtn" class="dark-mode-toggle" title="Toggle Dark Mode">
         🌙
       </button>
     </aside>
@@ -147,7 +146,7 @@ ADMIN MODAL
 
             <h2>Create User</h2>
 
-            <button class="modal-close" onclick="closeAdminModal()">
+            <button class="modal-close"  id="closeAdminBtn">
                 ✕
             </button>
 
@@ -199,14 +198,14 @@ ADMIN MODAL
 
             <button
                 class="btn-secondary"
-                onclick="closeAdminModal()"
+    id="cancelAdminBtn"
             >
                 Cancel
             </button>
 
             <button
                 class="btn-primary"
-                onclick="createUser()"
+    id="createUserBtn"
             >
                 Create User
             </button>
@@ -233,7 +232,7 @@ GLOBAL MODAL
 
             <button
                 class="modal-close"
-                onclick="closeModal(false)"
+    id="modalCloseBtn"
             >
                 ✕
             </button>
@@ -279,6 +278,6 @@ GLOBAL MODAL
 <script src="https://cdn.jsdelivr.net/npm/bcryptjs@2.4.3/dist/bcrypt.min.js"></script>
 
 <!-- <script src="app.js"></script> -->
-    <script src="app.js"></script>
+    <script type="module" src="app.js"></script>
   </body>
 </html>

@@ -2,86 +2,99 @@
 // English Journey v1.7
 // Learning Engine
 // ======================================
+import { db } from "./firebase.js";
 
+// debugLog("Firebase Connected!", db);
+import {
+  subscribeUsers,
+  createUser as createFirestoreUser,
+  updateUser,
+} from "./userService.js";
 // ======================================
 // SECURITY & ANTI-CHEAT MEASURES
 // ======================================
+const DEBUG_MODE = false;
 
-// Disable DevTools
-function disableDevTools() {
-  // Disable F12
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "F12") {
-      e.preventDefault();
-      return false;
+function debugLog(...args) {
+    if (DEBUG_MODE) {
+        debugLog(...args);
     }
-  });
-
-  // Disable Ctrl+Shift+I (Inspector)
-  document.addEventListener("keydown", (e) => {
-    if (e.ctrlKey && e.shiftKey && e.key === "I") {
-      e.preventDefault();
-      return false;
-    }
-  });
-
-  // Disable Ctrl+Shift+C (Element picker)
-  document.addEventListener("keydown", (e) => {
-    if (e.ctrlKey && e.shiftKey && e.key === "C") {
-      e.preventDefault();
-      return false;
-    }
-  });
-
-  // Disable Ctrl+Shift+J (Console)
-  document.addEventListener("keydown", (e) => {
-    if (e.ctrlKey && e.shiftKey && e.key === "J") {
-      e.preventDefault();
-      return false;
-    }
-  });
-
-  // Disable Right-click
-  document.addEventListener("contextmenu", (e) => {
-    e.preventDefault();
-    return false;
-  });
-
-  // Detect DevTools opening (rough detection)
-  let devtools = { open: false, orientation: null };
-  
-  const threshold = 160;
-  setInterval(() => {
-    if (window.outerHeight - window.innerHeight > threshold ||
-        window.outerWidth - window.innerWidth > threshold) {
-      if (!devtools.open) {
-        devtools.open = true;
-        console.clear();
-        console.log("🔒 DevTools không được phép sử dụng");
-      }
-    } else {
-      devtools.open = false;
-    }
-  }, 500);
 }
+// Disable DevTools
+// function disableDevTools() {
+//   // Disable F12
+//   document.addEventListener("keydown", (e) => {
+//     if (e.key === "F12") {
+//       e.preventDefault();
+//       return false;
+//     }
+//   });
+
+//   // Disable Ctrl+Shift+I (Inspector)
+//   document.addEventListener("keydown", (e) => {
+//     if (e.ctrlKey && e.shiftKey && e.key === "I") {
+//       e.preventDefault();
+//       return false;
+//     }
+//   });
+
+//   // Disable Ctrl+Shift+C (Element picker)
+//   document.addEventListener("keydown", (e) => {
+//     if (e.ctrlKey && e.shiftKey && e.key === "C") {
+//       e.preventDefault();
+//       return false;
+//     }
+//   });
+
+//   // Disable Ctrl+Shift+J (Console)
+//   document.addEventListener("keydown", (e) => {
+//     if (e.ctrlKey && e.shiftKey && e.key === "J") {
+//       e.preventDefault();
+//       return false;
+//     }
+//   });
+
+//   // Disable Right-click
+//   document.addEventListener("contextmenu", (e) => {
+//     e.preventDefault();
+//     return false;
+//   });
+
+//   // Detect DevTools opening (rough detection)
+//   let devtools = { open: false, orientation: null };
+
+//   const threshold = 160;
+//   setInterval(() => {
+//     if (window.outerHeight - window.innerHeight > threshold ||
+//         window.outerWidth - window.innerWidth > threshold) {
+//       if (!devtools.open) {
+//         devtools.open = true;
+//         console.clear();
+//         debugLog("🔒 DevTools không được phép sử dụng");
+//       }
+//     } else {
+//       devtools.open = false;
+//     }
+//   }, 500);
+// }
 
 // Override console methods to prevent logging sensitive data
-const originalLog = console.log;
-const originalWarn = console.warn;
-const originalError = console.error;
+// const originalLog = debugLog;
+// const originalWarn = console.warn;
+// const originalError = console.error;
 
-console.log = function(...args) {
-  // Prevent logging
-  return;
-};
+// debugLog = function(...args) {
+//   // Prevent logging
+//   return;
+// };
 
-console.warn = function(...args) {
-  return;
-};
+// console.warn = function(...args) {
+//   return;
+// };
 
-console.error = function(...args) {
-  return;
-};
+// console.error = function(...args) {
+//   return;
+// };
 
 // ======================================
 // AUTHENTICATION
@@ -103,285 +116,223 @@ const LOCK_DURATION = 5 * 60 * 1000;
 // };
 
 let currentUser = null;
-
 function findUser(username) {
+    debugLog("usersDatabase =", usersDatabase);
+    debugLog("username =", username);
+
+    usersDatabase.forEach(user => {
+        debugLog(
+            user.username,
+            typeof user.username,
+            user.username === username,
+            user.username.toLowerCase() === username.toLowerCase()
+        );
+    });
 
     return usersDatabase.find(user =>
-        user.username.toLowerCase() === username.toLowerCase()
+        String(user.username).trim().toLowerCase() ===
+        String(username).trim().toLowerCase()
     );
-
 }
-function checkUserLock(user){
+function checkUserLock(user) {
+  if (user.status !== "locked") {
+    return false;
+  }
 
+  // Nếu có thời gian lock và đã hết hạn
 
-    if(user.status !== "locked"){
-
-        return false;
-
-    }
-
-
-    // Nếu có thời gian lock và đã hết hạn
-
-    if(
-        user.lockedUntil &&
-        Date.now() > user.lockedUntil
-    ){
-
-
-        user.status = "active";
-
-        user.failedAttempts = 0;
-
-        user.lockedUntil = 0;
-
-
-        saveUsers();
-
-
-        return false;
-
-    }
-
-
-    return true;
-
-
-}
-
-function getProgressKey() {
-
-    if (!currentUser) {
-        return "englishProgress_guest";
-    }
-
-    return `englishProgress_${currentUser.id}`;
-
-}
-async function handleLogin(event) {
-  if(usersDatabase.length===0){
-
-    await loadUsers();
-
-}
-  event.preventDefault();
-
-  // ==========================
-  // Check account lock
-  // ==========================
-  // if (Date.now() < lockUntil) {
-  //   const remainingSeconds = Math.ceil(
-  //     (lockUntil - Date.now()) / 1000
-  //   );
-
-  //   const minutes = Math.floor(remainingSeconds / 60);
-  //   const seconds = remainingSeconds % 60;
-
-  //   alert(
-  //     `🔒 Too many failed attempts.\n\nPlease try again in ${minutes}m ${seconds}s.`
-  //   );
-
-  //   return;
-  // }
-
-  const username = document.getElementById("username").value.trim();
-  const password = document.getElementById("password").value;
-
-  const usernameInput = document.getElementById("username");
-  const passwordInput = document.getElementById("password");
-
-  // ==========================
-  // Check password
-  // ==========================
- const user = findUser(username);
-
-
-if (!user) {
-
-    await showAlert("User not found.");
-
-    return;
-
-}
-
-
-
-if(checkUserLock(user)){
-
-
-    let message =
-        "🔒 This account is locked.";
-
-
-    if(user.lockedUntil){
-
-        const remaining =
-            Math.ceil(
-                (user.lockedUntil - Date.now())
-                /
-                60000
-            );
-
-
-        message +=
-        `\nTry again in ${remaining} minute(s).`;
-
-    }
-
-
-await showAlert(message);
-
-    return;
-
-}
-
-const passwordOK =
-dcodeIO.bcrypt.compareSync(
-password,
-user.passwordHash
-);
-
-if(passwordOK) {
-
-
-    user.lastLogin =
-        new Date().toISOString();
-
+  if (user.lockedUntil && Date.now() > user.lockedUntil) {
+    user.status = "active";
 
     user.failedAttempts = 0;
 
     user.lockedUntil = 0;
 
-    user.status = "active";
-
-
     saveUsers();
 
-    // ==========================
-    // Reset login attempts
-    // ==========================
-    loginAttempts = 0;
-    lockUntil = 0;
+    return false;
+  }
 
-    localStorage.removeItem("loginAttempts");
-    localStorage.removeItem("lockUntil");
+  return true;
+}
 
-    // ==========================
-    // Create session
-    // ==========================
-    const sessionData = {
+function getProgressKey() {
+  if (!currentUser) {
+    return "englishProgress_guest";
+  }
 
-    uid:user.id,
+  return `englishProgress_${currentUser.id}`;
+}
+async function handleLogin(event) {
 
-    username:btoa(user.username),
+      debugLog("handleLogin called");
 
-    role:btoa(user.role),
+    event.preventDefault();
 
-    ts:Date.now()
-
-};
-
-    const encrypted = btoa(JSON.stringify(sessionData));
-
-   currentUser = {
-
-    id:user.id,
-
-    username:user.username,
-
-    role:user.role,
-
-    loginTime:new Date().toISOString()
-
-};
-    localStorage.setItem("__session", encrypted);
-
-    usernameInput.value = "";
-    passwordInput.value = "";
-    document.getElementById("loginForm").reset();
-
-    showAppScreen();
-    loadDatabase();
-
-  } else {
-
-    // ==========================
-    // Failed login
-    // ==========================
-
-
-    user.failedAttempts =
-        (user.failedAttempts || 0) + 1;
-
-
-
-    if(
-        user.failedAttempts >= MAX_LOGIN_ATTEMPTS
-    ){
-
-        user.status = "locked";
-
-
-        user.lockedUntil =
-            Date.now() + LOCK_DURATION;
-
-
+    if (usersDatabase.length === 0) {
+        await showAlert("Users are still loading. Please try again in a moment.");
+        return;
     }
 
+    const username = document.getElementById("username").value.trim();
+    const password = document.getElementById("password").value;
 
-    saveUsers();
+    const usernameInput = document.getElementById("username");
+    const passwordInput = document.getElementById("password");
 
-   const remaining =
-    MAX_LOGIN_ATTEMPTS - user.failedAttempts;
+    const user = findUser(username);
 
+    if (!user) {
+        await showAlert("User not found.");
+        return;
+    }
 
-if(user.status === "locked"){
+    if (checkUserLock(user)) {
+        let message = "🔒 This account is locked.";
 
+        if (user.lockedUntil) {
+            const remaining = Math.ceil(
+                (user.lockedUntil - Date.now()) / 60000
+            );
 
-   await showAlert(
-"🔒 Too many failed attempts..."
-);
+            message += `\nTry again in ${remaining} minute(s).`;
+        }
 
-}else{
+        await showAlert(message);
+        return;
+    }
 
+    let passwordOK = false;
 
-    await showAlert(
+    try {
+      debugLog(user.passwordHash);
+        passwordOK = dcodeIO.bcrypt.compareSync(
+          
+            password,
+            user.passwordHash
+        );
+        debugLog("Password OK:", passwordOK);
+    } catch (e) {
+        console.error(e);
 
-        `❌ Invalid credentials!\n\nRemaining attempts: ${remaining}`
-    );
+        await showAlert("Password data is invalid.");
+        return;
+    }
 
+    if (passwordOK) {
 
+        // cập nhật Firestore
+        await updateUser(user.id, {
+            lastLogin: new Date().toISOString(),
+            failedAttempts: 0,
+            lockedUntil: 0,
+            status: "active"
+        });
+        debugLog("Update user success");
+
+        const sessionData = {
+            uid: user.id,
+            username: btoa(user.username),
+            role: btoa(user.role),
+            ts: Date.now()
+        };
+
+        localStorage.setItem(
+            "__session",
+            btoa(JSON.stringify(sessionData))
+        );
+        debugLog("Session saved");
+
+        currentUser = {
+            id: user.id,
+            username: user.username,
+            role: user.role,
+            loginTime: new Date().toISOString()
+        };
+
+        usernameInput.value = "";
+        passwordInput.value = "";
+        document.getElementById("loginForm").reset();
+debugLog("Before showAppScreen");
+        showAppScreen();
+        debugLog("After showAppScreen");
+        await loadDatabase();
+
+    } else {
+
+        const failedAttempts = (user.failedAttempts || 0) + 1;
+
+        const updateData = {
+            failedAttempts
+        };
+
+        if (failedAttempts >= MAX_LOGIN_ATTEMPTS) {
+            updateData.status = "locked";
+            updateData.lockedUntil = Date.now() + LOCK_DURATION;
+        }
+
+        await updateUser(user.id, updateData);
+
+        const remaining = MAX_LOGIN_ATTEMPTS - failedAttempts;
+
+        if (failedAttempts >= MAX_LOGIN_ATTEMPTS) {
+            await showAlert("🔒 Too many failed attempts...");
+        } else {
+            await showAlert(
+                `❌ Invalid credentials!\n\nRemaining attempts: ${remaining}`
+            );
+        }
+
+        passwordInput.value = "";
+    }
 }
 
-    passwordInput.value = "";
-  }
-}
+function clearSession(){
 
-async function handleLogout() {
-const ok =
-await showConfirm(
-"Are you sure you want to logout?"
-);
-
-if(!ok) return;  
-    // Securely clear user session
     currentUser = null;
+
     localStorage.removeItem("__session");
+
     localStorage.removeItem("userSession");
+
     localStorage.removeItem("sessionToken");
-    
-    // Optionally clear learning progress
-    // localStorage.removeItem("englishProgress");
-    
-    // Clear all form fields
-    document.getElementById("loginForm").reset();
-    document.getElementById("username").value = "";
-    document.getElementById("password").value = "";
-    
-    // Show login screen
+
+}
+async function handleLogout(){
+
+    const ok =
+        await showConfirm(
+            "Are you sure you want to logout?"
+        );
+
+    if(!ok) return;
+
+    clearSession();
+
     showLoginScreen();
 
 }
+// async function handleLogout() {
+//   const ok = await showConfirm("Are you sure you want to logout?");
+
+//   if (!ok) return;
+//   // Securely clear user session
+//   currentUser = null;
+//   localStorage.removeItem("__session");
+//   localStorage.removeItem("userSession");
+//   localStorage.removeItem("sessionToken");
+
+//   // Optionally clear learning progress
+//   // localStorage.removeItem("englishProgress");
+
+//   // Clear all form fields
+//   document.getElementById("loginForm").reset();
+//   document.getElementById("username").value = "";
+//   document.getElementById("password").value = "";
+
+//   // Show login screen
+//   showLoginScreen();
+// }
 
 function showLoginScreen() {
   document.getElementById("loginScreen").style.display = "flex";
@@ -391,51 +342,51 @@ function showLoginScreen() {
 function showAppScreen() {
   document.getElementById("loginScreen").style.display = "none";
   document.getElementById("appScreen").style.display = "flex";
-  document.getElementById("userGreeting").textContent = `Welcome, ${currentUser.username}! 👋`;
+  document.getElementById("userGreeting").textContent =
+    `Welcome, ${currentUser.username}! 👋`;
 
   const adminBtn = document.getElementById("adminBtn");
 
-if (currentUser.role === "admin") {
+  if (currentUser.role === "admin") {
     adminBtn.style.display = "flex";
-} else {
+  } else {
     adminBtn.style.display = "none";
-}
+  }
 }
 
 function checkAuth() {
   const savedSession = localStorage.getItem("__session");
-  
+
   if (savedSession) {
     try {
       // Verify encrypted session
       const decrypted = JSON.parse(atob(savedSession));
-      
+
       // Validate session (optional: check timestamp)
       const SESSION_EXPIRE = 24 * 60 * 60 * 1000;
 
-if (
-    decrypted.uid &&
-    Date.now() - decrypted.ts < SESSION_EXPIRE
-) {
+      if (decrypted.uid && Date.now() - decrypted.ts < SESSION_EXPIRE) {
         currentUser = {
+          id: decrypted.uid,
 
-    id:decrypted.uid,
+          username: atob(decrypted.username),
 
-    username:atob(decrypted.username),
-
-    role:atob(decrypted.role)
-
-};
+          role: atob(decrypted.role),
+        };
         showAppScreen();
         return true;
       }
-    } catch (e) {
-      // Session corrupted or invalid
-      handleLogout();
-      return false;
-    }
+    } catch(e){
+
+    clearSession();
+
+    showLoginScreen();
+
+    return false;
+
+}
   }
-  
+
   showLoginScreen();
   return false;
 }
@@ -445,48 +396,110 @@ if (
 // ======================================
 
 let usersDatabase = [];
-
-async function loadUsers() {
-
-
-    const savedUsers =
-        localStorage.getItem("usersDatabase");
+subscribeUsers((users) => {
+   debugLog("Firestore callback", users);
+  usersDatabase = users;
 
 
-    if(savedUsers){
+    // update admin table if opened
+    if(document.querySelector(".admin-panel")){
 
-        usersDatabase =
-            JSON.parse(savedUsers);
+        document.getElementById("content").innerHTML = `
+
+            <div class="lesson-card admin-panel">
+
+    <div class="admin-header">
+
+        <h2>
+
+            👨‍💼 English Journey Admin
+
+        </h2>
+
+       <button
+    id="createUserBtn"
+    onclick="showCreateUserModal()"
+>
+
+    ➕ Create User
+
+</button>
+
+<button
+onclick="exportUsersJSON()"
+>
+⬇️ Export users.json
+</button>
+
+<button
+onclick="triggerImportUsers()"
+>
+⬆️ Import users.json
+</button>
 
 
-        console.log(
-            "✅ Loaded users from localStorage",
-            usersDatabase
-        );
+<input
+type="file"
+id="importUsersFile"
+accept=".json"
+style="display:none"
+onchange="importUsersJSON(event)"
+>
+</div>
 
 
-        return;
+    </div>
+
+    ${renderUsersTable()}
+
+</div>
+
+        `;
 
     }
 
+    debugLog("After assign:", usersDatabase);
+
+    debugLog("Find admin:", findUser("admin"));
 
 
-    usersDatabase =
-        await loadJSON("./data/users.json");
+  // Nếu Admin Panel đang mở thì refresh
+  const modal = document.getElementById("adminModal");
 
+  if (modal && modal.classList.contains("show")) {
+    showAdminPanel();
+  }
+});
+// async function loadUsers() {
 
+//     const savedUsers =
+//         localStorage.getItem("usersDatabase");
 
-    saveUsers();
+//     if(savedUsers){
 
+//         usersDatabase =
+//             JSON.parse(savedUsers);
 
+//         debugLog(
+//             "✅ Loaded users from localStorage",
+//             usersDatabase
+//         );
 
-    console.log(
-        "✅ Loaded users from users.json",
-        usersDatabase
-    );
+//         return;
 
+//     }
 
-}
+//     usersDatabase =
+//         await loadJSON("./data/users.json");
+
+//     saveUsers();
+
+//     debugLog(
+//         "✅ Loaded users from users.json",
+//         usersDatabase
+//     );
+
+// }
 
 // DATABASE
 
@@ -546,21 +559,13 @@ async function loadJSON(file) {
 
 async function loadDatabase() {
   try {
-const [
-grammar,
-vocabulary,
-collocation,
-phrasal
-] =
-await Promise.all([
-
-loadJSON("./data/grammar_a1_a2.json"),
-loadJSON("./data/vocabulary_a1_a2.json"),
-loadJSON("./data/collocations_a1_a2.json"),
-loadJSON("./data/phrasal_verbs_a1_a2.json")
-
-]);
-// usersDatabase = users;
+    const [grammar, vocabulary, collocation, phrasal] = await Promise.all([
+      loadJSON("./data/grammar_a1_a2.json"),
+      loadJSON("./data/vocabulary_a1_a2.json"),
+      loadJSON("./data/collocations_a1_a2.json"),
+      loadJSON("./data/phrasal_verbs_a1_a2.json"),
+    ]);
+    // usersDatabase = users;
 
     grammarData = grammar;
 
@@ -592,35 +597,23 @@ loadJSON("./data/phrasal_verbs_a1_a2.json")
   }
 }
 
-function saveUsers(){
+// function saveUsers(){
 
-    localStorage.setItem(
-        "usersDatabase",
-        JSON.stringify(usersDatabase)
-    );
+//     localStorage.setItem(
+//         "usersDatabase",
+//         JSON.stringify(usersDatabase)
+//     );
 
-}
+// }
 
+function loadUsersFromStorage() {
+  const savedUsers = localStorage.getItem("usersDatabase");
 
+  if (savedUsers) {
+    usersDatabase = JSON.parse(savedUsers);
 
-function loadUsersFromStorage(){
-
-    const savedUsers =
-        localStorage.getItem("usersDatabase");
-
-
-    if(savedUsers){
-
-        usersDatabase =
-            JSON.parse(savedUsers);
-
-        console.log(
-            "Loaded users from localStorage",
-            usersDatabase
-        );
-
-    }
-
+    debugLog("Loaded users from localStorage", usersDatabase);
+  }
 }
 
 let editingUserId = null;
@@ -629,234 +622,151 @@ let modalResolver = null;
 let modalMode = "alert";
 
 function showModal({
+  title = "Notification",
 
-    title="Notification",
+  message = "",
 
-    message="",
+  mode = "alert",
 
-    mode="alert",
+  placeholder = "",
 
-    placeholder="",
+  value = "",
+}) {
+  modalMode = mode;
 
-    value=""
+  return new Promise((resolve) => {
+    modalResolver = resolve;
 
-}){
+    document.getElementById("modalTitle").textContent = title;
 
-    modalMode = mode;
+    document.getElementById("modalMessage").textContent = message;
 
-    return new Promise(resolve=>{
+    const input = document.getElementById("modalInput");
 
-        modalResolver = resolve;
+    const cancel = document.getElementById("modalCancel");
 
-        document
-        .getElementById("modalTitle")
-        .textContent = title;
+    if (mode === "prompt") {
+      input.style.display = "block";
 
-        document
-        .getElementById("modalMessage")
-        .textContent = message;
+      input.placeholder = placeholder;
 
-        const input =
-        document.getElementById("modalInput");
+      input.value = value;
 
-        const cancel =
-        document.getElementById("modalCancel");
-
-        if(mode==="prompt"){
-
-            input.style.display="block";
-
-            input.placeholder=placeholder;
-
-            input.value=value;
-
-            setTimeout(()=>input.focus(),50);
-
-        }else{
-
-            input.style.display="none";
-
-        }
-
-        cancel.style.display =
-        mode==="confirm" || mode==="prompt"
-        ? "inline-flex"
-        : "none";
-
-        document
-        .getElementById("globalModal")
-        .classList.add("show");
-
-    });
-
-}
-
-function closeModal(ok){
-
-    document
-    .getElementById("globalModal")
-    .classList.remove("show");
-
-    if(!modalResolver) return;
-
-    if(modalMode==="alert"){
-
-        modalResolver(true);
-
+      setTimeout(() => input.focus(), 50);
+    } else {
+      input.style.display = "none";
     }
 
-    if(modalMode==="confirm"){
+    cancel.style.display =
+      mode === "confirm" || mode === "prompt" ? "inline-flex" : "none";
 
-        modalResolver(ok);
-
-    }
-
-    if(modalMode==="prompt"){
-
-        if(ok){
-
-            modalResolver(
-
-                document
-                .getElementById("modalInput")
-                .value
-
-            );
-
-        }else{
-
-            modalResolver(null);
-
-        }
-
-    }
-
-    modalResolver=null;
-
+    document.getElementById("globalModal").classList.add("show");
+  });
 }
 
-function showAlert(message){
+function closeModal(ok) {
+  document.getElementById("globalModal").classList.remove("show");
 
-    return showModal({
+  if (!modalResolver) return;
 
-        title:"Notification",
+  if (modalMode === "alert") {
+    modalResolver(true);
+  }
 
-        message,
+  if (modalMode === "confirm") {
+    modalResolver(ok);
+  }
 
-        mode:"alert"
+  if (modalMode === "prompt") {
+    if (ok) {
+      modalResolver(document.getElementById("modalInput").value);
+    } else {
+      modalResolver(null);
+    }
+  }
 
-    });
-
+  modalResolver = null;
 }
 
-function showConfirm(message){
+function showAlert(message) {
+  return showModal({
+    title: "Notification",
 
-    return showModal({
+    message,
 
-        title:"Confirmation",
+    mode: "alert",
+  });
+}
 
-        message,
+function showConfirm(message) {
+  return showModal({
+    title: "Confirmation",
 
-        mode:"confirm"
+    message,
 
-    });
-
+    mode: "confirm",
+  });
 }
 
 function showPrompt({
+  title,
 
+  message,
+
+  placeholder = "",
+
+  value = "",
+}) {
+  return showModal({
     title,
 
     message,
 
-    placeholder="",
+    placeholder,
 
-    value=""
+    value,
 
-}){
-
-    return showModal({
-
-        title,
-
-        message,
-
-        placeholder,
-
-        value,
-
-        mode:"prompt"
-
-    });
-
+    mode: "prompt",
+  });
 }
 
-document
-.getElementById("modalOK")
-.onclick=()=>closeModal(true);
+document.getElementById("modalOK").onclick = () => closeModal(true);
 
-document
-.getElementById("modalCancel")
-.onclick=()=>closeModal(false);
+document.getElementById("modalCancel").onclick = () => closeModal(false);
 
-document
-.getElementById("globalModal")
-.onclick=function(e){
-
-    if(e.target===this){
-
-        if(modalMode!=="alert"){
-
-            closeModal(false);
-
-        }
-
+document.getElementById("globalModal").onclick = function (e) {
+  if (e.target === this) {
+    if (modalMode !== "alert") {
+      closeModal(false);
     }
-
+  }
 };
 
-document
-.addEventListener("keydown",function(e){
+document.addEventListener("keydown", function (e) {
+  const modal = document.getElementById("globalModal");
 
-    const modal =
-    document.getElementById("globalModal");
+  if (!modal.classList.contains("show")) return;
 
-    if(!modal.classList.contains("show"))
-        return;
+  if (e.key === "Escape") {
+    closeModal(false);
+  }
 
-    if(e.key==="Escape"){
-
-        closeModal(false);
-
-    }
-
-    if(
-        e.key==="Enter" &&
-        modalMode==="prompt"
-    ){
-
-        closeModal(true);
-
-    }
-
+  if (e.key === "Enter" && modalMode === "prompt") {
+    closeModal(true);
+  }
 });
 
 function getUserById(id) {
-
-    return usersDatabase.find(user => user.id === id);
-
+  return usersDatabase.find((user) => user.id === id);
 }
 
 async function showAdminPanel() {
+  if (!currentUser || currentUser.role !== "admin") {
+    await showAlert("⛔ Access denied.");
+    return;
+  }
 
-    if (!currentUser || currentUser.role !== "admin") {
-
-await showAlert("⛔ Access denied.");
-        return;
-
-    }
-
-    document.getElementById("content").innerHTML = `
+  document.getElementById("content").innerHTML = `
 
 <div class="lesson-card admin-panel">
 
@@ -908,20 +818,18 @@ onchange="importUsersJSON(event)"
 
 `;
 
-    hideLessonNav();
-
+  hideLessonNav();
 }
+
 function renderUsersTable() {
+  if (!usersDatabase.length) {
+    return "<p>No users found.</p>";
+  }
 
-    if (!usersDatabase.length) {
-        return "<p>No users found.</p>";
-    }
+  let rows = "";
 
-    let rows = "";
-
-    usersDatabase.forEach(user => {
-
-        rows += `
+  usersDatabase.forEach((user) => {
+    rows += `
             <tr>
                 <td>${user.username}</td>
                 <td>${capitalize(user.role)}</td>
@@ -932,7 +840,7 @@ function renderUsersTable() {
 
 <button
 class="action-btn"
-onclick="toggleUserMenu(${user.id})"
+onclick="toggleUserMenu('${user.id}')"
 >
 
 ⚙️
@@ -944,21 +852,19 @@ id="userMenu-${user.id}"
 class="user-menu"
 >
 
-<button onclick="editUser(${user.id})">
+<button onclick="editUser('${user.id}')">
 
 ✏️ Edit
 
 </button>
 
-<button onclick="toggleLockUser(${user.id})">
+<button onclick="toggleLockUser('${user.id}')">
 
-${user.status==="active"
-? "🔒 Lock"
-: "🔓 Unlock"}
+${user.status === "active" ? "🔒 Lock" : "🔓 Unlock"}
 
 </button>
 
-<button onclick="resetPassword(${user.id})">
+<button onclick="resetPassword('${user.id}')">
 
 🔑 Reset Password
 
@@ -966,7 +872,7 @@ ${user.status==="active"
 
 <button
 class="danger"
-onclick="deleteUser(${user.id})"
+onclick="deleteUser('${user.id}')"
 >
 
 🗑 Delete
@@ -978,10 +884,9 @@ onclick="deleteUser(${user.id})"
 </td>
             </tr>
         `;
+  });
 
-    });
-
-    return `
+  return `
         <table class="admin-table">
 
             <thead>
@@ -1005,337 +910,168 @@ onclick="deleteUser(${user.id})"
     `;
 }
 
-function capitalize(text){
+function capitalize(text) {
+  if (!text) return "";
 
-    if(!text) return "";
-
-    return text.charAt(0).toUpperCase()+text.slice(1);
-
+  return text.charAt(0).toUpperCase() + text.slice(1);
 }
-    function formatDate(date){
+function formatDate(date) {
+  if (!date) return "-";
 
-    if(!date) return "-";
-
-    return new Date(date).toLocaleDateString();
-
+  return new Date(date).toLocaleDateString();
 }
-async function exportUsersJSON(){
+async function exportUsersJSON() {
+  if (!usersDatabase.length) {
+    await showAlert("No users data.");
+    return;
+  }
 
-    if(!usersDatabase.length){
+  const data = JSON.stringify(usersDatabase, null, 4);
 
-await showAlert("No users data.");
+  const blob = new Blob([data], {
+    type: "application/json",
+  });
+
+  const url = URL.createObjectURL(blob);
+
+  const link = document.createElement("a");
+
+  link.href = url;
+
+  link.download = "users.json";
+
+  document.body.appendChild(link);
+
+  link.click();
+
+  document.body.removeChild(link);
+
+  URL.revokeObjectURL(url);
+
+  await showAlert("✅ users.json exported successfully.");
+}
+
+function triggerImportUsers() {
+  document.getElementById("importUsersFile").click();
+}
+function importUsersJSON(event) {
+  const file = event.target.files[0];
+
+  if (!file) {
+    return;
+  }
+
+  const reader = new FileReader();
+
+  reader.onload = async function (e) {
+    try {
+      const importedUsers = JSON.parse(e.target.result);
+
+      if (!Array.isArray(importedUsers)) {
+        throw new Error("Invalid format");
+      }
+
+      const valid = importedUsers.every(
+        (user) =>
+          user.id &&
+          user.username &&
+          user.passwordHash &&
+          user.role &&
+          user.status,
+      );
+
+      if (!valid) {
+        throw new Error("Missing user fields");
+      }
+
+      const confirmImport = await showConfirm(
+        `Import ${importedUsers.length} users?\n\nCurrent users will be replaced.`,
+      );
+
+      if (!confirmImport) {
         return;
+      }
 
+      usersDatabase = importedUsers;
+
+      saveUsers();
+
+      await showAlert("✅ Users imported successfully.");
+
+      showAdminPanel();
+    } catch (error) {
+      await showAlert("❌ Invalid users.json file.");
+
+      console.error(error);
     }
+  };
 
-
-    const data =
-        JSON.stringify(
-            usersDatabase,
-            null,
-            4
-        );
-
-
-    const blob =
-        new Blob(
-            [data],
-            {
-                type:"application/json"
-            }
-        );
-
-
-    const url =
-        URL.createObjectURL(blob);
-
-
-    const link =
-        document.createElement("a");
-
-
-    link.href = url;
-
-
-    link.download =
-        "users.json";
-
-
-    document.body.appendChild(link);
-
-
-    link.click();
-
-
-    document.body.removeChild(link);
-
-
-    URL.revokeObjectURL(url);
-
-
-await showAlert("✅ users.json exported successfully.");
+  reader.readAsText(file);
 }
+async function toggleLockUser(id) {
 
-function triggerImportUsers(){
-
-    document
-    .getElementById("importUsersFile")
-    .click();
-
-}
-function importUsersJSON(event){
-
-
-    const file =
-        event.target.files[0];
-
-
-    if(!file){
-
-        return;
-
-    }
-
-
-
-    const reader =
-        new FileReader();
-
-
-
-reader.onload = async function(e){
-
-        try{
-
-
-            const importedUsers =
-                JSON.parse(
-                    e.target.result
-                );
-
-
-
-            if(
-                !Array.isArray(importedUsers)
-            ){
-
-                throw new Error(
-                    "Invalid format"
-                );
-
-            }
-
-
-
-            const valid =
-                importedUsers.every(
-                    user =>
-                    user.id &&
-                    user.username &&
-                    user.passwordHash &&
-                    user.role &&
-                    user.status
-                );
-
-
-
-            if(!valid){
-
-
-                throw new Error(
-                    "Missing user fields"
-                );
-
-
-            }
-
-
-
-            const confirmImport =
-                await showConfirm(
-                `Import ${importedUsers.length} users?\n\nCurrent users will be replaced.`
-                );
-
-
-
-            if(!confirmImport){
-
-                return;
-
-            }
-
-
-
-            usersDatabase =
-                importedUsers;
-
-
-
-            saveUsers();
-
-
-
-            await showAlert(
-                "✅ Users imported successfully."
-            );
-
-
-
-            showAdminPanel();
-
-
-
-        }catch(error){
-
-
-            await showAlert(
-                "❌ Invalid users.json file."
-            );
-
-
-            console.error(error);
-
-
-        }
-
-
-
-    };
-
-
-
-    reader.readAsText(file);
-
-
-
-}
-function toggleLockUser(id){
-
-    const user =
-        getUserById(id);
-
+    const user = getUserById(id);
 
     if(!user) return;
 
 
+    await updateUser(id, {
 
-    if(user.status==="active"){
+        status: user.status === "active"
+            ? "locked"
+            : "active",
 
+        lockedUntil: 0,
 
-        user.status="locked";
+        failedAttempts: 0
 
-
-        user.lockedUntil =
-            0;
-
-    //         user.lockedUntil =
-    // Date.now() + LOCK_DURATION;
-
-
-    }else{
-
-
-        user.status="active";
-
-
-        user.failedAttempts=0;
-
-
-        user.lockedUntil=0;
-
-
-    }
-
-
-
-    saveUsers();
-
-
-    showAdminPanel();
+    });
 
 }
-async function deleteUser(id){
+async function deleteUser(id) {
+  const confirmDelete = await showConfirm(
+    "Are you sure you want to delete this user?",
+  );
 
+  if (!confirmDelete) return;
 
-    const confirmDelete =
-        await showConfirm(
-            "Are you sure you want to delete this user?"
-        );
+  usersDatabase = usersDatabase.filter((user) => user.id !== id);
 
+  saveUsers();
 
-    if(!confirmDelete)
-        return;
-
-
-
-    usersDatabase =
-        usersDatabase.filter(
-            user => user.id !== id
-        );
-
-
-    saveUsers();
-
-
-    showAdminPanel();
-
-
+  showAdminPanel();
 }
-async function resetPassword(id){
+async function resetPassword(id) {
+  const user = getUserById(id);
 
+  if (!user) {
+    await showAlert("User not found.");
 
-    const user =
-        getUserById(id);
-
-
-    if(!user){
-
-        await showAlert("User not found.");
-
-        return;
-
-    }
-
-
-  const newPassword =
-await showPrompt({
-
-    title:"Reset Password",
-
-    message:`Enter new password for ${user.username}`,
-
-    placeholder:"New password"
-
-});
-
-if(!newPassword)
     return;
+  }
 
+  const newPassword = await showPrompt({
+    title: "Reset Password",
 
+    message: `Enter new password for ${user.username}`,
 
-    user.passwordHash =
-        dcodeIO.bcrypt.hashSync(
-            newPassword,
-            10
-        );
+    placeholder: "New password",
+  });
 
+  if (!newPassword) return;
 
+  user.passwordHash = dcodeIO.bcrypt.hashSync(newPassword, 10);
 
-    // reset security status
+  // reset security status
 
-    user.failedAttempts = 0;
+  user.failedAttempts = 0;
 
-    user.lockedUntil = 0;
-user.status = "active";
+  user.lockedUntil = 0;
+  user.status = "active";
 
-    saveUsers();
+  saveUsers();
 
-
-    await showAlert(
-        "✅ Password reset successfully."
-    );
-
-
+  await showAlert("✅ Password reset successfully.");
 }
 // function showCreateUserModal() {
 
@@ -1379,238 +1115,167 @@ user.status = "active";
 
 // }
 
-
 function showCreateUserModal() {
+  const modal = document.getElementById("adminModal");
 
-    const modal = document.getElementById("adminModal");
+  debugLog("Modal:", modal);
 
-    console.log("Modal:", modal);
+  if (!modal) {
+    showAlert("adminModal not found");
+    return;
+  }
 
-    if (!modal) {
-        showAlert("adminModal not found");
-        return;
-    }
-
-    modal.classList.add("show");
-
+  modal.classList.add("show");
 }
 function closeAdminModal() {
+  editingUserId = null;
 
-    editingUserId = null;
+  document.getElementById("adminModal").classList.remove("show");
 
-    document
-        .getElementById("adminModal")
-        .classList.remove("show");
+  document.getElementById("newUsername").value = "";
 
-    document.getElementById("newUsername").value = "";
+  document.getElementById("newPassword").value = "";
 
-    document.getElementById("newPassword").value = "";
+  document.getElementById("newRole").value = "student";
 
-    document.getElementById("newRole").value = "student";
+  document.getElementById("newStatus").value = "active";
 
-    document.getElementById("newStatus").value = "active";
+  document.querySelector("#adminModal h2").textContent = "Create User";
 
-    document.querySelector("#adminModal h2").textContent =
-        "Create User";
-
-    document.querySelector(".btn-primary").textContent =
-        "Create User";
-
+  document.querySelector(".btn-primary").textContent = "Create User";
 }
-async function createUser(){
+async function createUser() {
+  const username = document.getElementById("newUsername").value.trim();
 
-    const username =
-        document.getElementById("newUsername").value.trim();
+  const password = document.getElementById("newPassword").value;
 
-    const password =
-        document.getElementById("newPassword").value;
+  const role = document.getElementById("newRole").value;
 
-    const role =
-        document.getElementById("newRole").value;
+  const status = document.getElementById("newStatus").value;
 
-    const status =
-        document.getElementById("newStatus").value;
+  // ==========================
+  // EDIT USER
+  // ==========================
 
-
-        if (editingUserId !== null) {
-
+  if (editingUserId !== null) {
     const user = getUserById(editingUserId);
 
-    user.username =
-        username;
+    if (!user) {
+      await showAlert("User not found.");
 
-    user.role =
-        role;
+      return;
+    }
 
-    user.status =
-        status;
+    const data = {
+      username,
+
+      role,
+
+      status,
+    };
 
     if (password.trim()) {
-
-        user.passwordHash =
-            dcodeIO.bcrypt.hashSync(password, 10);
-
+      data.passwordHash = dcodeIO.bcrypt.hashSync(password, 10);
     }
-saveUsers();
+
+    await updateUser(user.id, data);
+
     editingUserId = null;
 
     closeAdminModal();
 
-    showAdminPanel();
+    return;
+  }
+
+  // ==========================
+  // CREATE USER
+  // ==========================
+
+  if (!username || !password) {
+    await showAlert("Please fill all fields.");
 
     return;
+  }
 
+  const existed = usersDatabase.some(
+    (user) => user.username.toLowerCase() === username.toLowerCase(),
+  );
+
+  if (existed) {
+    await showAlert("Username already exists.");
+
+    return;
+  }
+  await createFirestoreUser({
+    username,
+
+    passwordHash: dcodeIO.bcrypt.hashSync(password, 10),
+
+    role,
+
+    status,
+
+    createdAt: new Date().toISOString(),
+
+    lastLogin: null,
+
+    failedAttempts: 0,
+
+    lockedUntil: 0,
+  });
+
+  closeAdminModal();
 }
-    if(!username || !password){
+function toggleUserMenu(id) {
+  const currentMenu = document.getElementById(`userMenu-${id}`);
 
-        await showAlert("Please fill all fields.");
+  // Close all other menus
 
-        return;
-
+  document.querySelectorAll(".user-menu").forEach((menu) => {
+    if (menu !== currentMenu) {
+      menu.classList.remove("show");
     }
+  });
 
-    const existed =
-        usersDatabase.some(user =>
-            user.username.toLowerCase() === username.toLowerCase()
-        );
+  // Toggle current menu
 
-    if(existed){
-
-        await showAlert("Username already exists.");
-
-        return;
-
-    }
-
-    usersDatabase.push({
-
-        id:Date.now(),
-
-        username,
-
-        passwordHash:dcodeIO.bcrypt.hashSync(password,10),
-
-        role,
-
-        status,
-
-        createdAt:new Date().toISOString(),
-
-        lastLogin:null,
-
-        failedAttempts:0,
-
-        lockedUntil:0
-
-    });
-saveUsers();
-    closeAdminModal();
-
-    showAdminPanel();
-
-}
-function toggleUserMenu(id){
-
-
-    const currentMenu =
-        document.getElementById(
-            `userMenu-${id}`
-        );
-
-
-
-    // Close all other menus
-
-    document
-    .querySelectorAll(".user-menu")
-    .forEach(menu => {
-
-        if(menu !== currentMenu){
-
-            menu.classList.remove("show");
-
-        }
-
-    });
-
-
-
-    // Toggle current menu
-
-    currentMenu.classList.toggle("show");
-
-
+  currentMenu.classList.toggle("show");
 }
 
 function editUser(id) {
+  const user = getUserById(id);
 
-    const user = getUserById(id);
+  if (!user) return;
 
-    if (!user) return;
+  editingUserId = id;
 
-    editingUserId = id;
+  document.querySelector("#adminModal h2").textContent = "Edit User";
 
-    document.querySelector("#adminModal h2").textContent =
-        "Edit User";
+  document.getElementById("newUsername").value = user.username;
 
-    document.getElementById("newUsername").value =
-        user.username;
+  document.getElementById("newPassword").value = "";
 
-    document.getElementById("newPassword").value = "";
+  document.getElementById("newRole").value = user.role;
 
-    document.getElementById("newRole").value =
-        user.role;
+  document.getElementById("newStatus").value = user.status;
 
-    document.getElementById("newStatus").value =
-        user.status;
+  document.querySelector("#adminModal .btn-primary").textContent =
+    "Save Changes";
 
-    document.querySelector(".btn-primary").textContent =
-        "Save Changes";
-
-    document
-        .getElementById("adminModal")
-        .classList.add("show");
-
+  document.getElementById("adminModal").classList.add("show");
 }
 
-document.addEventListener(
-    "click",
-    function(event){
+document.addEventListener("click", function (event) {
+  const isMenuButton = event.target.closest(".action-btn");
 
+  const isMenu = event.target.closest(".user-menu");
 
-        const isMenuButton =
-            event.target.closest(
-                ".action-btn"
-            );
-
-
-        const isMenu =
-            event.target.closest(
-                ".user-menu"
-            );
-
-
-
-        if(
-            !isMenu &&
-            !isMenuButton
-        ){
-
-            document
-            .querySelectorAll(".user-menu")
-            .forEach(menu=>{
-
-                menu.classList.remove(
-                    "show"
-                );
-
-            });
-
-        }
-
-
-    }
-);
+  if (!isMenu && !isMenuButton) {
+    document.querySelectorAll(".user-menu").forEach((menu) => {
+      menu.classList.remove("show");
+    });
+  }
+});
 // ======================================
 // SHOW WELCOME SCREEN
 // ======================================
@@ -1658,7 +1323,7 @@ document.addEventListener(
 //       </div>
 //     </section>
 //   `;
-  
+
 //   updateDashboard();
 // }
 
@@ -1679,10 +1344,7 @@ function loadProgress() {
 }
 
 function saveProgress() {
-  localStorage.setItem(
-    getProgressKey(),
-    JSON.stringify(userProgress)
-);
+  localStorage.setItem(getProgressKey(), JSON.stringify(userProgress));
 }
 
 // ======================================
@@ -1738,7 +1400,7 @@ function loadLesson(type) {
   updateLessonSelection();
 
   // Handle quiz separately
-  if (type === 'quiz') {
+  if (type === "quiz") {
     startQuiz();
     return;
   }
@@ -1776,9 +1438,9 @@ function loadLesson(type) {
 }
 
 function updateLessonSelection() {
-  document.querySelectorAll('aside button[data-lesson]').forEach((button) => {
+  document.querySelectorAll("aside button[data-lesson]").forEach((button) => {
     const isActive = button.dataset.lesson === currentLessonType;
-    button.classList.toggle('active', isActive);
+    button.classList.toggle("active", isActive);
   });
 }
 
@@ -2135,7 +1797,7 @@ ${getNoteButtonHtml(item)}
   }
 
   document.getElementById("content").innerHTML = html;
-  
+
   // Show navigation bar
   showLessonNav(type);
 }
@@ -2151,13 +1813,13 @@ function showLessonNav(type) {
       <button onclick="loadLesson('${type}')" class="nav-btn next-btn">Next ➡️</button>
     </div>
   `;
-  
+
   // Create or update nav bar
   let navBar = document.getElementById("lessonNav");
   if (!navBar) {
     navBar = document.createElement("div");
     navBar.id = "lessonNav";
-document.getElementById("appScreen").appendChild(navBar);
+    document.getElementById("appScreen").appendChild(navBar);
   }
   navBar.innerHTML = navHTML;
   // adjust bottom padding to fit nav height
@@ -2172,7 +1834,7 @@ document.getElementById("appScreen").appendChild(navBar);
 
 // update CSS var for bottom nav height so `main` adjusts automatically
 function updateBottomNavPadding() {
-  const nav = document.getElementById('lessonNav');
+  const nav = document.getElementById("lessonNav");
   const root = document.documentElement;
   if (nav) {
     const rect = nav.getBoundingClientRect();
@@ -2180,9 +1842,9 @@ function updateBottomNavPadding() {
     // add a small buffer so content doesn't touch the nav
     const buffer = 24;
     const val = Math.max(h + buffer, 64);
-    root.style.setProperty('--bottom-nav-height', `${val}px`);
+    root.style.setProperty("--bottom-nav-height", `${val}px`);
   } else {
-    root.style.setProperty('--bottom-nav-height', '0px');
+    root.style.setProperty("--bottom-nav-height", "0px");
   }
 }
 
@@ -2190,7 +1852,7 @@ function updateBottomNavPadding() {
 function observeLessonNavInsertion() {
   if (window.__lessonNavMutObserver) return;
   const obs = new MutationObserver(() => {
-    const nav = document.getElementById('lessonNav');
+    const nav = document.getElementById("lessonNav");
     if (nav) {
       updateBottomNavPadding();
       if (window.ResizeObserver && !window.__lessonNavObserver) {
@@ -2342,8 +2004,8 @@ function startQuiz() {
     return;
   }
 
-  currentLessonType = 'quiz';
-  localStorage.setItem(LESSON_STORAGE_KEY, 'quiz');
+  currentLessonType = "quiz";
+  localStorage.setItem(LESSON_STORAGE_KEY, "quiz");
   updateLessonSelection();
   const list = grammarData.filter(
     (item) => item.practice && item.practice.length,
@@ -2428,8 +2090,8 @@ ${option}
 
 
 `;
-  
-  showLessonNav('quiz');
+
+  showLessonNav("quiz");
 }
 
 // ======================================
@@ -2488,8 +2150,8 @@ function speak(text) {
 // ======================================
 
 function showNotes() {
-  currentLessonType = 'notes';
-  localStorage.setItem(LESSON_STORAGE_KEY, 'notes');
+  currentLessonType = "notes";
+  localStorage.setItem(LESSON_STORAGE_KEY, "notes");
   updateLessonSelection();
   const notes = userProgress.learnedItems || [];
 
@@ -2621,40 +2283,22 @@ onclick="deleteNote('${item.id}')"
 // DELETE NOTE
 // ======================================
 
+async function deleteNote(id) {
+  const confirmDelete = await showConfirm(
+    "Remove this lesson from your notes?",
+  );
 
-async function deleteNote(id){
+  if (!confirmDelete) {
+    return;
+  }
 
+  userProgress.learnedItems = userProgress.learnedItems.filter(
+    (item) => item.id !== id,
+  );
 
-const confirmDelete =
-await showConfirm(
-"Remove this lesson from your notes?"
-);
+  saveProgress();
 
-
-
-if(!confirmDelete){
-
-return;
-
-}
-
-
-
-userProgress.learnedItems =
-userProgress.learnedItems.filter(
-(item)=>item.id !== id
-);
-
-
-
-saveProgress();
-
-
-
-showNotes();
-
-
-
+  showNotes();
 }
 function loadNote(item) {
   let type;
@@ -2670,140 +2314,96 @@ function loadNote(item) {
   renderLesson(type, item);
 }
 
-
 const keyConfig = {
-
-  vocabulary:{
-    keyField:"word"
+  vocabulary: {
+    keyField: "word",
   },
 
-  grammar:{
-    keyField:"topic"
+  grammar: {
+    keyField: "topic",
   },
 
-  collocation:{
-    keyField:"phrase"
+  collocation: {
+    keyField: "phrase",
   },
 
-  phrasalVerb:{
-    keyField:"phrase"
-  }
-
+  phrasalVerb: {
+    keyField: "phrase",
+  },
 };
-function generateKeyDatabase(){
-
+function generateKeyDatabase() {
   const keys = {
-
-    vocabulary:[],
-    grammar:[],
-    collocation:[],
-    phrasalVerb:[]
-
+    vocabulary: [],
+    grammar: [],
+    collocation: [],
+    phrasalVerb: [],
   };
 
-
-  function extractKeys(data,type){
-
+  function extractKeys(data, type) {
     const field = keyConfig[type].keyField;
 
+    return data
+      .map((item) => {
+        return {
+          id: item.id,
 
-    return data.map(item=>{
-
-      return {
-
-        id:item.id,
-
-        key:item[field]
-          ?.trim()
-          .toLowerCase()
-
-      };
-
-    })
-    .filter(item=>item.key);
-
-
+          key: item[field]?.trim().toLowerCase(),
+        };
+      })
+      .filter((item) => item.key);
   }
 
+  keys.vocabulary = extractKeys(vocabularyData, "vocabulary");
 
-  keys.vocabulary =
-    extractKeys(vocabularyData,"vocabulary");
+  keys.grammar = extractKeys(grammarData, "grammar");
 
+  keys.collocation = extractKeys(collocationData, "collocation");
 
-  keys.grammar =
-    extractKeys(grammarData,"grammar");
-
-
-  keys.collocation =
-    extractKeys(collocationData,"collocation");
-
-
-  keys.phrasalVerb =
-    extractKeys(phrasalVerbData,"phrasalVerb");
-
+  keys.phrasalVerb = extractKeys(phrasalVerbData, "phrasalVerb");
 
   return keys;
-
 }
 
-function exportKeys(){
+function exportKeys() {
+  const data = generateKeyDatabase();
 
- const data = generateKeyDatabase();
+  const blob = new Blob([JSON.stringify(data, null, 2)], {
+    type: "application/json",
+  });
 
+  const url = URL.createObjectURL(blob);
 
- const blob = new Blob(
-   [
-    JSON.stringify(
-      data,
-      null,
-      2
-    )
-   ],
-   {
-    type:"application/json"
-   }
- );
+  const a = document.createElement("a");
 
+  a.href = url;
 
- const url =
- URL.createObjectURL(blob);
+  a.download = "english_journey_keys.json";
 
+  a.click();
 
- const a=document.createElement("a");
-
- a.href=url;
-
- a.download=
- "english_journey_keys.json";
-
-
- a.click();
-
-
- URL.revokeObjectURL(url);
-
+  URL.revokeObjectURL(url);
 }
 // ======================================
 // DARK MODE
 // ======================================
 
-const DARK_MODE_KEY = 'darkMode';
+const DARK_MODE_KEY = "darkMode";
 
 function initDarkMode() {
-  const isDarkMode = localStorage.getItem(DARK_MODE_KEY) === 'true';
+  const isDarkMode = localStorage.getItem(DARK_MODE_KEY) === "true";
   if (isDarkMode) {
-    document.documentElement.setAttribute('data-theme', 'dark');
+    document.documentElement.setAttribute("data-theme", "dark");
   }
 }
 
 function toggleDarkMode() {
-  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  const isDark = document.documentElement.getAttribute("data-theme") === "dark";
   if (isDark) {
-    document.documentElement.removeAttribute('data-theme');
-    localStorage.setItem(DARK_MODE_KEY, 'false');
+    document.documentElement.removeAttribute("data-theme");
+    localStorage.setItem(DARK_MODE_KEY, "false");
   } else {
-    document.documentElement.setAttribute('data-theme', 'dark');
-    localStorage.setItem(DARK_MODE_KEY, 'true');
+    document.documentElement.setAttribute("data-theme", "dark");
+    localStorage.setItem(DARK_MODE_KEY, "true");
   }
 }
 
@@ -2815,44 +2415,118 @@ function toggleDarkMode() {
 initDarkMode();
 
 // Enable security measures
-disableDevTools();
+// disableDevTools();
 
 // Check authentication first
-(async function(){
+(async function () {
+  // await loadUsers();
 
-    await loadUsers();
-
-    if(checkAuth()){
-        await loadDatabase();
-    }
-
+  if (checkAuth()) {
+    await loadDatabase();
+  }
 })();
 
 // Mobile menu toggle
 function toggleMenu() {
-  const app = document.querySelector('.app-screen');
+  const app = document.querySelector(".app-screen");
   if (!app) return;
-  app.classList.toggle('menu-open');
+  app.classList.toggle("menu-open");
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-  const btn = document.getElementById('menuToggle');
-  if (btn) btn.addEventListener('click', toggleMenu);
+document.addEventListener("DOMContentLoaded", function () {
+  const btn = document.getElementById("menuToggle");
+  if (btn) btn.addEventListener("click", toggleMenu);
 
   // Close menu when a nav action is clicked
-  document.querySelectorAll('aside button').forEach((b) => {
-    b.addEventListener('click', () => {
-      const app = document.querySelector('.app-screen');
-      if (app) app.classList.remove('menu-open');
+  document.querySelectorAll("aside button").forEach((b) => {
+    b.addEventListener("click", () => {
+      const app = document.querySelector(".app-screen");
+      if (app) app.classList.remove("menu-open");
     });
   });
+
+  document
+    .getElementById("loginForm")
+    .addEventListener("submit", handleLogin);
+
+    document
+    .getElementById("logoutBtn")
+    .addEventListener("click", handleLogout);
+
+    document
+    .getElementById("grammarBtn")
+    .addEventListener("click", () => loadLesson("grammar"));
+
+    document
+    .getElementById("vocabularyBtn")
+    .addEventListener("click", () => loadLesson("vocabulary"));
+
+    document
+    .getElementById("collocationBtn")
+    .addEventListener("click", () => loadLesson("collocation"));
+
+    document
+    .getElementById("phrasalBtn")
+    .addEventListener("click", () => loadLesson("phrasal"));
+
+    document
+    .getElementById("quizBtn")
+    .addEventListener("click", startQuiz);
+
+    document
+    .getElementById("notesBtn")
+    .addEventListener("click", showNotes);
+
+    document
+    .getElementById("adminBtn")
+    .addEventListener("click", showAdminPanel);
+
+    document
+    .getElementById("exportBtn")
+    .addEventListener("click", exportKeys);
+
+    document
+    .getElementById("darkModeBtn")
+    .addEventListener("click", toggleDarkMode);
+
+    document
+    .getElementById("closeAdminBtn")
+    .addEventListener("click", closeAdminModal);
+
+    document
+    .getElementById("createUserBtn")
+    .addEventListener("click", createUser);
+
+    document
+    .getElementById("cancelAdminBtn")
+    .addEventListener("click", closeAdminModal);
+
+    document
+    .getElementById("modalCloseBtn")
+    .addEventListener("click", () => closeModal(false));
   // Backdrop click closes menu
-  const backdrop = document.getElementById('menuBackdrop');
-  if (backdrop) backdrop.addEventListener('click', () => {
-    const app = document.querySelector('.app-screen');
-    if (app) app.classList.remove('menu-open');
-  });
+  const backdrop = document.getElementById("menuBackdrop");
+  if (backdrop)
+    backdrop.addEventListener("click", () => {
+      const app = document.querySelector(".app-screen");
+      if (app) app.classList.remove("menu-open");
+    });
   // initial bottom padding adjustment
   updateBottomNavPadding();
-  window.addEventListener('resize', updateBottomNavPadding);
+  window.addEventListener("resize", updateBottomNavPadding);
+
+  window.showCreateUserModal = showCreateUserModal;
+window.toggleUserMenu = toggleUserMenu;
+window.triggerImportUsers = triggerImportUsers;
+window.importUsersJSON = importUsersJSON;
+window.exportUsersJSON = exportUsersJSON;
+window.editUser = editUser;
+window.toggleLockUser = toggleLockUser;
+window.resetPassword = resetPassword;
+window.deleteUser = deleteUser;
+window.noteLesson = noteLesson;
+window.checkGrammarAnswer = checkGrammarAnswer;
+window.deleteNote = deleteNote;
+window.loadNote = loadNote;
+
 });
