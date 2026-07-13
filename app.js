@@ -79,22 +79,22 @@ function disableDevTools() {
 }
 
 // Override console methods to prevent logging sensitive data
-// const originalLog = debugLog;
-// const originalWarn = console.warn;
-// const originalError = console.error;
+const originalLog = debugLog;
+const originalWarn = console.warn;
+const originalError = console.error;
 
-// debugLog = function(...args) {
-//   // Prevent logging
-//   return;
-// };
+debugLog = function(...args) {
+  // Prevent logging
+  return;
+};
 
-// console.warn = function(...args) {
-//   return;
-// };
+console.warn = function(...args) {
+  return;
+};
 
-// console.error = function(...args) {
-//   return;
-// };
+console.error = function(...args) {
+  return;
+};
 
 // ======================================
 // AUTHENTICATION
@@ -787,26 +787,6 @@ async function showAdminPanel() {
 
 </button>
 
-<button
-onclick="exportUsersJSON()"
->
-⬇️ Export users.json
-</button>
-
-<button
-onclick="triggerImportUsers()"
->
-⬆️ Import users.json
-</button>
-
-
-<input
-type="file"
-id="importUsersFile"
-accept=".json"
-style="display:none"
-onchange="importUsersJSON(event)"
->
 </div>
 
 
@@ -840,8 +820,7 @@ function renderUsersTable() {
 
 <button
 class="action-btn"
-onclick="toggleUserMenu('${user.id}')"
->
+onclick="toggleUserMenu(this)">
 
 ⚙️
 
@@ -887,6 +866,8 @@ onclick="deleteUser('${user.id}')"
   });
 
   return `
+  <div class="admin-table-desktop">
+
         <table class="admin-table">
 
             <thead>
@@ -907,9 +888,114 @@ onclick="deleteUser('${user.id}')"
             </tbody>
 
         </table>
+        </div>
+<div class="admin-mobile">
+
+    ${renderUserCards()}
+
+</div>
     `;
 }
+function renderUserCards() {
 
+    return usersDatabase.map(user => `
+
+<div class="user-card">
+
+    <div class="user-card-header">
+
+        <div class="user-card-title">
+            👤 ${user.username}
+        </div>
+
+        <div class="user-action">
+
+            <button
+                class="action-btn"
+                onclick="toggleUserMenu(this)"
+            >
+                ⚙️
+            </button>
+
+            
+<div
+id="userMenu-${user.id}"
+class="user-menu"
+>
+
+<button onclick="editUser('${user.id}')">
+
+✏️ Edit
+
+</button>
+
+<button onclick="toggleLockUser('${user.id}')">
+
+${user.status === "active" ? "🔒 Lock" : "🔓 Unlock"}
+
+</button>
+
+<button onclick="resetPassword('${user.id}')">
+
+🔑 Reset Password
+
+</button>
+
+<button
+class="danger"
+onclick="deleteUser('${user.id}')"
+>
+
+🗑 Delete
+
+</button>
+
+</div>
+
+        </div>
+
+    </div>
+
+    <div class="user-card-divider"></div>
+
+    <div class="user-card-info">
+
+        <div class="info-row">
+            <span class="info-label">Role</span>
+            <span class="info-value">
+                ${capitalize(user.role)}
+            </span>
+        </div>
+
+        <div class="info-row">
+            <span class="info-label">Status</span>
+
+            <span class="status-badge status-${user.status}">
+                ${capitalize(user.status)}
+            </span>
+        </div>
+
+        <div class="info-row">
+            <span class="info-label">Created</span>
+            <span class="info-value">
+                ${formatDate(user.createdAt)}
+            </span>
+        </div>
+
+        <div class="info-row">
+            <span class="info-label">Last Login</span>
+            <span class="info-value">
+                ${user.lastLogin ? formatDate(user.lastLogin) : "Never"}
+            </span>
+        </div>
+
+    </div>
+
+</div>
+
+`).join("");
+
+}
 function capitalize(text) {
   if (!text) return "";
 
@@ -1226,21 +1312,37 @@ async function createUser() {
 
   closeAdminModal();
 }
-function toggleUserMenu(id) {
-  const currentMenu = document.getElementById(`userMenu-${id}`);
 
-  // Close all other menus
+function toggleUserMenu(button){
 
-  document.querySelectorAll(".user-menu").forEach((menu) => {
-    if (menu !== currentMenu) {
-      menu.classList.remove("show");
-    }
-  });
+    document.querySelectorAll(".user-menu").forEach(menu=>{
 
-  // Toggle current menu
+        if(menu !== button.nextElementSibling){
 
-  currentMenu.classList.toggle("show");
+            menu.classList.remove("show");
+
+        }
+
+    });
+
+    button.nextElementSibling.classList.toggle("show");
+
 }
+// function toggleUserMenu(id) {
+//   const currentMenu = document.getElementById(`userMenu-${id}`);
+
+//   // Close all other menus
+
+//   document.querySelectorAll(".user-menu").forEach((menu) => {
+//     if (menu !== currentMenu) {
+//       menu.classList.remove("show");
+//     }
+//   });
+
+//   // Toggle current menu
+
+//   currentMenu.classList.toggle("show");
+// }
 
 function editUser(id) {
   const user = getUserById(id);
