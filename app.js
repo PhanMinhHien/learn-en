@@ -9,6 +9,7 @@ import {
   subscribeUsers,
   createUser as createFirestoreUser,
   updateUser,
+  deleteUser as deleteFirestoreUser,
 } from "./userService.js";
 // ======================================
 // SECURITY & ANTI-CHEAT MEASURES
@@ -1094,19 +1095,43 @@ async function toggleLockUser(id) {
     });
 
 }
+
 async function deleteUser(id) {
+
   const confirmDelete = await showConfirm(
-    "Are you sure you want to delete this user?",
+    "Are you sure you want to delete this user?"
   );
 
   if (!confirmDelete) return;
 
-  usersDatabase = usersDatabase.filter((user) => user.id !== id);
+  try {
 
-  saveUsers();
+    await deleteFirestoreUser(id);
 
-  showAdminPanel();
+    await showAlert("✅ User deleted successfully.");
+
+  } catch (error) {
+
+    console.error(error);
+
+    await showAlert("❌ Failed to delete user.");
+
+  }
+
 }
+// async function deleteUser(id) {
+//   const confirmDelete = await showConfirm(
+//     "Are you sure you want to delete this user?",
+//   );
+
+//   if (!confirmDelete) return;
+
+//   usersDatabase = usersDatabase.filter((user) => user.id !== id);
+
+//   saveUsers();
+
+//   showAdminPanel();
+// }
 async function resetPassword(id) {
   const user = getUserById(id);
 
