@@ -21,62 +21,62 @@ function debugLog(...args) {
     }
 }
 // Disable DevTools
-// function disableDevTools() {
-//   // Disable F12
-//   document.addEventListener("keydown", (e) => {
-//     if (e.key === "F12") {
-//       e.preventDefault();
-//       return false;
-//     }
-//   });
+function disableDevTools() {
+  // Disable F12
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "F12") {
+      e.preventDefault();
+      return false;
+    }
+  });
 
-//   // Disable Ctrl+Shift+I (Inspector)
-//   document.addEventListener("keydown", (e) => {
-//     if (e.ctrlKey && e.shiftKey && e.key === "I") {
-//       e.preventDefault();
-//       return false;
-//     }
-//   });
+  // Disable Ctrl+Shift+I (Inspector)
+  document.addEventListener("keydown", (e) => {
+    if (e.ctrlKey && e.shiftKey && e.key === "I") {
+      e.preventDefault();
+      return false;
+    }
+  });
 
-//   // Disable Ctrl+Shift+C (Element picker)
-//   document.addEventListener("keydown", (e) => {
-//     if (e.ctrlKey && e.shiftKey && e.key === "C") {
-//       e.preventDefault();
-//       return false;
-//     }
-//   });
+  // Disable Ctrl+Shift+C (Element picker)
+  document.addEventListener("keydown", (e) => {
+    if (e.ctrlKey && e.shiftKey && e.key === "C") {
+      e.preventDefault();
+      return false;
+    }
+  });
 
-//   // Disable Ctrl+Shift+J (Console)
-//   document.addEventListener("keydown", (e) => {
-//     if (e.ctrlKey && e.shiftKey && e.key === "J") {
-//       e.preventDefault();
-//       return false;
-//     }
-//   });
+  // Disable Ctrl+Shift+J (Console)
+  document.addEventListener("keydown", (e) => {
+    if (e.ctrlKey && e.shiftKey && e.key === "J") {
+      e.preventDefault();
+      return false;
+    }
+  });
 
-//   // Disable Right-click
-//   document.addEventListener("contextmenu", (e) => {
-//     e.preventDefault();
-//     return false;
-//   });
+  // Disable Right-click
+  document.addEventListener("contextmenu", (e) => {
+    e.preventDefault();
+    return false;
+  });
 
-//   // Detect DevTools opening (rough detection)
-//   let devtools = { open: false, orientation: null };
+  // Detect DevTools opening (rough detection)
+  let devtools = { open: false, orientation: null };
 
-//   const threshold = 160;
-//   setInterval(() => {
-//     if (window.outerHeight - window.innerHeight > threshold ||
-//         window.outerWidth - window.innerWidth > threshold) {
-//       if (!devtools.open) {
-//         devtools.open = true;
-//         console.clear();
-//         debugLog("🔒 DevTools không được phép sử dụng");
-//       }
-//     } else {
-//       devtools.open = false;
-//     }
-//   }, 500);
-// }
+  const threshold = 160;
+  setInterval(() => {
+    if (window.outerHeight - window.innerHeight > threshold ||
+        window.outerWidth - window.innerWidth > threshold) {
+      if (!devtools.open) {
+        devtools.open = true;
+        console.clear();
+        debugLog("🔒 DevTools không được phép sử dụng");
+      }
+    } else {
+      devtools.open = false;
+    }
+  }, 500);
+}
 
 // Override console methods to prevent logging sensitive data
 // const originalLog = debugLog;
@@ -2415,7 +2415,7 @@ function toggleDarkMode() {
 initDarkMode();
 
 // Enable security measures
-// disableDevTools();
+disableDevTools();
 
 // Check authentication first
 (async function () {
