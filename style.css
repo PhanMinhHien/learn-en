@@ -645,9 +645,147 @@ font-size:24px;
 
 }
 
+/* Mobile User Card */
 
+.admin-mobile{
 
+    display:none;
+}
 
+.user-card{
+
+    background:#232d40;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:20px;
+    margin-bottom:18px;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.18);
+
+}
+
+.user-card-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+.user-card-title{
+
+    font-size:24px;
+    font-weight:700;
+    color:#fff;
+
+}
+
+.user-card-divider{
+
+    height:1px;
+    background:rgba(255,255,255,.08);
+    margin:18px 0;
+
+}
+
+.user-card-info{
+
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+
+}
+
+.info-row{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+.info-label{
+
+    color:#9ca7c3;
+    font-size:14px;
+    font-weight:500;
+
+}
+
+.info-value{
+
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+
+}
+
+/* Status */
+
+.status-badge{
+
+    padding:6px 14px;
+    border-radius:999px;
+    font-size:13px;
+    font-weight:700;
+
+}
+
+.status-active{
+
+    background:#173d2b;
+    color:#59ffa0;
+
+}
+
+.status-locked{
+
+    background:#4b1d25;
+    color:#ff9da8;
+
+}
+
+/* Action button */
+
+.user-action{
+
+    position:relative;
+
+}
+
+.user-action .action-btn{
+
+    width:42px;
+    height:42px;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+.admin-mobile{
+  margin-top: 50px;
+}
+/* Responsive */
+
+@media (max-width:768px){
+
+    .admin-table-desktop{
+
+        display:none;
+
+    }
+
+    .admin-mobile{
+
+        display:block;
+
+    }
+
+}
 
 
 
