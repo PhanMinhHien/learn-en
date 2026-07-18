@@ -8,7 +8,7 @@ import { db } from "./firebase.js";
 import {
   subscribeUsers,
   createUser as createFirestoreUser,
-  updateUser,
+  updateUser as updateFirestoreUser,
   deleteUser as deleteFirestoreUser,
 } from "./userService.js";
 // ======================================
@@ -22,80 +22,80 @@ function debugLog(...args) {
     }
 }
 // Disable DevTools
-// function disableDevTools() {
-//   // Disable F12
-//   document.addEventListener("keydown", (e) => {
-//     if (e.key === "F12") {
-//       e.preventDefault();
-//       return false;
-//     }
-//   });
+function disableDevTools() {
+  // Disable F12
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "F12") {
+      e.preventDefault();
+      return false;
+    }
+  });
 
-//   // Disable Ctrl+Shift+I (Inspector)
-//   document.addEventListener("keydown", (e) => {
-//     if (e.ctrlKey && e.shiftKey && e.key === "I") {
-//       e.preventDefault();
-//       return false;
-//     }
-//   });
+  // Disable Ctrl+Shift+I (Inspector)
+  document.addEventListener("keydown", (e) => {
+    if (e.ctrlKey && e.shiftKey && e.key === "I") {
+      e.preventDefault();
+      return false;
+    }
+  });
 
-//   // Disable Ctrl+Shift+C (Element picker)
-//   document.addEventListener("keydown", (e) => {
-//     if (e.ctrlKey && e.shiftKey && e.key === "C") {
-//       e.preventDefault();
-//       return false;
-//     }
-//   });
+  // Disable Ctrl+Shift+C (Element picker)
+  document.addEventListener("keydown", (e) => {
+    if (e.ctrlKey && e.shiftKey && e.key === "C") {
+      e.preventDefault();
+      return false;
+    }
+  });
 
-//   // Disable Ctrl+Shift+J (Console)
-//   document.addEventListener("keydown", (e) => {
-//     if (e.ctrlKey && e.shiftKey && e.key === "J") {
-//       e.preventDefault();
-//       return false;
-//     }
-//   });
+  // Disable Ctrl+Shift+J (Console)
+  document.addEventListener("keydown", (e) => {
+    if (e.ctrlKey && e.shiftKey && e.key === "J") {
+      e.preventDefault();
+      return false;
+    }
+  });
 
-//   // Disable Right-click
-//   document.addEventListener("contextmenu", (e) => {
-//     e.preventDefault();
-//     return false;
-//   });
+  // Disable Right-click
+  document.addEventListener("contextmenu", (e) => {
+    e.preventDefault();
+    return false;
+  });
 
-//   // Detect DevTools opening (rough detection)
-//   let devtools = { open: false, orientation: null };
+  // Detect DevTools opening (rough detection)
+  let devtools = { open: false, orientation: null };
 
-//   const threshold = 160;
-//   setInterval(() => {
-//     if (window.outerHeight - window.innerHeight > threshold ||
-//         window.outerWidth - window.innerWidth > threshold) {
-//       if (!devtools.open) {
-//         devtools.open = true;
-//         console.clear();
-//         debugLog("🔒 DevTools không được phép sử dụng");
-//       }
-//     } else {
-//       devtools.open = false;
-//     }
-//   }, 500);
-// }
+  const threshold = 160;
+  setInterval(() => {
+    if (window.outerHeight - window.innerHeight > threshold ||
+        window.outerWidth - window.innerWidth > threshold) {
+      if (!devtools.open) {
+        devtools.open = true;
+        console.clear();
+        debugLog("🔒 DevTools không được phép sử dụng");
+      }
+    } else {
+      devtools.open = false;
+    }
+  }, 500);
+}
 
 // Override console methods to prevent logging sensitive data
-// const originalLog = debugLog;
-// const originalWarn = console.warn;
-// const originalError = console.error;
+const originalLog = debugLog;
+const originalWarn = console.warn;
+const originalError = console.error;
 
-// debugLog = function(...args) {
-//   // Prevent logging
-//   return;
-// };
+debugLog = function(...args) {
+  // Prevent logging
+  return;
+};
 
-// console.warn = function(...args) {
-//   return;
-// };
+console.warn = function(...args) {
+  return;
+};
 
-// console.error = function(...args) {
-//   return;
-// };
+console.error = function(...args) {
+  return;
+};
 
 // ======================================
 // AUTHENTICATION
@@ -223,7 +223,7 @@ async function handleLogin(event) {
     if (passwordOK) {
 
         // cập nhật Firestore
-        await updateUser(user.id, {
+        await updateFirestoreUser(user.id, {
             lastLogin: new Date().toISOString(),
             failedAttempts: 0,
             lockedUntil: 0,
@@ -272,7 +272,7 @@ debugLog("Before showAppScreen");
             updateData.lockedUntil = Date.now() + LOCK_DURATION;
         }
 
-        await updateUser(user.id, updateData);
+        await updateFirestoreUser(user.id, updateData);
 
         const remaining = MAX_LOGIN_ATTEMPTS - failedAttempts;
 
@@ -1082,7 +1082,7 @@ async function toggleLockUser(id) {
     if(!user) return;
 
 
-    await updateUser(id, {
+    await updateFirestoreUser(id, {
 
         status: user.status === "active"
             ? "locked"
@@ -1133,36 +1133,54 @@ async function deleteUser(id) {
 //   showAdminPanel();
 // }
 async function resetPassword(id) {
+
   const user = getUserById(id);
 
   if (!user) {
+
     await showAlert("User not found.");
 
     return;
+
   }
 
   const newPassword = await showPrompt({
+
     title: "Reset Password",
 
     message: `Enter new password for ${user.username}`,
 
     placeholder: "New password",
+
   });
 
   if (!newPassword) return;
 
-  user.passwordHash = dcodeIO.bcrypt.hashSync(newPassword, 10);
+  try {
 
-  // reset security status
+    const passwordHash = dcodeIO.bcrypt.hashSync(newPassword, 10);
 
-  user.failedAttempts = 0;
+    await updateFirestoreUser(id, {
 
-  user.lockedUntil = 0;
-  user.status = "active";
+      passwordHash,
 
-  saveUsers();
+      // Reset security status
+      failedAttempts: 0,
+      lockedUntil: 0,
+      status: "active",
 
-  await showAlert("✅ Password reset successfully.");
+    });
+
+    await showAlert("✅ Password reset successfully.");
+
+  } catch (error) {
+
+    console.error(error);
+
+    await showAlert("❌ Failed to reset password.");
+
+  }
+
 }
 // function showCreateUserModal() {
 
@@ -1269,7 +1287,7 @@ async function createUser() {
       data.passwordHash = dcodeIO.bcrypt.hashSync(password, 10);
     }
 
-    await updateUser(user.id, data);
+    await updateFirestoreUser(user.id, data);
 
     editingUserId = null;
 
@@ -2522,7 +2540,7 @@ function toggleDarkMode() {
 initDarkMode();
 
 // Enable security measures
-// disableDevTools();
+disableDevTools();
 
 // Check authentication first
 (async function () {
@@ -2635,5 +2653,6 @@ window.noteLesson = noteLesson;
 window.checkGrammarAnswer = checkGrammarAnswer;
 window.deleteNote = deleteNote;
 window.loadNote = loadNote;
+window.loadLesson = loadLesson;
 
 });
