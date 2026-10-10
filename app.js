@@ -22,80 +22,80 @@ function debugLog(...args) {
     }
 }
 // Disable DevTools
-function disableDevTools() {
-  // Disable F12
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "F12") {
-      e.preventDefault();
-      return false;
-    }
-  });
+// function disableDevTools() {
+//   // Disable F12
+//   document.addEventListener("keydown", (e) => {
+//     if (e.key === "F12") {
+//       e.preventDefault();
+//       return false;
+//     }
+//   });
 
-  // Disable Ctrl+Shift+I (Inspector)
-  document.addEventListener("keydown", (e) => {
-    if (e.ctrlKey && e.shiftKey && e.key === "I") {
-      e.preventDefault();
-      return false;
-    }
-  });
+//   // Disable Ctrl+Shift+I (Inspector)
+//   document.addEventListener("keydown", (e) => {
+//     if (e.ctrlKey && e.shiftKey && e.key === "I") {
+//       e.preventDefault();
+//       return false;
+//     }
+//   });
 
-  // Disable Ctrl+Shift+C (Element picker)
-  document.addEventListener("keydown", (e) => {
-    if (e.ctrlKey && e.shiftKey && e.key === "C") {
-      e.preventDefault();
-      return false;
-    }
-  });
+//   // Disable Ctrl+Shift+C (Element picker)
+//   document.addEventListener("keydown", (e) => {
+//     if (e.ctrlKey && e.shiftKey && e.key === "C") {
+//       e.preventDefault();
+//       return false;
+//     }
+//   });
 
-  // Disable Ctrl+Shift+J (Console)
-  document.addEventListener("keydown", (e) => {
-    if (e.ctrlKey && e.shiftKey && e.key === "J") {
-      e.preventDefault();
-      return false;
-    }
-  });
+//   // Disable Ctrl+Shift+J (Console)
+//   document.addEventListener("keydown", (e) => {
+//     if (e.ctrlKey && e.shiftKey && e.key === "J") {
+//       e.preventDefault();
+//       return false;
+//     }
+//   });
 
-  // Disable Right-click
-  document.addEventListener("contextmenu", (e) => {
-    e.preventDefault();
-    return false;
-  });
+//   // Disable Right-click
+//   document.addEventListener("contextmenu", (e) => {
+//     e.preventDefault();
+//     return false;
+//   });
 
-  // Detect DevTools opening (rough detection)
-  let devtools = { open: false, orientation: null };
+//   // Detect DevTools opening (rough detection)
+//   let devtools = { open: false, orientation: null };
 
-  const threshold = 160;
-  setInterval(() => {
-    if (window.outerHeight - window.innerHeight > threshold ||
-        window.outerWidth - window.innerWidth > threshold) {
-      if (!devtools.open) {
-        devtools.open = true;
-        console.clear();
-        debugLog("🔒 DevTools không được phép sử dụng");
-      }
-    } else {
-      devtools.open = false;
-    }
-  }, 500);
-}
+//   const threshold = 160;
+//   setInterval(() => {
+//     if (window.outerHeight - window.innerHeight > threshold ||
+//         window.outerWidth - window.innerWidth > threshold) {
+//       if (!devtools.open) {
+//         devtools.open = true;
+//         console.clear();
+//         debugLog("🔒 DevTools không được phép sử dụng");
+//       }
+//     } else {
+//       devtools.open = false;
+//     }
+//   }, 500);
+// }
 
 // Override console methods to prevent logging sensitive data
-const originalLog = debugLog;
-const originalWarn = console.warn;
-const originalError = console.error;
+// const originalLog = debugLog;
+// const originalWarn = console.warn;
+// const originalError = console.error;
 
-debugLog = function(...args) {
-  // Prevent logging
-  return;
-};
+// debugLog = function(...args) {
+//   // Prevent logging
+//   return;
+// };
 
-console.warn = function(...args) {
-  return;
-};
+// console.warn = function(...args) {
+//   return;
+// };
 
-console.error = function(...args) {
-  return;
-};
+// console.error = function(...args) {
+//   return;
+// };
 
 // ======================================
 // AUTHENTICATION
@@ -1524,9 +1524,14 @@ function loadLesson(type) {
   localStorage.setItem(LESSON_STORAGE_KEY, type);
   updateLessonSelection();
 
-  // Handle quiz separately
+  // Handle special practice modes separately
   if (type === "quiz") {
     startQuiz();
+    return;
+  }
+
+  if (type === "sentence-builder") {
+    startSentenceBuilder();
     return;
   }
 
@@ -1611,6 +1616,9 @@ function restoreLastLesson() {
       break;
     case "quiz":
       startQuiz();
+      break;
+    case "sentence-builder":
+      startSentenceBuilder();
       break;
     case "notes":
       showNotes();
@@ -1932,10 +1940,15 @@ ${getNoteButtonHtml(item)}
 // ======================================
 
 function showLessonNav(type) {
+  const action =
+    type === "sentence-builder"
+      ? "nextSentenceBuilder()"
+      : `loadLesson('${type}')`;
+
   let navHTML = `
     <div class="lesson-bottom-nav">
-      <button onclick="loadLesson('${type}')" class="nav-btn prev-btn">⬅️ Previous</button>
-      <button onclick="loadLesson('${type}')" class="nav-btn next-btn">Next ➡️</button>
+      <button onclick="${action}" class="nav-btn prev-btn">⬅️ Previous</button>
+      <button onclick="${action}" class="nav-btn next-btn">Next ➡️</button>
     </div>
   `;
 
@@ -2117,6 +2130,537 @@ function saveGrammarNote(id) {
 
     saveProgress();
   }
+}
+
+// ======================================
+// SENTENCE BUILDER
+// ======================================
+
+let sentenceBuilderState = {
+  candidates: [],
+  current: null,
+  selected: [],
+  checked: false,
+};
+
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+function firstText(object, keys) {
+  if (!object || typeof object !== "object") return "";
+
+  for (const key of keys) {
+    const value = object[key];
+    if (typeof value === "string" && value.trim()) {
+      return value.trim();
+    }
+  }
+
+  return "";
+}
+
+function addSentenceCandidate(list, sentence, prompt, sourceType, sourceId) {
+  const english = String(sentence ?? "").trim().replace(/\s+/g, " ");
+  const vietnamese = String(prompt ?? "").trim().replace(/\s+/g, " ");
+
+  // Sentence Builder should only use complete sentence pairs:
+  // English sentence + Vietnamese sentence.
+  // Do NOT fall back to a single-word meaning/translation.
+  if (!english || english.split(/\s+/).length < 3) return;
+  if (!vietnamese || vietnamese.split(/\s+/).length < 3) return;
+
+  const normalized = english
+    .toLowerCase()
+    .replace(/[“”‘’]/g, "'")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  if (list.some((item) => item.normalized === normalized)) return;
+
+  list.push({
+    english,
+    prompt: vietnamese,
+    sourceType,
+    sourceId,
+    normalized,
+  });
+}
+
+// function collectSentenceCandidates(data, sourceType) {
+//   const result = [];
+//   if (!Array.isArray(data)) return result;
+
+//   data.forEach((item) => {
+//     if (!item || typeof item !== "object") return;
+
+//     // Grammar data has the exact structure:
+//     // examples: [{ english: "...", vietnamese: "..." }]
+//     if (Array.isArray(item.examples)) {
+//       item.examples.forEach((example) => {
+//         if (!example || typeof example !== "object") return;
+
+//         const english = firstText(example, ["english"]);
+//         const vietnamese = firstText(example, ["vietnamese"]);
+
+//         if (english && vietnamese) {
+//           addSentenceCandidate(
+//             result,
+//             english,
+//             vietnamese,
+//             sourceType,
+//             item.id
+//           );
+//         }
+//       });
+//     }
+
+//     // Future-compatible support for sentence-level translations in the
+//     // other data files. Their current schema only has Vietnamese meaning
+//     // for the word/phrase, so we must NOT use that as a sentence prompt.
+//     const english = firstText(item, [
+//       "sentence",
+//       "exampleSentence",
+//       "example_sentence",
+//       "englishSentence",
+//       "english_sentence",
+//     ]);
+
+//     const vietnamese = firstText(item, [
+//       "vietnameseSentence",
+//       "vietnamese_sentence",
+//       "sentenceVi",
+//       "sentenceVI",
+//       "exampleVietnamese",
+//       "example_vietnamese",
+//       "translationSentence",
+//       "translation_sentence",
+//       "vietnameseTranslation",
+//       "vietnamese_translation",
+//       "viSentence",
+//       "vi_sentence",
+//     ]);
+
+//     if (english && vietnamese) {
+//       addSentenceCandidate(
+//         result,
+//         english,
+//         vietnamese,
+//         sourceType,
+//         item.id
+//       );
+//     }
+
+//     // Also support a future example object:
+//     // example: { english: "...", vietnamese: "..." }
+//     if (item.example && typeof item.example === "object") {
+//       const exampleEnglish = firstText(item.example, ["english"]);
+//       const exampleVietnamese = firstText(item.example, ["vietnamese"]);
+
+//       if (exampleEnglish && exampleVietnamese) {
+//         addSentenceCandidate(
+//           result,
+//           exampleEnglish,
+//           exampleVietnamese,
+//           sourceType,
+//           item.id
+//         );
+//       }
+//     }
+//   });
+
+//   return result;
+// }
+
+function collectSentenceCandidates(data, sourceType) {
+  const result = [];
+  if (!Array.isArray(data)) return result;
+
+  data.forEach((item) => {
+    if (!item || typeof item !== "object") return;
+
+    // Grammar
+    if (Array.isArray(item.examples)) {
+      item.examples.forEach((example) => {
+        if (!example || typeof example !== "object") return;
+
+        const english = firstText(example, ["english"]);
+        const vietnamese = firstText(example, ["vietnamese"]);
+
+        if (english && vietnamese) {
+          addSentenceCandidate(
+            result,
+            english,
+            vietnamese,
+            sourceType,
+            item.id
+          );
+        }
+      });
+    }
+
+    // Vocabulary / Collocations / Phrasal Verbs
+    // Their example sentence is stored as a string in `example`.
+    if (typeof item.example === "string") {
+      const english = item.example.trim();
+
+      const vietnamese = firstText(item, [
+        "exampleVietnamese",
+        "example_vietnamese",
+        "vietnameseSentence",
+        "vietnamese_sentence",
+        "sentenceVi",
+        "sentenceVI",
+        "translationSentence",
+        "translation_sentence",
+        "vietnameseTranslation",
+        "vietnamese_translation",
+        "viSentence",
+        "vi_sentence",
+      ]);
+
+      if (english && vietnamese) {
+        addSentenceCandidate(
+          result,
+          english,
+          vietnamese,
+          sourceType,
+          item.id
+        );
+      }
+    }
+
+    // Support future sentence-level fields
+    const englishSentence = firstText(item, [
+      "sentence",
+      "exampleSentence",
+      "example_sentence",
+      "englishSentence",
+      "english_sentence",
+    ]);
+
+    const vietnameseSentence = firstText(item, [
+      "vietnameseSentence",
+      "vietnamese_sentence",
+      "sentenceVi",
+      "sentenceVI",
+      "exampleVietnamese",
+      "example_vietnamese",
+      "translationSentence",
+      "translation_sentence",
+      "vietnameseTranslation",
+      "vietnamese_translation",
+      "viSentence",
+      "vi_sentence",
+    ]);
+
+    if (englishSentence && vietnameseSentence) {
+      addSentenceCandidate(
+        result,
+        englishSentence,
+        vietnameseSentence,
+        sourceType,
+        item.id
+      );
+    }
+
+    // Future support:
+    // example: { english: "...", vietnamese: "..." }
+    if (item.example && typeof item.example === "object") {
+      const exampleEnglish = firstText(item.example, ["english"]);
+      const exampleVietnamese = firstText(item.example, [
+        "vietnamese",
+        "exampleVietnamese",
+        "example_vietnamese",
+      ]);
+
+      if (exampleEnglish && exampleVietnamese) {
+        addSentenceCandidate(
+          result,
+          exampleEnglish,
+          exampleVietnamese,
+          sourceType,
+          item.id
+        );
+      }
+    }
+  });
+
+  return result;
+}
+function getSentenceBuilderCandidates() {
+  // All four data sources are checked. A source contributes only when it
+  // contains both an English example sentence and a Vietnamese sentence
+  // translation. The current Grammar data has these paired examples.
+  return [
+    ...collectSentenceCandidates(grammarData, "Grammar"),
+    ...collectSentenceCandidates(vocabularyData, "Vocabulary"),
+    ...collectSentenceCandidates(collocationData, "Collocations"),
+    ...collectSentenceCandidates(phrasalVerbData, "Phrasal Verbs"),
+  ];
+}
+
+function tokenizeSentence(sentence) {
+  return (
+    String(sentence)
+      .trim()
+      .match(/[A-Za-zÀ-ÖØ-öø-ÿ0-9]+(?:['’][A-Za-zÀ-ÖØ-öø-ÿ0-9]+)*|[.,!?;:]/g) || []
+  );
+}
+
+function normalizeBuiltSentence(tokens) {
+  return tokens
+    .join(" ")
+    .replace(/\s+([.,!?;:])/g, "$1")
+    .replace(/([([{])\s+/g, "$1")
+    .replace(/\s+([)\]}])/g, "$1")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLowerCase();
+}
+
+function shuffleArray(array) {
+  const result = [...array];
+
+  for (let i = result.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [result[i], result[j]] = [result[j], result[i]];
+  }
+
+  return result;
+}
+
+function startSentenceBuilder() {
+  if (!databaseReady) {
+    showAlert("Database loading...");
+    return;
+  }
+
+  currentLessonType = "sentence-builder";
+  localStorage.setItem(LESSON_STORAGE_KEY, "sentence-builder");
+  updateLessonSelection();
+
+  const candidates = getSentenceBuilderCandidates();
+
+  if (!candidates.length) {
+    document.getElementById("content").innerHTML = `
+      <div class="lesson-card sentence-builder-card">
+        <h2>🧩 Sentence Builder</h2>
+        <p>No Vietnamese + English sentence pairs were found in the current data.</p>
+        <p class="sentence-builder-hint">
+          Sentence Builder only uses complete sentence pairs. Your Grammar data already
+          contains these pairs; Vocabulary, Collocations and Phrasal Verbs currently store
+          Vietnamese meanings for words/phrases, not Vietnamese translations of their example sentences.
+        </p>
+      </div>
+    `;
+    hideLessonNav();
+    return;
+  }
+
+  sentenceBuilderState.candidates = candidates;
+  renderSentenceBuilderQuestion(randomItem(candidates));
+}
+
+function renderSentenceBuilderQuestion(candidate) {
+  if (!candidate) return;
+
+  const tokens = tokenizeSentence(candidate.english);
+
+  if (tokens.length < 3) {
+    const next = randomItem(
+      sentenceBuilderState.candidates.filter(
+        (item) => item.normalized !== candidate.normalized
+      )
+    );
+
+    if (next) renderSentenceBuilderQuestion(next);
+    return;
+  }
+
+  sentenceBuilderState.current = candidate;
+  sentenceBuilderState.selected = [];
+  sentenceBuilderState.checked = false;
+
+  const shuffled = shuffleArray(tokens);
+
+  if (
+    shuffled.length > 1 &&
+    normalizeBuiltSentence(shuffled) === candidate.normalized
+  ) {
+    [shuffled[0], shuffled[1]] = [shuffled[1], shuffled[0]];
+  }
+
+  sentenceBuilderState.shuffled = shuffled;
+  renderSentenceBuilder();
+}
+
+function renderSentenceBuilder() {
+  const state = sentenceBuilderState;
+  const candidate = state.current;
+  if (!candidate) return;
+
+  const selectedTokens = state.selected.map(
+    (index) => state.shuffled[index]
+  );
+
+  const remaining = state.shuffled
+    .map((token, index) => ({ token, index }))
+    .filter((item) => !state.selected.includes(item.index));
+
+  const builtSentence = normalizeBuiltSentence(selectedTokens);
+  const isCorrect = builtSentence === candidate.normalized;
+
+  let feedback = "";
+
+  if (state.checked) {
+    feedback = isCorrect
+      ? `
+        <div class="sentence-builder-feedback correct">
+          <strong>🎉 Correct!</strong>
+          <span>Great job!</span>
+        </div>
+      `
+      : `
+        <div class="sentence-builder-feedback incorrect">
+          <strong>Not quite yet.</strong>
+          <span>Try again or check the correct sentence below.</span>
+          <div class="sentence-builder-correct-answer">
+            ${escapeHtml(candidate.english)}
+          </div>
+        </div>
+      `;
+  }
+
+  const prompt = candidate.prompt
+    ? `
+      <div class="sentence-builder-prompt">
+        <span class="sentence-builder-label">🇻🇳 Vietnamese sentence</span>
+        <strong>${escapeHtml(candidate.prompt)}</strong>
+      </div>
+    `
+    : `
+      <div class="sentence-builder-prompt">
+        <span class="sentence-builder-label">🇻🇳 Vietnamese sentence</span>
+        <strong>Build the correct English sentence.</strong>
+      </div>
+    `;
+
+  const selectedHtml = selectedTokens.length
+    ? selectedTokens.map((token, position) => `
+        <button
+          class="sentence-token selected-token"
+          onclick="removeSentenceToken(${position})"
+          ${state.checked && isCorrect ? "disabled" : ""}
+        >${escapeHtml(token)}</button>
+      `).join("")
+    : `<span class="sentence-builder-placeholder">Click the words below to build your sentence</span>`;
+
+  const availableHtml = remaining.map(({ token, index }) => `
+    <button
+      class="sentence-token"
+      onclick="addSentenceToken(${index})"
+      ${state.checked && isCorrect ? "disabled" : ""}
+    >${escapeHtml(token)}</button>
+  `).join("");
+
+  const checkDisabled = selectedTokens.length === 0 || (state.checked && isCorrect);
+
+  document.getElementById("content").innerHTML = `
+    <div class="lesson-card sentence-builder-card">
+      <div class="sentence-builder-header">
+        <div>
+          <h2>🧩 Sentence Builder</h2>
+          <p class="sentence-builder-subtitle">
+            Click each word to build the sentence in the correct order.
+          </p>
+        </div>
+        <span class="sentence-builder-source">${escapeHtml(candidate.sourceType)}</span>
+      </div>
+
+      ${prompt}
+
+      <div class="sentence-builder-answer">
+        <div class="sentence-builder-answer-label">Your sentence</div>
+        <div class="sentence-builder-selected">${selectedHtml}</div>
+      </div>
+
+      <div class="sentence-builder-word-bank">
+        <div class="sentence-builder-answer-label">Words</div>
+        <div class="sentence-builder-tokens">${availableHtml}</div>
+      </div>
+
+      ${feedback}
+
+      <div class="sentence-builder-actions">
+        <button
+          class="sentence-builder-secondary"
+          onclick="resetSentenceBuilder()"
+          ${state.checked && isCorrect ? "disabled" : ""}
+        >↺ Reset</button>
+
+        <button
+          class="sentence-builder-primary"
+          onclick="checkSentenceBuilder()"
+          ${checkDisabled ? "disabled" : ""}
+        >✓ Check</button>
+
+        ${state.checked ? `
+          <button
+            class="sentence-builder-next"
+            onclick="nextSentenceBuilder()"
+          >Next sentence →</button>
+        ` : ""}
+      </div>
+    </div>
+  `;
+
+  showLessonNav("sentence-builder");
+}
+
+function addSentenceToken(index) {
+  if (sentenceBuilderState.checked) return;
+  if (sentenceBuilderState.selected.includes(index)) return;
+
+  sentenceBuilderState.selected.push(index);
+  renderSentenceBuilder();
+}
+
+function removeSentenceToken(position) {
+  if (sentenceBuilderState.checked) return;
+
+  sentenceBuilderState.selected.splice(position, 1);
+  renderSentenceBuilder();
+}
+
+function resetSentenceBuilder() {
+  sentenceBuilderState.selected = [];
+  sentenceBuilderState.checked = false;
+  renderSentenceBuilder();
+}
+
+function checkSentenceBuilder() {
+  if (!sentenceBuilderState.current) return;
+
+  sentenceBuilderState.checked = true;
+  renderSentenceBuilder();
+}
+
+function nextSentenceBuilder() {
+  const current = sentenceBuilderState.current;
+
+  const pool = sentenceBuilderState.candidates.filter(
+    (item) => item.normalized !== current?.normalized
+  );
+
+  renderSentenceBuilderQuestion(
+    randomItem(pool.length ? pool : sentenceBuilderState.candidates)
+  );
 }
 
 // ======================================
@@ -2540,7 +3084,7 @@ function toggleDarkMode() {
 initDarkMode();
 
 // Enable security measures
-disableDevTools();
+// disableDevTools();
 
 // Check authentication first
 (async function () {
@@ -2593,6 +3137,10 @@ document.addEventListener("DOMContentLoaded", function () {
     document
     .getElementById("phrasalBtn")
     .addEventListener("click", () => loadLesson("phrasal"));
+
+    document
+      .getElementById("sentenceBuilderBtn")
+      .addEventListener("click", startSentenceBuilder);
 
     document
     .getElementById("quizBtn")
@@ -2654,5 +3202,15 @@ window.checkGrammarAnswer = checkGrammarAnswer;
 window.deleteNote = deleteNote;
 window.loadNote = loadNote;
 window.loadLesson = loadLesson;
+
+  // Sentence Builder uses inline onclick handlers in its rendered HTML.
+  // Because this file is loaded as a JavaScript module, these functions are
+  // not automatically placed on window. Expose them explicitly.
+  window.startSentenceBuilder = startSentenceBuilder;
+  window.addSentenceToken = addSentenceToken;
+  window.removeSentenceToken = removeSentenceToken;
+  window.resetSentenceBuilder = resetSentenceBuilder;
+  window.checkSentenceBuilder = checkSentenceBuilder;
+  window.nextSentenceBuilder = nextSentenceBuilder;
 
 });
